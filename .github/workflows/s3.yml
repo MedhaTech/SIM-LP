@@ -1,0 +1,43 @@
+on:
+  push:
+    branches: development
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Landing page
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --exclude '.git*' --follow-symlinks
+        env:
+          AWS_S3_BUCKET: sim-lp
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+      # - name: Maintenance page
+      #   uses: jakejarvis/s3-sync-action@master
+      #   with:
+      #     args: --exclude '.git*' --follow-symlinks
+      #   env:
+      #     AWS_S3_BUCKET: maintenance-unisolve2-82623
+      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     AWS_REGION: ${{ env.AWS_REGION }}
+      #     SOURCE_DIR: 'maintenance' 
+      # - name: Global page
+      #   uses: jakejarvis/s3-sync-action@master
+      #   with:
+      #     args: --exclude '.git*' --follow-symlinks
+      #   env:
+      #     AWS_S3_BUCKET: globalpage-unisolve2-19627
+      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     AWS_REGION: ${{ env.AWS_REGION }}
+      #     SOURCE_DIR: 'india' 
