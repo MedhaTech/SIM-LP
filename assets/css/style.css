@@ -76,10 +76,10 @@ Version: 1.0.0
 # Normalize
 --------------------------------------------------------------*/
 :root {
-  --main-color-one: #ffffff;
-  --main-color-two: #5ef4ffde;
+  --main-color-one: #16215c;
+  --main-color-two: #ffc05e;
   --secondary-color: #fb3c7f;
-  --heading-color: #000000;
+  --heading-color: #16215c;
   --paragraph-color: #727777;
   --heading-font: "Roboto", sans-serif;
   --heading-font-02: "Open Sans", sans-serif;
@@ -107,122 +107,8 @@ body {
   color: var(--paragraph-color);
   overflow-x: hidden;
   font-family: var(--body-font);
-  font-size: 38px;
-  
-
+  font-size: 14px;
 }
-.main {
-  color: green;
-}
-h2 {
-  display: block;
-  font-size: 25px;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  unicode-bidi: isolate;
-}
-.it_comp_slider_wrapper .carousel-inner .carousel-item .carousel-captions .content h2 {
-  /* color: #000; */
-  font-weight: 60;
-  font-size: 20px;
-  margin: -8 0 100px;
-  animation-delay: 1.2s;
-  text-transform: capitalize;
-  line-height: auto;
-}
-.main2 {
-  color: #067de1;
-}
-
-.lang-change {
-  /* Add your language change styles here */
-}
-
-.register,
-.lang-change {
-  padding: 10px 20px;
-  margin: 5px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.register:hover,
-.lang-change:hover {
-  background-color: #0056b3;
-}
-
-.full_width {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.it_comp_header_btn ul {
-  list-style: none;
-  padding: 0;
-}
-
-.it_comp_header_btn li {
-  display: flex;
-  gap: 10px;
-}
-
-.it_comp_btn_style {
-  display: inline-block;
-  padding: 10px 10px;  /* Decrease padding */
-  font-size: 15px;      /* Decrease font size */
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 0.25em;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-
-.it_comp_btn_style:hover {
-  background-color: #35577a;
-}
-
-.btn-secondary {
-  padding: 10px 10px;  /* Decrease padding */
-  font-size: 15px;      /* Decrease font size */
-  display: inline-block;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 0.25em;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.btn-secondary:hover {
-  background-color: #5a6268;
-}
-
-
-.it_comp_btn_style:hover {
-  background-color: #0056b3;
-}
-.it_comp_logo_wrapper {
-	float: left;
-	position: relative;
-	padding-top: 25px;
-  width:1000px;
-}
-
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -234,7 +120,7 @@ h2 {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 48px;
   line-height: 1.0833333333;
 }
 
@@ -342,7 +228,7 @@ code {
 }
 
 .section-bg-1 {
-  background-color: #000000;
+  background-color: #f4f7fc;
 }
 
 .check-list-02 {
@@ -1887,7 +1773,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 --------------------------------------------------------------*/
 .widget {
   margin-bottom: 30px;
- 
 }
 
 .widget select {
@@ -1944,23 +1829,23 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   height: 55px;
   border-radius: 50px;
   background-color: #fff;
-  color: #ffffff;
+  color: #5f5f5f;
 }
 .widget.footer-widget .subscribe-form .form-group .form-control::-webkit-input-placeholder {
   /* WebKit browsers */
-  color: rgb(255, 255, 255);
+  color: rgba(95, 95, 95, 0.6);
 }
 .widget.footer-widget .subscribe-form .form-group .form-control:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: rgb(255, 255, 255);
+  color: rgba(95, 95, 95, 0.6);
 }
 .widget.footer-widget .subscribe-form .form-group .form-control::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: rgb(255, 255, 255);
+  color: rgba(95, 95, 95, 0.6);
 }
 .widget.footer-widget .subscribe-form .form-group .form-control:-ms-input-placeholder {
   /* Internet Explorer 10+ */
-  color: rgb(255, 255, 255);
+  color: rgba(95, 95, 95, 0.6);
 }
 .widget.footer-widget .subscribe-form .submit-btn {
   border: none;
@@ -2445,55 +2330,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /*----------------------------------------------
     # Nav bar 
 ----------------------------------------------*/
-
-
-
-.navbar-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 10px;
-  position: absolute;
-  right: 10px;
-  top: 30px;
-}
-
-.navbar-buttons a, .navbar-buttons button {
-  margin: 0 5px;
-}
-
-/* Add a large top margin to the navbar items to create space */
-.navbar-nav {
-  display: flex;
-  flex-direction:column;
-  align-items: flex-end;
-  margin-top: 70px; /* Adjust this value to create three lines of space */
-}
-
-/* Add a margin to individual list items to separate them */
-.navbar-nav li {
-  margin-bottom: 0px;
-  margin-top: 10px; /* Adjust this value to create spacing between items */
-}
-
-/* Special margin for the FAQs item */
-.navbar-nav li:last-child {
-  margin-top: 10px; /* Add additional space above the FAQs item */
-  right: 5px;
-}
-.navbar {
-  background-color: #ffffff;
-}
-
-.navbar .navbar-area .navbar-expand-lg .nav-style-02{
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  z-index: 1000; /* Ensures navbar stays above other elements */
-  transition: background-color 0.3s ease;
-
-}
 .navbar.navbar-area.white .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.50)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -3216,8 +3052,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     margin: 0 15px;
   }
 }
-
-
 /*----------------------------
     Info Bar
 ----------------------------*/
@@ -3332,7 +3166,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /*--------------------------------------------------------------
 	## Header
 --------------------------------------------------------------*/
-
 .header-bottom-img {
   background-position: center;
   background-size: contain;
@@ -3571,7 +3404,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 .header-area.header-utility .header-inner .title.style-01 {
   line-height: 70px;
-  color: #ffffff;
+  color: #16215c;
   font-weight: 600;
 }
 .header-area.header-utility .header-inner .learn-para {
@@ -4186,7 +4019,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   bottom: 15%;
   left: 90%;
 }
-
 .header-area.header-medical .medi-shape-02 {
   background-image: url(assets/img/bg/medical/shape-02.png);
   background-size: contain;
@@ -4335,11 +4167,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   z-index: -1;
   animation: bikerun 10s infinite;
   transition: all 0.5s;
-}
-.it_comp_header_btn {
-	float: left;
-	width: 100%;
-	position: relative;
 }
 @keyframes bikerun {
   0% {
@@ -4514,8 +4341,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   height: 100%;
 }
 .header-area .title {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 72px;
+  line-height: 84px;
   color: var(--heading-color);
   font-weight: 700;
   margin-bottom: 30px;
@@ -6799,7 +6626,7 @@ Client Area
   left: 0;
   top: 0;
   z-index: 9;
-  background-color: #ffffff;
+  background-color: #fff;
   width: 100%;
   height: 100%;
   display: flex;
@@ -11101,24 +10928,3 @@ Single package item
   max-width: 285px;
   margin: auto;
 }
-/* Update the font color for the navigation links */
-.navbar-nav > li > a {
-    color: black; /* Set the color to black */
-}
-
-/* Ensure the color applies to the active and hover states */
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus,
-.navbar-nav > li.current-menu-item > a {
-    color: black; /* Set the color to black */
-}
-
-.nav-right-content .boxed-btn {
-    color: black; /* Set the color to black for the "Join With Us" button */
-}
-
-
-
-
-
-/*junk*/
