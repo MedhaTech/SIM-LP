@@ -2626,7 +2626,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   color: var(--main-color-one);
 }
 .navbar-area.nav-style-02 .nav-container .logo-wrapper {
-  max-width: 200px;
+  max-width: 250px;
 }
 .navbar-area.nav-style-02 .nav-container .nav-right-content {
   display: flex;
@@ -9911,7 +9911,7 @@ Single package item
   font-size: 80px;
   line-height: 90px;
   transition: all 0.3s;
-  color: #4b3be1;
+  /*color:#bf6037;*/
   display: inline-block;
   margin-bottom: 18px;
   position: relative;
