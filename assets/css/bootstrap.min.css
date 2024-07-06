@@ -1412,8 +1412,6 @@ pre code {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
-        margin-top: 200px;
-
     }
     .col-lg-7 {
         -webkit-box-flex: 0;
