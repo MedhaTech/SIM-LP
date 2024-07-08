@@ -10928,3 +10928,60 @@ Single package item
   max-width: 285px;
   margin: auto;
 }
+
+/*impact css*/
+.it_comp_logo_wrapper {
+  float: left;
+  position: relative;
+  padding-top: 25px;
+}
+
+
+.map_color {
+	fill: #ccc;
+	stroke: #FFFFFF;
+	stroke-width: 1;
+}
+
+.map_color:hover {
+  fill: #067de1 !important;
+}
+
+.map_counter_box_shape {
+	padding: 20px 20px;
+	background: #f0f5ff;
+	margin-top: 20px;
+	text-align: center;
+	z-index: 1;
+	position: relative;
+	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.06);
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.map_counter_box_shape h3 {
+	font-size: 32px;
+	font-weight: 500;
+	color: #24a1c1;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.map_counter_box_shape h4 {
+	font-size: 18px;
+	text-transform: capitalize;
+	color: #797979;
+	padding-top: 10px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
