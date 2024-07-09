@@ -102,14 +102,17 @@
         // Clinet - active
         $('.client-active-area').owlCarousel({
                 loop: true,
-                items: 4,
+                items: 5,
                 nav: true,
                 margin: 100,
                 dots: false,
                 navText: ['<span data-icon="&#x23;"></span>', '<span data-icon="&#x24;"></span>'],
                 responsive: {
                     0: {
-                        items: 2
+                        items: 1
+                    },
+                    300: {
+                        items: 1
                     },
                     600: {
                         items: 3

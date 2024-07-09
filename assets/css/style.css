@@ -102,6 +102,7 @@ html {
   /* WebKit  */
 }
 
+
 body {
   margin: 0;
   color: var(--paragraph-color);
@@ -4667,7 +4668,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .call-to-action-area-01 {
-  padding-bottom: 330px;
+  padding-bottom: 80px;
 }
 .call-to-action-area-01.bg-image {
   background-size: cover;
@@ -5007,9 +5008,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 .call-to-action-inner.style-08 {
   background-color: #fff;
-  box-shadow: 0px 0px 103px 0px rgba(93, 136, 250, 0.5);
+  box-shadow: 0px 0px 80px 0px rgba(93, 136, 250, 0.5);
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  padding: 100px 0px 100px 0px;
+  padding: 40px 0px 100px 0px;
 }
 .call-to-action-inner.style-08 .title {
   font-size: 42px;
@@ -7735,7 +7736,7 @@ Client Area
 }
 
 .counter-item-list li {
-  width: calc(100% / 3);
+  width: calc(100% / 2);
 }
 .counter-item-list li + li {
   border-left: 1px solid #a8aab1;
@@ -10943,13 +10944,13 @@ Single package item
 
 
 .map_color {
-	fill: #f3faf3;
-  stroke: #124F14;
+	fill: #f3d6ba;
+  stroke: #f5861f;
 	stroke-width: 1;
 }
 
 .map_color:hover {
-  fill: #ffc107 !important;
+  fill: #ffc05e !important;
 }
 
 
