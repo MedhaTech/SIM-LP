@@ -1763,3 +1763,9 @@
 /* mobile tablet layout 320px */
 
 @media only screen and (max-width: 330px) {}
+
+@media only screen and (max-width: 500px) {
+    .create-content-area-03 .trip-img.bg-image {
+       zoom:50%;
+      }
+  }

@@ -5008,7 +5008,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 .call-to-action-inner.style-08 {
   background-color: #fff;
-  box-shadow: 0px 0px 60px 0px rgba(93, 136, 250, 0.5);
+  box-shadow: 0px 0px 30px 0px rgba(93, 136, 250, 0.5);
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   padding: 50px 0px 50px 0px;
 }
@@ -10992,6 +10992,31 @@ Single package item
 	transition: all 0.5s;
 }
 
+@media (max-width: 500px) {
+  #bg-video {
+      display: none; /* Hide video on mobile */
+  }
+
+  #bg-image-bg {
+      display: block; /* Show image on mobile */
+  }
+}
+
+@media (min-width: 500px) {
+  #bg-image-bg {
+      display: none; /* Show image on mobile */
+  }
+}
+
+/* Media query for mobile viewports up to 500px */
+@media (max-width: 500px) {
+  #head-01{
+      margin-top: 50px; /* Adjust the margin to move the section down */
+  }
+}
+
+
+
 .video-container {
   position: absolute;
   top: 0;
@@ -11012,3 +11037,19 @@ Single package item
   text-align: right;
   padding-right: 90px; /* Adjust the padding as needed */
 }
+
+@media only screen and (max-width: 500px) {
+  .create-content-area-03 .trip-img.bg-image {
+     zoom:50%;
+    }
+}
+
+/* Media query for mobile viewports up to 500px */
+@media (max-width: 500px) {
+  .btn-wrapper a {
+      margin-top: 10px; /* Adjust the top margin for mobile */
+      width:100% /* Full width for stacked buttons */
+  }
+
+}
+
