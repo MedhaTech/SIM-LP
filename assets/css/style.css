@@ -2367,14 +2367,17 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   z-index: 1;
 }
 .navbar-area.nav-style-02 {
-  background-color:transparent;
-  position: absolute;
+  background-color: #ffffffb4;
+  backdrop-filter: blur(5px);
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   min-height: 100px;
   z-index: 2;
 }
+
+
 .navbar-area.nav-style-02.has-topbar {
   top: 50px;
 }
@@ -2647,7 +2650,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   text-align: right;
 }
 .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li.current-menu-item a {
-  color: white
+  color: #16215c;
 }
 .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li.current-menu-item:before {
   color: var(--main-color-one);
@@ -2897,7 +2900,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 @media only screen and (max-width: 991px) {
   .navbar-area.nav-style-02 .nav-container {
-    padding: 37px 0px;
+    padding: 20px 0px;
   }
   .navbar-area.nav-style-02 .nav-container .navbar-toggler {
     background-color: #fff;
@@ -10998,13 +11001,15 @@ Single package item
   }
 
   #bg-image-bg {
-      display: block; /* Show image on mobile */
+      display: block;
+      padding-top:100px ; /* Show image on mobile */
   }
 }
 
 @media (min-width: 500px) {
   #bg-image-bg {
-      display: none; /* Show image on mobile */
+      display: none; 
+     
   }
 }
 
@@ -11038,11 +11043,7 @@ Single package item
   padding-right: 90px; /* Adjust the padding as needed */
 }
 
-@media only screen and (max-width: 500px) {
-  .create-content-area-03 .trip-img.bg-image {
-     zoom:50%;
-    }
-}
+
 
 /* Media query for mobile viewports up to 500px */
 @media (max-width: 500px) {
@@ -11052,4 +11053,6 @@ Single package item
   }
 
 }
+
+
 

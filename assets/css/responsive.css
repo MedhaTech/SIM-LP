@@ -1491,7 +1491,7 @@
         padding: 50px 30px 50px;
     }
     .header-area {
-        padding: 200px 0 300px;
+        padding: 300px 0 30px;
     }
     .food-order-area::after {
         height: 50%;
@@ -1663,6 +1663,8 @@
     .header-area .title {
         font-size: 32px;
         line-height: 42px;
+        margin-left: 40px;
+        margin-top: 120px;
     }
     .testimonial-area .sass-testimonial .section-title .title {
         font-size: 24px;
@@ -1766,6 +1768,17 @@
 
 @media only screen and (max-width: 500px) {
     .create-content-area-03 .trip-img.bg-image {
-       zoom:50%;
+       zoom:57%;
       }
   }
+  @media only screen and (max-width: 360px) {
+    .header-area p{
+        margin-left: 40px;
+
+    }
+}
+@media only screen and (max-width: 360px) {
+    .header-area .btn-wrapper{
+        margin-left: 50px;
+    }
+}
