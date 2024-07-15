@@ -2367,6 +2367,15 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   z-index: 1;
 }
 .navbar-area.nav-style-02 {
+  background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100px;
+    z-index: 2;
+}
+.navbar-area.nav-fixed {
   background-color: #ffffffb4;
   backdrop-filter: blur(5px);
   position: fixed;
@@ -2376,8 +2385,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   min-height: 100px;
   z-index: 2;
 }
-
-
 .navbar-area.nav-style-02.has-topbar {
   top: 50px;
 }

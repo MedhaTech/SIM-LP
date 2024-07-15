@@ -304,18 +304,16 @@
     }
 
     function StickyMenu() {
-        /*--------------------------
-        sticky menu activation
-        ---------------------------*/
-        var st = $(this).scrollTop();
+        var scrollPosition = $(window).scrollTop();
         var mainMenuTop = $('.navbar-area');
-        if ($(window).scrollTop() > 1000) {
+    
+        if (scrollPosition > 100) {
             mainMenuTop.addClass('nav-fixed');
         } else {
-            mainMenuTop.removeClass('nav-fixed ');
+            mainMenuTop.removeClass('nav-fixed');
         }
-        lastScrollTop = st;
     }
+    
 
 
 })(jQuery);
