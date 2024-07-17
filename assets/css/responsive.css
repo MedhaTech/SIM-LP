@@ -1491,7 +1491,7 @@
         padding: 50px 30px 50px;
     }
     .header-area {
-        padding: 300px 0 30px;
+        padding: 170px 0 30px;
     }
     .food-order-area::after {
         height: 50%;
@@ -1663,8 +1663,7 @@
     .header-area .title {
         font-size: 32px;
         line-height: 42px;
-        margin-left: 40px;
-        margin-top: 120px;
+       
     }
     .testimonial-area .sass-testimonial .section-title .title {
         font-size: 24px;
@@ -1771,14 +1770,4 @@
        zoom:57%;
       }
   }
-  @media only screen and (max-width: 360px) {
-    .header-area p{
-        margin-left: 40px;
 
-    }
-}
-@media only screen and (max-width: 360px) {
-    .header-area .btn-wrapper{
-        margin-left: 50px;
-    }
-}
