@@ -102,7 +102,7 @@
         // Clinet - active
         $('.client-active-area').owlCarousel({
                 loop: true,
-                items: 5,
+                items: 4,
                 nav: true,
                 margin: 100,
                 dots: false,
@@ -304,21 +304,18 @@
     }
 
     function StickyMenu() {
-        var scrollPosition = $(window).scrollTop();
+        /*--------------------------
+        sticky menu activation
+        ---------------------------*/
+        var st = $(this).scrollTop();
         var mainMenuTop = $('.navbar-area');
-    
-        if (scrollPosition > 100) {
+        if ($(window).scrollTop() > 1000) {
             mainMenuTop.addClass('nav-fixed');
         } else {
-            mainMenuTop.removeClass('nav-fixed');
+            mainMenuTop.removeClass('nav-fixed ');
         }
+        lastScrollTop = st;
     }
 
-    
 
-      
-
-
-});
-   
-(jQuery);
+})(jQuery);
