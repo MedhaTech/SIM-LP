@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive Stylesheet -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    
+
 
 </head>
 
@@ -58,14 +58,20 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bizcoxx_main_menu">
                     <ul class="navbar-nav">
-                        <li><a href="#about_us" class="lang-change" data-lang="menu-home">About Us</a></li>
-                        <li><a href="#road_map" class="lang-change" data-lang="menu-roadmap">Road Map</a></li>
-                        <li><a href="#prizes">Prizes</a></li>
-                        <li><a href="#testimonial">Testimonial</a></li>
-                        <li><a href="#partners">Partners</a></li>
-                        <li><a href="impact.html">Impact</a></li>
-                        <li><a href="#themes">Themes</a></li>
-                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="#about_us" class="lang-change" data-lang="nav-aboutus">About Us</a></li>
+                        <li><a href="#road_map" class="lang-change" data-lang="nav-roadmap">Road Map</a></li>
+                        <li><a href="#prizes" class="lang-change" data-lang="nav-prizes">Prizes</a></li>
+                        <li><a href="#testimonial" class="lang-change" data-lang="nav-testimonial">Testimonial</a></li>
+                        <li><a href="#partners" class="lang-change" data-lang="nav-partners">Partners</a></li>
+                        <li><a href="impact.html" class="lang-change" data-lang="nav-impact">Impact</a></li>
+                        <li><a href="#themes" class="lang-change" data-lang="nav-themes">Themes</a></li>
+                        <li><a href="#faq" class="lang-change" data-lang="nav-faq">FAQs</a></li>
+                        <li>
+                            <select class="form-select p-1" onchange="langChange(this);">
+                                <option value="en">English</option>
+                                <option value="hi">हिंदी</option>
+                            </select>
+                        </li>
                     </ul>
                 </div>
                 <div class="nav-right-content">
@@ -73,12 +79,12 @@
                         <a href="https://schoolinnovationmarathon.org/login"
                             class="boxed-btn reverse-color">Login</a>
                     </div> -->
-                    <div class="btn-wrapper">
+                    <!-- <div class="btn-wrapper">
                         <button class="boxed-btn reverse-color" onclick="langChange('en')">En</button>
                     </div>
                     <div class="btn-wrapper">
                         <button class="boxed-btn reverse-color" onclick="langChange('hi')">Hi</button>
-                    </div>
+                    </div> -->
                     <!-- <button class="btn btn-secondary " type="button">
                              <span class="current-lang" >En</span>
                             </button> 
@@ -138,8 +144,7 @@
                         <div class="btn-wrapper padding-top-20 wow animate__animated animate__fadeInUp animated">
                             <a href="https://schoolinnovationmarathon.org/registration"
                                 class="boxed-btn medical-btn">Register</a>
-                            <a href="https://schoolinnovationmarathon.org/login"
-                                class="boxed-btn medical-btn">Login</a>
+                            <a href="https://schoolinnovationmarathon.org/login" class="boxed-btn medical-btn">Login</a>
                         </div>
                     </div>
                     <!-- //.header inner -->
@@ -308,9 +313,9 @@
                                 </h4>
                                 <p>Commencement of Student Internship Programme(SIP)<br>May 2025 onwards.</p>
                             </div>
-                           
+
                         </div>
-                        
+
                     </div>
                     <div class="col-lg-4 justify-content-center">
                         <div class="audio-bg" style="background-image: url(assets/images/New_other.gif)">
@@ -319,7 +324,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
-                            
+
                             <div class="content padding-bottom-55">
                                 <h4 class="title">
                                     <a href="">WINNERS</a>
@@ -359,9 +364,11 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-12">
                     <div class="section-title desktop-center white margin-bottom-55">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated" style="color: #16215c;">Viksit Bharat 2047 - Themes
+                        <h3 class="title wow animate__animated animate__fadeInUp animated" style="color: #16215c;">
+                            Viksit Bharat 2047 - Themes
                             for SIM 2024-25</h3>
-                        <p class="description wow animate__animated animate__fadeInUp animated" style="color:rgb(235 44 44 / 70%)">The vision of "Viksit
+                        <p class="description wow animate__animated animate__fadeInUp animated"
+                            style="color:rgb(235 44 44 / 70%)">The vision of "Viksit
                             Bharat 2047" aims to transform India into a developed nation by 2047. To support this, the
                             School Innovation Marathon 2024-25 has set broad themes. Start your research to generate
                             innovative ideas and implement solutions.</p>
@@ -372,7 +379,7 @@
                 <div class="col-lg-12">
                     <div class="testimonial-carousel-area">
                         <div class="testimonial-carousel">
-                           
+
                             <div class="single-testimonial-item">
                                 <div class="thumb bg-image">
                                     <img src="assets/images/Digital Transformation.png" alt="">
@@ -579,7 +586,8 @@
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description">  School Innovation Marathon encourages innovative solutions in any other area that
+                                    <p class="description"> School Innovation Marathon encourages innovative solutions
+                                        in any other area that
                                         aligns with the vision of Viksit Bharat 2047.</p>
                                     <div class="author-details">
                                         <div class="author-meta">
@@ -608,7 +616,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title customer desktop-center">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated" style="color: #16215c;">Prizes & Certificates</h3>
+                        <h3 class="title wow animate__animated animate__fadeInUp animated" style="color: #16215c;">
+                            Prizes & Certificates</h3>
                     </div>
                 </div>
             </div>
@@ -629,9 +638,9 @@
                                     <a href="">Funding & Internships</a>
                                 </h4>
                                 <p>
-                                     Funding Support from the Ministry of Education, facilitated by MIC
+                                    Funding Support from the Ministry of Education, facilitated by MIC
                                     <br>
-                                     Student Internship Programme (SIP) with Incubators, facilitated by AIM
+                                    Student Internship Programme (SIP) with Incubators, facilitated by AIM
                                 </p>
                             </div>
                         </div>
@@ -649,7 +658,7 @@
                                 <p>
                                     Student Entrepreneurship Programme (SEP), facilitated by AIM
                                     <br>
-                                     Patenting support and guidance, facilitated by Innovation Centers, MIC
+                                    Patenting support and guidance, facilitated by Innovation Centers, MIC
                                 </p>
                             </div>
                         </div>
@@ -666,7 +675,8 @@
                                     <a href="">Certificates</a>
                                 </h4>
                                 <p>
-                                    Top 20 teams from each state, Top 20 teams from Aspirational Districts, Top 20 teams from rural areas.
+                                    Top 20 teams from each state, Top 20 teams from Aspirational Districts, Top 20 teams
+                                    from rural areas.
                                 </p>
                             </div>
                         </div>
@@ -681,7 +691,8 @@
                                 <h4 class="title">
                                     <a href="">Rewards</a>
                                 </h4>
-                                <p> Top 20 teams from govt schools, Top 20 teams for teams having Children with special needs, Top 3 best-performing states</p>
+                                <p> Top 20 teams from govt schools, Top 20 teams for teams having Children with special
+                                    needs, Top 3 best-performing states</p>
                             </div>
                         </div>
                     </div>
@@ -689,13 +700,13 @@
             </div>
         </div>
     </div>
-    
-   
+
+
     <!--prized end here-->
 
 
-    
-<!-- <div class="create-content-area" id="prizes">
+
+    <!-- <div class="create-content-area" id="prizes">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -741,7 +752,7 @@
     </div>
     </div> -->
 
-    
+
 
     <!-- testimonial area start  -->
     <section class="testimonial-area bg-image padding-top-100 padding-bottom-120" id="testimonial"
@@ -1236,13 +1247,15 @@
                                         <a class="collapsed white style-01" role="button" data-toggle="collapse"
                                             data-target="#collapseOwo" aria-expanded="false"
                                             aria-controls="collapseOwo">
-                                            What is the School Innovation Marathon?  
+                                            What is the School Innovation Marathon?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseOwo" class="collapse show" data-parent="#accordion">
                                     <div class="card-body style-02">
-                                        The School Innovation Marathon is a nationwide initiative aimed at unleashing the creative potential of students across India. It encourages student innovation and agency to tackle critical local and global challenges.
+                                        The School Innovation Marathon is a nationwide initiative aimed at unleashing
+                                        the creative potential of students across India. It encourages student
+                                        innovation and agency to tackle critical local and global challenges.
 
                                     </div>
                                 </div>
@@ -1253,13 +1266,14 @@
                                         <a class="collapsed white style-01" role="button" data-toggle="collapse"
                                             data-target="#collapseTwo" aria-expanded="false"
                                             aria-controls="collapseOwo">
-                                            Who organizes the School Innovation Marathon? 
+                                            Who organizes the School Innovation Marathon?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                     <div class="card-body style-02">
-                                        The Marathon is spearheaded by AIM, NITI Aayog, Ministry of Education (MOE) in collaboration with UNICEF and YUWAAH.
+                                        The Marathon is spearheaded by AIM, NITI Aayog, Ministry of Education (MOE) in
+                                        collaboration with UNICEF and YUWAAH.
                                     </div>
                                 </div>
                             </div>
@@ -1269,13 +1283,14 @@
                                         <a class="collapsed white style-01" role="button" data-toggle="collapse"
                                             data-target="#collapseThree" aria-expanded="false"
                                             aria-controls="collapseOwo">
-                                            Who can participate in the School Innovation Marathon?  
+                                            Who can participate in the School Innovation Marathon?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse" data-parent="#accordion">
                                     <div class="card-body style-02">
-                                        All students from classes 6th to 12th in schools across India are eligible to participate.
+                                        All students from classes 6th to 12th in schools across India are eligible to
+                                        participate.
                                     </div>
                                 </div>
                             </div>
@@ -1285,13 +1300,15 @@
                                         <a class="collapsed white style-01" role="button" data-toggle="collapse"
                                             data-target="#collapseFour" aria-expanded="false"
                                             aria-controls="collapseOwo">
-                                            What are the rewards for the top teams? 
+                                            What are the rewards for the top teams?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseFour" class="collapse" data-parent="#accordion">
                                     <div class="card-body style-02">
-                                        The top teams will receive internships through the Student Innovator Program with leading corporates of India, certificates from AIM, NITI Aayog, and many more interesting opportunities at the conclusion of the Marathon.
+                                        The top teams will receive internships through the Student Innovator Program
+                                        with leading corporates of India, certificates from AIM, NITI Aayog, and many
+                                        more interesting opportunities at the conclusion of the Marathon.
                                     </div>
                                 </div>
                             </div>
@@ -1552,6 +1569,7 @@
             <script src="assets/js/contact.js"></script>
             <!-- main js -->
             <script src="assets/js/main.js"></script>
+            <script src="assets/js/map.js"></script>
 
 
 </body>
