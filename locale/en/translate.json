@@ -43,7 +43,9 @@
           "i_point1":"Launch of SIM on 29 July.",
           "i_point2":" Followed by Innovation & Prototyping Phase: Aug 1st to 30th Nov 2024.",
           "winners":"Winners",
-          "w_point1":"Announcement of Top Teams in Jan 2025",
+          "w_point1":"Announcement of Top",
+          "w_point1_1":" Teams in Jan 2025",
+
           "w_point2":"Funding support to teams in March 2025",
           "sip":"SIP",
           "s_point":"Commencement of Student Internship Programme(SIP) May 2025 onwards.",
@@ -103,7 +105,7 @@
             "culture":"Cultural Heritage and Creativity",
             "cc_desc":"Recognizes the value of preserving cultural heritage while promoting creativity and the arts as essential components of a vibrant society.",
             "cc_p1":"Preserving cultural heritage",
-            "c_p2":"Promoting arts and crafts",
+            "cc_p2":"Promoting arts and crafts",
             "cc_p3":"Fostering creativity",
 
             "others":"Others",
@@ -124,9 +126,10 @@
             "m_desc":" Student Entrepreneurship Programme (SEP), facilitated by AIM \n Patenting support and guidance, facilitated by Innovation Centers, MIC",
             
             "certificate":"Certificates",
-            "c_desc":"Top 20 teams from each state, Top 20 teams from Aspirational Districts, Top 20 teams from rural areas",
-            
-            "rewards":"Rewards",
+            "c_p1":"Top 20 teams from each state",
+            "c_p2":"Top 20 teams from Aspirational Districts",
+            "c_p3":"Top 20 teams from rural areas",
+            "rewards":"Special Recognition",
             "r_desc":" Top 20 teams from govt schools, Top 20 teams for teams having Children with special needs, Top 3 best-performing states"
             
           }
@@ -149,6 +152,17 @@
               "test_name4":"Suneeti Patwari",
               "designation4":"Student, Lakshmipat Singhania Academy, Kolkata",
               "desc_t4":"\"I began as a novice, but through the School Innovation marathon & the Student Innovation Program, we developed an industry prototype. This experience not only expanded my technology and business knowledge but also fostered personal growth. I'm immensely thankful for the opportunity.\""
+            }
+        },
+        {
+          "impact": {
+            "title":"Engagement & Impact SIM 2024-25",
+            "india":"INDIA",
+            "school":"Schools",
+            "teacher":"Teachers",
+            "team":"Teams",
+            "student":"Students",
+            "idea":"Ideas"
             }
         },
         {

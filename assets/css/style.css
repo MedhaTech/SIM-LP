@@ -5119,10 +5119,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   top: 57%;
   right: 1%;
   transform: translateY(-50%);
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  background-color: #75e8f0;
+  /* background-color: #75e8f0; */
 }
 .testimonial-area .social-testimonial {
   background-image: linear-gradient(-90deg, #49d9f4 0%, #8a54fb 99%);
