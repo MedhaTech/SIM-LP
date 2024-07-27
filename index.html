@@ -60,14 +60,14 @@
                     <ul class="navbar-nav">
                         <li><a href="#about_us" class="lang-change" data-lang="nav-aboutus">About Us</a></li>
                         <li><a href="#road_map" class="lang-change" data-lang="nav-roadmap">Road Map</a></li>
-                        <li><a href="#prizes" class="lang-change" data-lang="nav-prizes">Prizes</a></li>
-                        <li><a href="#testimonial" class="lang-change" data-lang="nav-testimonial">Testimonial</a></li>
-                        <li><a href="#partners" class="lang-change" data-lang="nav-partners">Partners</a></li>
-                        <li><a href="impact.html" class="lang-change" data-lang="nav-impact">Impact</a></li>
                         <li><a href="#themes" class="lang-change" data-lang="nav-themes">Themes</a></li>
+                        <li><a href="#prizes" class="lang-change" data-lang="nav-prizes">Prizes</a></li>
+                        <li><a href="impact.html" class="lang-change" data-lang="nav-impact">Impact</a></li>
+                        <li><a href="#partners" class="lang-change" data-lang="nav-partners">Partners</a></li>
+                        <li><a href="#testimonial" class="lang-change" data-lang="nav-testimonial">Testimonial</a></li>
                         <li><a href="#faq" class="lang-change" data-lang="nav-faq">FAQs</a></li>
                         <li>
-                            <select class="form-select p-1" onchange="langChange(this);">
+                            <select class="form-select p-1"  style="border-radius: 10px; background-color: #ffc05e;"onchange="langChange(this);">
                                 <option value="en">English</option>
                                 <option value="hi">हिंदी</option>
                             </select>
@@ -137,14 +137,14 @@
                 <div class="col-lg-6" style="margin-top: -50px;">
                     <div class="header-inner">
                         <!-- header inner -->
-                        <h2 class="title" style="font-size: 50px;">School Innovation Marathon 2024</h2>
-                        <p style="color:black">Creating Change Makers Of Tomorrow With 21st Century Skills.Nurture a
+                        <h2 class="title lang-change" data-lang="heroSection-title" style="font-size: 50px;">School Innovation Marathon 2024</h2>
+                        <p style="color:black" class="lang-change" data-lang="heroSection-title1">Creating Change Makers Of Tomorrow With 21st Century Skills.Nurture a
                             culture of social innovation and build skills <br> while inspiring young people to become
                             transformative <br>leaders.</p>
                         <div class="btn-wrapper padding-top-20 wow animate__animated animate__fadeInUp animated">
                             <a href="https://schoolinnovationmarathon.org/registration"
-                                class="boxed-btn medical-btn">Register</a>
-                            <a href="https://schoolinnovationmarathon.org/login" class="boxed-btn medical-btn">Login</a>
+                                class="boxed-btn medical-btn lang-change" data-lang="heroSection-register">Register</a>
+                            <a href="https://schoolinnovationmarathon.org/login" class="boxed-btn medical-btn lang-change" data-lang="heroSection-login">Login</a>
                         </div>
                     </div>
                     <!-- //.header inner -->
@@ -160,26 +160,28 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-title">
-                        <h4 class="title wow animate__animated animate__fadeInUp animated">SIM-School Innovation
+                        <h4 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="aboutSection-title">SIM-School Innovation
                             Marathon</h4>
-                        <p class="wow animate__animated animate__fadeInUp animated">School Innovation Marathon is
+                        <p class="wow animate__animated animate__fadeInUp animated lang-change" data-lang="aboutSection-desc">School Innovation Marathon is
                             envisioned as India’s largest school innovation challenge organized jointly by the Ministry
                             of Education, Atal Innovation Mission (AIM) NITI Aayog and Ministry of Education’s
                             Innovation Cell (MIC), where students from all schools of the country identify community
                             problems of their choice and develop innovative solutions in the form of working prototypes.
                             The Top Teams of School Innovation Marathon will get funding support from the Ministry of
                             Education. </p>
-                        <b>Last Year Highlights :</b>
+                        <b class="lang-change" data-lang="aboutSection-desc1">Last Year Highlights :</b>
+                        
                     </div>
+                    <br>
                     <ul class="content wow animate__animated animate__fadeInUp animated">
-                        <li><i aria-hidden="true" class="fas fa-check"></i><strong>19000+ Innovations</strong> witnessed
-                            in last edition of Marathon.</li>
-                        <li><i aria-hidden="true" class="fas fa-check"></i><strong>Internship opportunities</strong> for
-                            Top 400 teams through SIP program.</li>
-                        <li><i aria-hidden="true" class="fas fa-check"></i><strong>Mentorship Program</strong> for Top
-                            75 teams through SEP program</li>
-                        <li><i aria-hidden="true" class="fas fa-check"></i><strong>Prizes and certificates </strong>from
-                            AIM, NITI Aayog to students.</li>
+                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change" data-lang="aboutSection-point1_b" >19000+ Innovations</strong> <p class="lang-change" data-lang="aboutSection-point1" style="display:inline;">witnessed
+                            in last edition of Marathon.</p></li>
+                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change" data-lang="aboutSection-point2_b">Internship opportunities</strong><p class="lang-change" data-lang="aboutSection-point2" style="display:inline;"> for
+                            Top 400 teams through SIP program.</p></li>
+                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change" data-lang="aboutSection-point3_b">Mentorship Program</strong><p class="lang-change" data-lang="aboutSection-point3" style="display:inline;"> for Top
+                            75 teams through SEP program</p></li>
+                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change" data-lang="aboutSection-point4_b">Prizes and certificates </strong><p class="lang-change" data-lang="aboutSection-point4" style="display:inline;">from
+                            AIM, NITI Aayog to students.</p></li>
 
                     </ul>
                     </ul>
@@ -274,13 +276,14 @@
     -->
     <!--old Road Map end-->
     <!--Road Map start-->
-    <div id="road_map" class="build-area-02 padding-bottom-75">
-        <div class="container">
+    <section style="background-image: url(assets/images/bg.png);">
+    <div id="road_map"   class="build-area-02 padding-bottom-75">
+        <div class="container" >
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="section-title desktop-center padding-bottom-25">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated">Road Map</h3>
-                        <p class="wow animate__animated animate__fadeInUp animated">Journey Of A Student In School
+                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="roadmap-title">Road Map</h3>
+                        <p class="wow animate__animated animate__fadeInUp animated lang-change" data-lang="roadmap-title1">Journey Of A Student In School
                             Innovation Marathon.</p>
                     </div>
                 </div>
@@ -294,11 +297,11 @@
                             </div>
                             <div class="content padding-bottom-55">
                                 <h4 class="title">
-                                    <a href="">INNOVATION</a>
+                                    <a href="" class="lang-change" data-lang="roadmap-innovation">INNOVATION</a>
                                 </h4>
                                 <ul>
-                                    <li>Launch of SIM on 29 July. </li>
-                                    <li>Innovation & Prototyping Phase from Aug 1st to 30th Nov 2024.</li>
+                                    <li class="lang-change" data-lang="roadmap-i_point1">Launch of SIM on 29 July. </li>
+                                    <li class="lang-change" data-lang="roadmap-i_point2">Innovation & Prototyping Phase from Aug 1st to 30th Nov 2024.</li>
                                 </ul>
 
                             </div>
@@ -309,9 +312,9 @@
                             </div>
                             <div class="content padding-bottom-55">
                                 <h4 class="title">
-                                    <a href="">SIP</a>
+                                    <a href="" class="lang-change" data-lang="roadmap-sip">SIP</a>
                                 </h4>
-                                <p>Commencement of Student Internship Programme(SIP)<br>May 2025 onwards.</p>
+                                <p class="lang-change" data-lang="roadmap-s_point">Commencement of Student Internship Programme(SIP)<br>May 2025 onwards.</p>
                             </div>
 
                         </div>
@@ -327,11 +330,11 @@
 
                             <div class="content padding-bottom-55">
                                 <h4 class="title">
-                                    <a href="">WINNERS</a>
+                                    <a href="" class="lang-change" data-lang="roadmap-winners">WINNERS</a>
                                 </h4>
                                 <ul>
-                                    <li>Announcement of Top Teams in Jan 2025.</li>
-                                    <li>Funding support to teams in March 2025.</li>
+                                    <li><span class="lang-change" data-lang="roadmap-w_point1">Announcement of Top </span> <br> <span class="lang-change" data-lang="roadmap-w_point1_1"> Teams in Jan 2025.</span></li>
+                                    <li class="lang-change" data-lang="roadmap-w_point2">Funding support to teams in March 2025.</li>
                                 </ul>
                             </div>
                             <div class="icon style-01">
@@ -341,9 +344,9 @@
                         <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
                             <div class="content">
                                 <h4 class="title">
-                                    <a href="">SEP</a>
+                                    <a href="" class="lang-change" data-lang="roadmap-sep">SEP</a>
                                 </h4>
-                                <p>Top teams from SIP to student Entrepreneurship Programme(SEP)<br>Aug
+                                <p class="lang-change" data-lang="roadmap-sep_point">Top teams from SIP to student Entrepreneurship Programme(SEP)<br>Aug
                                     2025 onwards.</p>
                             </div>
                             <div class="icon style-03">
@@ -355,20 +358,24 @@
             </div>
         </div>
     </div>
+</section>
     <!--Road Map end-->
 
     <!-- themes area start  -->
     <section class="testimonial-area bg-image padding-top-80 padding-bottom-90"
-        style="background-image: url(assets/images/Themes_Background_SIM_2024.gif);" id="themes">
+        style="background-image: url(assets/images/bg3.png);" id="themes">
+        <div class="shape-02">
+             <img  src="assets/images/logoup2.png" alt="">
+        </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-12">
                     <div class="section-title desktop-center white margin-bottom-55">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated" style="color: #16215c;">
+                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"  data-lang="themes-title">
                             Viksit Bharat 2047 - Themes
                             for SIM 2024-25</h3>
-                        <p class="description wow animate__animated animate__fadeInUp animated"
-                            style="color:rgb(235 44 44 / 70%)">The vision of "Viksit
+                        <p class="description wow animate__animated animate__fadeInUp animated lang-change"  data-lang="themes-title1"
+                            >The vision of "Viksit
                             Bharat 2047" aims to transform India into a developed nation by 2047. To support this, the
                             School Innovation Marathon 2024-25 has set broad themes. Start your research to generate
                             innovative ideas and implement solutions.</p>
@@ -387,24 +394,24 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title">Digital Transformation</h4>
+                                            <h4 class="title lang-change" data-lang="themes-digital">Digital Transformation</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description">Highlights the critical role of digital technologies in
+                                    <p class="description lang-change" data-lang="themes-dt_desc">Highlights the critical role of digital technologies in
                                         bridging the digital divide and fostering innovation, making India a leader in
                                         the digital economy.</p>
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h3 class="title">Focus Areas</h3>
+                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
                                         </div>
                                     </div>
                                     <br>
                                     <ul>
-                                        <li>Digital literacy</li>
-                                        <li>Access to technology</li>
-                                        <li>Cybersecurity</li>
-                                        <li>AI technology based ideas</li>
+                                        <li class="lang-change" data-lang="themes-dt_p1">Digital literacy</li>
+                                        <li class="lang-change" data-lang="themes-dt_p2">Access to technology</li>
+                                        <li class="lang-change" data-lang="themes-dt_p3">Cybersecurity</li>
+                                        <li class="lang-change" data-lang="themes-dt_p4">AI technology based ideas</li>
                                     </ul>
                                 </div>
                             </div>
@@ -415,24 +422,24 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title">Health and Well-being</h4>
+                                            <h4 class="title lang-change" data-lang="themes-health">Health and Well-being</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description">Focuses on enhancing the overall health and wellness of
+                                    <p class="description lang-change" data-lang="themes-hw_desc">Focuses on enhancing the overall health and wellness of
                                         communities, ensuring that physical and mental health are prioritized in
                                         development plans.</p>
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h3 class="title">Focus Areas</h3>
+                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
                                         </div>
                                     </div>
                                     <br>
                                     <ul>
-                                        <li>Physical health</li>
-                                        <li>Mental health</li>
-                                        <li>Healthcare innovations</li>
-                                        <li>Community well-being</li>
+                                        <li class="lang-change" data-lang="themes-hw_p1">Physical health</li>
+                                        <li class="lang-change" data-lang="themes-hw_p2">Mental health</li>
+                                        <li class="lang-change" data-lang="themes-hw_p3">Healthcare innovations</li>
+                                        <li class="lang-change" data-lang="themes-hw_p4">Community well-being</li>
                                     </ul>
 
                                 </div>
@@ -444,24 +451,24 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title">Quality Education</h4>
+                                            <h4 class="title lang-change" data-lang="themes-education">Quality Education</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description">Stresses the necessity of providing equitable, high-quality
+                                    <p class="description lang-change" data-lang="themes-qe_desc">Stresses the necessity of providing equitable, high-quality
                                         education for all, fostering lifelong learning and preparing a skilled workforce
                                         for the future.</p>
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h3 class="title">Focus Areas</h3>
+                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
                                         </div>
                                     </div>
                                     <br>
                                     <ul>
-                                        <li>Inclusive education</li>
-                                        <li>Remote learning</li>
-                                        <li>Lifelong learning</li>
-                                        <li>Teacher training</li>
+                                        <li class="lang-change" data-lang="themes-qe_p1">Inclusive education</li>
+                                        <li class="lang-change" data-lang="themes-qe_p2">Remote learning</li>
+                                        <li class="lang-change" data-lang="themes-qe_p3">Lifelong learning</li>
+                                        <li class="lang-change" data-lang="themes-qe_p4">Teacher training</li>
                                     </ul>
 
                                 </div>
@@ -473,23 +480,23 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title">Economic Empowerment</h4>
+                                            <h4 class="title lang-change" data-lang="themes-economic">Economic Empowerment</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description"> Aims to uplift communities by promoting financial literacy,
+                                    <p class="description lang-change" data-lang="themes-ee_desc"> Aims to uplift communities by promoting financial literacy,
                                         entrepreneurship, and vocational skills, driving inclusive economic growth. </p>
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h3 class="title">Focus Areas</h3>
+                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
                                         </div>
                                     </div>
                                     <br>
                                     <ul>
-                                        <li>Financial literacy</li>
-                                        <li>Entrepreneurship</li>
-                                        <li>Vocational training</li>
-                                        <li>Economic development</li>
+                                        <li class="lang-change" data-lang="themes-ee_p1">Financial literacy</li>
+                                        <li class="lang-change" data-lang="themes-ee_p2">Entrepreneurship</li>
+                                        <li class="lang-change" data-lang="themes-ee_p3">Vocational training</li>
+                                        <li class="lang-change" data-lang="themes-ee_p4">Economic development</li>
                                     </ul>
                                 </div>
                             </div>
@@ -500,23 +507,23 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title">Smart and Resilient Communities</h4>
+                                            <h4 class="title lang-change" data-lang="themes-smart">Smart and Resilient Communities</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description"> Encourages the development of adaptive & innovative
+                                    <p class="description lang-change"  data-lang="themes-sc_desc"> Encourages the development of adaptive & innovative
                                         communities capable of withstanding & thriving amid future challenges.</p>
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h3 class="title">Focus Areas</h3>
+                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
                                         </div>
                                     </div>
                                     <br>
                                     <ul>
-                                        <li>Smart cities</li>
-                                        <li>Disaster management</li>
-                                        <li>Infrastructure development</li>
-                                        <li>Social innovation</li>
+                                        <li class="lang-change" data-lang="themes-sc_p1">Smart cities</li>
+                                        <li class="lang-change" data-lang="themes-sc_p2">Disaster management</li>
+                                        <li class="lang-change" data-lang="themes-sc_p3">Infrastructure development</li>
+                                        <li class="lang-change" data-lang="themes-sc_p4">Social innovation</li>
                                     </ul>
                                 </div>
                             </div>
@@ -527,23 +534,23 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title">Cultural Heritage and Creativity</h4>
+                                            <h4 class="title lang-change" data-lang="themes-culture">Cultural Heritage and Creativity</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description">Recognizes the value of preserving cultural heritage while
+                                    <p class="description lang-change" data-lang="themes-cc_desc">Recognizes the value of preserving cultural heritage while
                                         promoting creativity and the arts as essential components of a vibrant society.
                                     </p>
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h3 class="title">Focus Areas</h3>
+                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
                                         </div>
                                     </div>
                                     <br>
                                     <ul>
-                                        <li>Preserving cultural heritage</li>
-                                        <li>Promoting arts and crafts</li>
-                                        <li>Fostering creativity.</li>
+                                        <li class="lang-change" data-lang="themes-cc_p1">Preserving cultural heritage</li>
+                                        <li class="lang-change" data-lang="themes-cc_p2">Promoting arts and crafts</li>
+                                        <li class="lang-change" data-lang="themes-cc_p3">Fostering creativity.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -554,24 +561,24 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h3 class="title">Sustainable Development</h3>
+                                            <h3 class="title lang-change" data-lang="themes-sustainable">Sustainable Development</h3>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description">It emphasizes the importance of balancing economic
+                                    <p class="description lang-change" data-lang="themes-sd_desc">It emphasizes the importance of balancing economic
                                         growth with environmental protection to ensure a sustainable future.</p>
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h3 class="title">Focus Areas</h3>
+                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
                                         </div>
                                     </div>
 
                                     <br>
                                     <ul>
-                                        <li>Environmental conservation</li>
-                                        <li>Renewable energy</li>
-                                        <li>Sustainable agriculture</li>
-                                        <li>Water management</li>
+                                        <li class="lang-change" data-lang="themes-sd_p1">Environmental conservation</li>
+                                        <li class="lang-change" data-lang="themes-sd_p2">Renewable energy</li>
+                                        <li class="lang-change" data-lang="themes-sd_p3">Sustainable agriculture</li>
+                                        <li class="lang-change" data-lang="themes-sd_p4">Water management</li>
                                     </ul>
                                 </div>
                             </div>
@@ -582,21 +589,21 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title">Others</h4>
+                                            <h4 class="title lang-change" data-lang="themes-others">Others</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description"> School Innovation Marathon encourages innovative solutions
+                                    <p class="description lang-change" data-lang="themes-o_desc"> School Innovation Marathon encourages innovative solutions
                                         in any other area that
                                         aligns with the vision of Viksit Bharat 2047.</p>
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h3 class="title">Focus Areas</h3>
+                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
                                         </div>
                                     </div>
                                     <br>
                                     <ul>
-                                        <li>Any other Area that does not come under mentioned theme but
+                                        <li class="lang-change" data-lang="themes-o_p1">Any other Area that does not come under mentioned theme but
                                             broadly qualifies for the vision of Viksit bharat.</li>
                                     </ul>
                                 </div>
@@ -616,8 +623,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title customer desktop-center">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated" style="color: #16215c;">
+                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="prizes-title" style="color: #16215c;">
                             Prizes & Certificates</h3>
+                            <p class="description wow animate__animated animate__fadeInUp animated lang-change"  data-lang="prizes-desc">Participation certificates shall be provided to all teams participating in the School Innovation Marathon.</p>
                     </div>
                 </div>
             </div>
@@ -635,9 +643,9 @@
                             </div>
                             <div class="content style-01">
                                 <h4 class="title">
-                                    <a href="">Funding & Internships</a>
+                                    <a href="" class="title lang-change" data-lang="prizes-funding">Funding & Internships</a>
                                 </h4>
-                                <p>
+                                <p  class="lang-change" data-lang="prizes-f_desc">
                                     Funding Support from the Ministry of Education, facilitated by MIC
                                     <br>
                                     Student Internship Programme (SIP) with Incubators, facilitated by AIM
@@ -652,10 +660,10 @@
                                 <i class="fas fa-handshake"></i>
                             </div>
                             <div class="content style-01">
-                                <h4 class="title">
-                                    <a href="">Mentorship & Patenting</a>
+                                <h4 class="title" >
+                                    <a href="" class="lang-change" data-lang="prizes-mentorship">Mentorship & Patenting</a>
                                 </h4>
-                                <p>
+                                <p class="lang-change" data-lang="prizes-m_desc">
                                     Student Entrepreneurship Programme (SEP), facilitated by AIM
                                     <br>
                                     Patenting support and guidance, facilitated by Innovation Centers, MIC
@@ -672,12 +680,12 @@
                             </div>
                             <div class="content style-01">
                                 <h4 class="title">
-                                    <a href="">Certificates</a>
-                                </h4>
-                                <p>
-                                    Top 20 teams from each state, Top 20 teams from Aspirational Districts, Top 20 teams
-                                    from rural areas.
-                                </p>
+                                    <a href="" class="lang-change" data-lang="prizes-certificate">Certificates</a>
+                                </h4><p>
+                                <span class="lang-change" data-lang="prizes-c_p1">Top 20 teams from each state,</span><br>
+                                <span class="lang-change" data-lang="prizes-c_p2">Top 20 teams from Aspirational Districts,</span><br>
+                                <span class="lang-change" data-lang="prizes-c_p3"> Top 20 teams from rural areas.</span>
+                            </p>
                             </div>
                         </div>
                     </div>
@@ -689,9 +697,9 @@
                             </div>
                             <div class="content style-01">
                                 <h4 class="title">
-                                    <a href="">Rewards</a>
+                                    <a href=""class="lang-change" data-lang="prizes-rewards">Special Recognition</a>
                                 </h4>
-                                <p> Top 20 teams from govt schools, Top 20 teams for teams having Children with special
+                                <p class="lang-change" data-lang="prizes-r_desc"> Top 20 teams from govt schools, Top 20 teams for teams having Children with special
                                     needs, Top 3 best-performing states</p>
                             </div>
                         </div>
@@ -754,122 +762,7 @@
 
 
 
-    <!-- testimonial area start  -->
-    <section class="testimonial-area bg-image padding-top-100 padding-bottom-120" id="testimonial"
-        style="background-image: url(assets/images/t1.png);">
-        <div class="container">
-            <div class="section-title desktop-center blue margin-bottom-20">
-                <h2 class="title wow animate__animated animate__fadeInUp animated">Hear what our teacher and student
-                    innovators say about SIM</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="testimonial-carousel-area">
-                        <div class="testimonial-carousel-two">
-                            <div class="single-testimonial-item-05">
-                                <div class="icon">
-                                    <i class="flaticon-quote-left"></i>
-                                </div>
-                                <div class="thumb">
-                                    <img src="assets/images/team7 (1).png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title">Umesh Bajaj</h4>
-                                            <br>
-                                            <div class="designation">SIM Incharge, Dass & Brown World School, Ferozepur
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="description">“I serve as the SIM Incharge at Dass and Brown World School
-                                        in Ferozepur, Punjab. We recently featured in the Top 75 teams of SIM. The Atal
-                                        Tinkering Lab has become like a second home to me. It's a place where my
-                                        students and I engage in daily learning, finding solace in our lab. We are
-                                        dedicated to working on solutions for the Sustainable Development Goals, and I
-                                        am profoundly grateful to the Atal Innovation Mission for providing us with this
-                                        platform to contribute to our community and nurture innovation in the young
-                                        entrepreneurial minds.”</p>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-item-05">
-                                <div class="icon">
-                                    <i class="flaticon-quote-left"></i>
-                                </div>
-                                <div class="thumb">
-                                    <img src="assets/images/team6 (1).png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title">Prashant Nair</h4>
-                                            <br>
-                                            <div class="designation">Regional Mentor of Change, Tamil Nadu, SIM</div>
-                                        </div>
-                                    </div>
-                                    <p class="description">"SIM, the flagship national innovation challenge for schools
-                                        from Atal Innovation Mission (AIM) has been a trailblazer, having completed 5
-                                        editions with the 2022-2023 edition attracting 12,000+ teams pan India. I have
-                                        been fortunate to have been able to mentor 10+ teams that have been ranked
-                                        amongst the top teams over the last few years.SIM provides an excellent
-                                        opportunity for students to unleash their creativity, innovation and team work
-                                        to solve problems for societal and humanitarian benefit"</p>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-item-05">
-                                <div class="icon">
-                                    <i class="flaticon-quote-left"></i>
-                                </div>
-                                <div class="thumb">
-                                    <img src="assets/images/team9 (1).png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title">Suneeti Patwari</h4>
-                                            <br>
-                                            <div class="designation">Student, Lakshmipat Singhania Academy, Kolkata
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="description">“Our SIM journey as a team has been an incredible roller
-                                        coaster of innovation and collaboration. We worked hard and our hard work paid
-                                        off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
-                                        digital tablets from Niti Aayog as a prize for our achievement . It was like a
-                                        dream come true. We have even filed for the patent of our project this year in
-                                        2024. ”</p>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-item-05">
-                                <div class="icon">
-                                    <i class="flaticon-quote-left"></i>
-                                </div>
-                                <div class="thumb">
-                                    <img src="assets/images/team8 (1).png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title">Ishan Ghatak & Agam Yadav</h4>
-                                            <br>
-                                            <div class="designation">D.A.V Public School, Vasant Kunj, New Delhi</div>
-                                        </div>
-                                    </div>
-                                    <p class="description">“Our SIM journey as a team has been an incredible roller
-                                        coaster of innovation and collaboration. We worked hard and our hard work paid
-                                        off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
-                                        digital tablets from Niti Aayog as a prize for our achievement . It was like a
-                                        dream come true. We have even filed for the patent of our project this year in
-                                        2024. ”</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- testimonial area end -->
+   
     <!--impact start-->
     <div class="call-to-action-area-01 bg-image padding-top-120"
         style="background-image: url(assets/images/impactbg.png);">
@@ -877,10 +770,10 @@
             <div class="call-to-action-inner style-08">
                 <div class="row justify-content-center">
                     <div class="col-lg-9">
-                        <h2 class="title style-01">Engagement & Impact SIM 2024-25</h2>
+                        <h2 class="title style-01 lang-change" data-lang="impact-title">Engagement & Impact SIM 2024-25</h2>
                     </div>
                     <div class="col-lg-9 text-center">
-                        <h3 id="name" class="text-uppercase text-center" style="color:#f5861f">INDIA</h3>
+                        <h3 id="name" class="text-uppercase text-center lang-change" data-lang="impact-india" style="color:#f5861f">INDIA</h3>
                     </div>
                     <br>
                 </div>
@@ -892,7 +785,7 @@
                             <div class="single-counterup-01 white">
                                 <div class="content">
                                     <div class="count-wrap"><span class="count-num">10000</span></div>
-                                    <h4 class="title"><i class="fas fa-university"></i><br>Schools</h4>
+                                    <h4 class="title lang-change" data-lang="impact-school"><i class="fas fa-university"></i><br>Schools</h4>
                                 </div>
                             </div>
                         </div>
@@ -900,7 +793,7 @@
                             <div class="single-counterup-01 white">
                                 <div class="content">
                                     <div class="count-wrap"><span class="count-num">10000</span></div>
-                                    <h4 class="title"><i class="fas fa-chalkboard-teacher"></i> <br>Teachers</h4>
+                                    <h4 class="title lang-change" data-lang="impact-teacher"><i class="fas fa-chalkboard-teacher"></i> <br>Teachers</h4>
                                 </div>
                             </div>
                         </div>
@@ -908,7 +801,7 @@
                             <div class="single-counterup-01 white">
                                 <div class="content">
                                     <div class="count-wrap"><span class="count-num">10000</span></div>
-                                    <h4 class="title"><i class="fas fa-users"></i><br>Teams</h4>
+                                    <h4 class="title lang-change" data-lang="impact-team"><i class="fas fa-users"></i><br>Teams</h4>
                                 </div>
                             </div>
                         </div>
@@ -921,7 +814,7 @@
                             <div class="single-counterup-01 white">
                                 <div class="content">
                                     <div class="count-wrap"><span class="count-num">10000</span></div>
-                                    <h4 class="title"><i class="fas fa-user-graduate"></i><br> Students</h4>
+                                    <h4 class="title lang-change" data-lang="impact-student"><i class="fas fa-user-graduate"></i><br> Students</h4>
                                 </div>
                             </div>
                         </div>
@@ -929,7 +822,7 @@
                             <div class="single-counterup-01 white">
                                 <div class="content">
                                     <div class="count-wrap"><span class="count-num">10000</span></div>
-                                    <h4 class="title"><i class="fas fa-lightbulb"></i><br> Ideas</h4>
+                                    <h4 class="title lang-change" data-lang="impact-idea"><i class="fas fa-lightbulb"></i><br> Ideas</h4>
                                 </div>
                             </div>
                         </div>
@@ -946,49 +839,49 @@
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div class="section-title desktop-center blue margin-bottom-55">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated">Our Partners</h3>
+                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="partner-title">Our Partners</h3>
                     </div>
                     <div class="client-area">
                         <div class="client-active-area" style="text-align: center">
                             <div class="single-brand">
                                 <a><img src="assets/images/Ministry of Education_Logo (2).jpg" alt=""></a>
                                 <br>
-                                <p>Initiative By</p>
+                                <p class="lang-change" data-lang="partner-initiate">Initiative By</p>
                             </div>
                             <div class="single-brand">
                                 <a><img src="assets/images/MIC (1).jpg" alt=""></a>
                                 <br>
-                                <p>Initiative By</p>
+                                <p class="lang-change" data-lang="partner-initiate">Initiative By</p>
                             </div>
                             <div class="single-brand">
                                 <a><img src="assets/images/aicte.png" alt=""></a>
                                 <br>
-                                <p>Initiative By</p>
+                                <p class="lang-change" data-lang="partner-initiate">Initiative By</p>
                             </div>
                             <div class="single-brand">
                                 <a><img src="assets/images/partner16.png" alt=""></a>
                                 <br>
-                                <p>Initiative By</p>
+                                <p class="lang-change" data-lang="partner-initiate">Initiative By</p>
                             </div>
                             <div class="single-brand">
                                 <a><img src="assets/images/partner21.png" alt=""></a>
                                 <br>
-                                <p>Powered By</p>
+                                <p class="lang-change" data-lang="partner-powered">Powered By</p>
                             </div>
                             <div class="single-brand">
                                 <a><img src="assets/images/partner19.png" alt=""></a>
                                 <br>
-                                <p>Technology,Knowledge & Implementation Partner</p>
+                                <p class="lang-change" data-lang="partner-technical">Technology,Knowledge & Implementation Partner</p>
                             </div>
                             <div class="single-brand">
                                 <a><img src="assets/images/partner20.png" alt=""></a>
                                 <br>
-                                <p>Implementation Partner</p>
+                                <p class="lang-change" data-lang="partner-implement">Implementation Partner</p>
                             </div>
                             <div class="single-brand">
                                 <a><img src="assets/images/partner18.png" alt=""></a>
                                 <br>
-                                <p>Hosting Partner</p>
+                                <p class="lang-change" data-lang="partner-host">Hosting Partner</p>
                             </div>
                         </div>
                     </div>
@@ -998,6 +891,122 @@
     </div>
 
     <!--partners wrapper end-->
+     <!-- testimonial area start  -->
+     <section class="testimonial-area bg-image padding-top-100 padding-bottom-120" id="testimonial"
+     style="background-image: url(assets/images/t1.png);">
+     <div class="container">
+         <div class="section-title desktop-center blue margin-bottom-20">
+             <h2 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="testimonials-title" >Hear what our teacher and student
+                 innovators say about SIM</h2>
+         </div>
+         <div class="row">
+             <div class="col-lg-12">
+                 <div class="testimonial-carousel-area">
+                     <div class="testimonial-carousel-two">
+                         <div class="single-testimonial-item-05">
+                             <div class="icon">
+                                 <i class="flaticon-quote-left"></i>
+                             </div>
+                             <div class="thumb">
+                                 <img src="assets/images/team7 (1).png" alt="">
+                             </div>
+                             <div class="content">
+                                 <div class="author-details">
+                                     <div class="author-meta">
+                                         <h4 class="title lang-change" data-lang="testimonials-test_name2">Umesh Bajaj</h4>
+                                         <br>
+                                         <div class="designation lang-change" data-lang="testimonials-designation2">SIM Incharge, Dass & Brown World School, Ferozepur
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <p class="description lang-change" data-lang="testimonials-desc_t2">“I serve as the SIM Incharge at Dass and Brown World School
+                                     in Ferozepur, Punjab. We recently featured in the Top 75 teams of SIM. The Atal
+                                     Tinkering Lab has become like a second home to me. It's a place where my
+                                     students and I engage in daily learning, finding solace in our lab. We are
+                                     dedicated to working on solutions for the Sustainable Development Goals, and I
+                                     am profoundly grateful to the Atal Innovation Mission for providing us with this
+                                     platform to contribute to our community and nurture innovation in the young
+                                     entrepreneurial minds.”</p>
+                             </div>
+                         </div>
+                         <div class="single-testimonial-item-05">
+                             <div class="icon">
+                                 <i class="flaticon-quote-left"></i>
+                             </div>
+                             <div class="thumb">
+                                 <img src="assets/images/team6 (1).png" alt="">
+                             </div>
+                             <div class="content">
+                                 <div class="author-details">
+                                     <div class="author-meta">
+                                         <h4 class="title lang-change" data-lang="testimonials-test_name1">Prashant Nair</h4>
+                                         <br>
+                                         <div class="designation lang-change" data-lang="testimonials-designation1">Regional Mentor of Change, Tamil Nadu, SIM</div>
+                                     </div>
+                                 </div>
+                                 <p class="description lang-change" data-lang="testimonials-desc_t1">"SIM, the flagship national innovation challenge for schools
+                                     from Atal Innovation Mission (AIM) has been a trailblazer, having completed 5
+                                     editions with the 2022-2023 edition attracting 12,000+ teams pan India. I have
+                                     been fortunate to have been able to mentor 10+ teams that have been ranked
+                                     amongst the top teams over the last few years.SIM provides an excellent
+                                     opportunity for students to unleash their creativity, innovation and team work
+                                     to solve problems for societal and humanitarian benefit"</p>
+                             </div>
+                         </div>
+                         <div class="single-testimonial-item-05">
+                             <div class="icon">
+                                 <i class="flaticon-quote-left"></i>
+                             </div>
+                             <div class="thumb">
+                                 <img src="assets/images/team9 (1).png" alt="">
+                             </div>
+                             <div class="content">
+                                 <div class="author-details">
+                                     <div class="author-meta">
+                                         <h4 class="title lang-change" data-lang="testimonials-test_name4">Suneeti Patwari</h4>
+                                         <br>
+                                         <div class="designation lang-change" data-lang="testimonials-designation4">Student, Lakshmipat Singhania Academy, Kolkata
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <p class="description lang-change" data-lang="testimonials-desc_t4">“Our SIM journey as a team has been an incredible roller
+                                     coaster of innovation and collaboration. We worked hard and our hard work paid
+                                     off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
+                                     digital tablets from Niti Aayog as a prize for our achievement . It was like a
+                                     dream come true. We have even filed for the patent of our project this year in
+                                     2024. ”</p>
+                             </div>
+                         </div>
+                         <div class="single-testimonial-item-05">
+                             <div class="icon">
+                                 <i class="flaticon-quote-left"></i>
+                             </div>
+                             <div class="thumb">
+                                 <img src="assets/images/team8 (1).png" alt="">
+                             </div>
+                             <div class="content">
+                                 <div class="author-details">
+                                     <div class="author-meta">
+                                         <h4 class="title lang-change" data-lang="testimonials-test_name3">Ishan Ghatak & Agam Yadav</h4>
+                                         <br>
+                                         <div class="designation lang-change" data-lang="testimonials-designation3">D.A.V Public School, Vasant Kunj, New Delhi</div>
+                                     </div>
+                                 </div>
+                                 <p class="description lang-change" data-lang="testimonials-desc_t3">“Our SIM journey as a team has been an incredible roller
+                                     coaster of innovation and collaboration. We worked hard and our hard work paid
+                                     off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
+                                     digital tablets from Niti Aayog as a prize for our achievement . It was like a
+                                     dream come true. We have even filed for the patent of our project this year in
+                                     2024. ”</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- testimonial area end -->
     <!--
     <div id="packages" class="header-bottom-area padding-top-110">
         <div class="container">
@@ -1232,7 +1241,7 @@
             <div class="row">
                 <div class="col-lg-6 text-right">
                     <div class="content text-center margin-bottom-55">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated">Frequently asked questions
+                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="faqs-title">Frequently asked questions
                         </h3>
                         <!--<p class="wow animate__animated animate__fadeInUp animated">SIM- School Innovation Marathon 2024-2025</p>-->
                     </div>
@@ -1244,15 +1253,15 @@
                             <div class="card">
                                 <div class="card-header" id="headingOwo">
                                     <h5 class="mb-0">
-                                        <a class="collapsed white style-01" role="button" data-toggle="collapse"
+                                        <a class="collapsed white style-01 lang-change" role="button" data-toggle="collapse"
                                             data-target="#collapseOwo" aria-expanded="false"
-                                            aria-controls="collapseOwo">
+                                            aria-controls="collapseOwo"  data-lang="faqs-faq_q1">
                                             What is the School Innovation Marathon?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseOwo" class="collapse show" data-parent="#accordion">
-                                    <div class="card-body style-02">
+                                    <div class="card-body style-02 lang-change"  data-lang="faqs-faq_a1">
                                         The School Innovation Marathon is a nationwide initiative aimed at unleashing
                                         the creative potential of students across India. It encourages student
                                         innovation and agency to tackle critical local and global challenges.
@@ -1263,15 +1272,15 @@
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                     <h5 class="mb-0">
-                                        <a class="collapsed white style-01" role="button" data-toggle="collapse"
+                                        <a class="collapsed white style-01 lang-change" role="button" data-toggle="collapse"
                                             data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseOwo">
+                                            aria-controls="collapseOwo"  data-lang="faqs-faq_q2">
                                             Who organizes the School Innovation Marathon?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                    <div class="card-body style-02">
+                                    <div class="card-body style-02 lang-change"  data-lang="faqs-faq_a2">
                                         The Marathon is spearheaded by AIM, NITI Aayog, Ministry of Education (MOE) in
                                         collaboration with UNICEF and YUWAAH.
                                     </div>
@@ -1280,15 +1289,15 @@
                             <div class="card">
                                 <div class="card-header" id="headingThree">
                                     <h5 class="mb-0">
-                                        <a class="collapsed white style-01" role="button" data-toggle="collapse"
+                                        <a class="collapsed white style-01 lang-change" role="button" data-toggle="collapse"
                                             data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseOwo">
+                                            aria-controls="collapseOwo"  data-lang="faqs-faq_q3">
                                             Who can participate in the School Innovation Marathon?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                    <div class="card-body style-02">
+                                    <div class="card-body style-02 lang-change"  data-lang="faqs-faq_a3">
                                         All students from classes 6th to 12th in schools across India are eligible to
                                         participate.
                                     </div>
@@ -1297,15 +1306,15 @@
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                     <h5 class="mb-0">
-                                        <a class="collapsed white style-01" role="button" data-toggle="collapse"
+                                        <a class="collapsed white style-01 lang-change" role="button" data-toggle="collapse"
                                             data-target="#collapseFour" aria-expanded="false"
-                                            aria-controls="collapseOwo">
+                                            aria-controls="collapseOwo"  data-lang="faqs-faq_q4">
                                             What are the rewards for the top teams?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseFour" class="collapse" data-parent="#accordion">
-                                    <div class="card-body style-02">
+                                    <div class="card-body style-02 lang-change"  data-lang="faqs-faq_a4">
                                         The top teams will receive internships through the Student Innovator Program
                                         with leading corporates of India, certificates from AIM, NITI Aayog, and many
                                         more interesting opportunities at the conclusion of the Marathon.
@@ -1315,15 +1324,15 @@
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                     <h5 class="mb-0">
-                                        <a class="collapsed white style-01" role="button" data-toggle="collapse"
+                                        <a class="collapsed white style-01 lang-change" role="button" data-toggle="collapse"
                                             data-target="#collapseFive" aria-expanded="false"
-                                            aria-controls="collapseOwo">
+                                            aria-controls="collapseOwo"  data-lang="faqs-faq_q5">
                                             What is the deadline for submitting entries?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseFive" class="collapse" data-parent="#accordion">
-                                    <div class="card-body style-02">
+                                    <div class="card-body style-02 lang-change"  data-lang="faqs-faq_a5">
                                         The last date to submit entries is November 30th, 2024.
                                     </div>
                                 </div>
@@ -1433,7 +1442,11 @@
                         <li><a href="https://www.instagram.com/AIMToInnovate/"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                     <div class="copyright-area-inner">
-                        © Copyrights 2024 SIM All rights reserved.
+                        © Copyrights 2024 All rights reserved.<br>
+                        Designed by 
+                        <a href="https://www.inquilabfoundation.org/" target="_blank" rel="noopener">"Inqui-Lab"</a>
+                        , Developed by
+                        <a href="http://www.medhatech.in/" target="_blank" rel="noopener"> "Medha Tech"</a>
                     </div>
                 </div>
             </div>
