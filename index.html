@@ -155,13 +155,23 @@
         <!--hero section end-->
     </div>
     <!--about us start-->
-    <div class="create-content-area-03 padding-top-80" id="about_us">
+    <div class="build-area-02  padding-top-80" id="about_us">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="section-title desktop-center padding-bottom-25">
+                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="nav-aboutus">About Us</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="create-content-area-03">
+        <div class="container">
+           <div class="row">
                 <div class="col-lg-6">
                     <div class="section-title">
-                        <h4 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="aboutSection-title">SIM-School Innovation
-                            Marathon</h4>
+                        
                         <p class="wow animate__animated animate__fadeInUp animated lang-change" data-lang="aboutSection-desc">School Innovation Marathon is
                             envisioned as India’s largest school innovation challenge organized jointly by the Ministry
                             of Education, Atal Innovation Mission (AIM) NITI Aayog and Ministry of Education’s
@@ -187,13 +197,22 @@
                     </ul>
                 </div>
                 <div class="col-lg-6">
-                    <div class="trip-img wow animate__animated animate__backInDown bg-image"
+                    <div class="trip-img wow animate__animated animate__backInDown"
                         data-parallax='{"x": 50, "y": 0}'>
-                        <iframe width="100%" height="430"
-                            src="https://www.youtube.com/embed/HufI5CnhkfU?si=ezseecc8KvLP6RiL"
-                            title="YouTube video player" title=" YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <div class="video-play-area">
+                            <div class="container">
+                                <div class="video-player-inner">
+                                    <!-- <img src="assets/img/video-play/01.jpg" alt=""> -->
+                                    
+                                    <video width="100%" height="100%" controls autoplay>
+                                        <source src="assets/images/ABOUT_US_no_audio.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                        
+                                           
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -277,7 +296,7 @@
     <!--old Road Map end-->
     <!--Road Map start-->
     <section style="background-image: url(assets/images/bg.png);" id="road_map" >
-    <div class="build-area-02 padding-bottom-75" >
+    <div class="build-area-02 padding-bottom-75 padding-top-40" >
         <div class="container" >
             <div class="row justify-content-center">
                 <div class="col-lg-12">
@@ -370,7 +389,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-12">
-                    <div class="section-title desktop-center white margin-bottom-55">
+                    <div class="section-title desktop-center white margin-bottom-55 margin-top-20">
                         <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"  data-lang="themes-title">
                             Viksit Bharat 2047 - Themes
                             for SIM 2024-25</h3>
@@ -784,7 +803,7 @@
                         <div class="col-lg-4">
                             <div class="single-counterup-01 white">
                                 <div class="content">
-                                    <div class="count-wrap"><span class="count-num">10000</span></div>
+                                    <div class="count-wrap"><span class="count-num" id="institute_count"></span></div>
                                     <h4 class="title lang-change" data-lang="impact-school"><i class="fas fa-university"></i><br>Schools</h4>
                                 </div>
                             </div>
@@ -792,7 +811,7 @@
                         <div class="col-lg-4">
                             <div class="single-counterup-01 white">
                                 <div class="content">
-                                    <div class="count-wrap"><span class="count-num">10000</span></div>
+                                    <div class="count-wrap"><span class="count-num" id="teacher_count"></span></div>
                                     <h4 class="title lang-change" data-lang="impact-teacher"><i class="fas fa-chalkboard-teacher"></i> <br>Teachers</h4>
                                 </div>
                             </div>
@@ -800,7 +819,7 @@
                         <div class="col-lg-4">
                             <div class="single-counterup-01 white">
                                 <div class="content">
-                                    <div class="count-wrap"><span class="count-num">10000</span></div>
+                                    <div class="count-wrap"><span class="count-num" id="student_team"></span></div>
                                     <h4 class="title lang-change" data-lang="impact-team"><i class="fas fa-users"></i><br>Teams</h4>
                                 </div>
                             </div>
@@ -813,7 +832,7 @@
                         <div class="col-lg-6">
                             <div class="single-counterup-01 white">
                                 <div class="content">
-                                    <div class="count-wrap"><span class="count-num">10000</span></div>
+                                    <div class="count-wrap"><span class="count-num"  id="student_count"></span></div>
                                     <h4 class="title lang-change" data-lang="impact-student"><i class="fas fa-user-graduate"></i><br> Students</h4>
                                 </div>
                             </div>
@@ -821,7 +840,7 @@
                         <div class="col-lg-6">
                             <div class="single-counterup-01 white">
                                 <div class="content">
-                                    <div class="count-wrap"><span class="count-num">10000</span></div>
+                                    <div class="count-wrap"><span class="count-num" id="student_ideas"></span></div>
                                     <h4 class="title lang-change" data-lang="impact-idea"><i class="fas fa-lightbulb"></i><br> Ideas</h4>
                                 </div>
                             </div>
@@ -1552,6 +1571,45 @@
                 <span class="back-top"><i class="fa fa-angle-up"></i></span>
             </div>
             <!-- back to top area end -->
+
+            <script>
+                const api_url = "https://api.schoolinnovationmarathon.org/api/v1/dashboard/mapStats";
+                var api_data;
+                let dataOfmap = {};
+               const config = { headers: {
+                        Authorization : 'O10ZPA0jZS38wP7cO9EhI3jaDf24WmKX62nWw870'
+                    }}
+            async function getUser() {
+            // Making an API call (request)
+            // and getting the response back
+            const response = await fetch(api_url,config);
+            
+            // Parsing it to JSON format
+            const data = await response.json();
+            console.log(data);
+            api_data=data.data[0];
+            const districtData = data.data[0].dataValues;
+            for (const entry of districtData) {
+                const state_name = entry.state_name;
+                const overallSchools = parseInt(entry.overall_schools);
+                dataOfmap[state_name] = {'reg_schools':parseInt(entry.reg_schools),'teams':parseInt(entry.teams),'students':parseInt(entry.students),'ideas':parseInt(entry.ideas),'reg_mentors':parseInt(entry.reg_mentors),'state_name':state_name};
+            }
+            text.textContent = dataOfmap['all'].reg_schools;
+            text1.textContent = dataOfmap['all'].teams;
+            text2.textContent = dataOfmap['all'].students;
+            text3.textContent = dataOfmap['all'].ideas;
+            text4.textContent = "INDIA"
+            text5.textContent = dataOfmap['all'].reg_mentors;
+            }
+            getUser();
+                //  console.log(data.data[0].dataValues[0].reg_schools,'vgvhbkjb');
+                 var text = document.getElementById('institute_count');
+                 var text1 = document.getElementById('student_team');
+                 var text2 = document.getElementById('student_count');
+                 var text3 = document.getElementById('student_ideas');
+                 var text4 = document.getElementById('name');
+                 var text5 = document.getElementById('teacher_count')
+            </script>
 
 
             <!-- jquery -->
