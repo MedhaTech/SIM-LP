@@ -102,6 +102,8 @@
         // Clinet - active
         $('.client-active-area').owlCarousel({
                 loop: true,
+                autoplay: true, //true if you want enable autoplay
+                autoPlayTimeout: 1000,
                 items: 5,
                 nav: true,
                 margin: 100,
