@@ -1,5 +1,5 @@
 
-name: Deployment LP to Prod
+name: Deployment LP to EC2 DEV
 
 on:
   push:
