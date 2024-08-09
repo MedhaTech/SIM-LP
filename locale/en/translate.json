@@ -15,7 +15,10 @@
     {
       "heroSection": {
         "title":"School Innovation Marathon 2024",
-        "title1":"Creating Change Makers Of Tomorrow With 21st Century Skills.Nurture a culture of social innovation and build skills while inspiring young people to become transformative leaders",
+        "title1":"Creating Change Makers Of Tomorrow With",
+        "title1_p1":"21st Century Skills. Nurture a culture of social",
+        "title1_p2":"innovation and build skills while inspiring young",
+        "title1_p3":"people to become transformative leaders",
         "login": "Login",
         "register":"Register"
       }
