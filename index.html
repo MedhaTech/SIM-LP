@@ -27,167 +27,170 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive Stylesheet -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-<style>.it_comp_work_process {
-	position: relative;
-	text-align: center;
-	float: left;
-	width: 100%;
-}
+    <style>
+        .it_comp_work_process {
+            position: relative;
+            text-align: center;
+            float: left;
+            width: 100%;
+        }
 
-.it_comp_work_process .step-num {
-	background: #fff;
-	border-radius: 50%;
-	box-shadow: 0 4px 15px 0 #f0eaf5;
-	color: #C52C28;
-	display: inline-block;
-	font-size: 18px;
-	font-weight: 600;
-	height: 50px;
-	right: 0;
-	line-height: 55px;
-	position: absolute;
-	text-align: center;
-	top: 0;
-	width: 50px;
-}
+        .it_comp_work_process .step-num {
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px 0 #f0eaf5;
+            color: #C52C28;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 600;
+            height: 50px;
+            right: 0;
+            line-height: 55px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            width: 50px;
+        }
 
-.theme-bg .it_comp_work_process h4,
-.theme-bg .it_comp_work_process p {
-	color: #ffffff;
-}
+        .theme-bg .it_comp_work_process h4,
+        .theme-bg .it_comp_work_process p {
+            color: #ffffff;
+        }
 
-.it_comp_work_process .step-icon {
-	background: #ffffff;
-	width: 120px;
-	height: 120px;
-	position: relative;
-	border-radius: 50%;
-	line-height: 130px;
-	font-size: 40px;
-	text-align: center;
-	color: #1c1d3e;
-	-webkit-box-shadow: 0px 0px 30px 0px rgba(93, 136, 250, 0.5);
-	box-shadow: 0px 0px 30px 0px rgba(93, 136, 250, 0.5);
-}
+        .it_comp_work_process .step-icon {
+            background: #ffffff;
+            width: 120px;
+            height: 120px;
+            position: relative;
+            border-radius: 50%;
+            line-height: 130px;
+            font-size: 40px;
+            text-align: center;
+            color: #1c1d3e;
+            -webkit-box-shadow: 0px 0px 30px 0px rgba(93, 136, 250, 0.5);
+            box-shadow: 0px 0px 30px 0px rgba(93, 136, 250, 0.5);
+        }
 
-.it_comp_working_wrapper {
-	padding-bottom: 100px;
-	position: relative;
-	padding-top: 30px;
-}
+        .it_comp_working_wrapper {
+            padding-bottom: 100px;
+            position: relative;
+            padding-top: 30px;
+        }
 
-.it_comp_working_wrapper .step-icon {
-	color: #333;
-}
+        .it_comp_working_wrapper .step-icon {
+            color: #333;
+        }
 
-.it_comp_work_process .step-desc h4 a {
-	color: #111;
-	margin-bottom: 15px;
-	font-size: 22px;
-	display: inline-block;
-	text-transform: capitalize;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
-}
+        .it_comp_work_process .step-desc h4 a {
+            color: #111;
+            margin-bottom: 15px;
+            font-size: 22px;
+            display: inline-block;
+            text-transform: capitalize;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+        }
 
-.it_comp_work_process:hover .step-desc h4 a {
-	color: #C52C28;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
-}
+        .it_comp_work_process:hover .step-desc h4 a {
+            color: #C52C28;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+        }
 
-.it_comp_working_wrapper .step-icon {
-	border-color: rgba(255, 255, 255, 0.2);
-}
+        .it_comp_working_wrapper .step-icon {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
 
-.it_comp_work_process .step-num-box {
-	position: relative;
-	display: inline-block;
-	margin-bottom: 40px;
-}
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgb(0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.4);
-	padding-top: 60px;
-}
+        .it_comp_work_process .step-num-box {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 40px;
+        }
 
-.modal-content {
-	background-color: #fefefe;
-	margin: 5% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 45%;
-}
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
 
-.close {
-	color: #000000;
-	position: absolute;
-	right: 20px;
-	top: 10px;
-	font-size: 28px;
-	font-weight: bold;
-}
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 45%;
+        }
 
-.close:hover,
-.close:focus {
-	color: black;
-	text-decoration: none;
-	cursor: pointer;
-}
+        .close {
+            color: #000000;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
 
-.col-centered {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
+        .col-centered {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
 
-}
+        }
 
-@media (max-width: 700px) {
-	.modal{
-		padding-top: 150px;
-	}
-	.modal-content {
-		background-color: #fefefe;
-		margin: 5% auto;
-		padding: 20px;
-		border: 1px solid #888;
-		width: 90%;
-		zoom:45%;
-	}
-	
-}
-#it_comp_svg_container {
-	position: absolute;
-	width: 100%;
-	left: 52%;
-	transform: translateX(-50%);
-	width: 75%;
-	bottom: 104px;
-    
-}
+        @media (max-width: 700px) {
+            .modal {
+                padding-top: 150px;
+            }
 
-#svgC {
-    margin: 0 auto;
-	width: 100%;
-}
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 90%;
+                zoom: 45%;
+            }
 
-</style>
+        }
+
+        #it_comp_svg_container {
+            position: absolute;
+            width: 100%;
+            left: 52%;
+            transform: translateX(-50%);
+            width: 75%;
+            bottom: 104px;
+
+        }
+
+        #svgC {
+            margin: 0 auto;
+            width: 100%;
+        }
+    </style>
 
 </head>
 
@@ -297,18 +300,26 @@
                 <div class="col-lg-6" style="margin-top: -50px;">
                     <div class="header-inner">
                         <!-- header inner -->
-                        <h2 class="title lang-change" data-lang="heroSection-title" style="font-size: 50px;">School Innovation Marathon 2024</h2>
+                        <h2 class="title lang-change" data-lang="heroSection-title" style="font-size: 50px;">School
+                            Innovation Marathon 2024</h2>
                         <p>
-                            <span style="color:black" class="lang-change text-lowercase"data-lang="heroSection-title1">Creating Change Makers of tomorrow with </span>
-                            <span style="color:black" class="lang-change text-lowercase" data-lang="heroSection-title1_p1">21st Century Skills. Nurture a culture of social</span>
-                            <span style="color:black" class="lang-change text-lowercase" data-lang="heroSection-title1_p2">innovation and build skills while inspiring young</span>
-                            <span style="color:black" class="lang-change text-lowercase" data-lang="heroSection-title1_p3">people to become transformative leaders.</span>
+                            <span style="color:black" class="lang-change text-lowercase"
+                                data-lang="heroSection-title1">Creating Change Makers of tomorrow with </span>
+                            <span style="color:black" class="lang-change text-lowercase"
+                                data-lang="heroSection-title1_p1">21st Century Skills. Nurture a culture of
+                                social</span>
+                            <span style="color:black" class="lang-change text-lowercase"
+                                data-lang="heroSection-title1_p2">innovation and build skills while inspiring
+                                young</span>
+                            <span style="color:black" class="lang-change text-lowercase"
+                                data-lang="heroSection-title1_p3">people to become transformative leaders.</span>
                         </p>
-                        
+
                         <div class="btn-wrapper padding-top-20 wow animate__animated animate__fadeInUp animated">
                             <a href="https://schoolinnovationmarathon.org/registration"
                                 class="boxed-btn medical-btn lang-change" data-lang="heroSection-register">Register</a>
-                            <a href="https://schoolinnovationmarathon.org/login" class="boxed-btn medical-btn lang-change" data-lang="heroSection-login">Login</a>
+                            <a href="https://schoolinnovationmarathon.org/login"
+                                class="boxed-btn medical-btn lang-change" data-lang="heroSection-login">Login</a>
                         </div>
                     </div>
                     <!-- //.header inner -->
@@ -319,43 +330,61 @@
         <!--hero section end-->
     </div>
     <!--about us start-->
-    <div id="about_us"  class="create-content-area-03 padding-top-100">
+    <div id="about_us" class="create-content-area-03 padding-top-100">
         <div class="container">
-           <div class="row">
+            <div class="row">
                 <div class="col-lg-6 wow animate__animated animate__fadeInUp animated lang-change">
                     <div class="section-title">
-                        <h4 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="nav-aboutus">About Us</h4>
+                        <h4 class="title wow animate__animated animate__fadeInUp animated lang-change"
+                            data-lang="nav-aboutus">About Us</h4>
                     </div>
-                    <p class="wow animate__animated animate__fadeInUp animated lang-change" data-lang="aboutSection-desc">School Innovation Marathon is
+                    <p class="wow animate__animated animate__fadeInUp animated lang-change"
+                        data-lang="aboutSection-desc">School Innovation Marathon is
                         envisioned as India’s largest school innovation challenge organized jointly by the Ministry
                         of Education, Atal Innovation Mission (AIM) NITI Aayog and Ministry of Education’s
                         Innovation Cell (MIC), where students from all schools of the country identify community
                         problems of their choice and develop innovative solutions in the form of working prototypes.
                         The Top Teams of School Innovation Marathon will get funding support from the Ministry of
                         Education. </p>
-                    <p class="wow animate__animated animate__fadeInUp animated lang-change" data-lang="aboutSection-desc1">Last Year Highlights :</p>
-                    
+                    <p class="wow animate__animated animate__fadeInUp animated lang-change"
+                        data-lang="aboutSection-desc1">Last Year Highlights :</p>
+
                     <ul class="content wow animate__animated animate__fadeInUp animated">
-                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change" data-lang="aboutSection-point1_b" >19000+ Innovations</strong> <p class="lang-change" data-lang="aboutSection-point1" style="display:inline;">witnessed
-                            in last edition of Marathon.</p></li>
-                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change" data-lang="aboutSection-point2_b">Internship opportunities</strong><p class="lang-change" data-lang="aboutSection-point2" style="display:inline;"> for
-                            Top 400 teams through SIP program.</p></li>
-                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change" data-lang="aboutSection-point3_b">Mentorship Program</strong><p class="lang-change" data-lang="aboutSection-point3" style="display:inline;"> for Top
-                            75 teams through SEP program</p></li>
-                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change" data-lang="aboutSection-point4_b">Prizes and certificates </strong><p class="lang-change" data-lang="aboutSection-point4" style="display:inline;">from
-                            AIM, NITI Aayog to students.</p></li>
+                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change"
+                                data-lang="aboutSection-point1_b">19000+ Innovations</strong>
+                            <p class="lang-change" data-lang="aboutSection-point1" style="display:inline;">witnessed
+                                in last edition of Marathon.</p>
+                        </li>
+                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change"
+                                data-lang="aboutSection-point2_b">Internship opportunities</strong>
+                            <p class="lang-change" data-lang="aboutSection-point2" style="display:inline;"> for
+                                Top 400 teams through SIP program.</p>
+                        </li>
+                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change"
+                                data-lang="aboutSection-point3_b">Mentorship Program</strong>
+                            <p class="lang-change" data-lang="aboutSection-point3" style="display:inline;"> for Top
+                                75 teams through SEP program</p>
+                        </li>
+                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change"
+                                data-lang="aboutSection-point4_b">Prizes and certificates </strong>
+                            <p class="lang-change" data-lang="aboutSection-point4" style="display:inline;">from
+                                AIM, NITI Aayog to students.</p>
+                        </li>
 
                     </ul>
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <div class="trip-img wow animate__animated bg-image" data-parallax='{"x": 50, "y": 0}'>
-                        <iframe width="100%" height="430" src="https://www.youtube.com/embed/mxbmaf7B3I4?si=bJZunIE8ZsT2pAZZ&autoplay=0&loop=1&playlist=mxbmaf7B3I4&controls=1" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        <iframe width="100%" height="430"
+                            src="https://www.youtube.com/embed/mxbmaf7B3I4?si=bJZunIE8ZsT2pAZZ&autoplay=0&loop=1&playlist=mxbmaf7B3I4&controls=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
                         </iframe>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -436,111 +465,121 @@
     -->
     <!--old Road Map end-->
     <!--Road Map start-->
-    <section style="background-image: url(assets/images/bg.png);" id="road_map" >
-    <div class="build-area-02">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="section-title desktop-center padding-bottom-25">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="roadmap-title">Road Map</h3>
-                        <p class="wow animate__animated animate__fadeInUp animated lang-change" data-lang="roadmap-title1">Journey Of A Student In School
-                            Innovation Marathon. Let’s create impact with youth</p>
+    <section style="background-image: url(assets/images/bg.png);" id="road_map">
+        <div class="build-area-02">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="section-title desktop-center padding-bottom-25">
+                            <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
+                                data-lang="roadmap-title">Road Map</h3>
+                            <p class="wow animate__animated animate__fadeInUp animated lang-change"
+                                data-lang="roadmap-title1">Journey Of A Student In School
+                                Innovation Marathon. Let’s create impact with youth</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="audio-triangle-area">
-                <div class="row align-items-center">
-                    <div class="col-lg-4">
-                        <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
-                            <div class="icon">
-                                <i class="fas fa-lightbulb"></i>
+                <div class="audio-triangle-area">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title">
+                                        <a class="lang-change" data-lang="roadmap-innovation">INNOVATION</a>
+                                    </h4>
+                                    <ul>
+                                        <li class="lang-change" data-lang="roadmap-i_point1">Launch of SIM on 29 July.
+                                        </li>
+                                        <li class="lang-change" data-lang="roadmap-i_point2">Innovation & Prototyping
+                                            Phase from Aug 1st to 30th Nov 2024.</li>
+                                    </ul>
+
+                                </div>
                             </div>
-                            <div class="content padding-bottom-55">
-                                <h4 class="title">
-                                    <a class="lang-change" data-lang="roadmap-innovation">INNOVATION</a>
-                                </h4>
-                                <ul>
-                                    <li class="lang-change" data-lang="roadmap-i_point1">Launch of SIM on 29 July. </li>
-                                    <li class="lang-change" data-lang="roadmap-i_point2">Innovation & Prototyping Phase from Aug 1st to 30th Nov 2024.</li>
-                                </ul>
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="icon style-02">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title">
+                                        <a class="lang-change" data-lang="roadmap-sip">SIP</a>
+                                    </h4>
+                                    <p class="lang-change" data-lang="roadmap-s_point">Commencement of Student
+                                        Internship Programme(SIP)<br>May 2025 onwards.</p>
+                                </div>
 
                             </div>
+
                         </div>
-                        <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
-                            <div class="icon style-02">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <div class="content padding-bottom-55">
-                                <h4 class="title">
-                                    <a class="lang-change" data-lang="roadmap-sip">SIP</a>
-                                </h4>
-                                <p class="lang-change" data-lang="roadmap-s_point">Commencement of Student Internship Programme(SIP)<br>May 2025 onwards.</p>
+
+                        <div class="col-lg-4 justify-content-center">
+
+                            <div class="audio-bg" style="background-image: url(assets/images/New_other.gif)">
+
+                                <!-- <img class="bg-img wow animate__animated animate__fadeInUp animated" src="assets/img/audio-03.png" alt=""> -->
                             </div>
 
                         </div>
 
-                    </div>
+                        <div class="col-lg-4">
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
 
-                    <div class="col-lg-4 justify-content-center">
-                        
-                        <div class="audio-bg" style="background-image: url(assets/images/New_other.gif)">
-                            
-                            <!-- <img class="bg-img wow animate__animated animate__fadeInUp animated" src="assets/img/audio-03.png" alt=""> -->
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="col-lg-4">
-                        <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
-
-                            <div class="content padding-bottom-55">
-                                <h4 class="title">
-                                    <a class="lang-change" data-lang="roadmap-winners">WINNERS</a>
-                                </h4>
-                                <ul>
-                                    <li><span class="lang-change" data-lang="roadmap-w_point1">Announcement of Top </span> <br> <span class="lang-change" data-lang="roadmap-w_point1_1"> Teams in Jan 2025.</span></li>
-                                    <li class="lang-change" data-lang="roadmap-w_point2">Funding support to teams in March 2025.</li>
-                                </ul>
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title">
+                                        <a class="lang-change" data-lang="roadmap-winners">WINNERS</a>
+                                    </h4>
+                                    <ul>
+                                        <li><span class="lang-change" data-lang="roadmap-w_point1">Announcement of Top
+                                            </span> <br> <span class="lang-change" data-lang="roadmap-w_point1_1"> Teams
+                                                in Jan 2025.</span></li>
+                                        <li class="lang-change" data-lang="roadmap-w_point2">Funding support to teams in
+                                            March 2025.</li>
+                                    </ul>
+                                </div>
+                                <div class="icon style-01">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
                             </div>
-                            <div class="icon style-01">
-                                <i class="fas fa-trophy"></i>
-                            </div>
-                        </div>
-                        <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
-                            <div class="content">
-                                <h4 class="title">
-                                    <a class="lang-change" data-lang="roadmap-sep">SEP</a>
-                                </h4>
-                                <p class="lang-change" data-lang="roadmap-sep_point">Top teams from SIP to student Entrepreneurship Programme(SEP)<br>Aug
-                                    2025 onwards.</p>
-                            </div>
-                            <div class="icon style-03">
-                                <i class="fas fa-chart-line"></i>
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="content">
+                                    <h4 class="title">
+                                        <a class="lang-change" data-lang="roadmap-sep">SEP</a>
+                                    </h4>
+                                    <p class="lang-change" data-lang="roadmap-sep_point">Top teams from SIP to student
+                                        Entrepreneurship Programme(SEP)<br>Aug
+                                        2025 onwards.</p>
+                                </div>
+                                <div class="icon style-03">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     <!--Road Map end-->
 
     <!-- themes area start  -->
     <section class="testimonial-area bg-image padding-top-100 padding-bottom-90"
         style="background-image: url(assets/images/bg3.png);" id="themes">
         <div class="shape-02">
-             <img  src="assets/images/logoup2.png" alt="">
+            <img src="assets/images/logoup2.png" alt="">
         </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-12">
                     <div class="section-title desktop-center white margin-bottom-55 margin-top-20">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"  data-lang="themes-title">
+                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
+                            data-lang="themes-title">
                             Viksit Bharat 2047 - Themes
                             for SIM 2024-25</h3>
-                        <p class="description wow animate__animated animate__fadeInUp animated lang-change"  data-lang="themes-title1"
-                            >The vision of "Viksit
+                        <p class="description wow animate__animated animate__fadeInUp animated lang-change"
+                            data-lang="themes-title1">The vision of "Viksit
                             Bharat 2047" aims to transform India into a developed nation by 2047. To support this, the
                             School Innovation Marathon 2024-25 has set broad themes. Start your research to generate
                             innovative ideas and implement solutions.</p>
@@ -559,11 +598,13 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-digital">Digital Transformation</h4>
+                                            <h4 class="title lang-change" data-lang="themes-digital">Digital
+                                                Transformation</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description lang-change" data-lang="themes-dt_desc">Highlights the critical role of digital technologies in
+                                    <p class="description lang-change" data-lang="themes-dt_desc">Highlights the
+                                        critical role of digital technologies in
                                         bridging the digital divide and fostering innovation, making India a leader in
                                         the digital economy.</p>
                                     <div class="author-details">
@@ -587,11 +628,13 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-health">Health and Well-being</h4>
+                                            <h4 class="title lang-change" data-lang="themes-health">Health and
+                                                Well-being</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description lang-change" data-lang="themes-hw_desc">Focuses on enhancing the overall health and wellness of
+                                    <p class="description lang-change" data-lang="themes-hw_desc">Focuses on enhancing
+                                        the overall health and wellness of
                                         communities, ensuring that physical and mental health are prioritized in
                                         development plans.</p>
                                     <div class="author-details">
@@ -616,11 +659,13 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-education">Quality Education</h4>
+                                            <h4 class="title lang-change" data-lang="themes-education">Quality Education
+                                            </h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description lang-change" data-lang="themes-qe_desc">Stresses the necessity of providing equitable, high-quality
+                                    <p class="description lang-change" data-lang="themes-qe_desc">Stresses the necessity
+                                        of providing equitable, high-quality
                                         education for all, fostering lifelong learning and preparing a skilled workforce
                                         for the future.</p>
                                     <div class="author-details">
@@ -645,11 +690,13 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-economic">Economic Empowerment</h4>
+                                            <h4 class="title lang-change" data-lang="themes-economic">Economic
+                                                Empowerment</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description lang-change" data-lang="themes-ee_desc"> Aims to uplift communities by promoting financial literacy,
+                                    <p class="description lang-change" data-lang="themes-ee_desc"> Aims to uplift
+                                        communities by promoting financial literacy,
                                         entrepreneurship, and vocational skills, driving inclusive economic growth. </p>
                                     <div class="author-details">
                                         <div class="author-meta">
@@ -672,11 +719,13 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-smart">Smart and Resilient Communities</h4>
+                                            <h4 class="title lang-change" data-lang="themes-smart">Smart and Resilient
+                                                Communities</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description lang-change"  data-lang="themes-sc_desc"> Encourages the development of adaptive & innovative
+                                    <p class="description lang-change" data-lang="themes-sc_desc"> Encourages the
+                                        development of adaptive & innovative
                                         communities capable of withstanding & thriving amid future challenges.</p>
                                     <div class="author-details">
                                         <div class="author-meta">
@@ -699,11 +748,13 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-culture">Cultural Heritage and Creativity</h4>
+                                            <h4 class="title lang-change" data-lang="themes-culture">Cultural Heritage
+                                                and Creativity</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description lang-change" data-lang="themes-cc_desc">Recognizes the value of preserving cultural heritage while
+                                    <p class="description lang-change" data-lang="themes-cc_desc">Recognizes the value
+                                        of preserving cultural heritage while
                                         promoting creativity and the arts as essential components of a vibrant society.
                                     </p>
                                     <div class="author-details">
@@ -713,7 +764,8 @@
                                     </div>
                                     <br>
                                     <ul>
-                                        <li class="lang-change" data-lang="themes-cc_p1">Preserving cultural heritage</li>
+                                        <li class="lang-change" data-lang="themes-cc_p1">Preserving cultural heritage
+                                        </li>
                                         <li class="lang-change" data-lang="themes-cc_p2">Promoting arts and crafts</li>
                                         <li class="lang-change" data-lang="themes-cc_p3">Fostering creativity.</li>
                                     </ul>
@@ -726,11 +778,13 @@
                                 <div class="content">
                                     <div class="author-details">
                                         <div class="author-meta">
-                                            <h3 class="title lang-change" data-lang="themes-sustainable">Sustainable Development</h3>
+                                            <h3 class="title lang-change" data-lang="themes-sustainable">Sustainable
+                                                Development</h3>
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description lang-change" data-lang="themes-sd_desc">It emphasizes the importance of balancing economic
+                                    <p class="description lang-change" data-lang="themes-sd_desc">It emphasizes the
+                                        importance of balancing economic
                                         growth with environmental protection to ensure a sustainable future.</p>
                                     <div class="author-details">
                                         <div class="author-meta">
@@ -758,7 +812,8 @@
                                         </div>
                                     </div>
                                     <br>
-                                    <p class="description lang-change" data-lang="themes-o_desc"> School Innovation Marathon encourages innovative solutions
+                                    <p class="description lang-change" data-lang="themes-o_desc"> School Innovation
+                                        Marathon encourages innovative solutions
                                         in any other area that
                                         aligns with the vision of Viksit Bharat 2047.</p>
                                     <div class="author-details">
@@ -768,7 +823,8 @@
                                     </div>
                                     <br>
                                     <ul>
-                                        <li class="lang-change" data-lang="themes-o_p1">Any other Area that does not come under mentioned theme but
+                                        <li class="lang-change" data-lang="themes-o_p1">Any other Area that does not
+                                            come under mentioned theme but
                                             broadly qualifies for the vision of Viksit bharat.</li>
                                     </ul>
                                 </div>
@@ -788,9 +844,12 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title customer desktop-center">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="prizes-title" style="color: #16215c;">
+                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
+                            data-lang="prizes-title" style="color: #16215c;">
                             Prizes & Certificates</h3>
-                            <p class="description wow animate__animated animate__fadeInUp animated lang-change"  data-lang="prizes-desc">Participation certificates shall be provided to all teams participating in the School Innovation Marathon.</p>
+                        <p class="description wow animate__animated animate__fadeInUp animated lang-change"
+                            data-lang="prizes-desc">Participation certificates shall be provided to all teams
+                            participating in the School Innovation Marathon.</p>
                     </div>
                 </div>
             </div>
@@ -808,9 +867,10 @@
                             </div>
                             <div class="content style-01">
                                 <h4 class="title">
-                                    <a href="" class="title lang-change" data-lang="prizes-funding">Funding & Internships</a>
+                                    <a href="" class="title lang-change" data-lang="prizes-funding">Funding &
+                                        Internships</a>
                                 </h4>
-                                <p  class="lang-change" data-lang="prizes-f_desc">
+                                <p class="lang-change" data-lang="prizes-f_desc">
                                     Funding Support from the Ministry of Education, facilitated by MIC
                                     <br>
                                     Student Internship Programme (SIP) with Incubators, facilitated by AIM
@@ -825,8 +885,9 @@
                                 <i class="fas fa-handshake"></i>
                             </div>
                             <div class="content style-01">
-                                <h4 class="title" >
-                                    <a href="" class="lang-change" data-lang="prizes-mentorship">Mentorship & Patenting</a>
+                                <h4 class="title">
+                                    <a href="" class="lang-change" data-lang="prizes-mentorship">Mentorship &
+                                        Patenting</a>
                                 </h4>
                                 <p class="lang-change" data-lang="prizes-m_desc">
                                     Student Entrepreneurship Programme (SEP), facilitated by AIM
@@ -846,11 +907,15 @@
                             <div class="content style-01">
                                 <h4 class="title">
                                     <a href="" class="lang-change" data-lang="prizes-certificate">Certificates</a>
-                                </h4><p>
-                                <span class="lang-change" data-lang="prizes-c_p1">Top 20 teams from each state,</span><br>
-                                <span class="lang-change" data-lang="prizes-c_p2">Top 20 teams from Aspirational Districts,</span><br>
-                                <span class="lang-change" data-lang="prizes-c_p3"> Top 20 teams from rural areas.</span>
-                            </p>
+                                </h4>
+                                <p>
+                                    <span class="lang-change" data-lang="prizes-c_p1">Top 20 teams from each
+                                        state,</span><br>
+                                    <span class="lang-change" data-lang="prizes-c_p2">Top 20 teams from Aspirational
+                                        Districts,</span><br>
+                                    <span class="lang-change" data-lang="prizes-c_p3"> Top 20 teams from rural
+                                        areas.</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -862,9 +927,10 @@
                             </div>
                             <div class="content style-01">
                                 <h4 class="title">
-                                    <a href=""class="lang-change" data-lang="prizes-rewards">Special Recognition</a>
+                                    <a href="" class="lang-change" data-lang="prizes-rewards">Special Recognition</a>
                                 </h4>
-                                <p class="lang-change" data-lang="prizes-r_desc"> Top 20 teams from govt schools, Top 20 teams for teams having Children with special
+                                <p class="lang-change" data-lang="prizes-r_desc"> Top 20 teams from govt schools, Top 20
+                                    teams for teams having Children with special
                                     needs, Top 3 best-performing states</p>
                             </div>
                         </div>
@@ -927,7 +993,7 @@
 
 
 
-   
+
     <!--impact start-->
     <div class="call-to-action-area-01 bg-image padding-top-120"
         style="background-image: url(assets/images/impactbg.png);">
@@ -942,24 +1008,27 @@
                                     svg {
                                         border: 0px solid #aaa;
                                     }
+
                                     @media only screen and (max-width: 350px) {
                                         svg {
                                             padding-top: 20px;
-                                            zoom:45%;
+                                            zoom: 45%;
                                         }
                                     }
+
                                     @media only screen and (min-width: 500px) {
                                         svg {
                                             padding-top: 20px;
-                                            zoom:75%;
+                                            zoom: 75%;
                                         }
                                     }
                                 </style>
                                 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
                                 <svg xmlns:mapsvg="http://mapsvg.com" xmlns:dc="http://purl.org/dc/elements/1.1/"
                                     xmlns:cc="http://creativecommons.org/ns#"
-                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
-                                    xmlns="http://www.w3.org/2000/svg" version="1.1" id="svg2" height="695.70178" width="611.85999"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                    version="1.1" id="svg2" height="695.70178" width="611.85999"
                                     mapsvg:geoViewBox="68.184010 37.084109 97.418146 6.753659">
                                     <defs id="defs42" />
                                     <path id="IN-AN" class="map_color" title="Andaman and Nicobar Islands"
@@ -1036,13 +1105,15 @@
                                         d="m 425.187,373.7723 0.59,0.56319 0.104,0.73447 -1.028,-0.2821 0.334,-1.01556 z m 7.056,-0.16825 1.44,1.15862 -1.272,0.0433 -0.168,-1.20194 z m -2.328,-0.43625 0.59,0.55413 -0.333,0.68509 -0.6,-0.50878 0.343,-0.73044 z m -3.901,-0.27202 1.053,0.82715 -0.785,0.86343 -0.838,-0.87048 0.301,-1.15056 0.269,0.33046 z m 4.913,-0.32643 0.547,1.38531 -0.965,0.33852 0.313,-0.55614 -0.516,-0.59845 0.621,-0.56924 z m 4.058,0.26094 0.399,0.45438 -0.605,0.0856 -0.085,-1.1284 0.291,0.58838 z m -7.802,-0.82413 -0.012,1.35307 -0.813,-0.50577 0.825,-0.8473 z m 8.195,-0.62364 0.132,0.93798 0.453,0.37781 0.342,0.96014 -0.603,0.0705 -0.003,-0.59039 -0.564,-0.51987 -0.462,-1.12437 0.705,-0.11183 z m -3.761,0.19847 -0.165,0.94 -0.816,-0.48662 0.981,-0.45338 z m -10.337,-0.21258 0.733,0.39998 0.251,0.9269 -0.896,0.88962 -0.088,-2.2165 z m 2.993,-0.0685 0.348,0.82011 -0.482,1.06089 -0.298,-1.15862 0.432,-0.72238 z m -5.224,-0.26598 0.253,0.46547 -0.242,0.41307 0.328,0.36069 0.063,0.53498 -0.245,0.92085 -0.642,-1.93641 0.485,-0.75865 z m 17.893,-0.0151 0.749,1.75607 -0.909,0.59644 -1.101,-1.41151 0.226,-0.55815 1.035,-0.38285 z m -10.681,0.10579 0.558,-0.12392 0.314,0.7123 -0.966,0.96921 -0.539,-1.24728 0.633,-0.31031 z m 6.993,-0.63472 1.198,1.12839 -0.407,1.42158 -1.001,-1.40344 0.21,-1.14653 z m -9.854,0.31534 0.34,0.66092 -0.364,0.97727 0.436,0.70626 -0.698,0.71734 -0.396,-1.92332 0.499,-0.80902 -0.524,-0.34053 0.345,-0.52491 0.362,0.53599 z m -4.078,-0.42012 1.035,0.17329 0.702,1.57471 -0.296,1.54651 0.413,0.53196 -0.594,0.47655 -0.713,-0.2015 -0.547,-4.10152 z m 14.994,-0.18941 0.814,0.90674 -0.902,-0.18235 0.088,-0.72439 z m -11.772,0.0322 -0.129,0.78181 0.389,0.43222 -0.487,0.3768 -0.226,-1.41754 0.453,-0.17329 z m 13.441,-0.0464 0.786,0.61054 -0.516,0.27807 -0.27,-0.88861 z m -3.74,0.0302 0.638,-0.0232 -0.547,1.16568 0.431,1.58177 -0.325,0.22165 -0.739,-0.26598 0.128,-1.60696 -0.843,0.14911 0.445,-0.93999 0.812,-0.2821 z m -5.288,-0.4564 0.789,1.08608 -0.266,0.75562 -0.646,-1.32788 0.123,-0.51382 z m 8.302,-0.10982 0.765,1.28658 -0.232,0.21661 -1.126,-1.18885 0.593,-0.31434 z m -7.727,-0.17228 0.198,0.94604 -0.368,-0.31535 -0.211,-0.48359 0.381,-0.1471 z m -2.958,0.0302 -0.025,1.16769 -0.688,0.43624 0.09,-1.13142 0.623,-0.47251 z m 5.186,-0.41711 0.902,1.0881 -0.137,0.62364 0.288,0.13601 -0.078,0.74152 -0.706,0.14609 0.397,0.62968 -1.276,-0.4443 0.166,-1.48606 0.444,-1.43468 z m -3.592,-0.0655 0.579,0.50878 0.006,1.17978 -1.11,0.36975 -0.32,-1.16668 0.845,-0.89163 z m -2.57,-0.0181 0.438,0.25288 -0.435,1.33494 -0.511,-0.97728 0.508,-0.61054 z m 12.095,-0.0131 0.354,-0.007 0.135,1.05989 -0.685,-0.56521 0.196,-0.48763 z m -3.59,0.17228 0.046,0.84429 -0.826,0.37579 0.646,-1.64625 0.134,0.42617 z m 2.372,-0.97626 0.738,0.60349 -0.251,0.73044 -1.031,0.40904 -0.266,-0.91279 0.81,-0.83018 z m -7.309,-0.0625 0.309,0.44632 -0.081,0.70424 -0.566,-0.40602 0.338,-0.74454 z m -5.435,0.12089 0.469,1.14956 0.522,0.14709 -0.063,0.44632 -0.713,0.17833 -0.162,0.806 -0.772,-0.19243 -0.398,-1.5586 1.117,-0.97627 z m 10.959,-0.46445 0.441,0.30628 0.722,2.59833 -1.421,-1.18078 0.258,-1.72383 z m -15.055,-0.22064 0.744,1.42359 -0.038,1.5717 -0.571,1.41855 0.237,0.66596 -0.954,0.54505 -1.412,-0.52591 -0.104,-0.58233 0.756,-2.37367 1.342,-2.14294 z m 13.688,0.46546 0.719,-0.80297 0.375,0.40904 -1.055,1.51729 -0.164,-0.81003 0.125,-0.31333 z m 3.94,-0.88357 1.044,0.62565 -0.267,0.93395 -1.253,-0.44733 0.476,-1.11227 z m -7.481,-0.0957 0.666,0.67301 -0.305,1.87999 -0.804,-1.78428 0.443,-0.76872 z m -1.242,0.006 0.269,0.43322 -0.422,1.20799 -0.344,-0.51181 0.497,-1.1294 z m -2.425,-0.16725 0.745,0.38688 0.169,0.70928 -0.881,0.92891 -0.937,-0.0332 0.441,-1.747 0.463,-0.24483 z m 5.628,0.11687 0.69,0.0816 0.675,0.82816 -0.477,1.76917 -1.28,-1.28557 0.392,-1.39337 z m -1.577,-0.49568 0.575,0.22668 -0.42,0.54103 -0.155,-0.76771 z m 4.115,0.0846 1.645,-0.23273 1.082,0.61256 -0.279,0.48763 -1.031,0.81809 -1.417,-1.68555 z m -2.365,-0.31736 1.588,0.27606 0.181,0.79693 -0.384,0.44531 -0.399,-0.82111 -1.084,-0.18336 0.098,-0.51383 z m 0.456,-1.08104 0.111,0.56319 0.652,0.12997 0.206,0.29519 -1.034,-0.0745 -0.389,-0.77779 0.454,-0.13601 z m -1.787,-0.89264 1.167,0.42012 -0.787,1.30673 -1.036,-0.34356 0.656,-1.38329 z m -10.857,-0.16221 -1.128,2.11776 -0.844,0.47755 0.547,-1.89107 1.425,-0.70424 z m 14.055,0.15717 1.878,0.1753 -0.12,1.68252 -0.858,0.20453 -2.031,-0.9128 0.288,-0.98634 0.843,-0.16321 z m 4.782,-0.65689 0.77,1.39236 -0.308,1.18583 -0.641,0.18941 -1.111,-2.14094 0.116,-0.77678 1.174,0.15012 z m -3.572,-0.68913 0.345,1.03067 -1.89,-0.2831 1.545,-0.74757 z m -0.608,-0.55714 0.281,0.36169 -1.328,0.37781 -0.211,0.50879 -0.499,-0.1471 0.547,-1.17776 0.757,-0.28613 0.453,0.3627 z m 0.313,-1.98376 1.24,2.285 -0.91,0.0564 -0.87,-0.88861 0.884,-0.35061 -0.703,-1.21202 0.359,0.10982 z m 2.07,0.18739 0.613,0.77174 -0.419,1.29161 -0.839,0.61458 -0.015,0.91279 0.465,0.54808 -0.236,-1.24628 0.604,-0.0423 0.185,1.56464 1.023,1.49513 -0.184,0.4443 -1.598,-0.77174 -0.493,-1.3178 -0.236,-1.60394 0.613,-0.74253 -0.771,-1.62005 0.54,0.19344 0.748,-0.49166 z m 0.975,-0.36874 1.016,1.55255 -0.269,1.47699 -1.465,-0.15918 0.613,-1.48506 -0.508,-1.25534 0.613,-0.12996 z m -6.451,0.008 1.997,0.66494 -2.217,1.99384 1.104,1.13847 -0.194,0.4967 -1.367,-0.47957 -0.57,-1.71778 1.247,-2.0966 z m 3.309,1.10925 -1.554,0.8735 -0.806,1.22814 -0.341,-0.0312 -0.418,-0.46345 2.293,-2.15 0.438,-0.0947 0.388,0.63774 z m 2.002,-1.70771 0.295,0.63473 -0.631,0.4574 -0.148,-0.41509 0.043,-0.48561 0.441,-0.19143 z m -2.824,-1.3168 0.274,0.95007 -0.57,0.35061 0.496,0.88257 -0.672,0.14206 -0.865,-0.61155 0.088,-0.53599 1.249,-1.17777 z m 0.599,-1.41251 1.054,0.0594 0.409,0.84529 0.541,0.15112 0.159,1.36214 -0.859,0.35867 0.225,1.08608 -2.129,-1.09414 0.468,-0.25994 -0.313,-2.01398 0.445,-0.49469 z m 3.004,-0.8332 -0.023,1.29464 0.831,0.63069 -0.616,0.25893 1.529,1.9888 0.036,1.15459 0.577,-0.17329 -0.719,0.60349 -0.883,-1.74801 -0.988,-0.0947 -0.367,-1.09011 0.359,-3.2381 0.264,0.41307 z m -1.904,-3.47183 -0.03,1.59184 0.614,1.44979 -0.704,0.52289 -0.52,-2.88748 0.64,-0.67704 z m 0.847,-0.54405 0.539,0.24482 0.809,2.68498 -0.819,0.44632 -0.367,2.28501 -0.725,-0.58737 -0.002,-0.94201 0.547,-0.44129 -0.578,-1.60494 0.031,-1.87294 0.565,-0.21258 z m -19.201,-107.77598 1.213,0.42517 0.229,1.39941 1.063,0.58032 1.235,-0.4564 0.772,0.38789 1.506,-0.20855 0.405,0.55815 2.264,0.54808 2.051,-1.61502 -0.192,-0.66092 0.801,-0.24986 1.257,0.0212 0.783,0.60047 0.585,-0.42013 0.84,0.98332 0.568,-0.2287 0,0 2.476,0.93092 0.105,3.70155 0.922,-1.05082 0.726,0.6589 -0.289,0.60752 0.472,0.4302 1.309,-0.37982 0.451,0.86141 0.918,0.22769 0.245,1.35609 0.607,0.66394 2.607,-0.20653 2.545,-1.16265 0.29,0.59643 1.219,0.16725 0.21,0.64883 2.085,-0.21762 1.317,0.90775 0.48,-0.0947 0.204,0.40904 -0.859,0.83219 0.393,0.20855 0.554,0.0181 0.317,-0.51483 1.101,0.42415 0.633,-0.33247 0.372,0.86645 0.687,-0.3627 1.042,0.26396 0,0 0.406,1.27449 -0.404,0.61256 0.429,0.91883 -0.325,0.14911 -0.195,2.11272 0.376,0.65387 -0.907,1.48505 0.409,-0.1471 0.219,0.42819 -1.576,0.73044 -0.024,0.52389 -0.635,0.22065 0.17,0.7526 -0.854,-0.38285 0.411,0.81003 -0.257,0.2962 -0.427,-0.269 0.501,0.74051 -0.659,0.49065 0.728,0.11586 -0.778,0.54304 0.823,0.32945 -0.322,0.20956 0,0 -0.409,-0.0544 -0.478,-0.77074 -0.065,-0.40501 -0.747,-0.20956 0.482,1.21706 -0.86,-0.0564 -0.126,0.57628 -0.394,-0.0856 0.802,0.89062 -0.761,0.42013 0.342,0.29117 0.412,-0.43323 0.419,1.01355 -1.49,0.91883 -0.023,1.30773 -0.771,-0.0544 -0.025,-0.81406 -2.174,-0.0745 -0.188,-0.86444 -0.652,0.90373 -0.962,-0.0846 -1.452,-0.8997 0.043,-0.39493 -0.493,0.0474 0.223,-0.64782 -0.88,-0.72439 -1.419,-0.3758 -0.457,-0.96619 0.132,-1.29262 -0.805,-1.09817 0.754,-0.89969 -1.116,-0.0252 0.337,-0.39998 -0.427,-0.63573 0.141,-0.77577 -1.099,0.0302 -1.605,-1.52736 -0.271,0.79592 -0.37,-0.16724 -0.471,0.56823 0.181,0.98633 0.915,0.0967 0.1,0.27001 0.482,0.0484 0.34,0.5511 -0.33,0.55917 0.868,0.44934 0.666,-0.19646 0.096,0.90372 -2.079,0.32139 -0.745,-1.09313 -0.974,-0.0766 -0.421,0.33046 0.354,0.90272 -0.802,0.10679 -0.577,-0.59442 0.05,-0.96015 -0.475,-0.29217 -0.782,0.29419 -0.259,-1.23217 -0.938,0.44128 -0.473,-1.075 0.437,-0.19041 -1.635,-1.10019 -0.08,-0.83522 -0.534,-0.0171 0.038,0.5249 -0.835,-0.17429 0.082,-0.7516 -0.721,0.16826 -0.85,-1.3964 -1.06,-0.12896 -0.42,-2.04824 -0.792,0.95209 -0.89,2.71823 0.437,0.74554 0.245,-0.96619 2.421,0.60853 0.87,2.37165 -0.791,0.24885 -0.609,-0.57427 -0.414,0.85939 -0.652,0.15516 0.192,0.33852 -1.349,0.80499 0.017,1.44072 -2.15,0.71733 -1.452,1.01858 -0.407,1.58177 0.509,0.1743 -0.255,0.88156 0.293,0.20352 -0.902,0.28612 -1.198,2.31725 0.452,0.53397 0.184,2.16612 0.724,0.53297 0.724,-0.58234 0.467,0.31031 1.284,-0.52893 0.038,0.65688 2.236,1.56968 0.599,1.00649 1.038,0.20553 -0.216,1.478 1.122,0.36471 -0.072,0.54707 1.705,1.21505 0.657,-0.17833 0.846,0.84025 1.026,0.16322 0.256,-0.62969 1.214,0.10982 -0.13,-0.67402 0.995,0.0363 0.601,1.16568 -0.465,1.42661 0.588,0.3758 -0.027,0.68711 0.941,0.92589 0.373,-0.30225 0.4,0.74152 1.793,0.25893 -1.143,0.76872 0.046,0.91984 -0.503,0.0343 0.263,0.79088 -0.51,0.39192 -1.635,-1.0216 -0.861,0.90271 -0.645,-0.43423 -0.438,0.30628 -0.896,-0.73648 -1.929,0.0806 -1.073,0.6589 -1.384,-0.78786 -1.127,0.35665 0.352,1.25837 -0.416,0.36471 0.211,1.08911 -0.342,0.673 0.361,0.33752 -1.18,1.53844 0.085,0.54204 -1.252,0.15414 -0.322,0.65588 0.452,0.42718 -0.477,0.60853 -0.999,-0.69114 -0.285,0.46949 -0.005,-0.98835 -0.745,-0.95309 -1.849,0.53901 0.753,1.73793 -0.587,0.24885 -0.24,1.03772 -0.286,-0.3768 -0.346,0.97526 -0.74,0.23071 -0.122,1.11026 -1.134,1.2624 2.873,3.71464 1.093,1.03873 1.573,0.50375 1.21,1.27952 2.416,0.14205 1.681,0.75663 0.551,1.09717 0.274,-0.69417 0.38,0.0161 0.911,0.45741 1.522,-0.10478 0.674,0.81607 -0.057,1.79032 -0.68,0.72137 0.224,1.08205 -0.325,0.12695 0.11,0.42516 0.537,-0.0232 0.033,2.33034 0.66,-0.31535 0.257,0.537 -0.754,0.15213 -0.072,1.49412 -0.616,0.003 -0.909,1.02865 -1.73,0.19042 0.539,0.98433 -0.883,0.72136 0.402,0.45841 -0.358,2.82402 0.644,0.12594 -0.242,0.8201 1.342,-0.16725 0.299,1.26643 1.752,1.64524 1.164,-0.3224 -0.158,1.22411 -0.537,-0.0333 -0.165,0.54405 0.103,1.30773 -0.603,0.35363 0.263,0.8332 -1.02,0.30527 0.48,0.99944 1.599,0.84731 0.364,-0.0222 0.079,-0.78585 0.73,0.60249 1.271,-0.12292 0.119,0.49468 1.581,-0.0917 -0.267,0.70726 -0.427,-0.19545 -0.853,1.45483 -1.063,0.68509 0.07,2.08955 -0.558,0.0433 0.444,0.29319 -0.136,0.78383 0.71,0.10579 0.387,0.7264 -0.096,0.93899 0.769,-10e-4 0.45,0.79189 -0.19,1.1012 -0.821,0.7395 0.84,1.61502 -0.561,1.63416 0.526,0.18135 -0.421,0.9279 -1.438,0.54707 -0.546,0.86242 0.32,0.60551 -0.251,2.10667 0.631,0.74857 -1.201,-0.1884 -0.4,1.7198 -1.219,1.11731 -0.11,0.73044 -1.14,-0.0856 -1.31,2.28903 0.364,1.4377 -0.795,1.59688 0.167,1.39438 -0.6,0.52692 -0.116,-0.39595 -0.669,0.0756 -0.262,1.14754 -0.707,-0.58738 0.654,-1.15459 -2.214,0.53297 -0.466,0.48158 -0.143,1.94951 -0.559,0.0252 -0.219,-1.33997 -0.833,0.22265 -1.147,0.89768 0.289,1.17071 -1.162,-0.19545 -1.129,-2.59733 0.291,-1.05485 -0.493,-0.74756 1.133,-1.43266 0.338,-1.19388 -0.437,-2.07545 -0.785,-0.72338 -2.007,-0.2962 0.739,-2.10064 -1.169,1.91727 -1.346,-0.58032 -0.548,-0.88357 -0.258,-2.75349 -0.482,-0.65487 -0.829,-0.14811 1.225,1.70469 -0.047,2.4059 1.437,1.33292 2.657,0.37781 1.116,1.93742 -2.651,1.94749 -0.192,0.0635 -1.522,3.44766 -1.07,1.29261 -0.823,0.15818 -2.096,2.22455 -0.762,-0.10578 -1.332,0.95208 -4.348,1.1012 0,0 -0.489,-0.81809 0.255,-1.40445 -0.584,-0.49368 0.015,-0.71935 -1.539,0.0191 -0.377,-0.57931 -1.878,-0.63573 -0.577,-3.17462 -1.41,-0.4302 -0.191,0.96921 -1.356,0.51181 0.023,1.075 -1.349,-0.11183 -0.676,-0.9531 0.762,-1.84775 -0.35,-1.17877 -1.264,-0.95107 -2.622,-0.26598 -0.872,-1.33191 -1.567,0.23676 0.153,-1.62509 0,0 0.927,0.0886 0.188,-0.0554 0.505,0.003 0.204,-0.55111 0.042,-0.58737 0.094,0.33147 1.451,-0.0635 0.011,-0.95209 -1.193,-0.69114 0.309,-1.62005 -1.71,-0.66193 -0.353,-1.14452 0.918,0.0262 0.196,-0.55211 -0.81,-1.67043 -2.267,-0.0766 -0.708,-2.21649 -1.646,-1.074 -0.684,0.43524 -1.894,-1.70569 0.349,-1.91021 0.633,-0.82212 -0.633,-0.60954 0.787,-0.59341 0.296,0.34557 0.708,-0.2287 0.459,-0.97828 -0.587,0.47856 -0.312,-0.53901 -1.698,-0.11083 -0.485,0.46849 -1.984,-0.88861 -1.796,0.48662 -1.307,-1.11631 -0.282,-0.96216 -1.854,-0.58233 -0.231,-0.79693 -2.553,0.32038 -1.203,-1.47799 -0.543,-0.0181 -0.109,-1.55155 1.081,-1.3843 -0.245,-0.93999 0.616,-0.13098 -0.688,-0.89969 0.066,-1.37725 1.63,0.35666 2.163,-0.89265 -0.764,-1.32687 0.756,-0.73648 2.05,0.36774 0.016,2.16611 1.579,0.39091 0.372,-0.31434 -0.295,0.77779 0.388,0.36774 0.739,-0.49267 0.45,0.48259 0.299,-0.18941 -0.296,-0.35262 1.504,-0.89063 -0.382,-0.31534 0.089,-1.06694 0.48,-0.94504 1.229,-0.56722 0.005,-0.46949 1.859,0.0151 1.318,-0.96619 2.14,-0.53498 0.792,0.0171 0.135,0.37076 1.129,-0.22367 0.58,-1.68957 -0.563,-1.61099 0.584,0.46043 1.057,-0.75361 0.084,-0.41811 0.414,-0.40199 0.866,0.80499 0.639,-0.46949 3.292,1.61199 0.515,0.0151 0.37,-0.57729 -0.743,-1.08608 1.355,0.29116 -0.148,0.3083 0.628,0.23071 0.505,0.10579 0.115,-1.8548 0.465,0.78081 0.505,-0.58737 -0.057,-1.31075 -0.635,-0.23979 -0.493,-1.72383 1.977,0.23374 -0.355,0.61055 0.262,0.19344 0.602,-0.30326 2.121,0.63774 -0.505,-0.61759 1.023,-0.12191 0.582,-0.60147 -0.404,-0.28009 0.05,-1.4518 1.729,0.68913 -0.146,-0.49368 0.804,-0.5108 -0.8,-0.61256 2.516,0.134 0.063,-0.83521 -1.148,-0.58435 -0.041,-0.71129 0.955,-0.0907 0.606,-1.04981 0.962,-0.26598 1.125,-2.37165 -0.529,-0.18236 0.799,-1.84069 -0.34,-0.37378 -0.241,0.45136 0.234,-1.24729 -0.773,-0.84428 1.649,0.70827 0.819,-0.269 0.474,-0.71835 -0.779,-0.3899 0.604,-0.0423 -0.356,-0.32442 0.604,-0.73648 -0.561,-0.35766 0.297,-1.09615 -1.278,-0.38386 -0.453,-0.64178 0.407,-0.50475 -0.048,0.56722 0.403,-0.0242 0.463,-0.67905 -0.188,-0.67704 0.645,-0.0353 -0.198,-0.65689 1.767,-1.00548 -0.144,-0.76671 -1.874,-2.27795 -2.103,-1.46389 0.231,-2.99529 0,0 1.027,0.49266 -0.29,-0.81305 0.705,-1.00749 -1.518,-1.26844 0.102,-0.92388 -0.484,-0.13299 -0.139,-0.62867 0.466,-0.91985 0.572,0.24281 0.526,-0.70626 0.62,-0.0191 0.33,-1.17575 0.414,0.27203 0.566,-0.74152 1.256,0.26497 0.013,0.51584 0.368,0.19948 0.068,-0.37982 0.42,0.56319 0.896,0.13097 0.051,-0.54405 -0.776,-0.76267 -0.308,-1.16769 0.696,-1.06795 -0.392,-0.0927 0.272,-1.25131 -1.834,-0.79391 -0.599,-1.08708 -0.71,0.0363 0.252,-1.04981 -0.568,-0.32139 0.576,-0.54002 -1.843,-0.45942 -0.399,-0.94805 0.548,-0.54405 0.255,-2.54393 1.482,-1.08608 0.381,0.51483 0.142,-0.36169 0.633,0.0725 -0.085,-1.65028 1.026,0.25993 0.51,-0.8604 0.678,0.0463 1.563,-1.80242 1.461,-0.67502 1.625,-1.69058 -0.509,-0.63774 -0.627,0.13601 -0.15,-0.43524 0.784,-0.65084 -0.814,-0.59443 -0.058,-0.68207 -0.68,0.0997 -0.309,-0.43524 1.138,-0.97929 -0.045,-0.46042 -1.318,0.34255 -0.479,0.6186 -0.822,-0.5773 0,0 0.002,-0.009 0,0 -0.017,-0.0796 0,0 1.206,-2.27291 0.575,-3.17261 -0.302,-2.2044 -0.778,-0.7798 0.203,-0.51886 -0.536,-0.69921 0.303,-0.82715 -0.889,-0.44129 -0.325,-0.73144 -0.82,-0.0292 -0.347,-1.20295 -0.618,-0.42012 0.582,-1.54349 -0.11,-1.14351 z" />
                                 </svg>
                             </div>
-                            <div class="col-md-6">  
+                            <div class="col-md-6">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-6 col-md-5">
-                                        <h2 class="title style-01 lang-change" data-lang="impact-title">Engagement & Impact SIM 2024-25</h2>
+                                        <h2 class="title style-01 lang-change" data-lang="impact-title">Engagement &
+                                            Impact SIM 2024-25</h2>
                                     </div>
                                     <div class="col-lg-9 text-center">
-                                        <h3 id="name" class="text-uppercase text-center lang-change" data-lang="impact-india" style="color:#f5861f">INDIA</h3>
+                                        <h3 id="name" class="text-uppercase text-center lang-change"
+                                            data-lang="impact-india" style="color:#f5861f">INDIA</h3>
                                     </div>
                                     <br>
                                 </div>
@@ -1053,24 +1124,30 @@
                                         <div class="col-lg-4">
                                             <div class="single-counterup-01 white">
                                                 <div class="content">
-                                                    <div class="count-wrap"><span class="count-num" id="institute_count"></span></div>
-                                                    <h4 class="title lang-change" data-lang="impact-school"><i class="fas fa-university"></i><br>Schools</h4>
+                                                    <div class="count-wrap"><span class="count-num"
+                                                            id="institute_count"></span></div>
+                                                    <h4 class="title lang-change" data-lang="impact-school"><i
+                                                            class="fas fa-university"></i><br>Schools</h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="single-counterup-01 white">
                                                 <div class="content">
-                                                    <div class="count-wrap"><span class="count-num" id="teacher_count"></span></div>
-                                                    <h4 class="title lang-change" data-lang="impact-teacher"><i class="fas fa-chalkboard-teacher"></i> <br>Teachers</h4>
+                                                    <div class="count-wrap"><span class="count-num"
+                                                            id="teacher_count"></span></div>
+                                                    <h4 class="title lang-change" data-lang="impact-teacher"><i
+                                                            class="fas fa-chalkboard-teacher"></i> <br>Teachers</h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="single-counterup-01 white">
                                                 <div class="content">
-                                                    <div class="count-wrap"><span class="count-num" id="student_team"></span></div>
-                                                    <h4 class="title lang-change" data-lang="impact-team"><i class="fas fa-users"></i><br>Teams</h4>
+                                                    <div class="count-wrap"><span class="count-num"
+                                                            id="student_team"></span></div>
+                                                    <h4 class="title lang-change" data-lang="impact-team"><i
+                                                            class="fas fa-users"></i><br>Teams</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -1082,26 +1159,30 @@
                                         <div class="col-lg-6">
                                             <div class="single-counterup-01 white">
                                                 <div class="content">
-                                                    <div class="count-wrap"><span class="count-num"  id="student_count"></span></div>
-                                                    <h4 class="title lang-change" data-lang="impact-student"><i class="fas fa-user-graduate"></i><br> Students</h4>
+                                                    <div class="count-wrap"><span class="count-num"
+                                                            id="student_count"></span></div>
+                                                    <h4 class="title lang-change" data-lang="impact-student"><i
+                                                            class="fas fa-user-graduate"></i><br> Students</h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="single-counterup-01 white">
                                                 <div class="content">
-                                                    <div class="count-wrap"><span class="count-num" id="student_ideas"></span></div>
-                                                    <h4 class="title lang-change" data-lang="impact-idea"><i class="fas fa-lightbulb"></i><br> Ideas</h4>
+                                                    <div class="count-wrap"><span class="count-num"
+                                                            id="student_ideas"></span></div>
+                                                    <h4 class="title lang-change" data-lang="impact-idea"><i
+                                                            class="fas fa-lightbulb"></i><br> Ideas</h4>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
-               
+
                 </div>
             </div>
         </div>
@@ -1210,7 +1291,7 @@
                     </div>
                 </div>
             </div> -->
-            <!-- <div class="col-lg-2 col-md-6 col-centered">
+    <!-- <div class="col-lg-2 col-md-6 col-centered">
                 <div class="it_comp_work_process">
                     <div class="step-num-box">
                         <div class="step-icon">
@@ -1223,7 +1304,7 @@
                     </div>
                 </div>
             </div> -->
-       <!--</div>
+    <!--</div>
     </div>
 </section>
     <div id="myModal" class="modal">
@@ -1234,7 +1315,7 @@
         </div>
     </div> -->
 
-     <!--videos end-->
+    <!--videos end-->
 
 
     <!--partners wrapper start-->
@@ -1243,7 +1324,8 @@
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div class="section-title desktop-center blue margin-bottom-55">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="partner-title">Our Partners</h3>
+                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
+                            data-lang="partner-title">Our Partners</h3>
                     </div>
                     <div class="client-area">
                         <div class="client-active-area" style="text-align: center">
@@ -1275,7 +1357,8 @@
                             <div class="single-brand">
                                 <a><img src="assets/images/partner19.png" alt=""></a>
                                 <br>
-                                <p class="lang-change" data-lang="partner-technical">Technology,Knowledge & Implementation Partner</p>
+                                <p class="lang-change" data-lang="partner-technical">Technology,Knowledge &
+                                    Implementation Partner</p>
                             </div>
                             <div class="single-brand">
                                 <a><img src="assets/images/partner20.png" alt=""></a>
@@ -1295,122 +1378,135 @@
     </div>
 
     <!--partners wrapper end-->
-     <!-- testimonial area start  -->
-     <section class="testimonial-area bg-image padding-top-100 padding-bottom-120" id="testimonial"
-     style="background-image: url(assets/images/t1.png);">
-     <div class="container">
-         <div class="section-title desktop-center blue margin-bottom-20">
-             <h2 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="testimonials-title" >Hear what our teacher and student
-                 innovators say about SIM</h2>
-         </div>
-         <div class="row">
-             <div class="col-lg-12">
-                 <div class="testimonial-carousel-area">
-                     <div class="testimonial-carousel-two">
-                         <div class="single-testimonial-item-05">
-                             <div class="icon">
-                                 <i class="flaticon-quote-left"></i>
-                             </div>
-                             <div class="thumb">
-                                 <img src="assets/images/team7 (1).png" alt="">
-                             </div>
-                             <div class="content">
-                                 <div class="author-details">
-                                     <div class="author-meta">
-                                         <h4 class="title lang-change" data-lang="testimonials-test_name2">Umesh Bajaj</h4>
-                                         <br>
-                                         <div class="designation lang-change" data-lang="testimonials-designation2">SIM Incharge, Dass & Brown World School, Ferozepur
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <p class="description lang-change" data-lang="testimonials-desc_t2">“I serve as the SIM Incharge at Dass and Brown World School
-                                     in Ferozepur, Punjab. We recently featured in the Top 75 teams of SIM. The Atal
-                                     Tinkering Lab has become like a second home to me. It's a place where my
-                                     students and I engage in daily learning, finding solace in our lab. We are
-                                     dedicated to working on solutions for the Sustainable Development Goals, and I
-                                     am profoundly grateful to the Atal Innovation Mission for providing us with this
-                                     platform to contribute to our community and nurture innovation in the young
-                                     entrepreneurial minds.”</p>
-                             </div>
-                         </div>
-                         <div class="single-testimonial-item-05">
-                             <div class="icon">
-                                 <i class="flaticon-quote-left"></i>
-                             </div>
-                             <div class="thumb">
-                                 <img src="assets/images/team6 (1).png" alt="">
-                             </div>
-                             <div class="content">
-                                 <div class="author-details">
-                                     <div class="author-meta">
-                                         <h4 class="title lang-change" data-lang="testimonials-test_name1">Prashant Nair</h4>
-                                         <br>
-                                         <div class="designation lang-change" data-lang="testimonials-designation1">Regional Mentor of Change, Tamil Nadu, SIM</div>
-                                     </div>
-                                 </div>
-                                 <p class="description lang-change" data-lang="testimonials-desc_t1">"SIM, the flagship national innovation challenge for schools
-                                     from Atal Innovation Mission (AIM) has been a trailblazer, having completed 5
-                                     editions with the 2022-2023 edition attracting 12,000+ teams pan India. I have
-                                     been fortunate to have been able to mentor 10+ teams that have been ranked
-                                     amongst the top teams over the last few years.SIM provides an excellent
-                                     opportunity for students to unleash their creativity, innovation and team work
-                                     to solve problems for societal and humanitarian benefit"</p>
-                             </div>
-                         </div>
-                         <div class="single-testimonial-item-05">
-                             <div class="icon">
-                                 <i class="flaticon-quote-left"></i>
-                             </div>
-                             <div class="thumb">
-                                 <img src="assets/images/team9 (1).png" alt="">
-                             </div>
-                             <div class="content">
-                                 <div class="author-details">
-                                     <div class="author-meta">
-                                         <h4 class="title lang-change" data-lang="testimonials-test_name4">Suneeti Patwari</h4>
-                                         <br>
-                                         <div class="designation lang-change" data-lang="testimonials-designation4">Student, Lakshmipat Singhania Academy, Kolkata
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <p class="description lang-change" data-lang="testimonials-desc_t4">“Our SIM journey as a team has been an incredible roller
-                                     coaster of innovation and collaboration. We worked hard and our hard work paid
-                                     off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
-                                     digital tablets from Niti Aayog as a prize for our achievement . It was like a
-                                     dream come true. We have even filed for the patent of our project this year in
-                                     2024. ”</p>
-                             </div>
-                         </div>
-                         <div class="single-testimonial-item-05">
-                             <div class="icon">
-                                 <i class="flaticon-quote-left"></i>
-                             </div>
-                             <div class="thumb">
-                                 <img src="assets/images/team8 (1).png" alt="">
-                             </div>
-                             <div class="content">
-                                 <div class="author-details">
-                                     <div class="author-meta">
-                                         <h4 class="title lang-change" data-lang="testimonials-test_name3">Ishan Ghatak & Agam Yadav</h4>
-                                         <br>
-                                         <div class="designation lang-change" data-lang="testimonials-designation3">D.A.V Public School, Vasant Kunj, New Delhi</div>
-                                     </div>
-                                 </div>
-                                 <p class="description lang-change" data-lang="testimonials-desc_t3">“Our SIM journey as a team has been an incredible roller
-                                     coaster of innovation and collaboration. We worked hard and our hard work paid
-                                     off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
-                                     digital tablets from Niti Aayog as a prize for our achievement . It was like a
-                                     dream come true. We have even filed for the patent of our project this year in
-                                     2024. ”</p>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </section>
- <!-- testimonial area end -->
+    <!-- testimonial area start  -->
+    <section class="testimonial-area bg-image padding-top-100 padding-bottom-120" id="testimonial"
+        style="background-image: url(assets/images/t1.png);">
+        <div class="container">
+            <div class="section-title desktop-center blue margin-bottom-20">
+                <h2 class="title wow animate__animated animate__fadeInUp animated lang-change"
+                    data-lang="testimonials-title">Hear what our teacher and student
+                    innovators say about SIM</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonial-carousel-area">
+                        <div class="testimonial-carousel-two">
+                            <div class="single-testimonial-item-05">
+                                <div class="icon">
+                                    <i class="flaticon-quote-left"></i>
+                                </div>
+                                <div class="thumb">
+                                    <img src="assets/images/team7 (1).png" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="author-details">
+                                        <div class="author-meta">
+                                            <h4 class="title lang-change" data-lang="testimonials-test_name2">Umesh
+                                                Bajaj</h4>
+                                            <br>
+                                            <div class="designation lang-change" data-lang="testimonials-designation2">
+                                                SIM Incharge, Dass & Brown World School, Ferozepur
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="description lang-change" data-lang="testimonials-desc_t2">“I serve as the
+                                        SIM Incharge at Dass and Brown World School
+                                        in Ferozepur, Punjab. We recently featured in the Top 75 teams of SIM. The Atal
+                                        Tinkering Lab has become like a second home to me. It's a place where my
+                                        students and I engage in daily learning, finding solace in our lab. We are
+                                        dedicated to working on solutions for the Sustainable Development Goals, and I
+                                        am profoundly grateful to the Atal Innovation Mission for providing us with this
+                                        platform to contribute to our community and nurture innovation in the young
+                                        entrepreneurial minds.”</p>
+                                </div>
+                            </div>
+                            <div class="single-testimonial-item-05">
+                                <div class="icon">
+                                    <i class="flaticon-quote-left"></i>
+                                </div>
+                                <div class="thumb">
+                                    <img src="assets/images/team6 (1).png" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="author-details">
+                                        <div class="author-meta">
+                                            <h4 class="title lang-change" data-lang="testimonials-test_name1">Prashant
+                                                Nair</h4>
+                                            <br>
+                                            <div class="designation lang-change" data-lang="testimonials-designation1">
+                                                Regional Mentor of Change, Tamil Nadu, SIM</div>
+                                        </div>
+                                    </div>
+                                    <p class="description lang-change" data-lang="testimonials-desc_t1">"SIM, the
+                                        flagship national innovation challenge for schools
+                                        from Atal Innovation Mission (AIM) has been a trailblazer, having completed 5
+                                        editions with the 2022-2023 edition attracting 12,000+ teams pan India. I have
+                                        been fortunate to have been able to mentor 10+ teams that have been ranked
+                                        amongst the top teams over the last few years.SIM provides an excellent
+                                        opportunity for students to unleash their creativity, innovation and team work
+                                        to solve problems for societal and humanitarian benefit"</p>
+                                </div>
+                            </div>
+                            <div class="single-testimonial-item-05">
+                                <div class="icon">
+                                    <i class="flaticon-quote-left"></i>
+                                </div>
+                                <div class="thumb">
+                                    <img src="assets/images/team9 (1).png" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="author-details">
+                                        <div class="author-meta">
+                                            <h4 class="title lang-change" data-lang="testimonials-test_name4">Suneeti
+                                                Patwari</h4>
+                                            <br>
+                                            <div class="designation lang-change" data-lang="testimonials-designation4">
+                                                Student, Lakshmipat Singhania Academy, Kolkata
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="description lang-change" data-lang="testimonials-desc_t4">“Our SIM journey
+                                        as a team has been an incredible roller
+                                        coaster of innovation and collaboration. We worked hard and our hard work paid
+                                        off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
+                                        digital tablets from Niti Aayog as a prize for our achievement . It was like a
+                                        dream come true. We have even filed for the patent of our project this year in
+                                        2024. ”</p>
+                                </div>
+                            </div>
+                            <div class="single-testimonial-item-05">
+                                <div class="icon">
+                                    <i class="flaticon-quote-left"></i>
+                                </div>
+                                <div class="thumb">
+                                    <img src="assets/images/team8 (1).png" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="author-details">
+                                        <div class="author-meta">
+                                            <h4 class="title lang-change" data-lang="testimonials-test_name3">Ishan
+                                                Ghatak & Agam Yadav</h4>
+                                            <br>
+                                            <div class="designation lang-change" data-lang="testimonials-designation3">
+                                                D.A.V Public School, Vasant Kunj, New Delhi</div>
+                                        </div>
+                                    </div>
+                                    <p class="description lang-change" data-lang="testimonials-desc_t3">“Our SIM journey
+                                        as a team has been an incredible roller
+                                        coaster of innovation and collaboration. We worked hard and our hard work paid
+                                        off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
+                                        digital tablets from Niti Aayog as a prize for our achievement . It was like a
+                                        dream come true. We have even filed for the patent of our project this year in
+                                        2024. ”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial area end -->
     <!--
     <div id="packages" class="header-bottom-area padding-top-110">
         <div class="container">
@@ -1645,7 +1741,8 @@
             <div class="row">
                 <div class="col-lg-6 text-right">
                     <div class="content text-center margin-bottom-55">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="faqs-title">Frequently asked questions
+                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
+                            data-lang="faqs-title">Frequently asked questions
                         </h3>
                         <!--<p class="wow animate__animated animate__fadeInUp animated">SIM- School Innovation Marathon 2024-2025</p>-->
                     </div>
@@ -1657,15 +1754,15 @@
                             <div class="card">
                                 <div class="card-header" id="headingOwo">
                                     <h5 class="mb-0">
-                                        <a class="collapsed white style-01 lang-change" role="button" data-toggle="collapse"
-                                            data-target="#collapseOwo" aria-expanded="false"
-                                            aria-controls="collapseOwo"  data-lang="faqs-faq_q1">
+                                        <a class="collapsed white style-01 lang-change" role="button"
+                                            data-toggle="collapse" data-target="#collapseOwo" aria-expanded="false"
+                                            aria-controls="collapseOwo" data-lang="faqs-faq_q1">
                                             What is the School Innovation Marathon?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseOwo" class="collapse show" data-parent="#accordion">
-                                    <div class="card-body style-02 lang-change"  data-lang="faqs-faq_a1">
+                                    <div class="card-body style-02 lang-change" data-lang="faqs-faq_a1">
                                         The School Innovation Marathon is a nationwide initiative aimed at unleashing
                                         the creative potential of students across India. It encourages student
                                         innovation and agency to tackle critical local and global challenges.
@@ -1676,15 +1773,15 @@
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                     <h5 class="mb-0">
-                                        <a class="collapsed white style-01 lang-change" role="button" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseOwo"  data-lang="faqs-faq_q2">
+                                        <a class="collapsed white style-01 lang-change" role="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseOwo" data-lang="faqs-faq_q2">
                                             Who organizes the School Innovation Marathon?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                    <div class="card-body style-02 lang-change"  data-lang="faqs-faq_a2">
+                                    <div class="card-body style-02 lang-change" data-lang="faqs-faq_a2">
                                         The Marathon is spearheaded by AIM, NITI Aayog, Ministry of Education (MOE) in
                                         collaboration with UNICEF and YUWAAH.
                                     </div>
@@ -1693,15 +1790,15 @@
                             <div class="card">
                                 <div class="card-header" id="headingThree">
                                     <h5 class="mb-0">
-                                        <a class="collapsed white style-01 lang-change" role="button" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseOwo"  data-lang="faqs-faq_q3">
+                                        <a class="collapsed white style-01 lang-change" role="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseOwo" data-lang="faqs-faq_q3">
                                             Who can participate in the School Innovation Marathon?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                    <div class="card-body style-02 lang-change"  data-lang="faqs-faq_a3">
+                                    <div class="card-body style-02 lang-change" data-lang="faqs-faq_a3">
                                         All students from classes 6th to 12th in schools across India are eligible to
                                         participate.
                                     </div>
@@ -1710,15 +1807,15 @@
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                     <h5 class="mb-0">
-                                        <a class="collapsed white style-01 lang-change" role="button" data-toggle="collapse"
-                                            data-target="#collapseFour" aria-expanded="false"
-                                            aria-controls="collapseOwo"  data-lang="faqs-faq_q4">
+                                        <a class="collapsed white style-01 lang-change" role="button"
+                                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseOwo" data-lang="faqs-faq_q4">
                                             What are the rewards for the top teams?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseFour" class="collapse" data-parent="#accordion">
-                                    <div class="card-body style-02 lang-change"  data-lang="faqs-faq_a4">
+                                    <div class="card-body style-02 lang-change" data-lang="faqs-faq_a4">
                                         The top teams will receive internships through the Student Innovator Program
                                         with leading corporates of India, certificates from AIM, NITI Aayog, and many
                                         more interesting opportunities at the conclusion of the Marathon.
@@ -1728,15 +1825,15 @@
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                     <h5 class="mb-0">
-                                        <a class="collapsed white style-01 lang-change" role="button" data-toggle="collapse"
-                                            data-target="#collapseFive" aria-expanded="false"
-                                            aria-controls="collapseOwo"  data-lang="faqs-faq_q5">
+                                        <a class="collapsed white style-01 lang-change" role="button"
+                                            data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseOwo" data-lang="faqs-faq_q5">
                                             What is the deadline for submitting entries?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseFive" class="collapse" data-parent="#accordion">
-                                    <div class="card-body style-02 lang-change"  data-lang="faqs-faq_a5">
+                                    <div class="card-body style-02 lang-change" data-lang="faqs-faq_a5">
                                         The last date to submit entries is November 30th, 2024.
                                     </div>
                                 </div>
@@ -1749,8 +1846,8 @@
     </div>
     <!--FAQS area ends-->
 
-<!--chatbot start-->
-<!-- <div class="chatbox-container">
+    <!--chatbot start-->
+    <!-- <div class="chatbox-container">
     <div class="chatbox">
       <div class="chatbox-heading">
           <img src="assets/images/Mira_white.png" alt="Chatbot Image" width="100" height="45">
@@ -1775,7 +1872,7 @@
   </div>
   <img src="assets/images/chatbotimage1.png" alt="Messenger Icon" class="messenger-icon"> -->
 
-<!--chatbot end-->
+    <!--chatbot end-->
     <!--
     <div id="contact" class="contact-area padding-bottom-120 padding-top-110">
         <div class="bg-image" data-parallax='{"x": -50, "y": 0}' style="background-image: url(assets/img/contact/01.png);"></div>
@@ -1863,21 +1960,27 @@
                 <div class="footer-widget widget widget_nav_menu">
                     <h4 class="widget-title">Follow us on</h4>
                     <ul class="social_share margin-top-20">
-                        <li><a href="https://www.linkedin.com/company/atal-innovation-mission-official/mycompany/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="https://www.facebook.com/AIMToInnovate/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://twitter.com/AIMtoInnovate" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCnqXXpKfrOEK33yTuUGVkiQ" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="https://www.instagram.com/AIMToInnovate/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/atal-innovation-mission-official/mycompany/"
+                                target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.facebook.com/AIMToInnovate/" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/AIMtoInnovate" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCnqXXpKfrOEK33yTuUGVkiQ" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/AIMToInnovate/" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                     <div class="copyright-area-inner">
                         © Copyrights | 2024 | UNISOLVE<br>
-                        Designed by 
-                        <a href="https://www.inquilabfoundation.org/" target="_blank" rel="noopener"> Inqui-Lab</a> | Developed by
+                        Designed by
+                        <a href="https://www.inquilabfoundation.org/" target="_blank" rel="noopener"> Inqui-Lab</a> |
+                        Developed by
                         <a href="http://www.medhatech.in/" target="_blank" rel="noopener"> Medha Tech</a>
                     </div>
                 </div>
             </div>
-            
+
             <!--old footer 
             <div class="container">
                 <div class="footer-top-border padding-bottom-30">
@@ -1984,809 +2087,804 @@
             <script>
 
 
-                    function redirectToPage(event) {
-                            const stateId = event.target.id;
+                function redirectToPage(event) {
+                    const stateId = event.target.id;
+                    const stateUrls = {
+                        'IN-AP': 'AP.html',
+                        'IN-JK': 'JK.html',
+                        'IN-HP': 'HP.html',
+                        'IN-AR': 'ANP.html',
+                        'IN-AS': 'AS.html',
+                        'IN-DL': 'DL.html',
+                        'IN-GJ': 'GR.html',
+                        'IN-KL': 'KL.html',
+                        'IN-KA': 'KN.html',
+                        'IN-MP': 'MP.html',
+                        'IN-RJ': 'RJ.html',
+                        'IN-UT': 'UK.html',
+                        'IN-HR': 'HR.html',
+                        'IN-UP': 'UP.html',
+                        'IN-BR': 'BR.html',
+                        'IN-JH': 'JH.html',
+                        'IN-WB': 'WB.html',
+                        'IN-OR': 'OD.html',
+                        'IN-SK': 'SK.html',
+                        'IN-NL': 'NG.html',
+                        'IN-TR': 'TR.html',
+                        'IN-MZ': 'MR.html',
+                        'IN-MN': 'MN.html',
+                        'IN-CT': 'CH.html',
+                        'IN-TG': 'TL.html',
+                        'IN-GA': 'GO.html',
+                        'IN-AN': 'AN.html',
+                        'IN-TN': 'TN.html',
+                        'IN-MH': 'MA.html',
+                        'IN-PB': 'PB.html',
+                        'IN-ML': 'ME.html',
+                    };
+                    if (stateUrls[stateId]) {
+                        window.location.href = stateUrls[stateId];
+                    }
+                }
 
-            
-                                const stateUrls = {
-                                'IN-AP': 'AP.html',
-                                'IN-JK': 'JK.html',
-                                'IN-HP': 'HP.html',
-                                'IN-AR': 'ANP.html',
-                                'IN-AS': 'AS.html',
-                                'IN-DL': 'DL.html',
-                                'IN-GJ': 'GR.html',
-                                'IN-KL': 'KL.html',
-                                'IN-KA': 'KN.html',
-                                'IN-MP': 'MP.html',
-                                'IN-RJ': 'RJ.html',
-                                'IN-UT': 'UK.html',
-                                'IN-HR': 'HR.html',
-                                'IN-UP': 'UP.html',
-                                'IN-BR': 'BR.html',
-                                'IN-JH': 'JH.html',
-                                'IN-WB': 'WB.html',
-                                'IN-OR': 'OD.html',
-                                'IN-SK': 'SK.html',
-                                'IN-NL': 'NG.html',
-                                'IN-TR': 'TR.html',
-                                'IN-MZ': 'MR.html',
-                                'IN-MN': 'MN.html',
-                                'IN-CT': 'CH.html',
-                                'IN-TG': 'TL.html',
-                                'IN-GA': 'GO.html',
-                                'IN-AN': 'AN.html',
-                                'IN-TN': 'TN.html',
-                                'IN-MH': 'MA.html',
-                                'IN-PB': 'PB.html',
-                                'IN-ML': 'ME.html',
-                            };
+                // document.getElementById('IN-AP').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-JK').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-AR').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-AS').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-DL').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-GJ').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-KL').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-KA').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-MP').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-RJ').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-HP').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-UT').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-HR').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-UP').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-BR').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-JH').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-WB').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-OR').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-SK').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-NL').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-TR').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-MZ').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-MN').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-CT').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-TG').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-GA').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-AN').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-TN').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-MH').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-PB').addEventListener('click', redirectToPage);
+                // document.getElementById('IN-ML').addEventListener('click', redirectToPage);
 
-                
-                            if (stateUrls[stateId]) {
-                                window.location.href = stateUrls[stateId];
-                            }
-                        }
-
-            
-
-                        document.getElementById('IN-AP').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-JK').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-AR').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-AS').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-DL').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-GJ').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-KL').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-KA').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-MP').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-RJ').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-HP').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-UT').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-HR').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-UP').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-BR').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-JH').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-WB').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-OR').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-SK').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-NL').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-TR').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-MZ').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-MN').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-CT').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-TG').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-GA').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-AN').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-TN').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-MH').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-PB').addEventListener('click', redirectToPage);
-                        document.getElementById('IN-ML').addEventListener('click', redirectToPage);
-
-            
                 const api_url = "https://api.schoolinnovationmarathon.org/api/v1/dashboard/mapStats";
                 var api_data;
                 let dataOfmap = {};
-               const config = { headers: {
-                        Authorization : 'O10ZPA0jZS38wP7cO9EhI3jaDf24WmKX62nWw870'
-                    }}
-            async function getUser() {
-            // Making an API call (request)
-            // and getting the response back
-            const response = await fetch(api_url,config);
-            
-            // Parsing it to JSON format
-            const data = await response.json();
-            console.log(data);
-            api_data=data.data[0];
-            const districtData = data.data[0].dataValues;
-            for (const entry of districtData) {
-                const state_name = entry.state_name;
-                const overallSchools = parseInt(entry.overall_schools);
-                dataOfmap[state_name] = {'reg_schools':parseInt(entry.reg_schools),'teams':parseInt(entry.teams),'students':parseInt(entry.students),'ideas':parseInt(entry.ideas),'reg_mentors':parseInt(entry.reg_mentors),'state_name':state_name};
-            }
-            text.textContent = dataOfmap['all'].reg_schools;
-            text1.textContent = dataOfmap['all'].teams;
-            text2.textContent = dataOfmap['all'].students;
-            text3.textContent = dataOfmap['all'].ideas;
-            text4.textContent = "INDIA"
-            text5.textContent = dataOfmap['all'].reg_mentors;
-            }
-            getUser();
+                const config = {
+                    headers: {
+                        Authorization: 'O10ZPA0jZS38wP7cO9EhI3jaDf24WmKX62nWw870'
+                    }
+                }
+                async function getUser() {
+                    // Making an API call (request)
+                    // and getting the response back
+                    const response = await fetch(api_url, config);
+
+                    // Parsing it to JSON format
+                    const data = await response.json();
+                    console.log(data);
+                    api_data = data.data[0];
+                    const districtData = data.data[0].dataValues;
+                    for (const entry of districtData) {
+                        const state_name = entry.state_name;
+                        const overallSchools = parseInt(entry.overall_schools);
+                        dataOfmap[state_name] = { 'reg_schools': parseInt(entry.reg_schools), 'teams': parseInt(entry.teams), 'students': parseInt(entry.students), 'ideas': parseInt(entry.ideas), 'reg_mentors': parseInt(entry.reg_mentors), 'state_name': state_name };
+                    }
+                    text.textContent = dataOfmap['all'].reg_schools;
+                    text1.textContent = dataOfmap['all'].teams;
+                    text2.textContent = dataOfmap['all'].students;
+                    text3.textContent = dataOfmap['all'].ideas;
+                    text4.textContent = "INDIA"
+                    text5.textContent = dataOfmap['all'].reg_mentors;
+                }
+                getUser();
                 //  console.log(data.data[0].dataValues[0].reg_schools,'vgvhbkjb');
-                 var text = document.getElementById('institute_count');
-                 var text1 = document.getElementById('student_team');
-                 var text2 = document.getElementById('student_count');
-                 var text3 = document.getElementById('student_ideas');
-                 var text4 = document.getElementById('name');
-                 var text5 = document.getElementById('teacher_count')
-                   document.getElementById('IN-DL')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Delhi'].reg_schools;
+                var text = document.getElementById('institute_count');
+                var text1 = document.getElementById('student_team');
+                var text2 = document.getElementById('student_count');
+                var text3 = document.getElementById('student_ideas');
+                var text4 = document.getElementById('name');
+                var text5 = document.getElementById('teacher_count')
+                document.getElementById('IN-DL')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Delhi'].reg_schools;
                         text1.textContent = dataOfmap['Delhi'].teams;
                         text2.textContent = dataOfmap['Delhi'].students;
                         text3.textContent = dataOfmap['Delhi'].ideas;
                         text4.textContent = dataOfmap['Delhi'].state_name;
                         text5.textContent = dataOfmap['Delhi'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-AN')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Andaman and Nicobar Islands'].reg_schools;
+
+                document.getElementById('IN-AN')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Andaman and Nicobar Islands'].reg_schools;
                         text1.textContent = dataOfmap['Andaman and Nicobar Islands'].teams;
                         text2.textContent = dataOfmap['Andaman and Nicobar Islands'].students;
                         text3.textContent = dataOfmap['Andaman and Nicobar Islands'].ideas;
                         text4.textContent = dataOfmap['Andaman and Nicobar Islands'].state_name;
                         text5.textContent = dataOfmap['Andaman and Nicobar Islands'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-AP')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Andhra Pradesh'].reg_schools;
+
+                document.getElementById('IN-AP')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Andhra Pradesh'].reg_schools;
                         text1.textContent = dataOfmap['Andhra Pradesh'].teams;
                         text2.textContent = dataOfmap['Andhra Pradesh'].students;
                         text3.textContent = dataOfmap['Andhra Pradesh'].ideas;
                         text4.textContent = dataOfmap['Andhra Pradesh'].state_name;
                         text5.textContent = dataOfmap['Andhra Pradesh'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-AR')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Arunachal Pradesh'].reg_schools;
+
+                document.getElementById('IN-AR')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Arunachal Pradesh'].reg_schools;
                         text1.textContent = dataOfmap['Arunachal Pradesh'].teams;
                         text2.textContent = dataOfmap['Arunachal Pradesh'].students;
                         text3.textContent = dataOfmap['Arunachal Pradesh'].ideas;
                         text4.textContent = dataOfmap['Arunachal Pradesh'].state_name;
                         text5.textContent = dataOfmap['Arunachal Pradesh'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-AS')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Assam'].reg_schools;
+
+                document.getElementById('IN-AS')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Assam'].reg_schools;
                         text1.textContent = dataOfmap['Assam'].teams;
                         text2.textContent = dataOfmap['Assam'].students;
                         text3.textContent = dataOfmap['Assam'].ideas;
                         text4.textContent = dataOfmap['Assam'].state_name;
                         text5.textContent = dataOfmap['Assam'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-BR')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Bihar'].reg_schools;
+
+                document.getElementById('IN-BR')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Bihar'].reg_schools;
                         text1.textContent = dataOfmap['Bihar'].teams;
                         text2.textContent = dataOfmap['Bihar'].students;
                         text3.textContent = dataOfmap['Bihar'].ideas;
                         text4.textContent = dataOfmap['Bihar'].state_name;
                         text5.textContent = dataOfmap['Bihar'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-CH')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Chandigarh'].reg_schools;
+
+                document.getElementById('IN-CH')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Chandigarh'].reg_schools;
                         text1.textContent = dataOfmap['Chandigarh'].teams;
                         text2.textContent = dataOfmap['Chandigarh'].students;
                         text3.textContent = dataOfmap['Chandigarh'].ideas;
                         text4.textContent = dataOfmap['Chandigarh'].state_name;
                         text5.textContent = dataOfmap['Chandigarh'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-CT')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Chhattisgarh'].reg_schools;
+
+                document.getElementById('IN-CT')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Chhattisgarh'].reg_schools;
                         text1.textContent = dataOfmap['Chhattisgarh'].teams;
                         text2.textContent = dataOfmap['Chhattisgarh'].students;
                         text3.textContent = dataOfmap['Chhattisgarh'].ideas;
                         text4.textContent = dataOfmap['Chhattisgarh'].state_name;
                         text5.textContent = dataOfmap['Chhattisgarh'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-DN')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].reg_schools;
+
+                document.getElementById('IN-DN')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].reg_schools;
                         text1.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].teams;
                         text2.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].students;
                         text3.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].ideas;
                         text4.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].state_name;
                         text5.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-GA')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Goa'].reg_schools;
+
+                document.getElementById('IN-GA')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Goa'].reg_schools;
                         text1.textContent = dataOfmap['Goa'].teams;
                         text2.textContent = dataOfmap['Goa'].students;
                         text3.textContent = dataOfmap['Goa'].ideas;
                         text4.textContent = dataOfmap['Goa'].state_name;
                         text5.textContent = dataOfmap['Goa'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-GJ')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Gujarat'].reg_schools;
+
+                document.getElementById('IN-GJ')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Gujarat'].reg_schools;
                         text1.textContent = dataOfmap['Gujarat'].teams;
                         text2.textContent = dataOfmap['Gujarat'].students;
                         text3.textContent = dataOfmap['Gujarat'].ideas;
                         text4.textContent = dataOfmap['Gujarat'].state_name;
                         text5.textContent = dataOfmap['Gujarat'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-HP')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Himachal Pradesh'].reg_schools;
+
+                document.getElementById('IN-HP')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Himachal Pradesh'].reg_schools;
                         text1.textContent = dataOfmap['Himachal Pradesh'].teams;
                         text2.textContent = dataOfmap['Himachal Pradesh'].students;
                         text3.textContent = dataOfmap['Himachal Pradesh'].ideas;
                         text4.textContent = dataOfmap['Himachal Pradesh'].state_name;
                         text5.textContent = dataOfmap['Himachal Pradesh'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-HR')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Haryana'].reg_schools;
+
+                document.getElementById('IN-HR')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Haryana'].reg_schools;
                         text1.textContent = dataOfmap['Haryana'].teams;
                         text2.textContent = dataOfmap['Haryana'].students;
                         text3.textContent = dataOfmap['Haryana'].ideas;
                         text4.textContent = dataOfmap['Haryana'].state_name;
                         text5.textContent = dataOfmap['Haryana'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-JH')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Jharkhand'].reg_schools;
+
+                document.getElementById('IN-JH')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Jharkhand'].reg_schools;
                         text1.textContent = dataOfmap['Jharkhand'].teams;
                         text2.textContent = dataOfmap['Jharkhand'].students;
                         text3.textContent = dataOfmap['Jharkhand'].ideas;
                         text4.textContent = dataOfmap['Jharkhand'].state_name;
                         text5.textContent = dataOfmap['Jharkhand'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-JK')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Jammu and Kashmir'].reg_schools;
+
+                document.getElementById('IN-JK')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Jammu and Kashmir'].reg_schools;
                         text1.textContent = dataOfmap['Jammu and Kashmir'].teams;
                         text2.textContent = dataOfmap['Jammu and Kashmir'].students;
                         text3.textContent = dataOfmap['Jammu and Kashmir'].ideas;
                         text4.textContent = dataOfmap['Jammu and Kashmir'].state_name;
                         text5.textContent = dataOfmap['Jammu and Kashmir'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-KA')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Karnataka'].reg_schools;
+
+                document.getElementById('IN-KA')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Karnataka'].reg_schools;
                         text1.textContent = dataOfmap['Karnataka'].teams;
                         text2.textContent = dataOfmap['Karnataka'].students;
                         text3.textContent = dataOfmap['Karnataka'].ideas;
                         text4.textContent = dataOfmap['Karnataka'].state_name;
                         text5.textContent = dataOfmap['Karnataka'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-KL')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Kerala'].reg_schools;
+
+                document.getElementById('IN-KL')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Kerala'].reg_schools;
                         text1.textContent = dataOfmap['Kerala'].teams;
                         text2.textContent = dataOfmap['Kerala'].students;
                         text3.textContent = dataOfmap['Kerala'].ideas;
                         text4.textContent = dataOfmap['Kerala'].state_name;
                         text5.textContent = dataOfmap['Kerala'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    // document.getElementById('IN-LK')
-                    // .addEventListener('mouseover', function(e) {
-                    //     text.textContent =  dataOfmap['Ladakh'].reg_schools;
-                    //     text1.textContent = dataOfmap['Ladakh'].teams;
-                    //     text2.textContent = dataOfmap['Ladakh'].students;
-                    //     text3.textContent = dataOfmap['Ladakh'].ideas;
-                    //     text4.textContent = dataOfmap['Ladakh'].state_name;
-                    //     text5.textContent = dataOfmap['Ladakh'].reg_mentors;
-                    //     addEventListener("mouseout", function(e) {
-                    //     text.textContent =   dataOfmap['all'].reg_schools;
-                    //     text1.textContent = dataOfmap['all'].teams;
-                    //     text2.textContent = dataOfmap['all'].students;
-                    //     text3.textContent = dataOfmap['all'].ideas;
-                    //     text4.textContent = "INDIA"
-                    //     text5.textContent = dataOfmap['all'].reg_mentors;
-                    //     });
-                    // });
-        
-                    document.getElementById('IN-MH')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Maharashtra'].reg_schools;
+
+                // document.getElementById('IN-LK')
+                // .addEventListener('mouseover', function(e) {
+                //     text.textContent =  dataOfmap['Ladakh'].reg_schools;
+                //     text1.textContent = dataOfmap['Ladakh'].teams;
+                //     text2.textContent = dataOfmap['Ladakh'].students;
+                //     text3.textContent = dataOfmap['Ladakh'].ideas;
+                //     text4.textContent = dataOfmap['Ladakh'].state_name;
+                //     text5.textContent = dataOfmap['Ladakh'].reg_mentors;
+                //     addEventListener("mouseout", function(e) {
+                //     text.textContent =   dataOfmap['all'].reg_schools;
+                //     text1.textContent = dataOfmap['all'].teams;
+                //     text2.textContent = dataOfmap['all'].students;
+                //     text3.textContent = dataOfmap['all'].ideas;
+                //     text4.textContent = "INDIA"
+                //     text5.textContent = dataOfmap['all'].reg_mentors;
+                //     });
+                // });
+
+                document.getElementById('IN-MH')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Maharashtra'].reg_schools;
                         text1.textContent = dataOfmap['Maharashtra'].teams;
                         text2.textContent = dataOfmap['Maharashtra'].students;
                         text3.textContent = dataOfmap['Maharashtra'].ideas;
                         text4.textContent = dataOfmap['Maharashtra'].state_name;
                         text5.textContent = dataOfmap['Maharashtra'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-ML')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Meghalaya'].reg_schools;
+
+                document.getElementById('IN-ML')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Meghalaya'].reg_schools;
                         text1.textContent = dataOfmap['Meghalaya'].teams;
                         text2.textContent = dataOfmap['Meghalaya'].students;
                         text3.textContent = dataOfmap['Meghalaya'].ideas;
                         text4.textContent = dataOfmap['Meghalaya'].state_name;
                         text5.textContent = dataOfmap['Meghalaya'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-MN')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Manipur'].reg_schools;
+
+                document.getElementById('IN-MN')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Manipur'].reg_schools;
                         text1.textContent = dataOfmap['Manipur'].teams;
                         text2.textContent = dataOfmap['Manipur'].students;
                         text3.textContent = dataOfmap['Manipur'].ideas;
                         text4.textContent = dataOfmap['Manipur'].state_name;
                         text5.textContent = dataOfmap['Manipur'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-MP')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Madhya Pradesh'].reg_schools;
+
+                document.getElementById('IN-MP')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Madhya Pradesh'].reg_schools;
                         text1.textContent = dataOfmap['Madhya Pradesh'].teams;
                         text2.textContent = dataOfmap['Madhya Pradesh'].students;
                         text3.textContent = dataOfmap['Madhya Pradesh'].ideas;
                         text4.textContent = dataOfmap['Madhya Pradesh'].state_name;
                         text5.textContent = dataOfmap['Madhya Pradesh'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-MZ')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Mizoram'].reg_schools;
+
+                document.getElementById('IN-MZ')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Mizoram'].reg_schools;
                         text1.textContent = dataOfmap['Mizoram'].teams;
                         text2.textContent = dataOfmap['Mizoram'].students;
                         text3.textContent = dataOfmap['Mizoram'].ideas;
                         text4.textContent = dataOfmap['Mizoram'].state_name;
                         text5.textContent = dataOfmap['Mizoram'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-NL')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Nagaland'].reg_schools;
+
+                document.getElementById('IN-NL')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Nagaland'].reg_schools;
                         text1.textContent = dataOfmap['Nagaland'].teams;
                         text2.textContent = dataOfmap['Nagaland'].students;
                         text3.textContent = dataOfmap['Nagaland'].ideas;
                         text4.textContent = dataOfmap['Nagaland'].state_name;
                         text5.textContent = dataOfmap['Nagaland'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-OR')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Odisha'].reg_schools;
+
+                document.getElementById('IN-OR')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Odisha'].reg_schools;
                         text1.textContent = dataOfmap['Odisha'].teams;
                         text2.textContent = dataOfmap['Odisha'].students;
                         text3.textContent = dataOfmap['Odisha'].ideas;
                         text4.textContent = dataOfmap['Odisha'].state_name;
                         text5.textContent = dataOfmap['Odisha'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-PB')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Punjab'].reg_schools;
+
+                document.getElementById('IN-PB')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Punjab'].reg_schools;
                         text1.textContent = dataOfmap['Punjab'].teams;
                         text2.textContent = dataOfmap['Punjab'].students;
                         text3.textContent = dataOfmap['Punjab'].ideas;
                         text4.textContent = dataOfmap['Punjab'].state_name;
                         text5.textContent = dataOfmap['Punjab'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-PY')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Puducherry'].reg_schools;
+
+                document.getElementById('IN-PY')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Puducherry'].reg_schools;
                         text1.textContent = dataOfmap['Puducherry'].teams;
                         text2.textContent = dataOfmap['Puducherry'].students;
                         text3.textContent = dataOfmap['Puducherry'].ideas;
                         text4.textContent = dataOfmap['Puducherry'].state_name;
                         text5.textContent = dataOfmap['Puducherry'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-RJ')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Rajasthan'].reg_schools;
+
+                document.getElementById('IN-RJ')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Rajasthan'].reg_schools;
                         text1.textContent = dataOfmap['Rajasthan'].teams;
                         text2.textContent = dataOfmap['Rajasthan'].students;
                         text3.textContent = dataOfmap['Rajasthan'].ideas;
                         text4.textContent = dataOfmap['Rajasthan'].state_name;
                         text5.textContent = dataOfmap['Rajasthan'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-SK')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Sikkim'].reg_schools;
+
+                document.getElementById('IN-SK')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Sikkim'].reg_schools;
                         text1.textContent = dataOfmap['Sikkim'].teams;
                         text2.textContent = dataOfmap['Sikkim'].students;
                         text3.textContent = dataOfmap['Sikkim'].ideas;
                         text4.textContent = dataOfmap['Sikkim'].state_name;
                         text5.textContent = dataOfmap['Sikkim'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-TG')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Telangana'].reg_schools;
+
+                document.getElementById('IN-TG')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Telangana'].reg_schools;
                         text1.textContent = dataOfmap['Telangana'].teams;
                         text2.textContent = dataOfmap['Telangana'].students;
                         text3.textContent = dataOfmap['Telangana'].ideas;
                         text4.textContent = dataOfmap['Telangana'].state_name;
                         text5.textContent = dataOfmap['Telangana'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-TN')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Tamil Nadu'].reg_schools ;
+
+                document.getElementById('IN-TN')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Tamil Nadu'].reg_schools;
                         text1.textContent = dataOfmap['Tamil Nadu'].teams;
                         text2.textContent = dataOfmap['Tamil Nadu'].students;
                         text3.textContent = dataOfmap['Tamil Nadu'].ideas;
                         text4.textContent = dataOfmap['Tamil Nadu'].state_name;
                         text5.textContent = dataOfmap['Tamil Nadu'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-TR')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Tripura'].reg_schools;
+
+                document.getElementById('IN-TR')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Tripura'].reg_schools;
                         text1.textContent = dataOfmap['Tripura'].teams;
                         text2.textContent = dataOfmap['Tripura'].students;
                         text3.textContent = dataOfmap['Tripura'].ideas;
                         text4.textContent = dataOfmap['Tripura'].state_name;
                         text5.textContent = dataOfmap['Tripura'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-UP')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Uttar Pradesh'].reg_schools;
+
+                document.getElementById('IN-UP')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Uttar Pradesh'].reg_schools;
                         text1.textContent = dataOfmap['Uttar Pradesh'].teams;
                         text2.textContent = dataOfmap['Uttar Pradesh'].students;
                         text3.textContent = dataOfmap['Uttar Pradesh'].ideas;
                         text4.textContent = dataOfmap['Uttar Pradesh'].state_name;
                         text5.textContent = dataOfmap['Uttar Pradesh'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-UT')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Uttarakhand'].reg_schools;
+
+                document.getElementById('IN-UT')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Uttarakhand'].reg_schools;
                         text1.textContent = dataOfmap['Uttarakhand'].teams;
                         text2.textContent = dataOfmap['Uttarakhand'].students;
                         text3.textContent = dataOfmap['Uttarakhand'].ideas;
                         text4.textContent = dataOfmap['Uttarakhand'].state_name;
                         text5.textContent = dataOfmap['Uttarakhand'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-        
-                    document.getElementById('IN-WB')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['West Bengal'].reg_schools;
+
+                document.getElementById('IN-WB')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['West Bengal'].reg_schools;
                         text1.textContent = dataOfmap['West Bengal'].teams;
                         text2.textContent = dataOfmap['West Bengal'].students;
                         text3.textContent = dataOfmap['West Bengal'].ideas;
                         text4.textContent = dataOfmap['West Bengal'].state_name;
                         text5.textContent = dataOfmap['West Bengal'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-                    document.getElementById('IN-LD')
-                    .addEventListener('mouseover', function(e) {
-                        text.textContent =  dataOfmap['Lakshadweep'].reg_schools;
+                document.getElementById('IN-LD')
+                    .addEventListener('mouseover', function (e) {
+                        text.textContent = dataOfmap['Lakshadweep'].reg_schools;
                         text1.textContent = dataOfmap['Lakshadweep'].teams;
                         text2.textContent = dataOfmap['Lakshadweep'].students;
                         text3.textContent = dataOfmap['Lakshadweep'].ideas;
                         text4.textContent = dataOfmap['Lakshadweep'].state_name;
                         text5.textContent = dataOfmap['Lakshadweep'].reg_mentors;
-                        addEventListener("mouseout", function(e) {
-                        text.textContent =   dataOfmap['all'].reg_schools;
-                        text1.textContent = dataOfmap['all'].teams;
-                        text2.textContent = dataOfmap['all'].students;
-                        text3.textContent = dataOfmap['all'].ideas;
-                        text4.textContent = "INDIA"
-                        text5.textContent = dataOfmap['all'].reg_mentors;
+                        addEventListener("mouseout", function (e) {
+                            text.textContent = dataOfmap['all'].reg_schools;
+                            text1.textContent = dataOfmap['all'].teams;
+                            text2.textContent = dataOfmap['all'].students;
+                            text3.textContent = dataOfmap['all'].ideas;
+                            text4.textContent = "INDIA"
+                            text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
 
 
-                                document.addEventListener("DOMContentLoaded", function () {
-                                var modal = document.getElementById("myModal");
-                                var btns = document.querySelectorAll(".youtube-popup");
-                                var span = document.getElementsByClassName("close")[0];
-                                var iframe = document.getElementById("modalIframe");
+                document.addEventListener("DOMContentLoaded", function () {
+                    var modal = document.getElementById("myModal");
+                    var btns = document.querySelectorAll(".youtube-popup");
+                    var span = document.getElementsByClassName("close")[0];
+                    var iframe = document.getElementById("modalIframe");
 
-                                btns.forEach(function (btn) {
-                                    btn.onclick = function () {
-                                        var videoId = btn.getAttribute("data-video-id");
-                                        iframe.src = "https://www.youtube.com/embed/" + videoId;
-                                        modal.style.display = "block";
-                                    }
-                                });
+                    btns.forEach(function (btn) {
+                        btn.onclick = function () {
+                            var videoId = btn.getAttribute("data-video-id");
+                            iframe.src = "https://www.youtube.com/embed/" + videoId;
+                            modal.style.display = "block";
+                        }
+                    });
 
-                                span.onclick = function () {
-                                    modal.style.display = "none";
-                                    iframe.src = ""; // Clear the iframe src to stop video playback
-                                }
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                        iframe.src = ""; // Clear the iframe src to stop video playback
+                    }
 
-                                window.onclick = function (event) {
-                                    if (event.target == modal) {
-                                        modal.style.display = "none";
-                                        iframe.src = ""; // Clear the iframe src to stop video playback
-                                    }
-                                }
-                            });
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                            iframe.src = ""; // Clear the iframe src to stop video playback
+                        }
+                    }
+                });
 
-                            var snapC = Snap("#svgC"); 
+                var snapC = Snap("#svgC");
 
-                        // SVG C - "Squiggly" Path
-                        var myPathC = snapC.path("M62.9 14.9c-25-7.74-56.6 4.8-60.4 24.3-3.73 19.6 21.6 35 39.6 37.6 42.8 6.2 72.9-53.4 116-58.9 65-18.2 191 101 215 28.8 5-16.7-7-49.1-34-44-34 11.5-31 46.5-14 69.3 9.38 12.6 24.2 20.6 39.8 22.9 91.4 9.05 102-98.9 176-86.7 18.8 3.81 33 17.3 36.7 34.6 2.01 10.2.124 21.1-5.18 30.1").attr({
-                        id: "squiggle",
-                        fill: "none",
-                        strokeWidth: "1",
-                        stroke: "rgba(0,0,0,0.1)",
-                        strokeMiterLimit: "10",
-                        strokeDasharray: "5 10",
-                        strokeDashOffset: "180"
-                        });
-                    
+                // SVG C - "Squiggly" Path
+                var myPathC = snapC.path("M62.9 14.9c-25-7.74-56.6 4.8-60.4 24.3-3.73 19.6 21.6 35 39.6 37.6 42.8 6.2 72.9-53.4 116-58.9 65-18.2 191 101 215 28.8 5-16.7-7-49.1-34-44-34 11.5-31 46.5-14 69.3 9.38 12.6 24.2 20.6 39.8 22.9 91.4 9.05 102-98.9 176-86.7 18.8 3.81 33 17.3 36.7 34.6 2.01 10.2.124 21.1-5.18 30.1").attr({
+                    id: "squiggle",
+                    fill: "none",
+                    strokeWidth: "1",
+                    stroke: "rgba(0,0,0,0.1)",
+                    strokeMiterLimit: "10",
+                    strokeDasharray: "5 10",
+                    strokeDashOffset: "180"
+                });
+
             </script>
 
 
