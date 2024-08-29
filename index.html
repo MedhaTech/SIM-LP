@@ -27,7 +27,167 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive Stylesheet -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+<style>.it_comp_work_process {
+	position: relative;
+	text-align: center;
+	float: left;
+	width: 100%;
+}
 
+.it_comp_work_process .step-num {
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 4px 15px 0 #f0eaf5;
+	color: #C52C28;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+	height: 50px;
+	right: 0;
+	line-height: 55px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 50px;
+}
+
+.theme-bg .it_comp_work_process h4,
+.theme-bg .it_comp_work_process p {
+	color: #ffffff;
+}
+
+.it_comp_work_process .step-icon {
+	background: #ffffff;
+	width: 120px;
+	height: 120px;
+	position: relative;
+	border-radius: 50%;
+	line-height: 130px;
+	font-size: 40px;
+	text-align: center;
+	color: #1c1d3e;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(93, 136, 250, 0.5);
+	box-shadow: 0px 0px 30px 0px rgba(93, 136, 250, 0.5);
+}
+
+.it_comp_working_wrapper {
+	padding-bottom: 100px;
+	position: relative;
+	padding-top: 30px;
+}
+
+.it_comp_working_wrapper .step-icon {
+	color: #333;
+}
+
+.it_comp_work_process .step-desc h4 a {
+	color: #111;
+	margin-bottom: 15px;
+	font-size: 22px;
+	display: inline-block;
+	text-transform: capitalize;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.it_comp_work_process:hover .step-desc h4 a {
+	color: #C52C28;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.it_comp_working_wrapper .step-icon {
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+.it_comp_work_process .step-num-box {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+	padding-top: 60px;
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 45%;
+}
+
+.close {
+	color: #000000;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+.col-centered {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+@media (max-width: 700px) {
+	.modal{
+		padding-top: 150px;
+	}
+	.modal-content {
+		background-color: #fefefe;
+		margin: 5% auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 90%;
+		zoom:45%;
+	}
+	
+}
+#it_comp_svg_container {
+	position: absolute;
+	width: 100%;
+	left: 52%;
+	transform: translateX(-50%);
+	width: 75%;
+	bottom: 104px;
+    
+}
+
+#svgC {
+    margin: 0 auto;
+	width: 100%;
+}
+
+</style>
 
 </head>
 
@@ -948,6 +1108,135 @@
     </div>
     <!--impact end-->
 
+    <!--videos-->
+    <!-- <section class="testimonial-area bg-image padding-top-120 padding-bottom-120" id="videos">
+     
+    <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+        <div class="it_comp_heading_wrapper text-center">
+
+            <h2  class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="videos-title" style="text-transform: none;">Help resources to navigate the platform</h2>
+            <h1 class="lang-change"  data-lang="videos-title2" style="font-size: 18px;" >Please refer to the help videos below on how to Register, Log
+                In, Create Team and Submit
+                your idea. </h1>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container" >
+        <div class="row row-centered justify-content-center">
+            <div id="it_comp_svg_container">
+                <svg id="svgC" width="100%" height="100%" viewBox="0 0 620 120"
+                    preserveAspectRatio="xMidYMid meet">
+                    
+                </svg>
+            </div>
+
+          
+           <div class="col-lg-2 col-md-6 col-centered">
+                <div class="it_comp_work_process">
+                    <div class="box-loader"> <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="step-num-box">
+                        <div class="step-icon animate__animated animate__fadeInUp animated">
+                            <img src="assets/images/image.png" alt="img" class="youtube-popup" data-video-id="xe9bV7I3pQs">
+                        </div>
+                        <div class="step-num">01</div>
+                    </div>
+                    <div class="step-desc">
+                        <h4><a class="lang-change"  data-lang="videos-video_1" >VIDEO1</a></h4>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-2 col-md-6 col-centered">
+                <div class="it_comp_work_process">
+                    <div class="step-num-box">
+                        <div class="step-icon animate__animated animate__fadeInUp animated">
+                            <img src="assets/images/image.png" alt="img" class="youtube-popup" data-video-id="mxbmaf7B3I4">
+                        </div>
+                        <div class="step-num">02</div>
+                    </div>
+                    <div class="step-desc">
+                        <h4><a class="lang-change"  data-lang="videos-video_2">VIDEO2</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-centered">
+                <div class="it_comp_work_process">
+                    <div class="box-loader"> <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="step-num-box">
+                        <div class="step-icon animate__animated animate__fadeInUp animated">
+                            <img src="assets/images/image.png" alt="img" class="youtube-popup" data-video-id="xe9bV7I3pQs">
+                        </div>
+                        <div class="step-num">03</div>
+                    </div>
+                    <div class="step-desc">
+                        <h4><a class="lang-change"  data-lang="videos-video_3" >VIDEO1</a></h4>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-2 col-md-6 col-centered">
+                <div class="it_comp_work_process">
+                    <div class="step-num-box">
+                        <div class="step-icon animate__animated animate__fadeInUp animated">
+                            <img src="assets/images/image.png" alt="img" class="youtube-popup" data-video-id="mxbmaf7B3I4">
+                        </div>
+                        <div class="step-num">04</div>
+                    </div>
+                    <div class="step-desc">
+                        <h4><a class="lang-change"  data-lang="videos-video_4">VIDEO2</a></h4>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-2 col-md-6 col-centered">
+                <div class="it_comp_work_process">
+                    <div class="step-num-box">
+                        <div class="step-icon">
+                            <img src="assets/images/image.png" alt="img" class="youtube-popup" data-video-id="XlR6C_FmIGM">
+                        </div>
+                        <div class="step-num">05</div>
+                    </div>
+                    <div class="step-desc">
+                        <h4><a>VIDEO3</a></h4>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="col-lg-2 col-md-6 col-centered">
+                <div class="it_comp_work_process">
+                    <div class="step-num-box">
+                        <div class="step-icon">
+                            <img src="assets/images/image.png" alt="img" class="youtube-popup" data-video-id="IoaGAVQ38-I">
+                        </div>
+                        <div class="step-num">06</div>
+                    </div>
+                    <div class="step-desc">
+                        <h4><a>VIDEO4</a></h4>
+                    </div>
+                </div>
+            </div> -->
+       <!--</div>
+    </div>
+</section>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" style="padding-left: 550px;">&times;</span>
+            <iframe id="modalIframe" width="100%" height="430" src="" style="padding-top:20px"; title="YouTube video player" frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div> -->
+
+     <!--videos end-->
+
+
     <!--partners wrapper start-->
     <div class="header-bottom-area  padding-top-100" id="partners">
         <div class="container">
@@ -1693,6 +1982,86 @@
             <!-- back to top area end -->
 
             <script>
+
+                    function redirectToPage(event) {
+                            const stateId = event.target.id;
+
+            
+                                const stateUrls = {
+                                'IN-AP': 'AP.html',
+                                'IN-JK': 'JK.html',
+                                'IN-HP': 'HP.html',
+                                'IN-AR': 'ANP.html',
+                                'IN-AS': 'AS.html',
+                                'IN-DL': 'DL.html',
+                                'IN-GJ': 'GR.html',
+                                'IN-KL': 'KL.html',
+                                'IN-KA': 'KN.html',
+                                'IN-MP': 'MP.html',
+                                'IN-RJ': 'RJ.html',
+                                'IN-UT': 'UK.html',
+                                'IN-HR': 'HR.html',
+                                'IN-UP': 'UP.html',
+                                'IN-BR': 'BR.html',
+                                'IN-JH': 'JH.html',
+                                'IN-WB': 'WB.html',
+                                'IN-OR': 'OD.html',
+                                'IN-SK': 'SK.html',
+                                'IN-NL': 'NG.html',
+                                'IN-TR': 'TR.html',
+                                'IN-MZ': 'MR.html',
+                                'IN-MN': 'MN.html',
+                                'IN-CT': 'CH.html',
+                                'IN-TG': 'TL.html',
+                                'IN-GA': 'GO.html',
+                                'IN-AN': 'AN.html',
+                                'IN-TN': 'TN.html',
+                                'IN-MH': 'MA.html',
+                                'IN-PB': 'PB.html',
+                                'IN-ML': 'ME.html',
+                            };
+
+                
+                            if (stateUrls[stateId]) {
+                                window.location.href = stateUrls[stateId];
+                            }
+                        }
+
+            
+                        document.getElementById('IN-AP').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-JK').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-AR').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-AS').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-DL').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-GJ').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-KL').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-KA').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-MP').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-RJ').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-HP').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-UT').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-HR').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-UP').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-BR').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-JH').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-WB').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-OR').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-SK').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-NL').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-TR').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-MZ').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-MN').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-CT').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-TG').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-GA').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-AN').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-TN').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-MH').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-PB').addEventListener('click', redirectToPage);
+                        document.getElementById('IN-ML').addEventListener('click', redirectToPage);
+
+
+            
                 const api_url = "https://api.schoolinnovationmarathon.org/api/v1/dashboard/mapStats";
                 var api_data;
                 let dataOfmap = {};
@@ -2375,6 +2744,47 @@
                         text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
+
+
+                                document.addEventListener("DOMContentLoaded", function () {
+                                var modal = document.getElementById("myModal");
+                                var btns = document.querySelectorAll(".youtube-popup");
+                                var span = document.getElementsByClassName("close")[0];
+                                var iframe = document.getElementById("modalIframe");
+
+                                btns.forEach(function (btn) {
+                                    btn.onclick = function () {
+                                        var videoId = btn.getAttribute("data-video-id");
+                                        iframe.src = "https://www.youtube.com/embed/" + videoId;
+                                        modal.style.display = "block";
+                                    }
+                                });
+
+                                span.onclick = function () {
+                                    modal.style.display = "none";
+                                    iframe.src = ""; // Clear the iframe src to stop video playback
+                                }
+
+                                window.onclick = function (event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                        iframe.src = ""; // Clear the iframe src to stop video playback
+                                    }
+                                }
+                            });
+
+                            var snapC = Snap("#svgC"); 
+
+                        // SVG C - "Squiggly" Path
+                        var myPathC = snapC.path("M62.9 14.9c-25-7.74-56.6 4.8-60.4 24.3-3.73 19.6 21.6 35 39.6 37.6 42.8 6.2 72.9-53.4 116-58.9 65-18.2 191 101 215 28.8 5-16.7-7-49.1-34-44-34 11.5-31 46.5-14 69.3 9.38 12.6 24.2 20.6 39.8 22.9 91.4 9.05 102-98.9 176-86.7 18.8 3.81 33 17.3 36.7 34.6 2.01 10.2.124 21.1-5.18 30.1").attr({
+                        id: "squiggle",
+                        fill: "none",
+                        strokeWidth: "1",
+                        stroke: "rgba(0,0,0,0.1)",
+                        strokeMiterLimit: "10",
+                        strokeDasharray: "5 10",
+                        strokeDashOffset: "180"
+                        });
                     
             </script>
 
