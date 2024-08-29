@@ -47,7 +47,7 @@
           "i_point2":" Followed by Innovation & Prototyping Phase: Aug 1st to 30th Nov 2024.",
           "winners":"WINNERS",
           "w_point1":"Announcement of Top",
-          "w_point1_1":" Teams in Jan 2025",
+          "w_point1_1":"Teams in Jan 2025",
 
           "w_point2":"Funding support to teams in March 2025",
           "sip":"SIP",
@@ -192,5 +192,20 @@
             "faq_q5":"What is the deadline for submitting entries? ",
             "faq_a5":"The last date to submit entries is November 30th, 2024."
         }
+        },
+        {
+          "videos": {
+            "title":"Help resources to navigate the platform",
+            "title2":"Please refer to the help videos below on how to Register, Log in, Create Team and Submit your idea.",
+            "video_1":"name",
+            "video_2":"name.",
+            "video_3":"name",
+            "video_4":"name.",
+            "video_5":"name",
+            "video_6":"name"
+            
         }
+        }
+
+
 ]
