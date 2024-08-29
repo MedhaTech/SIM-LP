@@ -192,6 +192,19 @@
             "faq_q5":"प्रविष्टियाँ जमा करने की अंतिम तिथि क्या है?",
             "faq_a5":"प्रविष्टियाँ जमा करने की अंतिम तिथि 30 नवंबर, 2024 है।"
         }
+        },
+        {
+          "videos": {
+            "title":"Help resources to navigate the platform",
+            "title2":"Please refer to the help videos below on how to Register, Log in, Create Team and Submit your idea.",
+            "video_1":"name",
+            "video_2":"name.",
+            "video_3":"name",
+            "video_4":"name.",
+            "video_5":"name",
+            "video_6":"name"
+            
+        }
         }
 
 
