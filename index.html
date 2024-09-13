@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive Stylesheet -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="stylesheet" href="static/styles.css">
+    
     <style>
         .it_comp_work_process {
             position: relative;
@@ -330,8 +333,8 @@
         <!--hero section end-->
     </div>
     <!--about us start-->
-    <div id="about_us" class="create-content-area-03 padding-top-100">
-        <div class="container">
+    <div id="about_us" class="create-content-area-03 padding-top-100" style="background-color: white;">
+        <div class="container" >
             <div class="row">
                 <div class="col-lg-6 wow animate__animated animate__fadeInUp animated lang-change">
                     <div class="section-title">
@@ -465,7 +468,7 @@
     -->
     <!--old Road Map end-->
     <!--Road Map start-->
-    <section style="background-image: url(assets/images/bg.png);" id="road_map">
+    <section style="background-image: url(assets/images/bg.png); background-color: white;" id="road_map">
         <div class="build-area-02">
             <div class="container">
                 <div class="row justify-content-center">
@@ -566,7 +569,7 @@
 
     <!-- themes area start  -->
     <section class="testimonial-area bg-image padding-top-100 padding-bottom-90"
-        style="background-image: url(assets/images/bg3.png);" id="themes">
+        style="background-image: url(assets/images/bg3.png); background-color: white;" id="themes">
         <div class="shape-02">
             <img src="assets/images/logoup2.png" alt="">
         </div>
@@ -839,7 +842,7 @@
 
 
     <!--Prizes start here-->
-    <div class="offer-area padding-bottom-400 padding-top-100 bg-image" id="prizes">
+    <div class="offer-area padding-bottom-400 padding-top-100 bg-image" id="prizes" style="background-color: white;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -855,7 +858,7 @@
             </div>
         </div>
     </div>
-    <div class="offer-item-area">
+    <div class="offer-item-area" style="background-color: white;">
         <div class="container">
             <div class="offer-item-wrap m-top">
                 <div class="row">
@@ -996,7 +999,7 @@
 
     <!--impact start-->
     <div class="call-to-action-area-01 bg-image padding-top-120"
-        style="background-image: url(assets/images/impactbg.png);" id="impact">
+        style="background-image: url(assets/images/impactbg.png); background-color: white;" id="impact">
         <div class="container">
             <div class="call-to-action-inner style-08">
                 <div class="lawyer_wrraper advantege-work-area full_width animated-row">
@@ -1315,7 +1318,7 @@
 
 
     <!--partners wrapper start-->
-    <div class="header-bottom-area  padding-top-100" id="partners">
+    <div class="header-bottom-area  padding-top-100" id="partners"style="background-color: white;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10">
@@ -1376,7 +1379,7 @@
     <!--partners wrapper end-->
     <!-- testimonial area start  -->
     <section class="testimonial-area bg-image padding-top-100 padding-bottom-120" id="testimonial"
-        style="background-image: url(assets/images/t1.png);">
+        style="background-image: url(assets/images/t1.png); background-color: white;">
         <div class="container">
             <div class="section-title desktop-center blue margin-bottom-20">
                 <h2 class="title wow animate__animated animate__fadeInUp animated lang-change"
@@ -1729,7 +1732,7 @@
     </div>-->
 
     <!--FAQS area starts-->
-    <div id="faq" class="frequently-area contact-area padding-bottom-120 padding-top-100">
+    <div id="faq" class="frequently-area contact-area padding-bottom-120 padding-top-100" style="background-color: white;" >
         <div class="bg-image" data-parallax='{"x": -50, "y": 0}' style="background-image: url(assets/images/faq1.png);">
         </div>
 
@@ -1842,33 +1845,35 @@
     </div>
     <!--FAQS area ends-->
 
-    <!--chatbot start-->
+    <!--chatbot1 start-->
     <div class="chatbox-container">
-    <div class="chatbox">
-      <div class="chatbox-heading">
-          <img src="http://3.26.190.181:5001/static/assets/Mira_white.png" alt="Chatbot Image" width="100" height="45">
-        <h2>Mira</h2>
-        <div class="refresh-button-container">
-          <div class="refresh-button">&#8634;</div>
-        </div>
-        <div class="close-button-container" >
-          <div class="close-button">&#10006;</div>
-        </div>
-      </div>
-      <div class="chat-messages" id="chatMessages"></div>
-      
-      <div class="input-box">
+        <div class="chatbox">
+          <div class="chatbox-heading">
+              <img src="./static/assets/bot-image.png" alt="Chatbot Image" width="100" height="45">
+            <h3 style="color: #fff;">Chatbot</h3>
+            <div class="refresh-button-container">
+              <div class="refresh-button">&#8634;</div>
+            </div>
+            <div class="close-button-container" >
+              <div class="close-button">&#10006;</div>
+            </div>
+          </div>
           
-        <input type="text" id="userMessage" name="message" class="user-input" placeholder="Type your message...">
-        <button id="send-button" class="send-button" >&#11166;</button>
-        <div id="chatMessages"></div>
+          <div class="chat-messages" id="chatMessages"></div>
+          <div class="powered-by">
+            Powered by: <span class="medha-tech">Medha Tech</span>
+          </div> 
+        </div>
       </div>
       
-    </div>
-  </div>
-  <img src="http://3.26.190.181:5001/static/assets/chatbotimage.png" alt="Messenger Icon" class="messenger-icon">
-
-    <!--chatbot end-->
+      <!-- <div class="speech-bubble">
+        <div class="speech-bubble-close-button" id="closeSpeechBubble">&#10006;</div>
+        I am a chatbot! How can I help you?
+      </div> -->
+      <img src="./static/assets/BMSCEMessenger.webp" alt="Messenger Icon" class="messenger-icon" >
+    
+    <!--chatbot1 end-->
+     
     <!--
     <div id="contact" class="contact-area padding-bottom-120 padding-top-110">
         <div class="bg-image" data-parallax='{"x": -50, "y": 0}' style="background-image: url(assets/img/contact/01.png);"></div>
@@ -2841,45 +2846,45 @@
                     });
 
 
-                document.addEventListener("DOMContentLoaded", function () {
-                    var modal = document.getElementById("myModal");
-                    var btns = document.querySelectorAll(".youtube-popup");
-                    var span = document.getElementsByClassName("close")[0];
-                    var iframe = document.getElementById("modalIframe");
+                // document.addEventListener("DOMContentLoaded", function () {
+                //     var modal = document.getElementById("myModal");
+                //     var btns = document.querySelectorAll(".youtube-popup");
+                //     var span = document.getElementsByClassName("close")[0];
+                //     var iframe = document.getElementById("modalIframe");
 
-                    btns.forEach(function (btn) {
-                        btn.onclick = function () {
-                            var videoId = btn.getAttribute("data-video-id");
-                            iframe.src = "https://www.youtube.com/embed/" + videoId;
-                            modal.style.display = "block";
-                        }
-                    });
+                //     btns.forEach(function (btn) {
+                //         btn.onclick = function () {
+                //             var videoId = btn.getAttribute("data-video-id");
+                //             iframe.src = "https://www.youtube.com/embed/" + videoId;
+                //             modal.style.display = "block";
+                //         }
+                //     });
 
-                    span.onclick = function () {
-                        modal.style.display = "none";
-                        iframe.src = ""; // Clear the iframe src to stop video playback
-                    }
+                //     span.onclick = function () {
+                //         modal.style.display = "none";
+                //         iframe.src = ""; // Clear the iframe src to stop video playback
+                //     }
 
-                    window.onclick = function (event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                            iframe.src = ""; // Clear the iframe src to stop video playback
-                        }
-                    }
-                });
+                //     window.onclick = function (event) {
+                //         if (event.target == modal) {
+                //             modal.style.display = "none";
+                //             iframe.src = ""; // Clear the iframe src to stop video playback
+                //         }
+                //     }
+                // });
 
-                var snapC = Snap("#svgC");
+                // var snapC = Snap("#svgC");
 
-                // SVG C - "Squiggly" Path
-                var myPathC = snapC.path("M62.9 14.9c-25-7.74-56.6 4.8-60.4 24.3-3.73 19.6 21.6 35 39.6 37.6 42.8 6.2 72.9-53.4 116-58.9 65-18.2 191 101 215 28.8 5-16.7-7-49.1-34-44-34 11.5-31 46.5-14 69.3 9.38 12.6 24.2 20.6 39.8 22.9 91.4 9.05 102-98.9 176-86.7 18.8 3.81 33 17.3 36.7 34.6 2.01 10.2.124 21.1-5.18 30.1").attr({
-                    id: "squiggle",
-                    fill: "none",
-                    strokeWidth: "1",
-                    stroke: "rgba(0,0,0,0.1)",
-                    strokeMiterLimit: "10",
-                    strokeDasharray: "5 10",
-                    strokeDashOffset: "180"
-                });
+                // // SVG C - "Squiggly" Path
+                // var myPathC = snapC.path("M62.9 14.9c-25-7.74-56.6 4.8-60.4 24.3-3.73 19.6 21.6 35 39.6 37.6 42.8 6.2 72.9-53.4 116-58.9 65-18.2 191 101 215 28.8 5-16.7-7-49.1-34-44-34 11.5-31 46.5-14 69.3 9.38 12.6 24.2 20.6 39.8 22.9 91.4 9.05 102-98.9 176-86.7 18.8 3.81 33 17.3 36.7 34.6 2.01 10.2.124 21.1-5.18 30.1").attr({
+                //     id: "squiggle",
+                //     fill: "none",
+                //     strokeWidth: "1",
+                //     stroke: "rgba(0,0,0,0.1)",
+                //     strokeMiterLimit: "10",
+                //     strokeDasharray: "5 10",
+                //     strokeDashOffset: "180"
+                // });
 
             </script>
 
@@ -2913,7 +2918,8 @@
             <!-- main js -->
             <script src="assets/js/main.js"></script>
             <script src="assets/js/map.js"></script>
-            <script src="http://3.26.190.181:5001/static/script.js"></script>
+            <script src="static/script.js"></script>
+          
             
 
 </body>
