@@ -671,7 +671,7 @@ function displayTeacherPortalOptions() {
                 displayTeacherCourseOptions();
             } 
             else if (optionText === 'Student teams Creation / Management') {
-                botResponse = "How can I help you with pre survey";
+                botResponse = "How can I help you with student teams creation";
                 displayBotMessage(botResponse);
                 displayTeacherManagementOptions();
             }  
@@ -1348,11 +1348,8 @@ function displayTeacherPortalOptions() {
                 'How can I create and manage student teams?',
                 'How do I access the full panel of the platform after logging in?',
                 'What should I do if I see a survey prompt upon logging in for the first time?',
-                'Where can I find the teacher courses on the Dashboard?',
-                'How do I log in to the Student Dashboard?',
-                'What information can I view on my Student Dashboard?',
-                'How can I track my progress in the School Innovation Marathon?',
-                'How can I switch the language of the portal on the Dashboard?'
+                'Where can I find the teacher courses on the Dashboard?'
+               
             ];
 
             subOptions.forEach(function(optionText) {
@@ -1425,18 +1422,7 @@ function displayTeacherPortalOptions() {
                     3. Download Reports: Use the Key Icon to download progress reports and view student submissions.
 
                     For detailed instructions, please watch <a href="https://www.youtube.com/watch?v=OIsCwczsT0o" target="_blank"><br>Video</a>`,
-                'How do I log in to the Student Dashboard?': `1. Visit [schoolinnovationmarathon.org/login]
-                2. Click on Student Team Login, enter your team ID, and password (team name in lowercase).
-                3. Click Sign In to access your dashboard.`,
-                'What information can I view on my Student Dashboard?': `1. View team member details, including their class and progress.
-                2. Track your course progress, quizzes passed, and action items.
-                3. Check the status of each stage like pre-survey, idea submission, and post-survey.`,
-                'How can I track my progress in the School Innovation Marathon?': `1. Use the SIM Roadmap to see stages like pre-survey, course, and idea submission.
-                    2. Status updates: "Not Started," "In Progress," and "Completed."
-                    3. Check action items and completed tasks in the dashboard.`,
-                'How can I switch the language of the portal on the Dashboard?': `1. Go to the top-right corner of the dashboard.
-                2. Click the dropdown menu to select a language.
-                3. Choose from English, Telugu, Hindi, or Tamil to translate the interface.`,
+               
             };
 
             // Check if the clicked option is in the predefined questions list
@@ -1742,10 +1728,90 @@ function displayTeacherPortalOptions() {
                 displayBotMessage(botResponse);
                 displayStudentCertificateOptions();
             } 
+            else if (optionText === 'Dashboard') {
+                botResponse = "How can I help you with certificate";
+                displayBotMessage(botResponse);
+                displayStudentDashboardOptions();
+            } 
         }
         function setOptionStyles(optionElement, backgroundColor, textColor) {
             optionElement.style.backgroundColor = backgroundColor;
             optionElement.style.color = textColor;
+        }
+        function displayStudentDashboardOptions() {
+            const subOptions = [
+                'How do I log in to the Student Dashboard?',
+                'What information can I view on my Student Dashboard?',
+                'How can I track my progress in the School Innovation Marathon?',
+                'How can I switch the language of the portal on the Dashboard?'
+                
+            ];
+
+            subOptions.forEach(function(optionText) {
+                const optionContainer = document.createElement('div');
+                const optionElement = document.createElement('div');
+
+                optionContainer.classList.add('option-container');
+                optionElement.classList.add('option');
+                optionElement.textContent = optionText;
+
+                // Add consistent left margin and padding for better spacing
+                optionElement.style.margin = '3px 30px'; // 3px top/bottom margin, 30px left/right margin for all options
+                optionElement.style.padding = '5px 10px'; // Padding inside the option element for better appearance
+
+                // Click event to display user message and fetch bot response
+                optionElement.addEventListener('click', function() {
+                    displayUserMessage(optionText);
+                    setTimeout(() => fetchStudentDashboardResponse(optionText), 500);
+                });
+
+                // Hover effect events
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+
+                optionContainer.appendChild(optionElement);
+                chatBox.appendChild(optionContainer);
+            });
+
+            chatBox.scrollTop = chatBox.scrollHeight; // Ensure the chat box scrolls to display the latest added elements
+        }
+
+       
+        function fetchStudentDashboardResponse(optionText) {
+            let botResponse = '';
+
+            // Define answers for each specific student registration question
+            const answers = {
+                'How do I log in to the Student Dashboard?': `1. Visit [schoolinnovationmarathon.org/login]
+                2. Click on Student Team Login, enter your team ID, and password (team name in lowercase).
+                3. Click Sign In to access your dashboard.`,
+                'What information can I view on my Student Dashboard?': `1. View team member details, including their class and progress.
+                        2. Track your course progress, quizzes passed, and action items.
+                        3. Check the status of each stage like pre-survey, idea submission, and post-survey.
+                        4.Please watch this video for detail steps (video_002)`,
+                'How can I track my progress in the School Innovation Marathon?': `1. Use the SIM Roadmap to see stages like pre-survey, course, and idea submission.
+                    2. Status updates: "Not Started," "In Progress," and "Completed."
+                    3. Check action items and completed tasks in the dashboard.`,
+                'How can I switch the language of the portal on the Dashboard?': `1. Go to the top-right corner of the dashboard.
+                    2. Click the dropdown menu to select a language.
+                    3. Choose from English, Telugu, Hindi, or Tamil to translate the interface.
+                    4.Please watch this video for detail steps (video_002)`,
+                
+            };
+
+            // Check if the clicked option is in the predefined questions list
+            if (answers[optionText]) {
+                botResponse = answers[optionText]; // Get the answer corresponding to the question
+                displayBotMessage(botResponse); // Display the answer
+            } else {
+                botResponse = "I don't have information on that question.";
+                displayBotMessage(botResponse);
+            }
+
+            // Display feedback message after a brief delay
+            setTimeout(function () {
+                displayFeedbackMessage();
+            }, 500);
         }
         // Display sub-options for Student Registration
         function displayStudentCourseOptions() {
@@ -1796,12 +1862,10 @@ function displayTeacherPortalOptions() {
             const answers = {
                 'What is student course about ?': `The student course is designed to equip students with essential skills in problem-solving, innovation, and project development. It provides a structured curriculum that guides students through the process of identifying challenges, brainstorming solutions, and developing prototypes. The course includes interactive modules, case studies, and practical assignments to enhance their understanding and application of these concepts.`,
                 'Is student course mandatory for all the students in a team ?': `Yes, the student course is mandatory for all students in a team. Each team member is required to complete the course to ensure that everyone has the necessary knowledge and skills to contribute effectively to the project. `,
-                'How to access student Course on portal ?': `Log in to the Portal:
-                    Visit schoolinnovationmarathon.org/login, select "Student Team Login," and log in with your team ID and password (team name in lowercase).
-                    Complete the Pre-Survey:
-                    Complete the mandatory pre-survey to unlock access to the full dashboard and course.
-                    Navigate to the Dashboard:
-                    After the pre-survey, the dashboard will guide you through stages like the student course and idea submission via the SIM Roadmap.`,
+                'How to access student Course on portal ?': `1. Log in to the Portal: Use your team ID and password to log in to your Student Dashboard.
+                    2. Navigate to Course: On the SIM Roadmap, click on the course section or use the left-hand menu to select "Student Course."
+                    3. Start the Course: Follow the prompts to watch videos, complete quizzes, and download the workbook.
+                    4.Please watch this video for detail steps (video_003)`,
                 'How many quizzes do I need to pass to complete the course?': `1. The number of quizzes depends on the course modules.
                     2. Each module includes one quiz.
                     3. You must pass all quizzes to complete the course.`,
