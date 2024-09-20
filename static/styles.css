@@ -136,14 +136,15 @@ body {
   padding: 5px 10px;
   border-radius: 10px;
   margin: 5px 0;
- order: 1;
+  order: 1;
+  max-width: 70%;
  
 
 
   
 }
 .user-message-container {
-  text-align: right; /* Align user messages to the right */
+  text-align: left; /* Align user messages to the right */
   margin-bottom: 10px;
   position: relative;
   display: flex; /* Use flexbox to align items */
