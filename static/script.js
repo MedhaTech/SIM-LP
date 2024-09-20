@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
         // Create the user image element
         var userImage = document.createElement('img');
-        userImage.src = './static/assets/user-image.png'; // Replace with the actual path to your user image
+        userImage.src = './static/assets/user2.png'; // Replace with the actual path to your user image
         userImage.classList.add('user-image');
     
         // Append the user message and image to the container
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
         messageElement.innerHTML = message.replace(/\n/g, "<br>");
         messageElement.classList.add('bot-message');
         messageElement.style.color = 'black';
-        messageElement.style.textAlign = 'justify'; // Justify the text
+        
     
         var whiteLinks = messageElement.querySelectorAll('a');
         whiteLinks.forEach(function(link) {
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
         messageElement.innerHTML = message.replace(/\n/g, "<br>");
         messageElement.classList.add('bot-message');
         messageElement.style.color = 'black';
-        messageElement.style.textAlign = 'justify'; // Justify the text
+        
         
 
 
@@ -1054,7 +1054,7 @@ function displayTeacherPortalOptions() {
             const answers = {
                 ' Who can provide support to the student teams?': ` School Incharge, school Teachers, mentors of change, Alumni, and External mentors from the local school ecosystem may support the student teams`,
                 ' How can we contact mentors or program coordinators?': `You can contact Mentors or Program coordinators through the dedicated WhatsApp communication channel provided for the program.`,
-                'What should we do if we encounter problems or need assistance?': `If you encounter problems or need assistance, check the FAQ section, contact support through the portal’s contact options, or submit a support ticket with details of your issue.`,
+                ' What should we do if we encounter problems or need assistance?': `If you encounter problems or need assistance, check the FAQ section, contact support through the portal’s contact options, or submit a support ticket with details of your issue.`,
                 
 
             };
@@ -1393,7 +1393,7 @@ function displayTeacherPortalOptions() {
                     2. Navigate to "Teams": 
                     - Select the relevant team from the "Teams" section.
                     3. Find and Share Credentials: 
-                    - The Student User ID is system-generated, and the Password is the team name. Share these with the students.
+                    - The team ID is system-generated, and the Password is the team name. Share these with the students.
 
                     For detailed instructions, please watch <a href="https://www.youtube.com/watch?v=e0S4PRXLo0U" target="_blank"><br>Video</a>`,
                 'Where can I find the teacher courses on the Dashboard?': `To find teacher courses on the School Innovation Marathon Dashboard:
@@ -1511,7 +1511,7 @@ function displayTeacherPortalOptions() {
             const subOptions = [
                 'What should I do if I see a prompt to complete the Pre-Survey upon my first login?',
                 'What information is required to complete the Pre-Survey?',
-                'How do I access the Pre-Survey form if I missed it upon logging in?',
+                
                 'Can I save my progress on the Pre-Survey and return to complete it later?',
                 'What happens after I submit the Pre-Survey?',
                 
@@ -1558,7 +1558,7 @@ function displayTeacherPortalOptions() {
             const answers = {
                 'What should I do if I see a prompt to complete the Pre-Survey upon my first login?': `You should complete the Pre-Survey by clicking “Start Now” to proceed. If you choose “Do Later,” it will log you out, and you’ll need to complete it before accessing other sections of the platform.`,
                 'What information is required to complete the Pre-Survey?': `You must answer all questions on the Pre-Survey form. It’s mandatory to provide this information to access the full panel of the platform.`,
-                'How do I access the Pre-Survey form if I missed it upon logging in?': `If you missed the Pre-Survey prompt, you can access it by navigating to the survey section in the Dashboard.`,
+                
                 'Can I save my progress on the Pre-Survey and return to complete it later?': `The Pre-Survey must be completed in a single session. If you choose "Do Later," you will be logged out and will need to begin the survey again upon your next login.`,
                 'What happens after I submit the Pre-Survey?': `The Pre-Survey must be completed in a single session. If you choose "Do Later," you will be logged out and will need to begin the survey again upon your next login.`,
                 
@@ -2307,7 +2307,7 @@ function displayTeacherPortalOptions() {
         // Define answers for each specific roadmap question
         var answers = {
             'What Are themes for Idea Submission in SIM ?': "The themes for Idea Submission in the School Innovation Marathon (SIM) are:\n 1. Digital Transformation \n 2. Quality Education \n 3. Economic Empowerment \n 4. Health and Well-Being \n 5. Cultural Heritage and Creativity \n 6. Smart and Resilient Communities\n 7. Sustainable Development\n 8. Others",
-            'Can students submit ideas beyond these themes?': "The timelines for the School Innovation Marathon 2024-25 are as follows: \n July 29, 2024 – Launch of the School Innovation Marathon 2024-2025\n The program officially starts on this date with a nationwide rollout.\n July - November 2024 – Innovation & Prototyping Phase\n During this period, students work on identifying problems, conducting research, ideating, innovating, and developing prototypes.\n November 30, 2024 – Last Day to Submit Projects \n This is the deadline for students to submit their innovative projects for review. \n January 2025 – Announcement of Top 1000 Teams \n The best 1000 student teams will be selected and announced based on their submitted projects. \n March 2025 – Funding Support for Top Teams \n The top teams will receive financial support to further develop their projects and take them to the next level. \n May 2025 – Internships for Top Teams \n The most promising teams will be offered internships, providing them real-world exposure and experience to further refine their innovations."
+            'Can students submit ideas beyond these themes?': "Students must submit ideas within the specified themes. If their idea doesn't align with any of the seven suggested themes, they should use the \"Others\" category for submission."
            
         };
     
