@@ -3135,7 +3135,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 @media only screen and (max-width: 991px) {
   .navbar-area.nav-style-02 .nav-container {
-    padding: 20px 0px;
+    padding: 10px 0px;
   }
 
   .navbar-area.nav-style-02 .nav-container .navbar-toggler {
@@ -4541,6 +4541,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: white;
 }
 
 .header-area.header-bg-02 {
@@ -12444,13 +12445,13 @@ Single package item
 @media (max-width: 500px) {
   #bg-video {
     display: none;
-    /* Hide video on mobile */
+  
   }
 
   #bg-image-bg {
     display: block;
     padding-top: 100px;
-    /* Show image on mobile */
+    
   }
 }
 
@@ -12461,11 +12462,11 @@ Single package item
   }
 }
 
-/* Media query for mobile viewports up to 500px */
+
 @media (max-width: 500px) {
   #head-01 {
     margin-top: 50px;
-    /* Adjust the margin to move the section down */
+   
   }
 }
 
@@ -12490,20 +12491,23 @@ Single package item
 .custom-text-right {
   text-align: right;
   padding-right: 90px;
-  /* Adjust the padding as needed */
+  
 }
 
 
 
-/* Media query for mobile viewports up to 500px */
+
 @media (max-width: 500px) {
   .btn-wrapper a {
     margin-top: 10px;
-    /* Adjust the top margin for mobile */
+   
     width: 100%
-      /* Full width for stacked buttons */
+     
   }
 
 }
+
+
+
 
 
