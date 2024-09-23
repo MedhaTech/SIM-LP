@@ -217,7 +217,7 @@
   width: 50%; 
 }
 
-/* Add margin between rows */
+
 .counter-item-list {
   margin-top: 20px; 
 }
@@ -236,55 +236,55 @@
 }
 
 #road_map {
-    display: block; /* Default display for desktop */
+    display: block;
 }
 
 #mobile_road_map {
-    display: none; /* Default display for mobile */
+    display: none; 
 }
 
 @media (max-width: 768px) {
     #road_map {
-        display: none; /* Hide original section on mobile */
+        display: none; 
     }
 
     #mobile_road_map {
-        display: block; /* Show mobile section */
+        display: block;
     }
 }
 
 
 .mobile-arrows {
-    display: none; /* Hidden by default */
-    position: absolute; /* Positioning */
-    top: 50%; /* Center vertically */
-    width: 100%; /* Full width */
-    transform: translateY(-50%); /* Center adjustment */
-    z-index: 10; /* On top of other elements */
+    display: none;
+    position: absolute; 
+    top: 50%; 
+    width: 100%; 
+    transform: translateY(-50%); 
+    z-index: 10; 
 }
 
 .arrow {
-    background-color: rgba(255, 255, 255, 0.7); /* Background color */
-    border: none; /* No border */
-    padding: 10px; /* Padding */
-    cursor: pointer; /* Pointer cursor */
+    background-color: rgba(255, 255, 255, 0.7); 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
 }
 
 .left-arrow {
-    position: absolute; /* Positioning */
-    left: 10px; /* Position to left */
+    position: absolute; 
+    left: 10px; 
 }
 
 .right-arrow {
-    position: absolute; /* Positioning */
-    right: 10px; /* Position to right */
+    position: absolute; 
+    right: 10px; 
 }
 
-/* Show arrows only on mobile view */
+
 @media (max-width: 500px) {
     .mobile-arrows {
-        display: flex; /* Show on mobile */
-        justify-content: space-between; /* Space out */
+        display: flex; 
+        justify-content: space-between; 
     }
 }
 
