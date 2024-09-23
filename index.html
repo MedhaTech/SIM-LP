@@ -193,6 +193,104 @@
             margin: 0 auto;
             width: 100%;
         }
+        
+        .counter-item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.counter-item-list:nth-child(1) .col-md-6:nth-child(1),
+.counter-item-list:nth-child(1) .col-md-6:nth-child(2) {
+  width: 50%; 
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+.counter-item-list:nth-child(1) .col-md-6:nth-child(3) {
+  width: 100%; 
+}
+
+
+.counter-item-list:nth-child(2) .col-md-6 {
+  width: 50%; 
+}
+
+/* Add margin between rows */
+.counter-item-list {
+  margin-top: 20px; 
+}
+@media (max-width: 768px) {
+  .chatbox {
+      width: 100%;
+      border-radius: 10px;
+      padding-left: 20px;
+  }
+  
+  .chatbox-heading h3 {
+      font-size: 16px;
+  }
+
+ 
+}
+
+#road_map {
+    display: block; /* Default display for desktop */
+}
+
+#mobile_road_map {
+    display: none; /* Default display for mobile */
+}
+
+@media (max-width: 768px) {
+    #road_map {
+        display: none; /* Hide original section on mobile */
+    }
+
+    #mobile_road_map {
+        display: block; /* Show mobile section */
+    }
+}
+
+
+.mobile-arrows {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioning */
+    top: 50%; /* Center vertically */
+    width: 100%; /* Full width */
+    transform: translateY(-50%); /* Center adjustment */
+    z-index: 10; /* On top of other elements */
+}
+
+.arrow {
+    background-color: rgba(255, 255, 255, 0.7); /* Background color */
+    border: none; /* No border */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.left-arrow {
+    position: absolute; /* Positioning */
+    left: 10px; /* Position to left */
+}
+
+.right-arrow {
+    position: absolute; /* Positioning */
+    right: 10px; /* Position to right */
+}
+
+/* Show arrows only on mobile view */
+@media (max-width: 500px) {
+    .mobile-arrows {
+        display: flex; /* Show on mobile */
+        justify-content: space-between; /* Space out */
+    }
+}
+
+
+
+
     </style>
 
 </head>
@@ -468,6 +566,110 @@
     -->
     <!--old Road Map end-->
     <!--Road Map start-->
+
+     
+    
+    <section style="background-image: url(assets/images/bg.png); background-color: white;" id="mobile_road_map"></section>
+        <div class="build-area-02">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="section-title desktop-center padding-bottom-25">
+                            <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
+                                data-lang="roadmap-title">Road Map</h3>
+                            <p class="wow animate__animated animate__fadeInUp animated lang-change"
+                                data-lang="roadmap-title1">Journey Of A Student In School
+                                Innovation Marathon. Let’s create impact with youth</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="audio-triangle-area">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title">
+                                        <a class="lang-change" data-lang="roadmap-innovation">INNOVATION</a>
+                                    </h4>
+                                    <ul>
+                                        <li class="lang-change" data-lang="roadmap-i_point1">Launch of SIM on 29 July.
+                                        </li>
+                                        <li class="lang-change" data-lang="roadmap-i_point2">Innovation & Prototyping
+                                            Phase from Aug 1st to 30th Nov 2024.</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="icon style-01">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title">
+                                        <a class="lang-change" data-lang="roadmap-winners">WINNERS</a>
+                                    </h4>
+                                    <ul>
+                                        <li><span class="lang-change" data-lang="roadmap-w_point1">Announcement of Top
+                                            </span> <br> <span class="lang-change" data-lang="roadmap-w_point1_1"> Teams
+                                                in Jan 2025.</span></li>
+                                        <li class="lang-change" data-lang="roadmap-w_point2">Funding support to teams in
+                                            March 2025.</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                           
+
+                        </div>
+
+                        <div class="col-lg-4 justify-content-center">
+
+                            <div class="audio-bg" style="background-image: url(assets/images/New_other.gif)">
+
+                                <!-- <img class="bg-img wow animate__animated animate__fadeInUp animated" src="assets/img/audio-03.png" alt=""> -->
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                               
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title">
+                                        <a class="lang-change" data-lang="roadmap-sip">SIP</a>
+                                    </h4>
+                                    <p class="lang-change" data-lang="roadmap-s_point">Commencement of Student
+                                        Internship Programme(SIP)<br>May 2025 onwards.</p>
+                                </div>
+                                <div class="icon style-02">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+
+                            </div>
+                            
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="content">
+                                    <h4 class="title">
+                                        <a class="lang-change" data-lang="roadmap-sep">SEP</a>
+                                    </h4>
+                                    <p class="lang-change" data-lang="roadmap-sep_point">Top teams from SIP to student
+                                        Entrepreneurship Programme(SEP)<br>Aug
+                                        2025 onwards.</p>
+                                </div>
+                                <div class="icon style-03">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section style="background-image: url(assets/images/bg.png); background-color: white;" id="road_map">
         <div class="build-area-02">
             <div class="container">
@@ -1012,14 +1214,15 @@
                                         border: 0px solid #aaa;
                                     }
 
-                                    @media only screen and (max-width: 480px) {
+                                    @media only screen and (max-width: 980px) {
                                         svg {
                                             padding-top: 20px;
                                             zoom: 55%;
                                         }
                                     }
+                                  
 
-                                    @media only screen and (min-width: 500px) {
+                                    @media only screen and (min-width: 1000px) {
                                         svg {
                                             padding-top: 20px;
                                             zoom: 75%;
@@ -1379,132 +1582,138 @@
     <!--partners wrapper end-->
     <!-- testimonial area start  -->
     <section class="testimonial-area bg-image padding-top-100 padding-bottom-120" id="testimonial"
-        style="background-image: url(assets/images/t1.png); background-color: white;">
-        <div class="container">
-            <div class="section-title desktop-center blue margin-bottom-20">
-                <h2 class="title wow animate__animated animate__fadeInUp animated lang-change"
-                    data-lang="testimonials-title">Hear what our teacher and student
-                    innovators say about SIM</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="testimonial-carousel-area">
-                        <div class="testimonial-carousel-two">
-                            <div class="single-testimonial-item-05">
-                                <div class="icon">
-                                    <i class="flaticon-quote-left"></i>
-                                </div>
-                                <div class="thumb">
-                                    <img src="assets/images/team7 (1).png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="testimonials-test_name2">Umesh
-                                                Bajaj</h4>
-                                            <br>
-                                            <div class="designation lang-change" data-lang="testimonials-designation2">
-                                                SIM Incharge, Dass & Brown World School, Ferozepur
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="description lang-change" data-lang="testimonials-desc_t2">“I serve as the
-                                        SIM Incharge at Dass and Brown World School
-                                        in Ferozepur, Punjab. We recently featured in the Top 75 teams of SIM. The Atal
-                                        Tinkering Lab has become like a second home to me. It's a place where my
-                                        students and I engage in daily learning, finding solace in our lab. We are
-                                        dedicated to working on solutions for the Sustainable Development Goals, and I
-                                        am profoundly grateful to the Atal Innovation Mission for providing us with this
-                                        platform to contribute to our community and nurture innovation in the young
-                                        entrepreneurial minds.”</p>
-                                </div>
+    style="background-image: url(assets/images/t1.png); background-color: white;">
+    <div class="container">
+        <div class="section-title desktop-center blue margin-bottom-20">
+            <h2 class="title wow animate__animated animate__fadeInUp animated lang-change"
+                data-lang="testimonials-title">Hear what our teacher and student innovators say about SIM</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="testimonial-carousel-area">
+                    <div class="testimonial-carousel-two">
+                        <div class="single-testimonial-item-05">
+                            <div class="icon">
+                                <i class="flaticon-quote-left"></i>
                             </div>
-                            <div class="single-testimonial-item-05">
-                                <div class="icon">
-                                    <i class="flaticon-quote-left"></i>
-                                </div>
-                                <div class="thumb">
-                                    <img src="assets/images/team6 (1).png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="testimonials-test_name1">Prashant
-                                                Nair</h4>
-                                            <br>
-                                            <div class="designation lang-change" data-lang="testimonials-designation1">
-                                                Regional Mentor of Change, Tamil Nadu, SIM</div>
-                                        </div>
-                                    </div>
-                                    <p class="description lang-change" data-lang="testimonials-desc_t1">"SIM, the
-                                        flagship national innovation challenge for schools
-                                        from Atal Innovation Mission (AIM) has been a trailblazer, having completed 5
-                                        editions with the 2022-2023 edition attracting 12,000+ teams pan India. I have
-                                        been fortunate to have been able to mentor 10+ teams that have been ranked
-                                        amongst the top teams over the last few years.SIM provides an excellent
-                                        opportunity for students to unleash their creativity, innovation and team work
-                                        to solve problems for societal and humanitarian benefit"</p>
-                                </div>
+                            <div class="thumb">
+                                <img src="assets/images/team7 (1).png" alt="">
                             </div>
-                            <div class="single-testimonial-item-05">
-                                <div class="icon">
-                                    <i class="flaticon-quote-left"></i>
-                                </div>
-                                <div class="thumb">
-                                    <img src="assets/images/team9 (1).png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="testimonials-test_name4">Suneeti
-                                                Patwari</h4>
-                                            <br>
-                                            <div class="designation lang-change" data-lang="testimonials-designation4">
-                                                Student, Lakshmipat Singhania Academy, Kolkata
-                                            </div>
+                            <div class="content">
+                                <div class="author-details">
+                                    <div class="author-meta">
+                                        <h4 class="title lang-change" data-lang="testimonials-test_name2">Umesh Bajaj</h4>
+                                        <br>
+                                        <div class="designation lang-change" data-lang="testimonials-designation2">
+                                            SIM Incharge, Dass & Brown World School, Ferozepur
                                         </div>
                                     </div>
-                                    <p class="description lang-change" data-lang="testimonials-desc_t4">“Our SIM journey
-                                        as a team has been an incredible roller
-                                        coaster of innovation and collaboration. We worked hard and our hard work paid
-                                        off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
-                                        digital tablets from Niti Aayog as a prize for our achievement . It was like a
-                                        dream come true. We have even filed for the patent of our project this year in
-                                        2024. ”</p>
                                 </div>
+                                <p class="description lang-change" data-lang="testimonials-desc_t2">“I serve as the
+                                    SIM Incharge at Dass and Brown World School
+                                    in Ferozepur, Punjab. We recently featured in the Top 75 teams of SIM. The Atal
+                                    Tinkering Lab has become like a second home to me. It's a place where my
+                                    students and I engage in daily learning, finding solace in our lab. We are
+                                    dedicated to working on solutions for the Sustainable Development Goals, and I
+                                    am profoundly grateful to the Atal Innovation Mission for providing us with this
+                                    platform to contribute to our community and nurture innovation in the young
+                                    entrepreneurial minds.”</p>
                             </div>
-                            <div class="single-testimonial-item-05">
-                                <div class="icon">
-                                    <i class="flaticon-quote-left"></i>
-                                </div>
-                                <div class="thumb">
-                                    <img src="assets/images/team8 (1).png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="testimonials-test_name3">Ishan
-                                                Ghatak & Agam Yadav</h4>
-                                            <br>
-                                            <div class="designation lang-change" data-lang="testimonials-designation3">
-                                                D.A.V Public School, Vasant Kunj, New Delhi</div>
+                        </div>
+                        <div class="single-testimonial-item-05">
+                            <div class="icon">
+                                <i class="flaticon-quote-left"></i>
+                            </div>
+                            <div class="thumb">
+                                <img src="assets/images/team6 (1).png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="author-details">
+                                    <div class="author-meta">
+                                        <h4 class="title lang-change" data-lang="testimonials-test_name1">Prashant Nair</h4>
+                                        <br>
+                                        <div class="designation lang-change" data-lang="testimonials-designation1">
+                                            Regional Mentor of Change, Tamil Nadu, SIM
                                         </div>
                                     </div>
-                                    <p class="description lang-change" data-lang="testimonials-desc_t3">“Our SIM journey
-                                        as a team has been an incredible roller
-                                        coaster of innovation and collaboration. We worked hard and our hard work paid
-                                        off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
-                                        digital tablets from Niti Aayog as a prize for our achievement . It was like a
-                                        dream come true. We have even filed for the patent of our project this year in
-                                        2024. ”</p>
                                 </div>
+                                <p class="description lang-change" data-lang="testimonials-desc_t1">"SIM, the
+                                    flagship national innovation challenge for schools
+                                    from Atal Innovation Mission (AIM) has been a trailblazer, having completed 5
+                                    editions with the 2022-2023 edition attracting 12,000+ teams pan India. I have
+                                    been fortunate to have been able to mentor 10+ teams that have been ranked
+                                    amongst the top teams over the last few years. SIM provides an excellent
+                                    opportunity for students to unleash their creativity, innovation and teamwork
+                                    to solve problems for societal and humanitarian benefit."</p>
+                            </div>
+                        </div>
+                        <div class="single-testimonial-item-05">
+                            <div class="icon">
+                                <i class="flaticon-quote-left"></i>
+                            </div>
+                            <div class="thumb">
+                                <img src="assets/images/team9 (1).png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="author-details">
+                                    <div class="author-meta">
+                                        <h4 class="title lang-change" data-lang="testimonials-test_name4">Suneeti Patwari</h4>
+                                        <br>
+                                        <div class="designation lang-change" data-lang="testimonials-designation4">
+                                            Student, Lakshmipat Singhania Academy, Kolkata
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="description lang-change" data-lang="testimonials-desc_t4">“Our SIM journey
+                                    as a team has been an incredible roller
+                                    coaster of innovation and collaboration. We worked hard and our hard work paid
+                                    off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
+                                    digital tablets from Niti Aayog as a prize for our achievement. It was like a
+                                    dream come true. We have even filed for the patent of our project this year in
+                                    2024.”</p>
+                            </div>
+                        </div>
+                        <div class="single-testimonial-item-05">
+                            <div class="icon">
+                                <i class="flaticon-quote-left"></i>
+                            </div>
+                            <div class="thumb">
+                                <img src="assets/images/team8 (1).png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="author-details">
+                                    <div class="author-meta">
+                                        <h4 class="title lang-change" data-lang="testimonials-test_name3">Ishan Ghatak & Agam Yadav</h4>
+                                        <br>
+                                        <div class="designation lang-change" data-lang="testimonials-designation3">
+                                            D.A.V Public School, Vasant Kunj, New Delhi
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="description lang-change" data-lang="testimonials-desc_t3">“Our SIM journey
+                                    as a team has been an incredible roller
+                                    coaster of innovation and collaboration. We worked hard and our hard work paid
+                                    off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
+                                    digital tablets from Niti Aayog as a prize for our achievement. It was like a
+                                    dream come true. We have even filed for the patent of our project this year in
+                                    2024.”</p>
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="mobile-arrows">
+                        <button class="arrow left-arrow" aria-label="Previous">
+                            &#10094; 
+                        </button>
+                        <button class="arrow right-arrow" aria-label="Next">
+                            &#10095;
+                        </button>
+                    </div> -->
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     <!-- testimonial area end -->
     <!--
     <div id="packages" class="header-bottom-area padding-top-110">
@@ -2844,6 +3053,36 @@
                             text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
+
+                    const testimonials = document.querySelector('.testimonial-carousel-two');
+                    const leftArrow = document.querySelector('.left-arrow');
+                    const rightArrow = document.querySelector('.right-arrow');
+
+                    let index = 0;
+                    const totalTestimonials = document.querySelectorAll('.single-testimonial-item-05').length;
+
+                    // Update the carousel position
+                    function updateCarousel() {
+                        // Calculate the offset for the translateX property
+                        const offset = index * 100; // Adjust based on index
+                    
+                        testimonials.style.transform = `translateX(-${offset}%)`; // Move to the current index
+                    }
+
+                    // Event listener for the left arrow
+                    leftArrow.addEventListener('click', () => {
+                        index = (index > 0) ? index - 1 : totalTestimonials - 1; // Loop back
+                        updateCarousel();
+                    });
+
+                    // Event listener for the right arrow
+                    rightArrow.addEventListener('click', () => {
+                        index = (index < totalTestimonials - 1) ? index + 1 : 0; // Loop to start
+                        updateCarousel();
+                    });
+
+                    // Initialize the carousel position
+                    updateCarousel();
 
 
                 // document.addEventListener("DOMContentLoaded", function () {

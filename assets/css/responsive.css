@@ -441,7 +441,8 @@
         margin-bottom: 40px;
     }
     .header-area {
-        padding: 290px 0 355px;
+        
+        background-color: #fff;
     }
     .get-in-touch-area .bg-image {
         display: none;
