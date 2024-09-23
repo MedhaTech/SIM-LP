@@ -8713,6 +8713,8 @@ Client Area
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; 
 }
 
 .counter-item-list li {
@@ -8721,6 +8723,22 @@ Client Area
 
 .counter-item-list li+li {
   border-left: 1px solid #a8aab1;
+}
+
+.counter-item-list:nth-child(1) .col-md-6:nth-child(1),
+.counter-item-list:nth-child(1) .col-md-6:nth-child(2) {
+  width: 50%; 
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+.counter-item-list:nth-child(1) .col-md-6:nth-child(3) {
+  width: 100%; 
+}
+
+
+.counter-item-list:nth-child(2) .col-md-6 {
+  width: 50%; 
 }
 
 .single-counterup-block-with-img {
@@ -12507,7 +12525,19 @@ Single package item
 
 }
 
+@media (max-width: 768px) {
+  .chatbox {
+      width: 100%;
+      border-radius: 10px;
+      padding-left: 20px;
+  }
+  
+  .chatbox-heading h3 {
+      font-size: 16px;
+  }
 
+ 
+}
 
 
 

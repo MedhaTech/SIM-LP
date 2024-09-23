@@ -194,64 +194,23 @@
             width: 100%;
         }
         
-        .counter-item-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+       
+
+/* Hide one of the views based on screen size */
+.mobile-view {
+    display: none;
 }
 
-
-.counter-item-list:nth-child(1) .col-md-6:nth-child(1),
-.counter-item-list:nth-child(1) .col-md-6:nth-child(2) {
-  width: 50%; 
-  padding-left: 50px;
-  padding-right: 50px;
-
-}
-.counter-item-list:nth-child(1) .col-md-6:nth-child(3) {
-  width: 100%; 
-}
-
-
-.counter-item-list:nth-child(2) .col-md-6 {
-  width: 50%; 
-}
-
-
-.counter-item-list {
-  margin-top: 20px; 
-}
-@media (max-width: 768px) {
-  .chatbox {
-      width: 100%;
-      border-radius: 10px;
-      padding-left: 20px;
-  }
-  
-  .chatbox-heading h3 {
-      font-size: 16px;
-  }
-
- 
-}
-
-#road_map {
-    display: block;
-}
-
-#mobile_road_map {
-    display: none; 
-}
-
-@media (max-width: 768px) {
-    #road_map {
-        display: none; 
+@media (max-width: 500px) {
+    .desktop-view {
+        display: none;
     }
 
-    #mobile_road_map {
+    .mobile-view {
         display: block;
     }
 }
+
 
 
 .mobile-arrows {
@@ -331,10 +290,10 @@
                         <li><a href="#testimonial" class="lang-change" data-lang="nav-testimonial">Testimonial</a></li>
                         <li><a href="#faq" class="lang-change" data-lang="nav-faq">FAQs</a></li>
                         <li>
-                            <!-- <select class="form-select p-1"  style="border-radius: 10px; background-color: #ffc05e;"onchange="langChange(this);">
+                            <select class="form-select p-1"  style="border-radius: 10px; background-color: #ffc05e;"onchange="langChange(this);">
                                 <option value="en">English</option>
                                 <option value="hi">हिंदी</option>
-                            </select> -->
+                            </select>
                         </li>
                     </ul>
                 </div>
@@ -432,12 +391,11 @@
     </div>
     <!--about us start-->
     <div id="about_us" class="create-content-area-03 padding-top-100" style="background-color: white;">
-        <div class="container" >
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6 wow animate__animated animate__fadeInUp animated lang-change">
+                <div class="col-lg-6 wow animate__animated animate__fadeInUp animated">
                     <div class="section-title">
-                        <h4 class="title wow animate__animated animate__fadeInUp animated lang-change"
-                            data-lang="nav-aboutus">About Us</h4>
+                        <h4 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="aboutSection-title">About Us</h4>
                     </div>
                     <p class="wow animate__animated animate__fadeInUp animated lang-change"
                         data-lang="aboutSection-desc">School Innovation Marathon is
@@ -567,109 +525,6 @@
     <!--old Road Map end-->
     <!--Road Map start-->
 
-     
-    
-    <section style="background-image: url(assets/images/bg.png); background-color: white;" id="mobile_road_map"></section>
-        <div class="build-area-02">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="section-title desktop-center padding-bottom-25">
-                            <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
-                                data-lang="roadmap-title">Road Map</h3>
-                            <p class="wow animate__animated animate__fadeInUp animated lang-change"
-                                data-lang="roadmap-title1">Journey Of A Student In School
-                                Innovation Marathon. Let’s create impact with youth</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="audio-triangle-area">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4">
-                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
-                                <div class="icon">
-                                    <i class="fas fa-lightbulb"></i>
-                                </div>
-                                <div class="content padding-bottom-55">
-                                    <h4 class="title">
-                                        <a class="lang-change" data-lang="roadmap-innovation">INNOVATION</a>
-                                    </h4>
-                                    <ul>
-                                        <li class="lang-change" data-lang="roadmap-i_point1">Launch of SIM on 29 July.
-                                        </li>
-                                        <li class="lang-change" data-lang="roadmap-i_point2">Innovation & Prototyping
-                                            Phase from Aug 1st to 30th Nov 2024.</li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
-                                <div class="icon style-01">
-                                    <i class="fas fa-trophy"></i>
-                                </div>
-                                <div class="content padding-bottom-55">
-                                    <h4 class="title">
-                                        <a class="lang-change" data-lang="roadmap-winners">WINNERS</a>
-                                    </h4>
-                                    <ul>
-                                        <li><span class="lang-change" data-lang="roadmap-w_point1">Announcement of Top
-                                            </span> <br> <span class="lang-change" data-lang="roadmap-w_point1_1"> Teams
-                                                in Jan 2025.</span></li>
-                                        <li class="lang-change" data-lang="roadmap-w_point2">Funding support to teams in
-                                            March 2025.</li>
-                                    </ul>
-                                </div>
-                                
-                            </div>
-                           
-
-                        </div>
-
-                        <div class="col-lg-4 justify-content-center">
-
-                            <div class="audio-bg" style="background-image: url(assets/images/New_other.gif)">
-
-                                <!-- <img class="bg-img wow animate__animated animate__fadeInUp animated" src="assets/img/audio-03.png" alt=""> -->
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
-                               
-                                <div class="content padding-bottom-55">
-                                    <h4 class="title">
-                                        <a class="lang-change" data-lang="roadmap-sip">SIP</a>
-                                    </h4>
-                                    <p class="lang-change" data-lang="roadmap-s_point">Commencement of Student
-                                        Internship Programme(SIP)<br>May 2025 onwards.</p>
-                                </div>
-                                <div class="icon style-02">
-                                    <i class="fas fa-briefcase"></i>
-                                </div>
-
-                            </div>
-                            
-                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
-                                <div class="content">
-                                    <h4 class="title">
-                                        <a class="lang-change" data-lang="roadmap-sep">SEP</a>
-                                    </h4>
-                                    <p class="lang-change" data-lang="roadmap-sep_point">Top teams from SIP to student
-                                        Entrepreneurship Programme(SEP)<br>Aug
-                                        2025 onwards.</p>
-                                </div>
-                                <div class="icon style-03">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section style="background-image: url(assets/images/bg.png); background-color: white;" id="road_map">
         <div class="build-area-02">
             <div class="container">
@@ -679,83 +534,131 @@
                             <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
                                 data-lang="roadmap-title">Road Map</h3>
                             <p class="wow animate__animated animate__fadeInUp animated lang-change"
-                                data-lang="roadmap-title1">Journey Of A Student In School
-                                Innovation Marathon. Let’s create impact with youth</p>
+                                data-lang="roadmap-title1">Journey Of A Student In School Innovation Marathon. Let’s create
+                                impact with youth</p>
                         </div>
                     </div>
                 </div>
-                <div class="audio-triangle-area">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4">
+    
+                <!-- Desktop View -->
+                <div class="audio-triangle-area desktop-view">
+                    <div class="row align-items-center d-flex">
+                        <div class="col-lg-4 innovation-block">
                             <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
                                 <div class="icon">
                                     <i class="fas fa-lightbulb"></i>
                                 </div>
                                 <div class="content padding-bottom-55">
-                                    <h4 class="title">
-                                        <a class="lang-change" data-lang="roadmap-innovation">INNOVATION</a>
-                                    </h4>
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-innovation">INNOVATION</a></h4>
                                     <ul>
-                                        <li class="lang-change" data-lang="roadmap-i_point1">Launch of SIM on 29 July.
-                                        </li>
-                                        <li class="lang-change" data-lang="roadmap-i_point2">Innovation & Prototyping
-                                            Phase from Aug 1st to 30th Nov 2024.</li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
-                                <div class="icon style-02">
-                                    <i class="fas fa-briefcase"></i>
-                                </div>
-                                <div class="content padding-bottom-55">
-                                    <h4 class="title">
-                                        <a class="lang-change" data-lang="roadmap-sip">SIP</a>
-                                    </h4>
-                                    <p class="lang-change" data-lang="roadmap-s_point">Commencement of Student
-                                        Internship Programme(SIP)<br>May 2025 onwards.</p>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-4 justify-content-center">
-
-                            <div class="audio-bg" style="background-image: url(assets/images/New_other.gif)">
-
-                                <!-- <img class="bg-img wow animate__animated animate__fadeInUp animated" src="assets/img/audio-03.png" alt=""> -->
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
-
-                                <div class="content padding-bottom-55">
-                                    <h4 class="title">
-                                        <a class="lang-change" data-lang="roadmap-winners">WINNERS</a>
-                                    </h4>
-                                    <ul>
-                                        <li><span class="lang-change" data-lang="roadmap-w_point1">Announcement of Top
-                                            </span> <br> <span class="lang-change" data-lang="roadmap-w_point1_1"> Teams
-                                                in Jan 2025.</span></li>
-                                        <li class="lang-change" data-lang="roadmap-w_point2">Funding support to teams in
-                                            March 2025.</li>
+                                        <li class="lang-change" data-lang="roadmap-i_point1">Launch of SIM on 29 July.</li>
+                                        <li class="lang-change" data-lang="roadmap-i_point2">Innovation & Prototyping Phase from Aug 1st to 30th Nov 2024.</li>
                                     </ul>
                                 </div>
+                            </div>
+    
+                           
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
                                 <div class="icon style-01">
                                     <i class="fas fa-trophy"></i>
                                 </div>
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-winners">WINNERS</a></h4>
+                                    <ul>
+                                        <li><span class="lang-change" data-lang="roadmap-w_point1">Announcement of Top Teams</span> <br> <span class="lang-change" data-lang="roadmap-w_point1_1">in Jan 2025.</span></li>
+                                        <li class="lang-change" data-lang="roadmap-w_point2">Funding support to teams in March 2025.</li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
+    
+                        
+                        <div class="col-lg-4 gif-section">
+                            <div class="audio-bg" style="background-image: url(assets/images/New_other.gif)">
+                            </div>
+                        </div>
+    
+                     
+                        <div class="col-lg-4 sip-block">
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-sip">SIP</a></h4>
+                                    <p class="lang-change" data-lang="roadmap-s_point">Commencement of Student Internship Programme(SIP)<br>May 2025 onwards.</p>
+                                </div>
+                                <div class="icon style-02">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                            </div>
+    
+                            
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-sep">SEP</a></h4>
+                                    <p class="lang-change" data-lang="roadmap-sep_point">Top teams from SIP to student Entrepreneurship Programme(SEP)<br>Aug 2025 onwards.</p>
+                                </div>
+                                <div class="icon style-03">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Mobile View-->
+                <div class="audio-triangle-area mobile-view">
+                    <div class="row align-items-center d-flex">
+                        <div class="col-lg-4 innovation-block">
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-innovation">INNOVATION</a></h4>
+                                    <ul>
+                                        <li class="lang-change" data-lang="roadmap-i_point1">Launch of SIM on 29 July.</li>
+                                        <li class="lang-change" data-lang="roadmap-i_point2">Innovation & Prototyping Phase from Aug 1st to 30th Nov 2024.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 winner-block">
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="icon style-01">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-winners">WINNERS</a></h4>
+                                    <ul>
+                                        <li><span class="lang-change" data-lang="roadmap-w_point1">Announcement of Top Teams</span> <br> <span class="lang-change" data-lang="roadmap-w_point1_1">in Jan 2025.</span></li>
+                                        <li class="lang-change" data-lang="roadmap-w_point2">Funding support to teams in March 2025.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                       
+                        <div class="col-lg-4 gif-section">
+                            <div class="audio-bg" style="background-image: url(assets/images/New_other.gif)">
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 sip-block">
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-sip">SIP</a></h4>
+                                    <p class="lang-change" data-lang="roadmap-s_point">Commencement of Student Internship Programme(SIP)<br>May 2025 onwards.</p>
+                                </div>
+                                <div class="icon style-02">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                            </div>
+    
+                            
                             <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
                                 <div class="content">
-                                    <h4 class="title">
-                                        <a class="lang-change" data-lang="roadmap-sep">SEP</a>
-                                    </h4>
-                                    <p class="lang-change" data-lang="roadmap-sep_point">Top teams from SIP to student
-                                        Entrepreneurship Programme(SEP)<br>Aug
-                                        2025 onwards.</p>
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-sep">SEP</a></h4>
+                                    <p class="lang-change" data-lang="roadmap-sep_point">Top teams from SIP to student Entrepreneurship Programme(SEP)<br>Aug 2025 onwards.</p>
                                 </div>
                                 <div class="icon style-03">
                                     <i class="fas fa-chart-line"></i>
@@ -767,6 +670,8 @@
             </div>
         </div>
     </section>
+    
+    
     <!--Road Map end-->
 
     <!-- themes area start  -->
