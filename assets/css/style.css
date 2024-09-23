@@ -12519,25 +12519,13 @@ Single package item
   .btn-wrapper a {
     margin-top: 10px;
    
-    width: 100%
+    
      
   }
 
 }
 
-@media (max-width: 768px) {
-  .chatbox {
-      width: 100%;
-      border-radius: 10px;
-      padding-left: 20px;
-  }
-  
-  .chatbox-heading h3 {
-      font-size: 16px;
-  }
 
- 
-}
 
 
 

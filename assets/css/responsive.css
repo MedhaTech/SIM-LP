@@ -1502,7 +1502,7 @@
         width: 100%;
     }
     .header-area .btn-wrapper .boxed-btn+.boxed-btn {
-        margin-left: 0;
+       
         margin-top: 20px;
     }
     .header-area.header-utility .header-inner .title {
