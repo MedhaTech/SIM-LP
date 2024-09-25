@@ -194,9 +194,7 @@
             width: 100%;
         }
         
-       
 
-/* Hide one of the views based on screen size */
 .mobile-view {
     display: none;
 }
@@ -210,6 +208,98 @@
         display: block;
     }
 }
+       
+/* For iPad view  */
+@media only screen and (min-width: 768px) and (max-width: 997px) {
+    
+    #head-1 .header-inner {
+        margin-top: -200px !important;
+    }
+    #head-1 h2.title {
+        display: none;
+    }
+    #head-1 .ipad-title {
+        display: block;
+        font-size: 40px;
+        line-height: 1.2;
+        text-transform: none;
+    }
+    #head-1 .ipad-title span {
+        display: block;
+        text-transform: capitalize;
+    }
+    #head-1 p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* For iPad Pro view */
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+  
+    #head-1 .header-inner {
+        margin-top: -100px !important; 
+    }
+
+    
+    #head-1 h2.title {
+        display: block;
+    }
+
+  
+    #head-1 .ipad-title {
+        display: none;
+    }
+
+    
+    #head-1 p {
+        font-size: inherit;
+        line-height: inherit;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    #head-1 .header-inner {
+        margin-top: -50px !important;
+    }
+
+    #head-1 h2.title {
+        display: block;
+    }
+
+    #head-1 .ipad-title {
+        display: none;
+    }
+
+    #head-1 p {
+        font-size: inherit;
+        line-height: inherit;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #head-1 h2.title {
+        display: block;
+    }
+
+    #head-1 .ipad-title {
+        display: none;
+    }
+
+
+}
+/* For mobile views */
+@media only screen and (max-width: 415px) {
+    #head-1 .header-inner p,
+    #head-1 .header-inner p span {
+        font-size: 15px !important; 
+        line-height: 1.4; 
+    }
+}
+
+
 
 
 
@@ -357,24 +447,29 @@
 
         <div class="container" id="head-1">
             <div class="row">
-                <div class="col-lg-6" style="margin-top: -50px;">
-                    <div class="header-inner">
-                        <!-- header inner -->
-                        <h2 class="title lang-change" data-lang="heroSection-title" style="font-size: 50px;">School
-                            Innovation Marathon 2024</h2>
+                <div class="col-lg-6">
+                    <div class="header-inner" style="margin-top: -50px;">
+                        <!-- Original heading for non-iPad views -->
+                        <h2 class="title lang-change" data-lang="heroSection-title" style="font-size: 50px;">
+                            School Innovation Marathon 2024
+                        </h2>
+        
+                        <!-- New heading specifically for iPad view -->
+                        <h2 class="ipad-title">
+                            School Innovation<br><span><h2>Marathon 2024</h2></span>
+                        </h2>
+        
                         <p>
                             <span style="color:black" class="lang-change text-lowercase"
                                 data-lang="heroSection-title1">Creating Change Makers of tomorrow with </span>
                             <span style="color:black" class="lang-change text-lowercase"
-                                data-lang="heroSection-title1_p1">21st Century Skills. Nurture a culture of
-                                social</span>
+                                data-lang="heroSection-title1_p1">21st Century Skills. Nurture a culture of social</span>
                             <span style="color:black" class="lang-change text-lowercase"
-                                data-lang="heroSection-title1_p2">innovation and build skills while inspiring
-                                young</span>
+                                data-lang="heroSection-title1_p2">innovation and build skills while inspiring young</span>
                             <span style="color:black" class="lang-change text-lowercase"
                                 data-lang="heroSection-title1_p3">people to become transformative leaders.</span>
                         </p>
-
+        
                         <div class="btn-wrapper padding-top-20 wow animate__animated animate__fadeInUp animated">
                             <a href="https://schoolinnovationmarathon.org/registration"
                                 class="boxed-btn medical-btn lang-change" data-lang="heroSection-register">Register</a>
@@ -386,7 +481,9 @@
                 </div>
             </div>
         </div>
-
+        
+        
+        
         <!--hero section end-->
     </div>
     <!--about us start-->
@@ -1125,7 +1222,7 @@
                                     @media only screen and (max-width: 980px) {
                                         svg {
                                             padding-top: 20px;
-                                            zoom: 55%;
+                                            zoom: 50%;
                                         }
                                     }
                                   
