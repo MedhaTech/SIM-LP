@@ -2360,7 +2360,7 @@ function displayTeacherPortalOptions() {
         } else if (feedback === 'dislike') {
             displayBotMessage('I\'m sorry to hear that. Try again!.', false);
             setTimeout(function() {
-                displaySuboptions1();
+                displayOptionsAfterExaminationOptions();
             }, 500);
         }
     }
@@ -2450,6 +2450,7 @@ function displayTeacherPortalOptions() {
             // Display farewell message
             displayBotMessage('Thanks for visiting the chatbot. Feel free to ask questions.', false);
         });
+        
         // Add event listener for hover effect
         noOptionElement.addEventListener('mouseenter', function() {
             noOptionElement.style.backgroundColor = 'crimson';
