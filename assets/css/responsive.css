@@ -1145,6 +1145,7 @@
     .testimonial-area .medical .title {
         font-size: 28px;
         line-height: 38px;
+       
     }
     .client-area .section-title .title.style-01 {
         font-size: 28px;
@@ -1492,7 +1493,7 @@
         padding: 50px 30px 50px;
     }
     .header-area {
-        padding: 170px 0 30px;
+        padding: 170px 0 10px;
     }
     .food-order-area::after {
         height: 50%;

@@ -87,7 +87,7 @@
         .it_comp_work_process .step-desc h4 a {
             color: #111;
             margin-bottom: 15px;
-            font-size: 22px;
+            font-size: 14px;
             display: inline-block;
             text-transform: capitalize;
             -webkit-transition: all 0.5s;
@@ -448,7 +448,7 @@
         </div>-->
         <!--hero section start-->
 
-        <div class="container" id="head-1">
+        <div class="container padding-bottom-80" id="head-1">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="header-inner" style="margin-top: -50px;">
@@ -490,7 +490,7 @@
         <!--hero section end-->
     </div>
     <!--about us start-->
-    <div id="about_us" class="create-content-area-03 padding-top-100" style="background-color: white;">
+    <div id="about_us" class="create-content-area-03 padding-bottom-80" style="background-color: white;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 wow animate__animated animate__fadeInUp animated">
@@ -625,9 +625,9 @@
     <!--old Road Map end-->
     <!--Road Map start-->
 
-    <section style="background-image: url(assets/images/bg.png); background-color: white;" id="road_map">
+    <section style="background-image: url(assets/images/bg.png); background-color: white;" id="road_map" >
         <div class="build-area-02">
-            <div class="container">
+            <div class="container padding-bottom-50">
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div class="section-title desktop-center padding-bottom-25">
@@ -1400,7 +1400,7 @@
     <!--impact end-->
 
     <!--videos-->
-    <section class="testimonial-area bg-image padding-top-120 padding-bottom-120" id="videos" style="background-color: white;">
+    <section class="testimonial-area bg-image padding-top-120 padding-bottom-50" id="videos" style="background-color: white;">
      
     <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
         <div class="it_comp_heading_wrapper text-center">
@@ -2303,11 +2303,11 @@
             <!-- back to top area end -->
 
             <script>
-
-
                 function redirectToPage(event) {
                     const stateId = event.target.id;
-                    const stateUrls = {
+
+    
+                        const stateUrls = {
                         'IN-AP': 'AP.html',
                         'IN-JK': 'JK.html',
                         'IN-HP': 'HP.html',
@@ -2340,800 +2340,731 @@
                         'IN-PB': 'PB.html',
                         'IN-ML': 'ME.html',
                     };
+
+        
                     if (stateUrls[stateId]) {
                         window.location.href = stateUrls[stateId];
                     }
                 }
 
-                document.getElementById('IN-AP').addEventListener('click', redirectToPage);
-                document.getElementById('IN-JK').addEventListener('click', redirectToPage);
-                document.getElementById('IN-AR').addEventListener('click', redirectToPage);
-                document.getElementById('IN-AS').addEventListener('click', redirectToPage);
-                document.getElementById('IN-DL').addEventListener('click', redirectToPage);
-                document.getElementById('IN-GJ').addEventListener('click', redirectToPage);
-                document.getElementById('IN-KL').addEventListener('click', redirectToPage);
-                document.getElementById('IN-KA').addEventListener('click', redirectToPage);
-                document.getElementById('IN-MP').addEventListener('click', redirectToPage);
-                document.getElementById('IN-RJ').addEventListener('click', redirectToPage);
-                document.getElementById('IN-HP').addEventListener('click', redirectToPage);
-                document.getElementById('IN-UT').addEventListener('click', redirectToPage);
-                document.getElementById('IN-HR').addEventListener('click', redirectToPage);
-                document.getElementById('IN-UP').addEventListener('click', redirectToPage);
-                document.getElementById('IN-BR').addEventListener('click', redirectToPage);
-                document.getElementById('IN-JH').addEventListener('click', redirectToPage);
-                document.getElementById('IN-WB').addEventListener('click', redirectToPage);
-                document.getElementById('IN-OR').addEventListener('click', redirectToPage);
-                document.getElementById('IN-SK').addEventListener('click', redirectToPage);
-                document.getElementById('IN-NL').addEventListener('click', redirectToPage);
-                document.getElementById('IN-TR').addEventListener('click', redirectToPage);
-                document.getElementById('IN-MZ').addEventListener('click', redirectToPage);
-                document.getElementById('IN-MN').addEventListener('click', redirectToPage);
-                document.getElementById('IN-CT').addEventListener('click', redirectToPage);
-                document.getElementById('IN-TG').addEventListener('click', redirectToPage);
-                document.getElementById('IN-GA').addEventListener('click', redirectToPage);
-                document.getElementById('IN-AN').addEventListener('click', redirectToPage);
-                document.getElementById('IN-TN').addEventListener('click', redirectToPage);
-                document.getElementById('IN-MH').addEventListener('click', redirectToPage);
-                document.getElementById('IN-PB').addEventListener('click', redirectToPage);
-                document.getElementById('IN-ML').addEventListener('click', redirectToPage);
-
-                const api_url = "https://api.schoolinnovationmarathon.org/api/v1/dashboard/mapStats";
-                var api_data;
-                let dataOfmap = {};
-                const config = {
-                    headers: {
-                        Authorization: 'O10ZPA0jZS38wP7cO9EhI3jaDf24WmKX62nWw870'
-                    }
-                };
-                async function getUser() {
-                    // Making an API call (request)
-                    // and getting the response back
-                    const response = await fetch(api_url, config);
-
-                    // Parsing it to JSON format
-                    const data = await response.json();
-                    console.log(data);
-                    api_data = data.data[0];
-                    const districtData = data.data[0].dataValues;
-                    for (const entry of districtData) {
-                        const state_name = entry.state_name;
-                        const overallSchools = parseInt(entry.overall_schools);
-                        dataOfmap[state_name] = { 'reg_schools': parseInt(entry.reg_schools), 'teams': parseInt(entry.teams), 'students': parseInt(entry.students), 'ideas': parseInt(entry.ideas), 'reg_mentors': parseInt(entry.reg_mentors), 'state_name': state_name };
-                    }
-                    text.textContent = dataOfmap['all'].reg_schools;
-                    text1.textContent = dataOfmap['all'].teams;
-                    text2.textContent = dataOfmap['all'].students;
-                    text3.textContent = dataOfmap['all'].ideas;
-                    text4.textContent = "INDIA"
-                    text5.textContent = dataOfmap['all'].reg_mentors;
-                }
-                getUser();
-                //  console.log(data.data[0].dataValues[0].reg_schools,'vgvhbkjb');
-                var text = document.getElementById('institute_count');
-                var text1 = document.getElementById('student_team');
-                var text2 = document.getElementById('student_count');
-                var text3 = document.getElementById('student_ideas');
-                var text4 = document.getElementById('name');
-                var text5 = document.getElementById('teacher_count')
-                document.getElementById('IN-DL')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Delhi'].reg_schools;
-                        text1.textContent = dataOfmap['Delhi'].teams;
-                        text2.textContent = dataOfmap['Delhi'].students;
-                        text3.textContent = dataOfmap['Delhi'].ideas;
-                        text4.textContent = dataOfmap['Delhi'].state_name;
-                        text5.textContent = dataOfmap['Delhi'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-AN')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Andaman and Nicobar Islands'].reg_schools;
-                        text1.textContent = dataOfmap['Andaman and Nicobar Islands'].teams;
-                        text2.textContent = dataOfmap['Andaman and Nicobar Islands'].students;
-                        text3.textContent = dataOfmap['Andaman and Nicobar Islands'].ideas;
-                        text4.textContent = dataOfmap['Andaman and Nicobar Islands'].state_name;
-                        text5.textContent = dataOfmap['Andaman and Nicobar Islands'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-AP')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Andhra Pradesh'].reg_schools;
-                        text1.textContent = dataOfmap['Andhra Pradesh'].teams;
-                        text2.textContent = dataOfmap['Andhra Pradesh'].students;
-                        text3.textContent = dataOfmap['Andhra Pradesh'].ideas;
-                        text4.textContent = dataOfmap['Andhra Pradesh'].state_name;
-                        text5.textContent = dataOfmap['Andhra Pradesh'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-AR')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Arunachal Pradesh'].reg_schools;
-                        text1.textContent = dataOfmap['Arunachal Pradesh'].teams;
-                        text2.textContent = dataOfmap['Arunachal Pradesh'].students;
-                        text3.textContent = dataOfmap['Arunachal Pradesh'].ideas;
-                        text4.textContent = dataOfmap['Arunachal Pradesh'].state_name;
-                        text5.textContent = dataOfmap['Arunachal Pradesh'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-AS')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Assam'].reg_schools;
-                        text1.textContent = dataOfmap['Assam'].teams;
-                        text2.textContent = dataOfmap['Assam'].students;
-                        text3.textContent = dataOfmap['Assam'].ideas;
-                        text4.textContent = dataOfmap['Assam'].state_name;
-                        text5.textContent = dataOfmap['Assam'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-BR')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Bihar'].reg_schools;
-                        text1.textContent = dataOfmap['Bihar'].teams;
-                        text2.textContent = dataOfmap['Bihar'].students;
-                        text3.textContent = dataOfmap['Bihar'].ideas;
-                        text4.textContent = dataOfmap['Bihar'].state_name;
-                        text5.textContent = dataOfmap['Bihar'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-CH')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Chandigarh'].reg_schools;
-                        text1.textContent = dataOfmap['Chandigarh'].teams;
-                        text2.textContent = dataOfmap['Chandigarh'].students;
-                        text3.textContent = dataOfmap['Chandigarh'].ideas;
-                        text4.textContent = dataOfmap['Chandigarh'].state_name;
-                        text5.textContent = dataOfmap['Chandigarh'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-CT')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Chhattisgarh'].reg_schools;
-                        text1.textContent = dataOfmap['Chhattisgarh'].teams;
-                        text2.textContent = dataOfmap['Chhattisgarh'].students;
-                        text3.textContent = dataOfmap['Chhattisgarh'].ideas;
-                        text4.textContent = dataOfmap['Chhattisgarh'].state_name;
-                        text5.textContent = dataOfmap['Chhattisgarh'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-DN')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].reg_schools;
-                        text1.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].teams;
-                        text2.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].students;
-                        text3.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].ideas;
-                        text4.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].state_name;
-                        text5.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-GA')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Goa'].reg_schools;
-                        text1.textContent = dataOfmap['Goa'].teams;
-                        text2.textContent = dataOfmap['Goa'].students;
-                        text3.textContent = dataOfmap['Goa'].ideas;
-                        text4.textContent = dataOfmap['Goa'].state_name;
-                        text5.textContent = dataOfmap['Goa'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-GJ')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Gujarat'].reg_schools;
-                        text1.textContent = dataOfmap['Gujarat'].teams;
-                        text2.textContent = dataOfmap['Gujarat'].students;
-                        text3.textContent = dataOfmap['Gujarat'].ideas;
-                        text4.textContent = dataOfmap['Gujarat'].state_name;
-                        text5.textContent = dataOfmap['Gujarat'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-HP')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Himachal Pradesh'].reg_schools;
-                        text1.textContent = dataOfmap['Himachal Pradesh'].teams;
-                        text2.textContent = dataOfmap['Himachal Pradesh'].students;
-                        text3.textContent = dataOfmap['Himachal Pradesh'].ideas;
-                        text4.textContent = dataOfmap['Himachal Pradesh'].state_name;
-                        text5.textContent = dataOfmap['Himachal Pradesh'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-HR')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Haryana'].reg_schools;
-                        text1.textContent = dataOfmap['Haryana'].teams;
-                        text2.textContent = dataOfmap['Haryana'].students;
-                        text3.textContent = dataOfmap['Haryana'].ideas;
-                        text4.textContent = dataOfmap['Haryana'].state_name;
-                        text5.textContent = dataOfmap['Haryana'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-JH')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Jharkhand'].reg_schools;
-                        text1.textContent = dataOfmap['Jharkhand'].teams;
-                        text2.textContent = dataOfmap['Jharkhand'].students;
-                        text3.textContent = dataOfmap['Jharkhand'].ideas;
-                        text4.textContent = dataOfmap['Jharkhand'].state_name;
-                        text5.textContent = dataOfmap['Jharkhand'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-JK')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Jammu and Kashmir'].reg_schools;
-                        text1.textContent = dataOfmap['Jammu and Kashmir'].teams;
-                        text2.textContent = dataOfmap['Jammu and Kashmir'].students;
-                        text3.textContent = dataOfmap['Jammu and Kashmir'].ideas;
-                        text4.textContent = dataOfmap['Jammu and Kashmir'].state_name;
-                        text5.textContent = dataOfmap['Jammu and Kashmir'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-KA')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Karnataka'].reg_schools;
-                        text1.textContent = dataOfmap['Karnataka'].teams;
-                        text2.textContent = dataOfmap['Karnataka'].students;
-                        text3.textContent = dataOfmap['Karnataka'].ideas;
-                        text4.textContent = dataOfmap['Karnataka'].state_name;
-                        text5.textContent = dataOfmap['Karnataka'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-KL')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Kerala'].reg_schools;
-                        text1.textContent = dataOfmap['Kerala'].teams;
-                        text2.textContent = dataOfmap['Kerala'].students;
-                        text3.textContent = dataOfmap['Kerala'].ideas;
-                        text4.textContent = dataOfmap['Kerala'].state_name;
-                        text5.textContent = dataOfmap['Kerala'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                // document.getElementById('IN-LK')
-                // .addEventListener('mouseover', function(e) {
-                //     text.textContent =  dataOfmap['Ladakh'].reg_schools;
-                //     text1.textContent = dataOfmap['Ladakh'].teams;
-                //     text2.textContent = dataOfmap['Ladakh'].students;
-                //     text3.textContent = dataOfmap['Ladakh'].ideas;
-                //     text4.textContent = dataOfmap['Ladakh'].state_name;
-                //     text5.textContent = dataOfmap['Ladakh'].reg_mentors;
-                //     addEventListener("mouseout", function(e) {
-                //     text.textContent =   dataOfmap['all'].reg_schools;
-                //     text1.textContent = dataOfmap['all'].teams;
-                //     text2.textContent = dataOfmap['all'].students;
-                //     text3.textContent = dataOfmap['all'].ideas;
-                //     text4.textContent = "INDIA"
-                //     text5.textContent = dataOfmap['all'].reg_mentors;
-                //     });
-                // });
-
-                document.getElementById('IN-MH')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Maharashtra'].reg_schools;
-                        text1.textContent = dataOfmap['Maharashtra'].teams;
-                        text2.textContent = dataOfmap['Maharashtra'].students;
-                        text3.textContent = dataOfmap['Maharashtra'].ideas;
-                        text4.textContent = dataOfmap['Maharashtra'].state_name;
-                        text5.textContent = dataOfmap['Maharashtra'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-ML')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Meghalaya'].reg_schools;
-                        text1.textContent = dataOfmap['Meghalaya'].teams;
-                        text2.textContent = dataOfmap['Meghalaya'].students;
-                        text3.textContent = dataOfmap['Meghalaya'].ideas;
-                        text4.textContent = dataOfmap['Meghalaya'].state_name;
-                        text5.textContent = dataOfmap['Meghalaya'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-MN')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Manipur'].reg_schools;
-                        text1.textContent = dataOfmap['Manipur'].teams;
-                        text2.textContent = dataOfmap['Manipur'].students;
-                        text3.textContent = dataOfmap['Manipur'].ideas;
-                        text4.textContent = dataOfmap['Manipur'].state_name;
-                        text5.textContent = dataOfmap['Manipur'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-MP')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Madhya Pradesh'].reg_schools;
-                        text1.textContent = dataOfmap['Madhya Pradesh'].teams;
-                        text2.textContent = dataOfmap['Madhya Pradesh'].students;
-                        text3.textContent = dataOfmap['Madhya Pradesh'].ideas;
-                        text4.textContent = dataOfmap['Madhya Pradesh'].state_name;
-                        text5.textContent = dataOfmap['Madhya Pradesh'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-MZ')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Mizoram'].reg_schools;
-                        text1.textContent = dataOfmap['Mizoram'].teams;
-                        text2.textContent = dataOfmap['Mizoram'].students;
-                        text3.textContent = dataOfmap['Mizoram'].ideas;
-                        text4.textContent = dataOfmap['Mizoram'].state_name;
-                        text5.textContent = dataOfmap['Mizoram'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-NL')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Nagaland'].reg_schools;
-                        text1.textContent = dataOfmap['Nagaland'].teams;
-                        text2.textContent = dataOfmap['Nagaland'].students;
-                        text3.textContent = dataOfmap['Nagaland'].ideas;
-                        text4.textContent = dataOfmap['Nagaland'].state_name;
-                        text5.textContent = dataOfmap['Nagaland'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-OR')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Odisha'].reg_schools;
-                        text1.textContent = dataOfmap['Odisha'].teams;
-                        text2.textContent = dataOfmap['Odisha'].students;
-                        text3.textContent = dataOfmap['Odisha'].ideas;
-                        text4.textContent = dataOfmap['Odisha'].state_name;
-                        text5.textContent = dataOfmap['Odisha'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-PB')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Punjab'].reg_schools;
-                        text1.textContent = dataOfmap['Punjab'].teams;
-                        text2.textContent = dataOfmap['Punjab'].students;
-                        text3.textContent = dataOfmap['Punjab'].ideas;
-                        text4.textContent = dataOfmap['Punjab'].state_name;
-                        text5.textContent = dataOfmap['Punjab'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-PY')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Puducherry'].reg_schools;
-                        text1.textContent = dataOfmap['Puducherry'].teams;
-                        text2.textContent = dataOfmap['Puducherry'].students;
-                        text3.textContent = dataOfmap['Puducherry'].ideas;
-                        text4.textContent = dataOfmap['Puducherry'].state_name;
-                        text5.textContent = dataOfmap['Puducherry'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-RJ')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Rajasthan'].reg_schools;
-                        text1.textContent = dataOfmap['Rajasthan'].teams;
-                        text2.textContent = dataOfmap['Rajasthan'].students;
-                        text3.textContent = dataOfmap['Rajasthan'].ideas;
-                        text4.textContent = dataOfmap['Rajasthan'].state_name;
-                        text5.textContent = dataOfmap['Rajasthan'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-SK')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Sikkim'].reg_schools;
-                        text1.textContent = dataOfmap['Sikkim'].teams;
-                        text2.textContent = dataOfmap['Sikkim'].students;
-                        text3.textContent = dataOfmap['Sikkim'].ideas;
-                        text4.textContent = dataOfmap['Sikkim'].state_name;
-                        text5.textContent = dataOfmap['Sikkim'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-TG')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Telangana'].reg_schools;
-                        text1.textContent = dataOfmap['Telangana'].teams;
-                        text2.textContent = dataOfmap['Telangana'].students;
-                        text3.textContent = dataOfmap['Telangana'].ideas;
-                        text4.textContent = dataOfmap['Telangana'].state_name;
-                        text5.textContent = dataOfmap['Telangana'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-TN')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Tamil Nadu'].reg_schools;
-                        text1.textContent = dataOfmap['Tamil Nadu'].teams;
-                        text2.textContent = dataOfmap['Tamil Nadu'].students;
-                        text3.textContent = dataOfmap['Tamil Nadu'].ideas;
-                        text4.textContent = dataOfmap['Tamil Nadu'].state_name;
-                        text5.textContent = dataOfmap['Tamil Nadu'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-TR')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Tripura'].reg_schools;
-                        text1.textContent = dataOfmap['Tripura'].teams;
-                        text2.textContent = dataOfmap['Tripura'].students;
-                        text3.textContent = dataOfmap['Tripura'].ideas;
-                        text4.textContent = dataOfmap['Tripura'].state_name;
-                        text5.textContent = dataOfmap['Tripura'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-UP')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Uttar Pradesh'].reg_schools;
-                        text1.textContent = dataOfmap['Uttar Pradesh'].teams;
-                        text2.textContent = dataOfmap['Uttar Pradesh'].students;
-                        text3.textContent = dataOfmap['Uttar Pradesh'].ideas;
-                        text4.textContent = dataOfmap['Uttar Pradesh'].state_name;
-                        text5.textContent = dataOfmap['Uttar Pradesh'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-UT')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Uttarakhand'].reg_schools;
-                        text1.textContent = dataOfmap['Uttarakhand'].teams;
-                        text2.textContent = dataOfmap['Uttarakhand'].students;
-                        text3.textContent = dataOfmap['Uttarakhand'].ideas;
-                        text4.textContent = dataOfmap['Uttarakhand'].state_name;
-                        text5.textContent = dataOfmap['Uttarakhand'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                document.getElementById('IN-WB')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['West Bengal'].reg_schools;
-                        text1.textContent = dataOfmap['West Bengal'].teams;
-                        text2.textContent = dataOfmap['West Bengal'].students;
-                        text3.textContent = dataOfmap['West Bengal'].ideas;
-                        text4.textContent = dataOfmap['West Bengal'].state_name;
-                        text5.textContent = dataOfmap['West Bengal'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-                document.getElementById('IN-LD')
-                    .addEventListener('mouseover', function (e) {
-                        text.textContent = dataOfmap['Lakshadweep'].reg_schools;
-                        text1.textContent = dataOfmap['Lakshadweep'].teams;
-                        text2.textContent = dataOfmap['Lakshadweep'].students;
-                        text3.textContent = dataOfmap['Lakshadweep'].ideas;
-                        text4.textContent = dataOfmap['Lakshadweep'].state_name;
-                        text5.textContent = dataOfmap['Lakshadweep'].reg_mentors;
-                        addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
-                            text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
-                        });
-                    });
-
-                    // const testimonials = document.querySelector('.testimonial-carousel-two');
-                    // const leftArrow = document.querySelector('.left-arrow');
-                    // const rightArrow = document.querySelector('.right-arrow');
-
-                    // let index = 0;
-                    // const totalTestimonials = document.querySelectorAll('.single-testimonial-item-05').length;
-
-                    // // Update the carousel position
-                    // function updateCarousel() {
-                    //     // Calculate the offset for the translateX property
-                    //     const offset = index * 100; // Adjust based on index
-                    
-                    //     testimonials.style.transform = `translateX(-${offset}%)`; // Move to the current index
-                    // }
-
-                    // // Event listener for the left arrow
-                    // leftArrow.addEventListener('click', () => {
-                    //     index = (index > 0) ? index - 1 : totalTestimonials - 1; // Loop back
-                    //     updateCarousel();
-                    // });
-
-                    // // Event listener for the right arrow
-                    // rightArrow.addEventListener('click', () => {
-                    //     index = (index < totalTestimonials - 1) ? index + 1 : 0; // Loop to start
-                    //     updateCarousel();
-                    // });
-
-                    // // Initialize the carousel position
-                    // updateCarousel();
+    
+    document.getElementById('IN-AP').addEventListener('click', redirectToPage);
+    document.getElementById('IN-JK').addEventListener('click', redirectToPage);
+    document.getElementById('IN-AR').addEventListener('click', redirectToPage);
+    document.getElementById('IN-AS').addEventListener('click', redirectToPage);
+    document.getElementById('IN-DL').addEventListener('click', redirectToPage);
+    document.getElementById('IN-GJ').addEventListener('click', redirectToPage);
+    document.getElementById('IN-KL').addEventListener('click', redirectToPage);
+    document.getElementById('IN-KA').addEventListener('click', redirectToPage);
+    document.getElementById('IN-MP').addEventListener('click', redirectToPage);
+    document.getElementById('IN-RJ').addEventListener('click', redirectToPage);
+    document.getElementById('IN-HP').addEventListener('click', redirectToPage);
+    document.getElementById('IN-UT').addEventListener('click', redirectToPage);
+    document.getElementById('IN-HR').addEventListener('click', redirectToPage);
+    document.getElementById('IN-UP').addEventListener('click', redirectToPage);
+    document.getElementById('IN-BR').addEventListener('click', redirectToPage);
+    document.getElementById('IN-JH').addEventListener('click', redirectToPage);
+    document.getElementById('IN-WB').addEventListener('click', redirectToPage);
+    document.getElementById('IN-OR').addEventListener('click', redirectToPage);
+    document.getElementById('IN-SK').addEventListener('click', redirectToPage);
+    document.getElementById('IN-NL').addEventListener('click', redirectToPage);
+    document.getElementById('IN-TR').addEventListener('click', redirectToPage);
+    document.getElementById('IN-MZ').addEventListener('click', redirectToPage);
+    document.getElementById('IN-MN').addEventListener('click', redirectToPage);
+    document.getElementById('IN-CT').addEventListener('click', redirectToPage);
+    document.getElementById('IN-TG').addEventListener('click', redirectToPage);
+    document.getElementById('IN-GA').addEventListener('click', redirectToPage);
+    document.getElementById('IN-AN').addEventListener('click', redirectToPage);
+    document.getElementById('IN-TN').addEventListener('click', redirectToPage);
+    document.getElementById('IN-MH').addEventListener('click', redirectToPage);
+    document.getElementById('IN-PB').addEventListener('click', redirectToPage);
+    document.getElementById('IN-ML').addEventListener('click', redirectToPage);
 
 
-                document.addEventListener("DOMContentLoaded", function () {
-                    var modal = document.getElementById("myModal");
-                    var btns = document.querySelectorAll(".youtube-popup");
-                    var span = document.getElementsByClassName("close")[0];
-                    var iframe = document.getElementById("modalIframe");
+const api_url = "https://api.schoolinnovationmarathon.org/api/v1/dashboard/mapStats";
+var api_data;
+let dataOfmap = {};
+const config = { headers: {
+        Authorization : 'O10ZPA0jZS38wP7cO9EhI3jaDf24WmKX62nWw870'
+    }}
+async function getUser() {
+// Making an API call (request)
+// and getting the response back
+const response = await fetch(api_url,config);
 
-                    btns.forEach(function (btn) {
-                        btn.onclick = function () {
-                            var videoId = btn.getAttribute("data-video-id");
-                            iframe.src = "https://www.youtube.com/embed/" + videoId;
-                            modal.style.display = "block";
-                        }
-                    });
+// Parsing it to JSON format
+const data = await response.json();
+console.log(data);
+api_data=data.data[0];
+const districtData = data.data[0].dataValues;
+for (const entry of districtData) {
+const state_name = entry.state_name;
+const overallSchools = parseInt(entry.overall_schools);
+dataOfmap[state_name] = {'reg_schools':parseInt(entry.reg_schools),'teams':parseInt(entry.teams),'students':parseInt(entry.students),'ideas':parseInt(entry.ideas),'reg_mentors':parseInt(entry.reg_mentors),'state_name':state_name};
+}
+text.textContent = dataOfmap['all'].reg_schools;
+text1.textContent = dataOfmap['all'].teams;
+text2.textContent = dataOfmap['all'].students;
+text3.textContent = dataOfmap['all'].ideas;
+text4.textContent = "INDIA"
+text5.textContent = dataOfmap['all'].reg_mentors;
+}
+getUser();
+//  console.log(data.data[0].dataValues[0].reg_schools,'vgvhbkjb');
+ var text = document.getElementById('institute_count');
+ var text1 = document.getElementById('student_team');
+ var text2 = document.getElementById('student_count');
+ var text3 = document.getElementById('student_ideas');
+ var text4 = document.getElementById('name');
+ var text5 = document.getElementById('teacher_count')
+   document.getElementById('IN-DL')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Delhi'].reg_schools;
+        text1.textContent = dataOfmap['Delhi'].teams;
+        text2.textContent = dataOfmap['Delhi'].students;
+        text3.textContent = dataOfmap['Delhi'].ideas;
+        text4.textContent = dataOfmap['Delhi'].state_name;
+        text5.textContent = dataOfmap['Delhi'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
 
-                    span.onclick = function () {
-                        modal.style.display = "none";
-                        iframe.src = ""; // Clear the iframe src to stop video playback
-                    }
+    document.getElementById('IN-AN')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Andaman and Nicobar Islands'].reg_schools;
+        text1.textContent = dataOfmap['Andaman and Nicobar Islands'].teams;
+        text2.textContent = dataOfmap['Andaman and Nicobar Islands'].students;
+        text3.textContent = dataOfmap['Andaman and Nicobar Islands'].ideas;
+        text4.textContent = dataOfmap['Andaman and Nicobar Islands'].state_name;
+        text5.textContent = dataOfmap['Andaman and Nicobar Islands'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
 
-                    window.onclick = function (event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                            iframe.src = ""; // Clear the iframe src to stop video playback
-                        }
-                    }
-                });
-                
-                var snapC = Snap("#svgC");
+    document.getElementById('IN-AP')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Andhra Pradesh'].reg_schools;
+        text1.textContent = dataOfmap['Andhra Pradesh'].teams;
+        text2.textContent = dataOfmap['Andhra Pradesh'].students;
+        text3.textContent = dataOfmap['Andhra Pradesh'].ideas;
+        text4.textContent = dataOfmap['Andhra Pradesh'].state_name;
+        text5.textContent = dataOfmap['Andhra Pradesh'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
 
-                // SVG C - "Squiggly" Path
-                var myPathC = snapC.path("M62.9 14.9c-25-7.74-56.6 4.8-60.4 24.3-3.73 19.6 21.6 35 39.6 37.6 42.8 6.2 72.9-53.4 116-58.9 65-18.2 191 101 215 28.8 5-16.7-7-49.1-34-44-34 11.5-31 46.5-14 69.3 9.38 12.6 24.2 20.6 39.8 22.9 91.4 9.05 102-98.9 176-86.7 18.8 3.81 33 17.3 36.7 34.6 2.01 10.2.124 21.1-5.18 30.1").attr({
-                    id: "squiggle",
-                    fill: "none",
-                    strokeWidth: "1",
-                    stroke: "rgba(0,0,0,0.1)",
-                    strokeMiterLimit: "10",
-                    strokeDasharray: "5 10",
-                    strokeDashOffset: "180"
-                });
+    document.getElementById('IN-AR')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Arunachal Pradesh'].reg_schools;
+        text1.textContent = dataOfmap['Arunachal Pradesh'].teams;
+        text2.textContent = dataOfmap['Arunachal Pradesh'].students;
+        text3.textContent = dataOfmap['Arunachal Pradesh'].ideas;
+        text4.textContent = dataOfmap['Arunachal Pradesh'].state_name;
+        text5.textContent = dataOfmap['Arunachal Pradesh'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
 
-            </script>
+    document.getElementById('IN-AS')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Assam'].reg_schools;
+        text1.textContent = dataOfmap['Assam'].teams;
+        text2.textContent = dataOfmap['Assam'].students;
+        text3.textContent = dataOfmap['Assam'].ideas;
+        text4.textContent = dataOfmap['Assam'].state_name;
+        text5.textContent = dataOfmap['Assam'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-BR')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Bihar'].reg_schools;
+        text1.textContent = dataOfmap['Bihar'].teams;
+        text2.textContent = dataOfmap['Bihar'].students;
+        text3.textContent = dataOfmap['Bihar'].ideas;
+        text4.textContent = dataOfmap['Bihar'].state_name;
+        text5.textContent = dataOfmap['Bihar'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-CH')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Chandigarh'].reg_schools;
+        text1.textContent = dataOfmap['Chandigarh'].teams;
+        text2.textContent = dataOfmap['Chandigarh'].students;
+        text3.textContent = dataOfmap['Chandigarh'].ideas;
+        text4.textContent = dataOfmap['Chandigarh'].state_name;
+        text5.textContent = dataOfmap['Chandigarh'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-CT')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Chhattisgarh'].reg_schools;
+        text1.textContent = dataOfmap['Chhattisgarh'].teams;
+        text2.textContent = dataOfmap['Chhattisgarh'].students;
+        text3.textContent = dataOfmap['Chhattisgarh'].ideas;
+        text4.textContent = dataOfmap['Chhattisgarh'].state_name;
+        text5.textContent = dataOfmap['Chhattisgarh'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-DN')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].reg_schools;
+        text1.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].teams;
+        text2.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].students;
+        text3.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].ideas;
+        text4.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].state_name;
+        text5.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-GA')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Goa'].reg_schools;
+        text1.textContent = dataOfmap['Goa'].teams;
+        text2.textContent = dataOfmap['Goa'].students;
+        text3.textContent = dataOfmap['Goa'].ideas;
+        text4.textContent = dataOfmap['Goa'].state_name;
+        text5.textContent = dataOfmap['Goa'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-GJ')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Gujarat'].reg_schools;
+        text1.textContent = dataOfmap['Gujarat'].teams;
+        text2.textContent = dataOfmap['Gujarat'].students;
+        text3.textContent = dataOfmap['Gujarat'].ideas;
+        text4.textContent = dataOfmap['Gujarat'].state_name;
+        text5.textContent = dataOfmap['Gujarat'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-HP')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Himachal Pradesh'].reg_schools;
+        text1.textContent = dataOfmap['Himachal Pradesh'].teams;
+        text2.textContent = dataOfmap['Himachal Pradesh'].students;
+        text3.textContent = dataOfmap['Himachal Pradesh'].ideas;
+        text4.textContent = dataOfmap['Himachal Pradesh'].state_name;
+        text5.textContent = dataOfmap['Himachal Pradesh'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-HR')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Haryana'].reg_schools;
+        text1.textContent = dataOfmap['Haryana'].teams;
+        text2.textContent = dataOfmap['Haryana'].students;
+        text3.textContent = dataOfmap['Haryana'].ideas;
+        text4.textContent = dataOfmap['Haryana'].state_name;
+        text5.textContent = dataOfmap['Haryana'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-JH')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Jharkhand'].reg_schools;
+        text1.textContent = dataOfmap['Jharkhand'].teams;
+        text2.textContent = dataOfmap['Jharkhand'].students;
+        text3.textContent = dataOfmap['Jharkhand'].ideas;
+        text4.textContent = dataOfmap['Jharkhand'].state_name;
+        text5.textContent = dataOfmap['Jharkhand'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-JK')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Jammu and Kashmir'].reg_schools;
+        text1.textContent = dataOfmap['Jammu and Kashmir'].teams;
+        text2.textContent = dataOfmap['Jammu and Kashmir'].students;
+        text3.textContent = dataOfmap['Jammu and Kashmir'].ideas;
+        text4.textContent = dataOfmap['Jammu and Kashmir'].state_name;
+        text5.textContent = dataOfmap['Jammu and Kashmir'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-KA')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Karnataka'].reg_schools;
+        text1.textContent = dataOfmap['Karnataka'].teams;
+        text2.textContent = dataOfmap['Karnataka'].students;
+        text3.textContent = dataOfmap['Karnataka'].ideas;
+        text4.textContent = dataOfmap['Karnataka'].state_name;
+        text5.textContent = dataOfmap['Karnataka'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-KL')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Kerala'].reg_schools;
+        text1.textContent = dataOfmap['Kerala'].teams;
+        text2.textContent = dataOfmap['Kerala'].students;
+        text3.textContent = dataOfmap['Kerala'].ideas;
+        text4.textContent = dataOfmap['Kerala'].state_name;
+        text5.textContent = dataOfmap['Kerala'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    // document.getElementById('IN-LK')
+    // .addEventListener('mouseover', function(e) {
+    //     text.textContent =  dataOfmap['Ladakh'].reg_schools;
+    //     text1.textContent = dataOfmap['Ladakh'].teams;
+    //     text2.textContent = dataOfmap['Ladakh'].students;
+    //     text3.textContent = dataOfmap['Ladakh'].ideas;
+    //     text4.textContent = dataOfmap['Ladakh'].state_name;
+    //     text5.textContent = dataOfmap['Ladakh'].reg_mentors;
+    //     addEventListener("mouseout", function(e) {
+    //     text.textContent =   dataOfmap['all'].reg_schools;
+    //     text1.textContent = dataOfmap['all'].teams;
+    //     text2.textContent = dataOfmap['all'].students;
+    //     text3.textContent = dataOfmap['all'].ideas;
+    //     text4.textContent = "INDIA"
+    //     text5.textContent = dataOfmap['all'].reg_mentors;
+    //     });
+    // });
+
+    document.getElementById('IN-MH')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Maharashtra'].reg_schools;
+        text1.textContent = dataOfmap['Maharashtra'].teams;
+        text2.textContent = dataOfmap['Maharashtra'].students;
+        text3.textContent = dataOfmap['Maharashtra'].ideas;
+        text4.textContent = dataOfmap['Maharashtra'].state_name;
+        text5.textContent = dataOfmap['Maharashtra'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-ML')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Meghalaya'].reg_schools;
+        text1.textContent = dataOfmap['Meghalaya'].teams;
+        text2.textContent = dataOfmap['Meghalaya'].students;
+        text3.textContent = dataOfmap['Meghalaya'].ideas;
+        text4.textContent = dataOfmap['Meghalaya'].state_name;
+        text5.textContent = dataOfmap['Meghalaya'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-MN')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Manipur'].reg_schools;
+        text1.textContent = dataOfmap['Manipur'].teams;
+        text2.textContent = dataOfmap['Manipur'].students;
+        text3.textContent = dataOfmap['Manipur'].ideas;
+        text4.textContent = dataOfmap['Manipur'].state_name;
+        text5.textContent = dataOfmap['Manipur'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-MP')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Madhya Pradesh'].reg_schools;
+        text1.textContent = dataOfmap['Madhya Pradesh'].teams;
+        text2.textContent = dataOfmap['Madhya Pradesh'].students;
+        text3.textContent = dataOfmap['Madhya Pradesh'].ideas;
+        text4.textContent = dataOfmap['Madhya Pradesh'].state_name;
+        text5.textContent = dataOfmap['Madhya Pradesh'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-MZ')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Mizoram'].reg_schools;
+        text1.textContent = dataOfmap['Mizoram'].teams;
+        text2.textContent = dataOfmap['Mizoram'].students;
+        text3.textContent = dataOfmap['Mizoram'].ideas;
+        text4.textContent = dataOfmap['Mizoram'].state_name;
+        text5.textContent = dataOfmap['Mizoram'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-NL')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Nagaland'].reg_schools;
+        text1.textContent = dataOfmap['Nagaland'].teams;
+        text2.textContent = dataOfmap['Nagaland'].students;
+        text3.textContent = dataOfmap['Nagaland'].ideas;
+        text4.textContent = dataOfmap['Nagaland'].state_name;
+        text5.textContent = dataOfmap['Nagaland'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-OR')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Odisha'].reg_schools;
+        text1.textContent = dataOfmap['Odisha'].teams;
+        text2.textContent = dataOfmap['Odisha'].students;
+        text3.textContent = dataOfmap['Odisha'].ideas;
+        text4.textContent = dataOfmap['Odisha'].state_name;
+        text5.textContent = dataOfmap['Odisha'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-PB')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Punjab'].reg_schools;
+        text1.textContent = dataOfmap['Punjab'].teams;
+        text2.textContent = dataOfmap['Punjab'].students;
+        text3.textContent = dataOfmap['Punjab'].ideas;
+        text4.textContent = dataOfmap['Punjab'].state_name;
+        text5.textContent = dataOfmap['Punjab'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-PY')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Puducherry'].reg_schools;
+        text1.textContent = dataOfmap['Puducherry'].teams;
+        text2.textContent = dataOfmap['Puducherry'].students;
+        text3.textContent = dataOfmap['Puducherry'].ideas;
+        text4.textContent = dataOfmap['Puducherry'].state_name;
+        text5.textContent = dataOfmap['Puducherry'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-RJ')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Rajasthan'].reg_schools;
+        text1.textContent = dataOfmap['Rajasthan'].teams;
+        text2.textContent = dataOfmap['Rajasthan'].students;
+        text3.textContent = dataOfmap['Rajasthan'].ideas;
+        text4.textContent = dataOfmap['Rajasthan'].state_name;
+        text5.textContent = dataOfmap['Rajasthan'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-SK')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Sikkim'].reg_schools;
+        text1.textContent = dataOfmap['Sikkim'].teams;
+        text2.textContent = dataOfmap['Sikkim'].students;
+        text3.textContent = dataOfmap['Sikkim'].ideas;
+        text4.textContent = dataOfmap['Sikkim'].state_name;
+        text5.textContent = dataOfmap['Sikkim'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-TG')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Telangana'].reg_schools;
+        text1.textContent = dataOfmap['Telangana'].teams;
+        text2.textContent = dataOfmap['Telangana'].students;
+        text3.textContent = dataOfmap['Telangana'].ideas;
+        text4.textContent = dataOfmap['Telangana'].state_name;
+        text5.textContent = dataOfmap['Telangana'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-TN')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Tamil Nadu'].reg_schools ;
+        text1.textContent = dataOfmap['Tamil Nadu'].teams;
+        text2.textContent = dataOfmap['Tamil Nadu'].students;
+        text3.textContent = dataOfmap['Tamil Nadu'].ideas;
+        text4.textContent = dataOfmap['Tamil Nadu'].state_name;
+        text5.textContent = dataOfmap['Tamil Nadu'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-TR')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Tripura'].reg_schools;
+        text1.textContent = dataOfmap['Tripura'].teams;
+        text2.textContent = dataOfmap['Tripura'].students;
+        text3.textContent = dataOfmap['Tripura'].ideas;
+        text4.textContent = dataOfmap['Tripura'].state_name;
+        text5.textContent = dataOfmap['Tripura'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-UP')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Uttar Pradesh'].reg_schools;
+        text1.textContent = dataOfmap['Uttar Pradesh'].teams;
+        text2.textContent = dataOfmap['Uttar Pradesh'].students;
+        text3.textContent = dataOfmap['Uttar Pradesh'].ideas;
+        text4.textContent = dataOfmap['Uttar Pradesh'].state_name;
+        text5.textContent = dataOfmap['Uttar Pradesh'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-UT')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Uttarakhand'].reg_schools;
+        text1.textContent = dataOfmap['Uttarakhand'].teams;
+        text2.textContent = dataOfmap['Uttarakhand'].students;
+        text3.textContent = dataOfmap['Uttarakhand'].ideas;
+        text4.textContent = dataOfmap['Uttarakhand'].state_name;
+        text5.textContent = dataOfmap['Uttarakhand'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+
+    document.getElementById('IN-WB')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['West Bengal'].reg_schools;
+        text1.textContent = dataOfmap['West Bengal'].teams;
+        text2.textContent = dataOfmap['West Bengal'].students;
+        text3.textContent = dataOfmap['West Bengal'].ideas;
+        text4.textContent = dataOfmap['West Bengal'].state_name;
+        text5.textContent = dataOfmap['West Bengal'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+    document.getElementById('IN-LD')
+    .addEventListener('mouseover', function(e) {
+        text.textContent =  dataOfmap['Lakshadweep'].reg_schools;
+        text1.textContent = dataOfmap['Lakshadweep'].teams;
+        text2.textContent = dataOfmap['Lakshadweep'].students;
+        text3.textContent = dataOfmap['Lakshadweep'].ideas;
+        text4.textContent = dataOfmap['Lakshadweep'].state_name;
+        text5.textContent = dataOfmap['Lakshadweep'].reg_mentors;
+        addEventListener("mouseout", function(e) {
+        text.textContent =   dataOfmap['all'].reg_schools;
+        text1.textContent = dataOfmap['all'].teams;
+        text2.textContent = dataOfmap['all'].students;
+        text3.textContent = dataOfmap['all'].ideas;
+        text4.textContent = "INDIA"
+        text5.textContent = dataOfmap['all'].reg_mentors;
+        });
+    });
+    
+</script>
 
 
             <!-- jquery -->
