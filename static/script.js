@@ -47,11 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
         // Array of different greeting messages
         const greetings = [
-            "Hello! I'm here to help you with any questions you may have.",
-            "Hi there! Need assistance? I'm here for you.",
-            "Welcome! How can I assist you today?",
-            "Greetings! Let me know if there's anything you need help with.",
-            "Hey! I'm ready to answer any questions you might have."
+            "Hello! 🙂, I'm here to help you with any questions you may have.",
+            "Hi there!🙂,  Need assistance? I'm here for you.",
+            "Welcome!🙂,  How can I assist you today?",
+            "Greetings!🙂, Let me know if there's anything you need help with.",
+            "Hello 🙂, How can I assist you today?"
         ];
     
         // Select a random greeting from the array
@@ -249,13 +249,13 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     
             optionElement.addEventListener('mouseover', function() {
-                optionElement.style.backgroundColor = 'crimson';
+                optionElement.style.backgroundColor = 'green';
                 optionElement.style.color = 'white';
             });
     
             optionElement.addEventListener('mouseout', function() {
                 optionElement.style.backgroundColor = 'white';
-                optionElement.style.color = 'crimson';
+                optionElement.style.color = 'green';
             });
     
             optionContainer.appendChild(optionElement);
@@ -265,7 +265,47 @@ document.addEventListener('DOMContentLoaded', function() {
         chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom of the chat box
     }
     
+    function displaySuboptionsTeacher() {
+        const subOptions = ['Portal', 'Program queries','Support Videos']; // List of sub-options
+        var firstOption = true; // Flag to check if it's the first sub-option
     
+        subOptions.forEach(function(optionText) {
+            var optionContainer = document.createElement('div');
+            optionContainer.classList.add('option-container');
+    
+            var optionElement = document.createElement('div');
+            optionElement.textContent = optionText;
+            optionElement.classList.add('option');
+    
+            if (firstOption) {
+                optionElement.style.marginLeft = '30px'; // Apply left margin only to the first option
+                firstOption = false; // Reset flag after applying margin once
+            }
+    
+            optionElement.addEventListener('click', function() {
+                displayUserMessage(optionText);
+                setTimeout(function() {
+                    fetchBotResponse_new(optionText);
+                }, 500);
+            });
+    
+    
+            optionElement.addEventListener('mouseover', function() {
+                optionElement.style.backgroundColor = 'green';
+                optionElement.style.color = 'white';
+            });
+    
+            optionElement.addEventListener('mouseout', function() {
+                optionElement.style.backgroundColor = 'white';
+                optionElement.style.color = 'green';
+            });
+    
+            optionContainer.appendChild(optionElement);
+            chatBox.appendChild(optionContainer);
+        });
+    
+        chatBox.scrollTop = chatBox.scrollHeight; // Ensure the chat box scrolls to display the latest added elements
+    }
    
     function displaySuboptions1() {
         const subOptions = ['Portal', 'Program queries']; // List of sub-options
@@ -293,13 +333,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
             optionElement.addEventListener('mouseover', function() {
-                optionElement.style.backgroundColor = 'crimson';
+                optionElement.style.backgroundColor = 'green';
                 optionElement.style.color = 'white';
             });
     
             optionElement.addEventListener('mouseout', function() {
                 optionElement.style.backgroundColor = 'white';
-                optionElement.style.color = 'crimson';
+                optionElement.style.color = 'green';
             });
     
             optionContainer.appendChild(optionElement);
@@ -332,13 +372,13 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     
             optionElement.addEventListener('mouseover', function() {
-                optionElement.style.backgroundColor = 'crimson';
+                optionElement.style.backgroundColor = 'green';
                 optionElement.style.color = 'white';
             });
     
             optionElement.addEventListener('mouseout', function() {
                 optionElement.style.backgroundColor = 'white';
-                optionElement.style.color = 'crimson';
+                optionElement.style.color = 'green';
             });
     
             optionContainer.appendChild(optionElement);
@@ -379,8 +419,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     
             // Hover effect events
-            optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-            optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+            optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+            optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
     
             optionContainer.appendChild(optionElement);
             chatBox.appendChild(optionContainer);
@@ -420,8 +460,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     
             // Hover effect events
-            optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-            optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+            optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+            optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
     
             optionContainer.appendChild(optionElement);
             chatBox.appendChild(optionContainer);
@@ -453,8 +493,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     
             // Hover effect events
-            optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-            optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+            optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+            optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
     
             optionContainer.appendChild(optionElement);
             chatBox.appendChild(optionContainer);
@@ -486,8 +526,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     
             // Hover effect events
-            optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-            optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+            optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+            optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
     
             optionContainer.appendChild(optionElement);
             chatBox.appendChild(optionContainer);
@@ -501,13 +541,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // You can customize this function to fetch appropriate responses based on selected option
         var botResponse = '';
         var link = '';
-        if (optionText.toLowerCase() === 'teacher' || 'student') {
+        if (optionText.toLowerCase() === 'student') {
             botResponse = "what is your query regarding?";
             displayBotMessage(botResponse);
             displaySuboptions1();
         }
-       
-    
+        else if (optionText.toLowerCase() === 'teacher') {
+            botResponse = "what is your query regarding?";
+            displayBotMessage(botResponse);
+            displaySuboptionsTeacher();
+        }
     }
   
         function fetchBotResponse_new(optionText) {
@@ -523,11 +566,22 @@ document.addEventListener('DOMContentLoaded', function() {
                     displayBotMessage(botResponse);
                     displayStudentPortalOptions(); 
                 }
+                else if (lastClickedOption === 'Student') {
+                    botResponse = "Here are the categories for Student:";
+                    displayBotMessage(botResponse);
+                    displayStudentPortalOptions(); 
+                }
             }
             else if (optionText.toLowerCase() === 'program queries') {
                 botResponse = "Questions";
                 displayBotMessage(botResponse);
                 displaySuboptions2();
+                
+            }
+            else if (optionText.toLowerCase() === 'support videos') {
+                botResponse = "Select";
+                displayBotMessage(botResponse);
+                displayTeacherSupportVideosOptions();
                 
             }
             
@@ -539,16 +593,18 @@ function fetchBotResponse(optionText) {
     var botResponse = '';
     if (optionText.toLowerCase() === 'teacher') {
         lastClickedOption = 'Teacher'; // Set Teacher as the last clicked option
-        botResponse = "What is your query regarding?";
+        botResponse = " Dear Teacher 🙂, How can we assist you today?";
         displayBotMessage(botResponse);
-        displaySuboptions1(); // Call suboptions for Teacher
+        displaySuboptionsTeacher(); // Call suboptions for Teacher
     } else if (optionText.toLowerCase() === 'student') {
         lastClickedOption = 'Student'; // Set Student as the last clicked option
-        botResponse = "What is your query regarding?";
+        botResponse = " Hi Kiddo !! 🙂, How can I help you today ???";
         displayBotMessage(botResponse);
         displaySuboptions1(); // Call suboptions for Student
     }
 }
+
+
 
 // Teacher Portal Options
 // Teacher Portal Options
@@ -578,13 +634,13 @@ function displayTeacherPortalOptions() {
         });
 
         optionElement.addEventListener('mouseover', function() {
-            optionElement.style.backgroundColor = 'crimson';
+            optionElement.style.backgroundColor = 'green';
             optionElement.style.color = 'white';
         });
 
         optionElement.addEventListener('mouseout', function() {
             optionElement.style.backgroundColor = 'white';
-            optionElement.style.color = 'crimson';
+            optionElement.style.color = 'green';
         });
 
         optionContainer.appendChild(optionElement);
@@ -620,13 +676,13 @@ function displayTeacherPortalOptions() {
                 });
 
                 optionElement.addEventListener('mouseover', function() {
-                    optionElement.style.backgroundColor = 'crimson';
+                    optionElement.style.backgroundColor = 'green';
                     optionElement.style.color = 'white';
                 });
 
                 optionElement.addEventListener('mouseout', function() {
                     optionElement.style.backgroundColor = 'white';
-                    optionElement.style.color = 'crimson';
+                    optionElement.style.color = 'green';
                 });
 
                 optionContainer.appendChild(optionElement);
@@ -691,7 +747,7 @@ function displayTeacherPortalOptions() {
                 displayTeacherPostSurveyOptions();
             }  
             else if (optionText === 'Certificate') {
-                botResponse = "How can I help you with post survey";
+                botResponse = "How can I help you with certificate";
                 displayBotMessage(botResponse);
                 displayTeacherCertificateOptions();
             }  
@@ -704,6 +760,109 @@ function displayTeacherPortalOptions() {
         function setOptionStyles(optionElement, backgroundColor, textColor) {
             optionElement.style.backgroundColor = backgroundColor;
             optionElement.style.color = textColor;
+        }
+        function displayTeacherSupportVideosOptions() {
+            const subOptions = [
+                'Teacher Registration', 'Teacher Login', 'Dashboard', 'Student Team Creation', 'Teacher course ', 'Resources',
+                'Post survey', 'My profile And Password change', 'Forgot password & Password change', 'Student Login Credentials', 'Support'
+            ];
+            const marginLeftValue = '10px'; // Set a consistent left margin
+        
+            subOptions.forEach(function(optionText) {
+                var optionContainer = document.createElement('div');
+                optionContainer.classList.add('option-container');
+                optionContainer.style.marginBottom = '10px'; // Add bottom margin for spacing
+        
+                var optionElement = document.createElement('div');
+                optionElement.textContent = optionText;
+                optionElement.classList.add('option');
+                optionElement.style.marginLeft = marginLeftValue; // Apply consistent left margin
+                optionElement.style.padding = '5px 10px'; // Add some padding for better appearance
+        
+                optionElement.addEventListener('click', function() {
+                    displayUserMessage(optionText);
+                    setTimeout(function() {
+                        fetchTeacherSupportVideoResponse(optionText);
+                    }, 500);
+                });
+                
+        
+                optionElement.addEventListener('mouseover', function() {
+                    optionElement.style.backgroundColor = 'green';
+                    optionElement.style.color = 'white';
+                });
+        
+                optionElement.addEventListener('mouseout', function() {
+                    optionElement.style.backgroundColor = 'white';
+                    optionElement.style.color = 'green';
+                });
+        
+                optionContainer.appendChild(optionElement);
+                chatBox.appendChild(optionContainer);
+            });
+        
+            chatBox.scrollTop = chatBox.scrollHeight; // Ensure the chat box scrolls to display the latest added elements
+        }
+
+        function fetchTeacherSupportVideoResponse(optionText) {
+            var botResponse = '';
+            if (optionText === 'Teacher Registration') {
+                botResponse = "Please watch the <a href='https://youtu.be/sVCgsJgfNJY' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+               // Display sub-options for Teacher Registration
+            }
+            else if (optionText === 'Teacher Login') {
+                botResponse = "Please watch the <a href='https://youtu.be/MIZcxs9pJuA' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+                
+            } 
+            else if (optionText === 'Dashboard') {
+                botResponse = "Please watch the <a href='https://youtu.be/OIsCwczsT0o' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+                
+            }  
+            else if (optionText === 'Student Team Creation') {
+                botResponse = "Please watch the <a href='https://youtu.be/sT3I44RzZAI' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+                
+            }  
+            else if (optionText === 'Teacher course') {
+                botResponse = "Please watch the <a href='https://youtu.be/dWpG-TMyMrQ' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+               
+            }  
+           
+            else if (optionText === 'Resources') {
+                botResponse = "Please watch the <a href='https://youtu.be/fse1a6IaeB0?si=eGCchfakf7GbldRV' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+               
+            } 
+            else if (optionText === 'Post survey') {
+                botResponse = "Please watch the <a href='https://youtu.be/siaE-HPVvk0' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+               
+            }  
+            else if (optionText === 'My profile And Password change') {
+                botResponse = "Please watch the <a href='https://youtu.be/Go8alatAXhE' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+               
+            }  
+            else if (optionText === 'Forgot password & Password change') {
+                botResponse = "Please watch the <a href='https://youtu.be/D434mJUmGpk' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+               
+            } 
+            else if (optionText === 'Student Login Credentials') {
+                botResponse = "Please watch the <a href='https://youtu.be/e0S4PRXLo0U' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+                
+            }  
+            else if (optionText === 'Support') {
+                botResponse = "Please watch the <a href='https://youtu.be/LYS2A3ozZRU' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+                
+            }  
+            
         }
 
         // Display sub-options for Teacher Registration
@@ -736,8 +895,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -812,8 +971,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -832,7 +991,7 @@ function displayTeacherPortalOptions() {
                         2. Go to Profile Settings: Navigate to the "Change Password" option under your profile or account settings.
                         3. Update Password: Enter your current password, then your new password, and save the changes.
 
-                        For detailed instructions, please watch <a href="https://www.youtube.com/watch?v=fse1a6IaeB0" target="_blank"><br>Watch Video</a>`,
+                        For detailed instructions, please watch <a href="https://youtu.be/Go8alatAXhE" target="_blank"><br>Watch Video</a>`,
                 
 
             };
@@ -879,8 +1038,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -952,8 +1111,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -983,7 +1142,8 @@ function displayTeacherPortalOptions() {
                 4. Certificate Download:
                 - You can download the certificate only after completing the Post Survey. Access this option from the dashboard by clicking on the “Certificate” icon.
 
-                Make sure you complete the survey to unlock the certificate and fully engage with the program's requirements.`,
+                Make sure you complete the survey to unlock the certificate and fully engage with the program's requirements.
+                For detailed instructions, please watch <a href="https://youtu.be/siaE-HPVvk0?si=71kjDDKlBCrYVAwa" target="_blank">video</a>`,
                 'What should I do if I encounter technical issues or errors while filling out the Post Survey?': `If you encounter technical issues or errors while filling out the Post Survey, follow these steps:
                     1. Refresh the Page: Try refreshing your browser to see if the issue resolves.
                     2. Check Internet Connection: Ensure your internet connection is stable.
@@ -1037,8 +1197,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -1054,7 +1214,8 @@ function displayTeacherPortalOptions() {
             const answers = {
                 ' Who can provide support to the student teams?': ` School Incharge, school Teachers, mentors of change, Alumni, and External mentors from the local school ecosystem may support the student teams`,
                 ' How can we contact mentors or program coordinators?': `You can contact Mentors or Program coordinators through the dedicated WhatsApp communication channel provided for the program.`,
-                ' What should we do if we encounter problems or need assistance?': `If you encounter problems or need assistance, check the FAQ section, contact support through the portal’s contact options, or submit a support ticket with details of your issue.`,
+                ' What should we do if we encounter problems or need assistance?': `If you encounter problems or need assistance, check the FAQ section, contact support through the portal’s contact options, or submit a support ticket with details of your issue.
+                For detailed instructions, please watch <a href="https://youtu.be/LYS2A3ozZRU?si=1J8BIRguPMjAFRNX" target="_blank">video</a>`,
                 
 
             };
@@ -1104,8 +1265,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -1122,7 +1283,8 @@ function displayTeacherPortalOptions() {
                 'Where can I find the Teacher Guide for the School Innovation Marathon 2024-25?': `The Teacher Guide is available in the "Resources" section on the School Innovation Marathon website. It provides detailed instructions on how to facilitate student participation, manage the registration process, and guide students through the competition phases.`,
                 'What information is covered in the Teacher Guide?': `The Teacher Guide includes information on program objectives, step-by-step instructions for registration, guidelines for mentoring students, tips for idea development, and deadlines for each stage of the Marathon.`,
                 'Are there any handbooks available to help Teachers with specific tasks during the School Innovation Marathon?': `Yes, there are several handbooks available in the "Resources" section. These include handbooks on student mentoring, idea evaluation, and project submission, designed to assist Teachers at different stages of the competition.`,
-                'How do I use the handbooks available in the "Resources" section?': `Each handbook is designed to provide specific guidance on tasks such as mentoring, project evaluation, and managing student submissions. You can download these handbooks from the "Resources" section and follow the instructions provided to help your students succeed.`,
+                'How do I use the handbooks available in the "Resources" section?': `Each handbook is designed to provide specific guidance on tasks such as mentoring, project evaluation, and managing student submissions. You can download these handbooks from the "Resources" section and follow the instructions provided to help your students succeed.
+                For detailed instructions, please watch <a href="https://youtu.be/fse1a6IaeB0?si=TaRDJRrbvt70NWv3" target="_blank">video</a>`,
                 'What should I do if I encounter difficulties understanding the Teacher Guide or handbooks?': `If you have trouble understanding any part of the Teacher Guide or handbooks, you can reach out to the support team via the contact details provided on the website or attend the webinars offered as part of the School Innovation Marathon.`,
                 'Are the Teacher Guide and handbooks updated regularly?': `Yes, the Teacher Guide and handbooks are updated periodically to reflect any changes in the program or guidelines. Always make sure you are using the latest version available in the "Resources" section.`,
                 'Can I download the Teacher Guide for offline use?': `Yes, you can download the Teacher Guide as a PDF from the "Resources" section on the website. This allows you to refer to it whenever needed, even without internet access.`,
@@ -1177,8 +1339,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -1301,8 +1463,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -1318,7 +1480,8 @@ function displayTeacherPortalOptions() {
             const answers = {
                 'What is teacher course about ?': `The Teacher Course is a comprehensive training module designed to equip Teachers with the necessary knowledge and resources to effectively support and guide students participating in the program. It includes a variety of videos and handbooks that cover the program's objectives, the roles and responsibilities of Teachers, and step-by-step instructions on how to assist students in submitting their innovative ideas. The course ensures that Teachers are well-prepared to mentor students throughout the different phases of the program.`,
                 'Do I need to complete the Teacher Course before guiding students?': `Yes, it's highly recommended to complete the Teacher Course before guiding students, as it provides essential information and resources that will help you effectively support your students throughout the program.`,
-                'How can I access the Teacher Course from the Dashboard?': `To access the Teacher Course, you can either click on the “Course” tab in the Dashboard, which will take you directly to the course page, or scroll down the Dashboard and click on “Teacher Course” in the Roadmap section. Clicking on the eye icon will also redirect you to the course page.`,
+                'How can I access the Teacher Course from the Dashboard?': `To access the Teacher Course, you can either click on the “Course” tab in the Dashboard, which will take you directly to the course page, or scroll down the Dashboard and click on “Teacher Course” in the Roadmap section. Clicking on the eye icon will also redirect you to the course page.
+                For detailed instructions, please watch <a href="https://youtu.be/OIsCwczsT0o?si=Yo9M-kjNK9_7OjIi" target="_blank">video</a>`,
                 
 
             };
@@ -1371,8 +1534,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -1465,8 +1628,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -1475,11 +1638,7 @@ function displayTeacherPortalOptions() {
             chatBox.scrollTop = chatBox.scrollHeight; // Ensure the chat box scrolls to display the latest added elements
         }
 
-        // Function to set hover styles (similar to displaySuboptions_questions)
        
-
-
-        // Handle Teacher Registration sub-options
         function fetchTeacherPasswordResponse(optionText) {
             let botResponse = '';
 
@@ -1489,7 +1648,7 @@ function displayTeacherPortalOptions() {
                     1. Log In: Sign in to your account using your current credentials.
                     2. Go to Profile Settings: Navigate to the "Change Password" option under your profile or account settings.
                     3. Update Password: Enter your current password, then your new password, and save the changes.
-                    For detailed instructions, please watch <a href="https://www.youtube.com/watch?v=Go8alatAXhE" target="_blank"><br>Video</a>`,
+                    For detailed instructions, please watch <a href="https://www.youtube.com/watch?v=Go8alatAXhE" target="_blank">Video</a>`,
             };
 
             // Check if the clicked option is in the predefined questions list
@@ -1536,8 +1695,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -1546,11 +1705,7 @@ function displayTeacherPortalOptions() {
             chatBox.scrollTop = chatBox.scrollHeight; // Ensure the chat box scrolls to display the latest added elements
         }
 
-        // Function to set hover styles (similar to displaySuboptions_questions)
-       
-
-
-        // Handle Teacher Registration sub-options
+        
         function fetchTeacherPreSurveyResponse(optionText) {
             let botResponse = '';
 
@@ -1560,7 +1715,7 @@ function displayTeacherPortalOptions() {
                 'What information is required to complete the Pre-Survey?': `You must answer all questions on the Pre-Survey form. It’s mandatory to provide this information to access the full panel of the platform.`,
                 
                 'Can I save my progress on the Pre-Survey and return to complete it later?': `The Pre-Survey must be completed in a single session. If you choose "Do Later," you will be logged out and will need to begin the survey again upon your next login.`,
-                'What happens after I submit the Pre-Survey?': `The Pre-Survey must be completed in a single session. If you choose "Do Later," you will be logged out and will need to begin the survey again upon your next login.`,
+                'What happens after I submit the Pre-Survey?': `The students can begin with their course once they submit the presurvey`,
                 
 
             };
@@ -1587,7 +1742,7 @@ function displayTeacherPortalOptions() {
                 'How do I login to the School Innovation Marathon portal as a teacher?',
                 'What steps should I take if I forget my password?',
                 'I am a new teacher; how do I create an account on the portal?',
-                'What do I do if I am unable to log in with my credentials?',
+                'What steps should be taken if I am unable to log in with my credentials',
                 'Can multiple Teachers from the same school log in with the same credentials?',
                 'How can I update my login details, such as Email or phone number?',
                 'What are the system requirements for logging in?',
@@ -1613,8 +1768,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -1648,18 +1803,11 @@ function displayTeacherPortalOptions() {
                     2. Complete Registration: Choose "Teacher" registration, fill in your details, and create a Username and password.
                     3. Verify and Log In: Check your Email for a verification link, confirm your registration, and log in with your new credentials.
                     For detailed instructions, please watch <a href="https://www.youtube.com/watch?v=sVCgsJgfNJY" target="_blank"><br>Video</a>`,
-                            'What do I do if I\'m unable to log in with my credentials?': `If you're unable to log in with your credentials, follow these steps:
-                    1. Check Credentials:
-                    - Ensure you're using the correct username (your Email ID) and password (the characters before "@" in your Email ID).
-                    2. Reset Password:
-                    - Click on the "Forgot Password" link on the login page.
-                    - Follow the instructions to receive a temporary password via OTP and reset your password.
-                    3. Clear Cache and Cookies:
-                    - Clear your browser's cache and cookies, then try logging in again.
-                    4. Try a Different Browser or Device:
-                    - Attempt to log in using a different web browser or device.
-                    5. Contact Support:
-                    - If you’re still having trouble, reach out to the support team through the dedicated WhatsApp communication channel for further assistance.`,
+                            'What steps should be taken if I am unable to log in with my credentials': `Here’s the revised version with an additional point:
+                                1. Check Credentials: Ensure you're using the correct username (Email ID) and password (before "@" in your email).
+                                2. Reset Password: Click "Forgot Password" to receive an OTP and reset your password.
+                                3. Try Again: Clear cache, switch browsers/devices, or contact support via WhatsApp if issues persist.
+                                4.  For more information, watch the <a href="https://youtu.be/MIZcxs9pJuA" target="_blank"> video</a>`,
                             'Can multiple Teachers from the same school log in with the same credentials?': `No, multiple Teachers from the same school should not use the same credentials. Each teacher must have their own unique account for proper access and functionality within the program. If additional Teachers from the same school need access, they should register individually with their own credentials on the portal.`,
                             'How can I update my login details, such as Email or phone number?': `Please note that Email and phone number cannot be edited directly through the portal. To update these details, follow these steps:
                                 1. Contact Support: Reach out to the program's support team through the designated communication channel (e.g., WhatsApp).
@@ -1766,8 +1914,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -1844,8 +1992,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -1921,8 +2069,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -1969,7 +2117,7 @@ function displayTeacherPortalOptions() {
                 'How do we submit our idea on portal ?',
                 'What is the deadline for submitting entries?',
                 'What documents are required for online application submission?',
-                ' Is there any deadline extension?',
+                'Is there any deadline extension?',
                 ' How can we make changes to our project after submission?',
                 ' What happens if we miss a deadline?',
                 ' Can we submit multiple entries or projects?',
@@ -1997,8 +2145,8 @@ function displayTeacherPortalOptions() {
                 });
 
                 // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
@@ -2064,39 +2212,40 @@ function displayTeacherPortalOptions() {
             const subOptions = [
                 'How do I Register as a student in SIM',
                 'Is there a limit on the number of teams that can participate from a school?',
-                ' What is the ideal Composition of a team?',
-                ' Is individual member entry allowed?',
+                'What is the ideal Composition of a team?',
+                'Is individual member entry allowed?',
                 'Can students from all grades participate?'
             ];
-
+        
             subOptions.forEach(function(optionText) {
                 const optionContainer = document.createElement('div');
                 const optionElement = document.createElement('div');
-
+        
                 optionContainer.classList.add('option-container');
                 optionElement.classList.add('option');
                 optionElement.textContent = optionText;
-
+        
                 // Add consistent left margin and padding for better spacing
                 optionElement.style.margin = '3px 30px'; // 3px top/bottom margin, 30px left/right margin for all options
                 optionElement.style.padding = '5px 10px'; // Padding inside the option element for better appearance
-
+        
                 // Click event to display user message and fetch bot response
                 optionElement.addEventListener('click', function() {
                     displayUserMessage(optionText);
                     setTimeout(() => fetchStudentRegistrationResponse(optionText), 500);
                 });
-
-                // Hover effect events
-                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
-
+        
+                // Hover effect events with updated color
+                optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
+        
                 optionContainer.appendChild(optionElement);
                 chatBox.appendChild(optionContainer);
             });
-
+        
             chatBox.scrollTop = chatBox.scrollHeight; // Ensure the chat box scrolls to display the latest added elements
         }
+        
 
        
         function fetchStudentRegistrationResponse(optionText) {
@@ -2104,12 +2253,10 @@ function displayTeacherPortalOptions() {
 
             // Define answers for each specific student registration question
             const answers = {
-                'How do I Register as a student in SIM': `1. Go to the Portal and click "Register".
-                2. Select "Student" as your category, and enter your personal details.
-                3. After submitting the form, verify your registration using the OTP sent to your email.
-                4. You can create or join a team after logging in.
-
-                Watch this video for detailed instructions:<a href="https://www.youtube.com/watch?v=MIZcxs9pJuA" target="_blank"><br>Video</a>`,
+                'How do I Register as a student in SIM': `1. Register as a Teacher: Visit the SIM portal, complete the registration form, and verify your account via the confirmation Email.
+                        2. Enroll Students: Log in to the teacher portal, go to the student enrollment section, and register students by entering their details.
+                        3. Provide Student Details: Enter each student’s name, class, gender, and age. Ensure each team has 2-3 members.
+                         Watch this video for detailed instructions:<a href="https://www.youtube.com/watch?v=MIZcxs9pJuA" target="_blank">Video</a>`,
                 'Is there a limit on the number of teams that can participate from a school?': `No, there is no specific limit on the number of teams that can participate from a single school. All students are encouraged to register and form teams.`,
                 ' What is the ideal Composition of a team?': `A team should include 2 to 3 students, ensuring effective collaboration and easy management.`,
                 ' Is individual member entry allowed?': `No, individual member entry is not allowed Teams must consist of a minimum of 2 members`,
@@ -2139,7 +2286,7 @@ function displayTeacherPortalOptions() {
                     const subOptions = [
                         'Where to Find Student User Id and Password',
                         'What should I do if I haven’t received the login credentials from my guide teacher?',
-                        ' What are the steps to log in after receiving the credentials from my guide teacher?',
+                        'What are the steps to log in after receiving the credentials from my guide teacher?',
                         'Can i change my team username / password '
                     ];
 
@@ -2162,8 +2309,8 @@ function displayTeacherPortalOptions() {
                         });
 
                         // Hover effect events
-                        optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'crimson', 'white'));
-                        optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'crimson'));
+                        optionElement.addEventListener('mouseover', () => setOptionStyles(optionElement, 'green', 'white'));
+                        optionElement.addEventListener('mouseout', () => setOptionStyles(optionElement, 'white', 'green'));
 
                         optionContainer.appendChild(optionElement);
                         chatBox.appendChild(optionContainer);
@@ -2375,17 +2522,17 @@ function displayTeacherPortalOptions() {
         yesOptionElement.classList.add('option');
         yesOptionElement.addEventListener('click', function() {
             displayUserMessage('Yes');
-            displaySuboptions1();
+            displayOptions();
         });
         // Add event listener for hover effect
         yesOptionElement.addEventListener('mouseenter', function() {
-            yesOptionElement.style.backgroundColor = 'crimson';
+            yesOptionElement.style.backgroundColor = 'green';
             yesOptionElement.style.color = 'white';
         });
         // Remove hover effect when mouse leaves
         yesOptionElement.addEventListener('mouseleave', function() {
             yesOptionElement.style.backgroundColor = 'white';
-            yesOptionElement.style.color = 'crimson';
+            yesOptionElement.style.color = 'green';
         });
         optionContainer.appendChild(yesOptionElement);
     
@@ -2401,13 +2548,13 @@ function displayTeacherPortalOptions() {
         });
         // Add event listener for hover effect
         noOptionElement.addEventListener('mouseenter', function() {
-            noOptionElement.style.backgroundColor = 'crimson';
+            noOptionElement.style.backgroundColor = 'green';
             noOptionElement.style.color = 'white';
         });
         // Remove hover effect when mouse leaves
         noOptionElement.addEventListener('mouseleave', function() {
             noOptionElement.style.backgroundColor = 'white';
-            noOptionElement.style.color = 'crimson';
+            noOptionElement.style.color = 'green';
         });
         optionContainer.appendChild(noOptionElement);
     
@@ -2431,13 +2578,13 @@ function displayTeacherPortalOptions() {
         });
         // Add event listener for hover effect
         yesOptionElement.addEventListener('mouseenter', function() {
-            yesOptionElement.style.backgroundColor = 'crimson';
+            yesOptionElement.style.backgroundColor = 'green';
             yesOptionElement.style.color = 'white';
         });
         // Remove hover effect when mouse leaves
         yesOptionElement.addEventListener('mouseleave', function() {
             yesOptionElement.style.backgroundColor = 'white';
-            yesOptionElement.style.color = 'crimson';
+            yesOptionElement.style.color = 'green';
         });
         optionContainer.appendChild(yesOptionElement);
     
@@ -2453,13 +2600,13 @@ function displayTeacherPortalOptions() {
         
         // Add event listener for hover effect
         noOptionElement.addEventListener('mouseenter', function() {
-            noOptionElement.style.backgroundColor = 'crimson';
+            noOptionElement.style.backgroundColor = 'green';
             noOptionElement.style.color = 'white';
         });
         // Remove hover effect when mouse leaves
         noOptionElement.addEventListener('mouseleave', function() {
             noOptionElement.style.backgroundColor = 'white';
-            noOptionElement.style.color = 'crimson';
+            noOptionElement.style.color = 'green';
         });
         optionContainer.appendChild(noOptionElement);
     
