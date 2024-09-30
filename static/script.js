@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
    
     
-    function displayFeedbackMessage() {
+    function displayFeedbackMessageTeacher() {
         // Create feedback options container
         var feedbackContainer = document.createElement('div');
         feedbackContainer.classList.add('feedback-container');
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
         likeButton.addEventListener('click', function() {
             displayUserMessage('👍');
             setTimeout(function() {
-                fetchFeedbackResponse('like');
+                fetchFeedbackResponseTeacher('like');
             }, 500);
         });
         feedbackContainer.appendChild(likeButton);
@@ -212,7 +212,45 @@ document.addEventListener('DOMContentLoaded', function() {
         dislikeButton.addEventListener('click', function() {
             displayUserMessage('👎');
             setTimeout(function() {
-                fetchFeedbackResponse('dislike');
+                fetchFeedbackResponseTeacher('dislike');
+            }, 500);
+        });
+        feedbackContainer.appendChild(dislikeButton);
+    
+        // Append feedback options container to the chat box
+        chatBox.appendChild(feedbackContainer);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+    function displayFeedbackMessageStudent() {
+        // Create feedback options container
+        var feedbackContainer = document.createElement('div');
+        feedbackContainer.classList.add('feedback-container');
+    
+        // Create feedback message
+        var feedbackMessage = document.createElement('p');
+        feedbackMessage.textContent = "Was I able to answer your question?";
+        feedbackContainer.appendChild(feedbackMessage);
+    
+        // Create like button
+        var likeButton = document.createElement('button');
+        likeButton.textContent = "👍";
+        likeButton.classList.add('feedback-button');
+        likeButton.addEventListener('click', function() {
+            displayUserMessage('👍');
+            setTimeout(function() {
+                fetchFeedbackResponseStudent('like');
+            }, 500);
+        });
+        feedbackContainer.appendChild(likeButton);
+    
+        // Create dislike button
+        var dislikeButton = document.createElement('button');
+        dislikeButton.textContent = "👎";
+        dislikeButton.classList.add('feedback-button');
+        dislikeButton.addEventListener('click', function() {
+            displayUserMessage('👎');
+            setTimeout(function() {
+                fetchFeedbackResponseStudent('dislike');
             }, 500);
         });
         feedbackContainer.appendChild(dislikeButton);
@@ -268,6 +306,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function displaySuboptionsTeacher() {
         const subOptions = ['Portal', 'Program queries','Support Videos']; // List of sub-options
         var firstOption = true; // Flag to check if it's the first sub-option
+        
     
         subOptions.forEach(function(optionText) {
             var optionContainer = document.createElement('div');
@@ -763,7 +802,7 @@ function displayTeacherPortalOptions() {
         }
         function displayTeacherSupportVideosOptions() {
             const subOptions = [
-                'Teacher Registration', 'Teacher Login', 'Dashboard', 'Student Team Creation', 'Teacher course ', 'Resources',
+                'Teacher Registration', 'Teacher Login', 'Dashboard', 'Student Team Creation', 'Teacher course', 'Resources',
                 'Post survey', 'My profile And Password change', 'Forgot password & Password change', 'Student Login Credentials', 'Support'
             ];
             const marginLeftValue = '10px'; // Set a consistent left margin
@@ -831,8 +870,7 @@ function displayTeacherPortalOptions() {
                 displayBotMessage(botResponse);
                
             }  
-           
-            else if (optionText === 'Resources') {
+           else if (optionText === 'Resources') {
                 botResponse = "Please watch the <a href='https://youtu.be/fse1a6IaeB0?si=eGCchfakf7GbldRV' target='_blank'>video</a>";
                 displayBotMessage(botResponse);
                
@@ -862,6 +900,9 @@ function displayTeacherPortalOptions() {
                 displayBotMessage(botResponse);
                 
             }  
+            setTimeout(function () {
+                displayFeedbackMessageTeacher();
+           }, 500);
             
         }
 
@@ -942,7 +983,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                displayFeedbackMessageTeacher();
             }, 500);
         }
 
@@ -1007,7 +1048,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageTeacher();
             }, 500);
         }
 
@@ -1078,7 +1119,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageTeacher();
             }, 500);
         }
 
@@ -1166,7 +1207,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageTeacher();
             }, 500);
         }
 
@@ -1231,7 +1272,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageTeacher();
             }, 500);
         }
 
@@ -1302,7 +1343,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageTeacher();
             }, 500);
         }
 
@@ -1432,7 +1473,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageTeacher();
             }, 500);
         }
 
@@ -1497,7 +1538,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageTeacher();
             }, 500);
         }
 
@@ -1599,7 +1640,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageTeacher();
             }, 500);
         }
          // Display sub-options for Teacher Registration
@@ -1662,7 +1703,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageTeacher();
             }, 500);
         }
 
@@ -1731,7 +1772,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageTeacher();
             }, 500);
         }
 
@@ -1839,7 +1880,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageTeacher();
             }, 500);
         }
 
@@ -1958,7 +1999,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageStudent();
             }, 500);
         }
         // Display sub-options for Student Registration
@@ -2039,7 +2080,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageStudent();
             }, 500);
         }
 
@@ -2109,7 +2150,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageStudent();
             }, 500);
         }
         function displayStudentIdeaSubmissionOptions() {
@@ -2204,7 +2245,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageStudent();
             }, 500);
         }
         
@@ -2274,7 +2315,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageStudent();
             }, 500);
         }
 
@@ -2368,7 +2409,7 @@ function displayTeacherPortalOptions() {
 
             // Display feedback message after a brief delay
             setTimeout(function () {
-                displayFeedbackMessage();
+                 displayFeedbackMessageStudent();
             }, 500);
         }
 
@@ -2394,8 +2435,12 @@ function displayTeacherPortalOptions() {
             displayBotMessage(botResponse); 
             
             setTimeout(function() {
-                displayFeedbackMessage();
-             }, 500);// Display the answer
+                if (lastClickedOption === 'Student') {
+                    displayFeedbackMessageStudent(); // Call feedback for students
+                } else if (lastClickedOption === 'Teacher') {
+                    displayFeedbackMessageTeacher(); // Call feedback for teachers
+                }
+            }, 500);
         } else if (optionText.toLowerCase() === 'about sim') {
             botResponse = "Questions";
             displayBotMessage(botResponse);
@@ -2442,8 +2487,12 @@ function displayTeacherPortalOptions() {
             displaySuboptions_themes();
         }
         setTimeout(function() {
-            displayFeedbackMessage();
-         }, 500);
+            if (lastClickedOption === 'Student') {
+                displayFeedbackMessageStudent(); // Call feedback for students
+            } else if (lastClickedOption === 'Teacher') {
+                displayFeedbackMessageTeacher(); // Call feedback for teachers
+            }
+        }, 500);
         
     }
     
@@ -2469,8 +2518,12 @@ function displayTeacherPortalOptions() {
         }
         
         setTimeout(function() {
-            displayFeedbackMessage();
-         }, 500);
+            if (lastClickedOption === 'Student') {
+                displayFeedbackMessageStudent(); // Call feedback for students
+            } else if (lastClickedOption === 'Teacher') {
+                displayFeedbackMessageTeacher(); // Call feedback for teachers
+            }
+        }, 500);
     }
 
     function fetchBotResponse_prizes(optionText) {
@@ -2495,17 +2548,33 @@ function displayTeacherPortalOptions() {
         }
         
         setTimeout(function() {
-            displayFeedbackMessage();
-         }, 500);
+            if (lastClickedOption === 'Student') {
+                displayFeedbackMessageStudent(); // Call feedback for students
+            } else if (lastClickedOption === 'Teacher') {
+                displayFeedbackMessageTeacher(); // Call feedback for teachers
+            }
+        }, 500);
     }
    
     
-    function fetchFeedbackResponse(feedback) {
+    function fetchFeedbackResponseTeacher(feedback) {
         if (feedback === 'like') {
             displayBotMessage('Thanks for your feedback. Is there anything else that I can help you with?', false);
             displayOptionsAfterFeedback();
         } else if (feedback === 'dislike') {
-            displayBotMessage('I\'m sorry to hear that. Try again!.', false);
+            displayBotMessage('If your question is different or you can’t find the answer you need, please raise a support ticket in the teacher support system. We’ll make sure to assist you as quickly as possible! Is there anything else that I can help you with?', false);
+            setTimeout(function() {
+                displayOptionsAfterExaminationOptions();
+            }, 500);
+        }
+    }
+
+    function fetchFeedbackResponseStudent(feedback) {
+        if (feedback === 'like') {
+            displayBotMessage('Thanks for your feedback. Is there anything else that I can help you with?', false);
+            displayOptionsAfterFeedback();
+        } else if (feedback === 'dislike') {
+            displayBotMessage('If your question is different or you can’t find the answer you’re looking for, please reach out to your SIM teacher. Alternatively, you can ask your teacher to raise a support ticket in the teacher support system for further assistance. We\'re here to help!', false);
             setTimeout(function() {
                 displayOptionsAfterExaminationOptions();
             }, 500);
@@ -2562,6 +2631,7 @@ function displayTeacherPortalOptions() {
         chatBox.appendChild(optionContainer);
         chatBox.scrollTop = chatBox.scrollHeight;
     }
+
     function displayOptionsAfterExaminationOptions() {
         // Display options for "Yes" and "No"
         var optionContainer = document.createElement('div');
