@@ -29,9 +29,13 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 
     <link rel="stylesheet" href="static/styles.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   
+
     
     <style>
-        .it_comp_work_process {
+         .it_comp_work_process {
             position: relative;
             text-align: center;
             float: left;
@@ -198,152 +202,149 @@
         }
         
 
-.mobile-view {
-    display: none;
-}
+        .mobile-view {
+            display: none;
+        }
 
-@media (max-width: 500px) {
-    .desktop-view {
-        display: none;
-    }
+        @media (max-width: 500px) {
+            .desktop-view {
+                display: none;
+            }
 
-    .mobile-view {
-        display: block;
-    }
-}
-       
-/* For iPad view  */
-@media only screen and (min-width: 768px) and (max-width: 997px) {
-    
-    #head-1 .header-inner {
-        margin-top: -200px !important;
-    }
-    #head-1 h2.title {
-        display: none;
-    }
-    #head-1 .ipad-title {
-        display: block;
-        font-size: 40px;
-        line-height: 1.2;
-        text-transform: none;
-    }
-    #head-1 .ipad-title span {
-        display: block;
-        text-transform: capitalize;
-    }
-    #head-1 p {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-}
+            .mobile-view {
+                display: block;
+            }
+        }
+            
+        /* For iPad view  */
+        @media only screen and (min-width: 768px) and (max-width: 997px) {
+            
+            #head-1 .header-inner {
+                margin-top: -200px !important;
+            }
+            #head-1 h2.title {
+                display: none;
+            }
+            #head-1 .ipad-title {
+                display: block;
+                font-size: 40px;
+                line-height: 1.2;
+                text-transform: none;
+            }
+            #head-1 .ipad-title span {
+                display: block;
+                text-transform: capitalize;
+            }
+            #head-1 p {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
 
-/* For iPad Pro view */
-@media only screen and (min-width: 1024px) and (max-width: 1024px) {
-  
-    #head-1 .header-inner {
-        margin-top: -100px !important; 
-    }
+        /* For iPad Pro view */
+        @media only screen and (min-width: 1024px) and (max-width: 1024px) {
+        
+            #head-1 .header-inner {
+                margin-top: -100px !important; 
+            }
 
-    
-    #head-1 h2.title {
-        display: block;
-    }
+            
+            #head-1 h2.title {
+                display: block;
+            }
 
-  
-    #head-1 .ipad-title {
-        display: none;
-    }
+        
+            #head-1 .ipad-title {
+                display: none;
+            }
 
-    
-    #head-1 p {
-        font-size: inherit;
-        line-height: inherit;
-    }
-}
-
-
-@media only screen and (min-width: 1025px) {
-    #head-1 .header-inner {
-        margin-top: -50px !important;
-    }
-
-    #head-1 h2.title {
-        display: block;
-    }
-
-    #head-1 .ipad-title {
-        display: none;
-    }
-
-    #head-1 p {
-        font-size: inherit;
-        line-height: inherit;
-    }
-}
+            
+            #head-1 p {
+                font-size: inherit;
+                line-height: inherit;
+            }
+        }
 
 
-@media only screen and (max-width: 767px) {
-    #head-1 h2.title {
-        display: block;
-    }
+        @media only screen and (min-width: 1025px) {
+            #head-1 .header-inner {
+                margin-top: -50px !important;
+            }
 
-    #head-1 .ipad-title {
-        display: none;
-    }
+            #head-1 h2.title {
+                display: block;
+            }
 
+            #head-1 .ipad-title {
+                display: none;
+            }
 
-}
-/* For mobile views */
-@media only screen and (max-width: 415px) {
-    #head-1 .header-inner p,
-    #head-1 .header-inner p span {
-        font-size: 15px !important; 
-        line-height: 1.4; 
-    }
-}
-
+            #head-1 p {
+                font-size: inherit;
+                line-height: inherit;
+            }
+        }
 
 
+        @media only screen and (max-width: 767px) {
+            #head-1 h2.title {
+                display: block;
+            }
+
+            #head-1 .ipad-title {
+                display: none;
+            }
 
 
-.mobile-arrows {
-    display: none;
-    position: absolute; 
-    top: 50%; 
-    width: 100%; 
-    transform: translateY(-50%); 
-    z-index: 10; 
-}
-
-.arrow {
-    background-color: rgba(255, 255, 255, 0.7); 
-    border: none; 
-    padding: 10px; 
-    cursor: pointer; 
-}
-
-.left-arrow {
-    position: absolute; 
-    left: 10px; 
-}
-
-.right-arrow {
-    position: absolute; 
-    right: 10px; 
-}
-
-
-@media (max-width: 500px) {
-    .mobile-arrows {
-        display: flex; 
-        justify-content: space-between; 
-    }
-}
+        }
+        /* For mobile views */
+        @media only screen and (max-width: 415px) {
+            #head-1 .header-inner p,
+            #head-1 .header-inner p span {
+                font-size: 15px !important; 
+                line-height: 1.4; 
+            }
+        }
 
 
 
 
-    </style>
+
+        .mobile-arrows {
+            display: none;
+            position: absolute; 
+            top: 50%; 
+            width: 100%; 
+            transform: translateY(-50%); 
+            z-index: 10; 
+        }
+
+        .arrow {
+            background-color: rgba(255, 255, 255, 0.7); 
+            border: none; 
+            padding: 10px; 
+            cursor: pointer; 
+        }
+
+        .left-arrow {
+            position: absolute; 
+            left: 10px; 
+        }
+
+        .right-arrow {
+            position: absolute; 
+            right: 10px; 
+        }
+
+
+        @media (max-width: 500px) {
+            .mobile-arrows {
+                display: flex; 
+                justify-content: space-between; 
+            }
+        }
+
+</style>
 
 </head>
 
@@ -778,276 +779,277 @@
     <!--Road Map end-->
 
     <!-- themes area start  -->
-    <section class="testimonial-area bg-image padding-top-100 padding-bottom-90"
-        style="background-image: url(assets/images/bg3.png); background-color: white;" id="themes">
-        <div class="shape-02">
-            <img src="assets/images/logoup2.png" alt="">
-        </div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-12">
-                    <div class="section-title desktop-center white margin-bottom-55 margin-top-20">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
-                            data-lang="themes-title">
-                            Viksit Bharat 2047 - Themes
-                            for SIM 2024-25</h3>
-                        <p class="description wow animate__animated animate__fadeInUp animated lang-change"
-                            data-lang="themes-title1">The vision of "Viksit
-                            Bharat 2047" aims to transform India into a developed nation by 2047. To support this, the
-                            School Innovation Marathon 2024-25 has set broad themes. Start your research to generate
-                            innovative ideas and implement solutions.</p>
+            <section class="testimonial-area bg-image padding-top-100 padding-bottom-90"
+            style="background-image: url(assets/images/bg3.png); background-color: white;" id="themes">
+            <div class="shape-02">
+                <img src="assets/images/logoup2.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-12">
+                        <div class="section-title desktop-center white margin-bottom-55 margin-top-20">
+                            <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
+                                data-lang="themes-title">
+                                Viksit Bharat 2047 - Themes
+                                for SIM 2024-25</h3>
+                            <p class="description wow animate__animated animate__fadeInUp animated lang-change"
+                                data-lang="themes-title1">The vision of "Viksit
+                                Bharat 2047" aims to transform India into a developed nation by 2047. To support this, the
+                                School Innovation Marathon 2024-25 has set broad themes. Start your research to generate
+                                innovative ideas and implement solutions.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="testimonial-carousel-area">
-                        <div class="testimonial-carousel">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="testimonial-carousel-area">
+                            <div class="testimonial-carousel">
 
-                            <div class="single-testimonial-item">
-                                <div class="thumb bg-image">
-                                    <img src="assets/images/Digital Transformation.png" alt="">
+                                <div class="single-testimonial-item">
+                                    <div class="thumb bg-image">
+                                        <img src="assets/images/Digital Transformation.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h4 class="title lang-change" data-lang="themes-digital">Digital
+                                                    Transformation</h4>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p class="description lang-change" data-lang="themes-dt_desc">Highlights the
+                                            critical role of digital technologies in
+                                            bridging the digital divide and fostering innovation, making India a leader in
+                                            the digital economy.</p>
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <ul>
+                                            <li class="lang-change" data-lang="themes-dt_p1">Digital literacy</li>
+                                            <li class="lang-change" data-lang="themes-dt_p2">Access to technology</li>
+                                            <li class="lang-change" data-lang="themes-dt_p3">Cybersecurity</li>
+                                            <li class="lang-change" data-lang="themes-dt_p4">AI technology based ideas</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-digital">Digital
-                                                Transformation</h4>
-                                        </div>
+                                <div class="single-testimonial-item">
+                                    <div class="thumb bg-image">
+                                        <img src="assets/images/Health and Wellbeing.png" alt="">
                                     </div>
-                                    <br>
-                                    <p class="description lang-change" data-lang="themes-dt_desc">Highlights the
-                                        critical role of digital technologies in
-                                        bridging the digital divide and fostering innovation, making India a leader in
-                                        the digital economy.</p>
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
+                                    <div class="content">
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h4 class="title lang-change" data-lang="themes-health">Health and
+                                                    Well-being</h4>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <br>
-                                    <ul>
-                                        <li class="lang-change" data-lang="themes-dt_p1">Digital literacy</li>
-                                        <li class="lang-change" data-lang="themes-dt_p2">Access to technology</li>
-                                        <li class="lang-change" data-lang="themes-dt_p3">Cybersecurity</li>
-                                        <li class="lang-change" data-lang="themes-dt_p4">AI technology based ideas</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-item">
-                                <div class="thumb bg-image">
-                                    <img src="assets/images/Health and Wellbeing.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-health">Health and
-                                                Well-being</h4>
+                                        <br>
+                                        <p class="description lang-change" data-lang="themes-hw_desc">Focuses on enhancing
+                                            the overall health and wellness of
+                                            communities, ensuring that physical and mental health are prioritized in
+                                            development plans.</p>
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <br>
-                                    <p class="description lang-change" data-lang="themes-hw_desc">Focuses on enhancing
-                                        the overall health and wellness of
-                                        communities, ensuring that physical and mental health are prioritized in
-                                        development plans.</p>
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <ul>
-                                        <li class="lang-change" data-lang="themes-hw_p1">Physical health</li>
-                                        <li class="lang-change" data-lang="themes-hw_p2">Mental health</li>
-                                        <li class="lang-change" data-lang="themes-hw_p3">Healthcare innovations</li>
-                                        <li class="lang-change" data-lang="themes-hw_p4">Community well-being</li>
-                                    </ul>
+                                        <br>
+                                        <ul>
+                                            <li class="lang-change" data-lang="themes-hw_p1">Physical health</li>
+                                            <li class="lang-change" data-lang="themes-hw_p2">Mental health</li>
+                                            <li class="lang-change" data-lang="themes-hw_p3">Healthcare innovations</li>
+                                            <li class="lang-change" data-lang="themes-hw_p4">Community well-being</li>
+                                        </ul>
 
-                                </div>
-                            </div>
-                            <div class="single-testimonial-item">
-                                <div class="thumb bg-image">
-                                    <img src="assets/images/Quality Education.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-education">Quality Education
-                                            </h4>
-                                        </div>
                                     </div>
-                                    <br>
-                                    <p class="description lang-change" data-lang="themes-qe_desc">Stresses the necessity
-                                        of providing equitable, high-quality
-                                        education for all, fostering lifelong learning and preparing a skilled workforce
-                                        for the future.</p>
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
-                                        </div>
+                                </div>
+                                <div class="single-testimonial-item">
+                                    <div class="thumb bg-image">
+                                        <img src="assets/images/Quality Education.png" alt="">
                                     </div>
-                                    <br>
-                                    <ul>
-                                        <li class="lang-change" data-lang="themes-qe_p1">Inclusive education</li>
-                                        <li class="lang-change" data-lang="themes-qe_p2">Remote learning</li>
-                                        <li class="lang-change" data-lang="themes-qe_p3">Lifelong learning</li>
-                                        <li class="lang-change" data-lang="themes-qe_p4">Teacher training</li>
-                                    </ul>
+                                    <div class="content">
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h4 class="title lang-change" data-lang="themes-education">Quality Education
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p class="description lang-change" data-lang="themes-qe_desc">Stresses the necessity
+                                            of providing equitable, high-quality
+                                            education for all, fostering lifelong learning and preparing a skilled workforce
+                                            for the future.</p>
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <ul>
+                                            <li class="lang-change" data-lang="themes-qe_p1">Inclusive education</li>
+                                            <li class="lang-change" data-lang="themes-qe_p2">Remote learning</li>
+                                            <li class="lang-change" data-lang="themes-qe_p3">Lifelong learning</li>
+                                            <li class="lang-change" data-lang="themes-qe_p4">Teacher training</li>
+                                        </ul>
 
-                                </div>
-                            </div>
-                            <div class="single-testimonial-item">
-                                <div class="thumb bg-image">
-                                    <img src="assets/images/Economic Development.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-economic">Economic
-                                                Empowerment</h4>
-                                        </div>
                                     </div>
-                                    <br>
-                                    <p class="description lang-change" data-lang="themes-ee_desc"> Aims to uplift
-                                        communities by promoting financial literacy,
-                                        entrepreneurship, and vocational skills, driving inclusive economic growth. </p>
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <ul>
-                                        <li class="lang-change" data-lang="themes-ee_p1">Financial literacy</li>
-                                        <li class="lang-change" data-lang="themes-ee_p2">Entrepreneurship</li>
-                                        <li class="lang-change" data-lang="themes-ee_p3">Vocational training</li>
-                                        <li class="lang-change" data-lang="themes-ee_p4">Economic development</li>
-                                    </ul>
                                 </div>
-                            </div>
-                            <div class="single-testimonial-item">
-                                <div class="thumb bg-image">
-                                    <img src="assets/images/Smart Communities.png" alt="">
+                                <div class="single-testimonial-item">
+                                    <div class="thumb bg-image">
+                                        <img src="assets/images/Economic Development.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h4 class="title lang-change" data-lang="themes-economic">Economic
+                                                    Empowerment</h4>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p class="description lang-change" data-lang="themes-ee_desc"> Aims to uplift
+                                            communities by promoting financial literacy,
+                                            entrepreneurship, and vocational skills, driving inclusive economic growth. </p>
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <ul>
+                                            <li class="lang-change" data-lang="themes-ee_p1">Financial literacy</li>
+                                            <li class="lang-change" data-lang="themes-ee_p2">Entrepreneurship</li>
+                                            <li class="lang-change" data-lang="themes-ee_p3">Vocational training</li>
+                                            <li class="lang-change" data-lang="themes-ee_p4">Economic development</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-smart">Smart and Resilient
-                                                Communities</h4>
-                                        </div>
+                                <div class="single-testimonial-item">
+                                    <div class="thumb bg-image">
+                                        <img src="assets/images/Smart Communities.png" alt="">
                                     </div>
-                                    <br>
-                                    <p class="description lang-change" data-lang="themes-sc_desc"> Encourages the
-                                        development of adaptive & innovative
-                                        communities capable of withstanding & thriving amid future challenges.</p>
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
+                                    <div class="content">
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h4 class="title lang-change" data-lang="themes-smart">Smart and Resilient
+                                                    Communities</h4>
+                                            </div>
                                         </div>
+                                        <br>
+                                        <p class="description lang-change" data-lang="themes-sc_desc"> Encourages the
+                                            development of adaptive & innovative
+                                            communities capable of withstanding & thriving amid future challenges.</p>
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <ul>
+                                            <li class="lang-change" data-lang="themes-sc_p1">Smart cities</li>
+                                            <li class="lang-change" data-lang="themes-sc_p2">Disaster management</li>
+                                            <li class="lang-change" data-lang="themes-sc_p3">Infrastructure development</li>
+                                            <li class="lang-change" data-lang="themes-sc_p4">Social innovation</li>
+                                        </ul>
                                     </div>
-                                    <br>
-                                    <ul>
-                                        <li class="lang-change" data-lang="themes-sc_p1">Smart cities</li>
-                                        <li class="lang-change" data-lang="themes-sc_p2">Disaster management</li>
-                                        <li class="lang-change" data-lang="themes-sc_p3">Infrastructure development</li>
-                                        <li class="lang-change" data-lang="themes-sc_p4">Social innovation</li>
-                                    </ul>
                                 </div>
-                            </div>
-                            <div class="single-testimonial-item">
-                                <div class="thumb bg-image">
-                                    <img src="assets/images/Culture and Heritage.png" alt="">
+                                <div class="single-testimonial-item">
+                                    <div class="thumb bg-image">
+                                        <img src="assets/images/Culture and Heritage.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h4 class="title lang-change" data-lang="themes-culture">Cultural Heritage
+                                                    and Creativity</h4>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p class="description lang-change" data-lang="themes-cc_desc">Recognizes the value
+                                            of preserving cultural heritage while
+                                            promoting creativity and the arts as essential components of a vibrant society.
+                                        </p>
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <ul>
+                                            <li class="lang-change" data-lang="themes-cc_p1">Preserving cultural heritage
+                                            </li>
+                                            <li class="lang-change" data-lang="themes-cc_p2">Promoting arts and crafts</li>
+                                            <li class="lang-change" data-lang="themes-cc_p3">Fostering creativity.</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-culture">Cultural Heritage
-                                                and Creativity</h4>
-                                        </div>
+                                <div class="single-testimonial-item">
+                                    <div class="thumb bg-image">
+                                        <img src="assets/images/Sustainable Development.png" alt="">
                                     </div>
-                                    <br>
-                                    <p class="description lang-change" data-lang="themes-cc_desc">Recognizes the value
-                                        of preserving cultural heritage while
-                                        promoting creativity and the arts as essential components of a vibrant society.
-                                    </p>
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
+                                    <div class="content">
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h3 class="title lang-change" data-lang="themes-sustainable">Sustainable
+                                                    Development</h3>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <br>
-                                    <ul>
-                                        <li class="lang-change" data-lang="themes-cc_p1">Preserving cultural heritage
-                                        </li>
-                                        <li class="lang-change" data-lang="themes-cc_p2">Promoting arts and crafts</li>
-                                        <li class="lang-change" data-lang="themes-cc_p3">Fostering creativity.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-item">
-                                <div class="thumb bg-image">
-                                    <img src="assets/images/Sustainable Development.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h3 class="title lang-change" data-lang="themes-sustainable">Sustainable
-                                                Development</h3>
+                                        <br>
+                                        <p class="description lang-change" data-lang="themes-sd_desc">It emphasizes the
+                                            importance of balancing economic
+                                            growth with environmental protection to ensure a sustainable future.</p>
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <br>
-                                    <p class="description lang-change" data-lang="themes-sd_desc">It emphasizes the
-                                        importance of balancing economic
-                                        growth with environmental protection to ensure a sustainable future.</p>
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
-                                        </div>
-                                    </div>
 
-                                    <br>
-                                    <ul>
-                                        <li class="lang-change" data-lang="themes-sd_p1">Environmental conservation</li>
-                                        <li class="lang-change" data-lang="themes-sd_p2">Renewable energy</li>
-                                        <li class="lang-change" data-lang="themes-sd_p3">Sustainable agriculture</li>
-                                        <li class="lang-change" data-lang="themes-sd_p4">Water management</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-item">
-                                <div class="thumb bg-image">
-                                    <img src="assets/images/9.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h4 class="title lang-change" data-lang="themes-others">Others</h4>
-                                        </div>
+                                        <br>
+                                        <ul>
+                                            <li class="lang-change" data-lang="themes-sd_p1">Environmental conservation</li>
+                                            <li class="lang-change" data-lang="themes-sd_p2">Renewable energy</li>
+                                            <li class="lang-change" data-lang="themes-sd_p3">Sustainable agriculture</li>
+                                            <li class="lang-change" data-lang="themes-sd_p4">Water management</li>
+                                        </ul>
                                     </div>
-                                    <br>
-                                    <p class="description lang-change" data-lang="themes-o_desc"> School Innovation
-                                        Marathon encourages innovative solutions
-                                        in any other area that
-                                        aligns with the vision of Viksit Bharat 2047.</p>
-                                    <div class="author-details">
-                                        <div class="author-meta">
-                                            <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
-                                        </div>
+                                </div>
+                                <div class="single-testimonial-item">
+                                    <div class="thumb bg-image">
+                                        <img src="assets/images/9.png" alt="">
                                     </div>
-                                    <br>
-                                    <ul>
-                                        <li class="lang-change" data-lang="themes-o_p1">Any other Area that does not
-                                            come under mentioned theme but
-                                            broadly qualifies for the vision of Viksit bharat.</li>
-                                    </ul>
+                                    <div class="content">
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h4 class="title lang-change" data-lang="themes-others">Others</h4>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p class="description lang-change" data-lang="themes-o_desc"> School Innovation
+                                            Marathon encourages innovative solutions
+                                            in any other area that
+                                            aligns with the vision of Viksit Bharat 2047.</p>
+                                        <div class="author-details">
+                                            <div class="author-meta">
+                                                <h3 class="title lang-change" data-lang="themes-focus">Focus Areas</h3>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <ul>
+                                            <li class="lang-change" data-lang="themes-o_p1">Any other Area that does not
+                                                come under mentioned theme but
+                                                broadly qualifies for the vision of Viksit bharat.</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
     <!-- theme area end -->
 
 
@@ -1526,16 +1528,15 @@
 
 
     <!--partners wrapper start-->
-    <div class="header-bottom-area  padding-top-100" id="partners"style="background-color: white;">
+    <div class="header-bottom-area padding-top-100" id="partners" style="background-color: white;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div class="section-title desktop-center blue margin-bottom-55">
-                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
-                            data-lang="partner-title">Our Partners</h3>
+                        <h3 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="partner-title">Our Partners</h3>
                     </div>
                     <div class="client-area">
-                        <div class="client-active-area" style="text-align: center">
+                        <div class="client-active-area owl-carousel owl-theme" style="text-align: center">
                             <div class="single-brand">
                                 <a><img src="assets/images/Ministry of Education_Logo (2).jpg" alt=""></a>
                                 <br>
@@ -1564,8 +1565,7 @@
                             <div class="single-brand">
                                 <a><img src="assets/images/partner19.png" alt=""></a>
                                 <br>
-                                <p class="lang-change" data-lang="partner-technical">Technology,Knowledge &
-                                    Implementation Partner</p>
+                                <p class="lang-change" data-lang="partner-technical">Technology, Knowledge & Implementation Partner</p>
                             </div>
                             <div class="single-brand">
                                 <a><img src="assets/images/partner20.png" alt=""></a>
@@ -1583,6 +1583,8 @@
             </div>
         </div>
     </div>
+    
+    
 
     <!--partners wrapper end-->
     <!-- testimonial area start  -->
@@ -3063,6 +3065,36 @@ getUser();
         text5.textContent = dataOfmap['all'].reg_mentors;
         });
     });
+    $(document).ready(
+        function () {
+        var testimonialCarousel = $('.testimonial-carousel');
+        
+        testimonialCarousel.owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: false, // Disable default nav
+            dots: false, // Disable default dots
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                }
+            }
+        });
+
+        // Custom Navigation Events
+        $('.prev-arrow').click(function () {
+            testimonialCarousel.trigger('prev.owl.carousel');
+        });
+        $('.next-arrow').click(function () {
+            testimonialCarousel.trigger('next.owl.carousel');
+        });
+    });
     
 </script>
 
@@ -3098,6 +3130,13 @@ getUser();
             <script src="assets/js/map.js"></script>
 
             <script src="static/script.js"></script>
+            <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS (if you're using Bootstrap's carousel) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
           
 
             
