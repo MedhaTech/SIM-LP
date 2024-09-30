@@ -13,19 +13,42 @@
         /*------------------------------
             smoth achor effect
         ------------------------------*/
-        $(document).on('click', '.navbar-nav li a', function(e) {
-            var anchor = $(this).attr('href');
-            var link = anchor.slice(0, 1);
-            if ('#' == link) {
-                e.preventDefault();
-                var top = $(anchor).offset().top;
-                $('html, body').animate({
-                    scrollTop: $(anchor).offset().top
-                }, 1000);
-                $(this).parent().addClass('current-menu-item').siblings().removeClass('current-menu-item');
-            }
-
+        $(document).ready(function() {
+            // Toggle icon click event to close the navbar
+            $('.navbar-toggler').on('click', function() {
+                $('.navbar-collapse').collapse('toggle');
+            });
+        
+            // Click event for navbar links
+            $(document).on('click', '.navbar-nav li a', function(e) {
+                var anchor = $(this).attr('href');
+                var link = anchor.slice(0, 1);
+        
+                if ('#' == link) {
+                    e.preventDefault();
+                    var top = $(anchor).offset().top;
+                    $('html, body').animate({
+                        scrollTop: $(anchor).offset().top
+                    }, 1000);
+        
+                    $(this).parent().addClass('current-menu-item').siblings().removeClass('current-menu-item');
+                }
+        
+                // Collapse navbar after selecting an item on mobile view
+                if ($(window).width() < 991) {
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
+        
+            // Click event for closing the navbar when clicking outside
+            $(document).on('click', function(e) {
+                if (!$(e.target).closest('.navbar-collapse').length && !$(e.target).closest('.navbar-toggler').length) {
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
         });
+        
+        
 
 
         /*--------------------

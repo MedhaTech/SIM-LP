@@ -197,12 +197,11 @@
           "videos": {
             "title":"Help resources to navigate the platform",
             "title2":"Please refer to the help videos below on how to Register, Log in, Create Team and Submit your idea.",
-            "video_1":"name",
-            "video_2":"name.",
-            "video_3":"name",
-            "video_4":"name.",
-            "video_5":"name",
-            "video_6":"name"
+            "video_1":"How to Register?",
+            "video_2":"Teacher Login",
+            "video_3":"Teacher Dashboard",
+            "video_4":"Team Creation",
+            "video_5":"Forgot Password?"
             
         }
         }
