@@ -12608,15 +12608,28 @@ Single package item
 
 @media (max-width: 500px) {
   .nav-left {
-      left: 120px;
+      left: 100px;
       top:107%;
   }
 
   .nav-right  {
-      right: 120px;
+      right: 100px;
       top:107%;
   }
 }
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .nav-left {
+      left: 100px;
+      top: 107%;
+  }
+
+  .nav-right {
+      right: 100px;
+      top: 107%;
+  }
+}
+
 
 
 
