@@ -3135,7 +3135,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 @media only screen and (max-width: 991px) {
   .navbar-area.nav-style-02 .nav-container {
-    padding: 20px 0px;
+    padding: 10px 0px;
   }
 
   .navbar-area.nav-style-02 .nav-container .navbar-toggler {
@@ -4541,6 +4541,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: white;
 }
 
 .header-area.header-bg-02 {
@@ -6568,9 +6569,9 @@ Client Area
   left: -203px;
 }
 
-.create-content-area-03 {
+/* .create-content-area-03 {
   padding: 100px 0px;
-}
+} */
 
 .create-content-area-03 .section-title .title {
   font-size: 30px;
@@ -8712,6 +8713,8 @@ Client Area
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; 
 }
 
 .counter-item-list li {
@@ -8720,6 +8723,22 @@ Client Area
 
 .counter-item-list li+li {
   border-left: 1px solid #a8aab1;
+}
+
+.counter-item-list:nth-child(1) .col-md-6:nth-child(1),
+.counter-item-list:nth-child(1) .col-md-6:nth-child(2) {
+  width: 50%; 
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+.counter-item-list:nth-child(1) .col-md-6:nth-child(3) {
+  width: 100%; 
+}
+
+
+.counter-item-list:nth-child(2) .col-md-6 {
+  width: 50%; 
 }
 
 .single-counterup-block-with-img {
@@ -12401,7 +12420,11 @@ Single package item
 .map_color:hover {
   fill: #ffc05e !important;
 }
-
+@media only screen and (width: 360px) and (height: 740px) {
+  svg {
+      zoom: 54%; 
+  }
+}
 
 .map_counter_box_shape {
   padding: 20px 20px;
@@ -12444,13 +12467,13 @@ Single package item
 @media (max-width: 500px) {
   #bg-video {
     display: none;
-    /* Hide video on mobile */
+  
   }
 
   #bg-image-bg {
     display: block;
     padding-top: 100px;
-    /* Show image on mobile */
+    
   }
 }
 
@@ -12461,11 +12484,11 @@ Single package item
   }
 }
 
-/* Media query for mobile viewports up to 500px */
+
 @media (max-width: 500px) {
   #head-01 {
     margin-top: 50px;
-    /* Adjust the margin to move the section down */
+   
   }
 }
 
@@ -12490,276 +12513,128 @@ Single package item
 .custom-text-right {
   text-align: right;
   padding-right: 90px;
-  /* Adjust the padding as needed */
+  
 }
 
 
 
-/* Media query for mobile viewports up to 500px */
+
 @media (max-width: 500px) {
   .btn-wrapper a {
     margin-top: 10px;
-    /* Adjust the top margin for mobile */
-    width: 100%
-      /* Full width for stacked buttons */
+   
+    
+     
   }
 
 }
-
-/*chatbot*/
-
-.messenger-icon {
-  display: inline-block;
-  position: fixed;
-  bottom: 80px;
-  /* Adjust this value as needed */
-  right: 20px;
-  /* Adjust this value as needed */
+.nav-arrow {
+  background-color: #f0f0f0;  /* Light gray background */
+  border-radius: 50%;  /* Makes the arrow a circle */
+  width: 50px;  /* Circle width */
+  height: 50px;  /* Circle height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  z-index: 999;
-  width: 70px;
-  /* Adjust the width as needed */
-  height: 70px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Adds shadow */
+  transition: background-color 0.3s ease;  /* Smooth hover transition */
 }
 
-
-.chatbox-container {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
+.nav-arrow i {
+  font-size: 24px;  /* Size of the arrow icon */
+  color: #333;  /* Icon color */
 }
 
-.chatbox {
-  display: flex;
-  flex-direction: column;
-  height: 650px;
-  width: 500px;
-  background-color: white;
-
-  border-radius: 15px;
-  /* Add border-radius for curved corners */
-
+.nav-arrow:hover {
+  background-color: #333;  /* Darker background on hover */
 }
 
-.chatbox-heading {
-  background-color: crimson;
-  color: #fff;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+.nav-arrow:hover i {
+  color: #fff;  /* White icon color on hover */
 }
 
-.chatbox-heading img {
-
-  height: 30px;
-  /* Set the desired height */
-  width: 30px;
-  margin-right: 10px;
-  /* Add margin to separate image from text */
+/* Positioning for left arrow */
+.nav-left {
+  position: absolute;
+  top: 50%;
+  left: -70px;  /* Adjust this value based on your layout */
+  transform: translateY(-50%);
 }
 
-.chatbox-heading h2 {
-  margin: 0;
-  /* Remove default margin for h1 */
+/* Positioning for right arrow */
+.nav-right {
+  position: absolute;
+  top: 50%;
+  right: -70px;  /* Adjust this value based on your layout */
+  transform: translateY(-50%);
 }
 
-.chat-messages {
-  flex: 1;
-  max-height: 550px;
-  overflow-y: auto;
+.owl-nav-arrow {
+  font-size: 30px;
+  color: #000; /* Change color to make it visible */
+  cursor: pointer;
   padding: 10px;
 }
 
-.input-box {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  margin-top: auto;
-  /* This will push .App to the bottom */
-
+.owl-prev-arrow {
+  position: absolute;
+  top: 40%;
+  left: -60px;
+  transform: translateY(-50%);
 }
 
-#userMessage {
-  flex-grow: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
-
+.owl-next-arrow {
+  position: absolute;
+  top: 40%;
+  right: -70px;
+  transform: translateY(-50%);
 }
 
-.send-button {
-  padding: 8px;
-  background-color: crimson;
-  color: #fff;
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  background: none;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  flex-shrink: 0;
-  font-size: 20px;
+  outline: none;
 }
 
 
-.close-button-container {
-  background-color: rgba(10, 10, 126, 0.836);
-  border-radius: 50%;
-  width: 30px;
-  /* Adjust the size as needed */
-  height: 30px;
-  /* Adjust the size as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  margin-right: 10px;
-}
 
-.close-button {
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.refresh-button {
-
-  cursor: pointer;
-  color: white;
-}
-
-.refresh-button-container {
-  background-color: rgba(10, 10, 126, 0.836);
-  border-radius: 50%;
-  width: 30px;
-  /* Adjust the size as needed */
-  height: 30px;
-  /* Adjust the size as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 20px;
-  margin-left: auto;
-  margin-right: 10px;
-}
-
-.option-container {
-  display: inline-block;
-  margin-right: 0;
-
-
-}
-
-.option {
-  display: inline-block;
-  padding: 5px 10px;
-  border: 1px solid crimson;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-  border-radius: 10px;
-  color: crimson;
-  margin-left: 10px;
-
-}
-
-.user-message {
-  background-color: crimson;
-  /* Light blue */
-  padding: 5px 10px;
-  border-radius: 10px;
-  margin: 5px 0;
-  float: right;
-  clear: both;
-
-}
-
-.user-message-container {
-  text-align: right;
-  /* Align user messages to the right */
-  margin-bottom: 10px;
-}
-
-.bot-message {
-  background-color: rgba(10, 10, 126, 0.836);
-  /* Background color for bot messages */
-  padding: 10px;
-  border-radius: 10px;
-  /* Curved corners */
-  max-width: 70%;
-  /* Maximum width for the bot message container */
-  clear: both;
-  margin-bottom: 5px;
-
-
-}
-
-/* Define the animation */
-@keyframes jump {
-  0% {
-    transform: translateY(0);
+@media (max-width: 500px) {
+  .owl-prev-arrow {
+      left: -10px; 
   }
 
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
+  .owl-next-arrow {
+      right: -10px; 
   }
 }
 
-/* Apply the animation to the messenger icon when hovered */
-.messenger-icon:hover {
-  animation: jump 0.5s infinite;
+@media (max-width: 500px) {
+  .nav-left {
+      left: 100px;
+      top:107%;
+  }
+
+  .nav-right  {
+      right: 100px;
+      top:107%;
+  }
 }
 
-.bot-message-container {
-  display: flex;
-  /* Use flexbox to align items */
-  align-items: center;
-  /* Center items vertically */
-  margin-bottom: 0;
+@media (min-width: 700px) and (max-width: 1024px) {
+  .nav-left {
+      left: 100px;
+      top: 107%;
+  }
+
+  .nav-right {
+      right: 100px;
+      top: 107%;
+  }
 }
 
-.bot-image {
-  width: 25px;
-  /* Adjust the width of the bot image */
-  height: 25px;
-  /* Adjust the height of the bot image */
-  margin-right: 10px;
-  /* Adjust the spacing between the image and the message */
-}
-
-.user-message-container {
-  display: flex;
-  /* Use flexbox to align items */
-  align-items: center;
-  /* Center items vertically */
-  justify-content: flex-end;
-  /* Align items to the right */
-}
-
-.user-image {
-  width: 25px;
-  /* Adjust the width of the user image */
-  height: 25px;
-  /* Adjust the height of the user image */
-  margin-right: 10px;
-  /* Adjust the spacing between the message and the image */
-
-}
-.feedback-container {
-  margin-left: 50px;
-  /* Moves the feedback container to the right */
-  margin-right: 10px;
-  /* Adds some gap on the right side */
-  margin-top: 0;
 
 
-}
+
 

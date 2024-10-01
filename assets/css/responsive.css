@@ -441,7 +441,8 @@
         margin-bottom: 40px;
     }
     .header-area {
-        padding: 290px 0 355px;
+        
+        background-color: #fff;
     }
     .get-in-touch-area .bg-image {
         display: none;
@@ -1144,6 +1145,7 @@
     .testimonial-area .medical .title {
         font-size: 28px;
         line-height: 38px;
+       
     }
     .client-area .section-title .title.style-01 {
         font-size: 28px;
@@ -1432,7 +1434,7 @@
 
 /* mobile tablet layout 414px */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 450px) {
     .header-area .title {
         font-size: 40px;
         line-height: 50px;
@@ -1491,7 +1493,7 @@
         padding: 50px 30px 50px;
     }
     .header-area {
-        padding: 170px 0 30px;
+        padding: 170px 0 10px;
     }
     .food-order-area::after {
         height: 50%;
@@ -1501,7 +1503,7 @@
         width: 100%;
     }
     .header-area .btn-wrapper .boxed-btn+.boxed-btn {
-        margin-left: 0;
+       
         margin-top: 20px;
     }
     .header-area.header-utility .header-inner .title {
@@ -1767,7 +1769,16 @@
 
 @media only screen and (max-width: 500px) {
     .create-content-area-03 .trip-img.bg-image {
-       zoom:57%;
+       zoom:75%;
+       
       }
   }
+
+/* For devices with a resolution of 360x740 */
+@media only screen and (max-width: 360px) and (max-height: 740px) {
+    .create-content-area-03 .trip-img.bg-image {
+        zoom: 65%;
+    }
+}
+
 
