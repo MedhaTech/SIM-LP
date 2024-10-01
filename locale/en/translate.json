@@ -25,7 +25,7 @@
     },
     {
       "aboutSection": {
-        "title": "SIM-School Innovation Marathon",
+        "title": "About Us",
         "desc": "School Innovation Marathon is envisioned as India’s largest school innovation challenge organized jointly by the Ministry of Education, Atal Innovation Mission (AIM) NITI Aayog and Ministry of Education’s Innovation Cell (MIC), where students from all schools of the country identify community problems of their choice and develop innovative solutions in the form of working prototypes. The Top Teams of School Innovation Marathon will get funding support from the Ministry of Education",
         "desc1":"Last Year Highlights :",
         "point1_b":"19000+ Innovations ",
@@ -201,7 +201,8 @@
             "video_2":"Teacher Login",
             "video_3":"Teacher Dashboard",
             "video_4":"Team Creation",
-            "video_5":"Forgot Password?"
+            "video_5":"Forgot Password?",
+            "video_6":"Idea Submission"
             
         }
         }
