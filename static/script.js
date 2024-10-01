@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
    
     function displaySuboptions1() {
-        const subOptions = ['Portal', 'Program queries']; // List of sub-options
+        const subOptions = ['Portal', 'Program queries','Support Videos']; // List of sub-options
         var firstOption = true; // Flag to check if it's the first sub-option
     
         subOptions.forEach(function(optionText) {
@@ -617,11 +617,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 displaySuboptions2();
                 
             }
-            else if (optionText.toLowerCase() === 'support videos') {
-                botResponse = "Select";
-                displayBotMessage(botResponse);
-                displayTeacherSupportVideosOptions();
-                
+            
+            else  if (optionText.toLowerCase() === 'support videos') {
+                if (lastClickedOption === 'Teacher') {
+                    botResponse = "Select the category:"
+                    displayBotMessage(botResponse);
+                    displayTeacherSupportVideosOptions();
+                } else if (lastClickedOption === 'Student') {
+                    botResponse = "Select the category:";
+                    displayBotMessage(botResponse);
+                    displayStudentSupportVideosOptions();
+                }
             }
             
         }
@@ -902,6 +908,87 @@ function displayTeacherPortalOptions() {
             }  
             setTimeout(function () {
                 displayFeedbackMessageTeacher();
+           }, 500);
+            
+        }
+
+        function displayStudentSupportVideosOptions() {
+            const subOptions = [
+                'Student Login', 'Student Dashboard', 'Student Course', 'Idea Submission', 'Post Survey', 'Student Resources'
+            ];
+            const marginLeftValue = '10px'; // Set a consistent left margin
+        
+            subOptions.forEach(function(optionText) {
+                var optionContainer = document.createElement('div');
+                optionContainer.classList.add('option-container');
+                optionContainer.style.marginBottom = '10px'; // Add bottom margin for spacing
+        
+                var optionElement = document.createElement('div');
+                optionElement.textContent = optionText;
+                optionElement.classList.add('option');
+                optionElement.style.marginLeft = marginLeftValue; // Apply consistent left margin
+                optionElement.style.padding = '5px 10px'; // Add some padding for better appearance
+        
+                optionElement.addEventListener('click', function() {
+                    displayUserMessage(optionText);
+                    setTimeout(function() {
+                        fetchStudentSupportVideoResponse(optionText);
+                    }, 500);
+                });
+                
+        
+                optionElement.addEventListener('mouseover', function() {
+                    optionElement.style.backgroundColor = 'green';
+                    optionElement.style.color = 'white';
+                });
+        
+                optionElement.addEventListener('mouseout', function() {
+                    optionElement.style.backgroundColor = 'white';
+                    optionElement.style.color = 'green';
+                });
+        
+                optionContainer.appendChild(optionElement);
+                chatBox.appendChild(optionContainer);
+            });
+        
+            chatBox.scrollTop = chatBox.scrollHeight; // Ensure the chat box scrolls to display the latest added elements
+        }
+
+        function fetchStudentSupportVideoResponse(optionText) {
+            var botResponse = '';
+            if (optionText === 'Student Login') {
+                botResponse = "Please watch the <a href='https://youtu.be/WxafskPsMog' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+               // Display sub-options for Teacher Registration
+            }
+            else if (optionText === 'Student Dashboard') {
+                botResponse = "Please watch the <a href='https://youtu.be/A5vvpfnVvcE' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+                
+            } 
+            else if (optionText === 'Student Course') {
+                botResponse = "Please watch the <a href='https://youtu.be/g5bDS1x5C4g' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+                
+            }  
+            else if (optionText === 'Idea Submission') {
+                botResponse = "Please watch the <a href='https://youtu.be/0sG7Ew1fr6A' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+                
+            }  
+            else if (optionText === 'Post Survey') {
+                botResponse = "Please watch the <a href='https://youtu.be/mDkYsD1ZxYA' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+               
+            }  
+           else if (optionText === 'Student Resources') {
+                botResponse = "Please watch the <a href='https://youtu.be/NYxbFvjG8vQ' target='_blank'>video</a>";
+                displayBotMessage(botResponse);
+               
+            } 
+            
+            setTimeout(function () {
+                displayFeedbackMessageStudent();
            }, 500);
             
         }
@@ -1977,14 +2064,14 @@ function displayTeacherPortalOptions() {
                 'What information can I view on my Student Dashboard?': `1. View team member details, including their class and progress.
                         2. Track your course progress, quizzes passed, and action items.
                         3. Check the status of each stage like pre-survey, idea submission, and post-survey.
-                        4.Please watch this video for detail steps (video_002)`,
+                        4.Please watch this video for detail steps <a href="https://youtu.be/A5vvpfnVvcE" target="_blank">video</a>`,
                 'How can I track my progress in the School Innovation Marathon?': `1. Use the SIM Roadmap to see stages like pre-survey, course, and idea submission.
                     2. Status updates: "Not Started," "In Progress," and "Completed."
                     3. Check action items and completed tasks in the dashboard.`,
                 'How can I switch the language of the portal on the Dashboard?': `1. Go to the top-right corner of the dashboard.
                     2. Click the dropdown menu to select a language.
                     3. Choose from English, Telugu, Hindi, or Tamil to translate the interface.
-                    4.Please watch this video for detail steps (video_002)`,
+                    4.Please watch this video for detail steps <a href="https://youtu.be/A5vvpfnVvcE" target="_blank">video</a>`,
                 
             };
 
@@ -2054,7 +2141,7 @@ function displayTeacherPortalOptions() {
                 'How to access student Course on portal ?': `1. Log in to the Portal: Use your team ID and password to log in to your Student Dashboard.
                     2. Navigate to Course: On the SIM Roadmap, click on the course section or use the left-hand menu to select "Student Course."
                     3. Start the Course: Follow the prompts to watch videos, complete quizzes, and download the workbook.
-                    4.Please watch this video for detail steps (video_003)`,
+                    4.Please watch this video for detail steps <a href="https://youtu.be/g5bDS1x5C4g" target="_blank">video</a>`,
                 'How many quizzes do I need to pass to complete the course?': `1. The number of quizzes depends on the course modules.
                     2. Each module includes one quiz.
                     3. You must pass all quizzes to complete the course.`,
@@ -2297,7 +2384,7 @@ function displayTeacherPortalOptions() {
                 'How do I Register as a student in SIM': `1. Register as a Teacher: Visit the SIM portal, complete the registration form, and verify your account via the confirmation Email.
                         2. Enroll Students: Log in to the teacher portal, go to the student enrollment section, and register students by entering their details.
                         3. Provide Student Details: Enter each student’s name, class, gender, and age. Ensure each team has 2-3 members.
-                         Watch this video for detailed instructions:<a href="https://www.youtube.com/watch?v=MIZcxs9pJuA" target="_blank">Video</a>`,
+                         Watch this video for detailed instructions:<a href="https://youtu.be/sT3I44RzZAI" target="_blank">Video</a>`,
                 'Is there a limit on the number of teams that can participate from a school?': `No, there is no specific limit on the number of teams that can participate from a single school. All students are encouraged to register and form teams.`,
                 ' What is the ideal Composition of a team?': `A team should include 2 to 3 students, ensuring effective collaboration and easy management.`,
                 ' Is individual member entry allowed?': `No, individual member entry is not allowed Teams must consist of a minimum of 2 members`,
@@ -2328,7 +2415,8 @@ function displayTeacherPortalOptions() {
                         'Where to Find Student User Id and Password',
                         'What should I do if I haven’t received the login credentials from my guide teacher?',
                         'What are the steps to log in after receiving the credentials from my guide teacher?',
-                        'Can i change my team username / password '
+                        'Can i change my team username / password ',
+                        'How to Login into student portal?'
                     ];
 
                     subOptions.forEach(function(optionText) {
@@ -2376,7 +2464,7 @@ function displayTeacherPortalOptions() {
                     3. Find and Share Credentials: 
                     - The Student User ID is system-generated, and the Password is the team name. Share these with the students.
 
-                    For detailed instructions, please watch <a href="https://www.youtube.com/watch?v=e0S4PRXLo0U" target="_blank"><br>Video</a>`,
+                    For detailed instructions, please watch <a href="https://youtu.be/e0S4PRXLo0U" target="_blank"><br>Video</a>`,
                 'What should I do if I haven’t received the login credentials from my guide teacher?': `If you have not received your login credentials from your guide teacher, please follow these steps: 
                 Contact Your Guide Teacher: Reach out to your guide teacher directly. You can find their contact details in the teacher dashboard.`,
                 'What are the steps to log in after receiving the credentials from my guide teacher?': `1. Receive Credentials: Obtain your login credentials from your guide teacher. The username will be the system-generated team ID, and the password will be the team name.
@@ -2396,6 +2484,10 @@ function displayTeacherPortalOptions() {
                     - Finish the student course by completing all modules.
                     - Initiate the idea submission process as instructed in the course..`,
                 'Can i change my team username / password ': `No , you cannot edit Team Username / password`,
+                'How to Login into student portal?': `1. Visit the Login Page: Go to [schoolinnovationmarathon.org/login](https://schoolinnovationmarathon.org/login).
+                        2. Select Student Team Login: Click on "Student Team Login" and enter your team ID and password (your team name in lowercase).
+                        3. Access Dashboard: Click "Sign In" to access your Team Dashboard and view your progress.
+                        4.Please watch this video for detail steps <a href="https://youtu.be/WxafskPsMog" target="_blank"><br>Video</a>`
             };
 
             // Check if the clicked option is in the predefined questions list
