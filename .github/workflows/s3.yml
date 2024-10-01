@@ -1,6 +1,6 @@
 on:
   push:
-    branches: devforchatbot
+    branches: development
   workflow_dispatch:
 
 permissions:
