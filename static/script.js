@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var messageElement = document.createElement('p');
         messageElement.innerHTML = message.replace(/\n/g, "<br>");
         messageElement.classList.add('bot-message');
-        messageElement.style.color = 'black';
+        messageElement.style.color = 'white';
         
     
         var whiteLinks = messageElement.querySelectorAll('a');
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var messageElement = document.createElement('p');
         messageElement.innerHTML = message.replace(/\n/g, "<br>");
         messageElement.classList.add('bot-message');
-        messageElement.style.color = 'black';
+        messageElement.style.color = 'white';
         
         
 
@@ -2666,7 +2666,7 @@ function displayTeacherPortalOptions() {
             displayBotMessage('Thanks for your feedback. Is there anything else that I can help you with?', false);
             displayOptionsAfterFeedback();
         } else if (feedback === 'dislike') {
-            displayBotMessage('If your question is different or you can’t find the answer you’re looking for, please reach out to your SIM teacher. Alternatively, you can ask your teacher to raise a support ticket in the teacher support system for further assistance. We\'re here to help!', false);
+            displayBotMessage('If your question is different or you can’t find the answer you’re looking for, please reach out to your SIM teacher. Alternatively, you can ask your teacher to raise a support ticket in the teacher support system for further assistance. Is there anything else that I can help you with?', false);
             setTimeout(function() {
                 displayOptionsAfterExaminationOptions();
             }, 500);

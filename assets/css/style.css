@@ -12420,7 +12420,11 @@ Single package item
 .map_color:hover {
   fill: #ffc05e !important;
 }
-
+@media only screen and (width: 360px) and (height: 740px) {
+  svg {
+      zoom: 54%; 
+  }
+}
 
 .map_counter_box_shape {
   padding: 20px 20px;
