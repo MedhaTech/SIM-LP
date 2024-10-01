@@ -195,13 +195,13 @@
         },
         {
           "videos": {
-            "title":"Help resources to navigate the platform",
-            "title2":"Please refer to the help videos below on how to Register, Log in, Create Team and Submit your idea.",
-            "video_1":"name",
-            "video_2":"name.",
-            "video_3":"name",
-            "video_4":"name.",
-            "video_5":"name"
+            "title":"पोर्टल का उपयोग करने के लिए सहायता संसाधन",
+            "title2":"कृपया नीचे दिए गए सहायता वीडियो देखें, जिसमें रजिस्टर, लॉग इन और टीम बनाने की प्रक्रिया समझाई गई है।",
+            "video_1":"रजिस्टर कैसे करें?",
+            "video_2":"टीचर लॉगिन",
+            "video_3":"टीचर डैशबोर्ड",
+            "video_4":"टीम बनाना",
+            "video_5":"पासवर्ड भूल गए?"
             
         }
         }
