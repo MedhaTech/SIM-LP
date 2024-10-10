@@ -6096,7 +6096,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 Client Area
 -----------------------------*/
 .client-area .single-brand a img {
-  filter: opacity(0.6) grayscale(1);
+  /* filter: opacity(0.6) grayscale(1); */
   transition: all 0.3s ease;
 }
 
