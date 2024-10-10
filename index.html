@@ -27,6 +27,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive Stylesheet -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="stylesheet" href="static/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+
     <style>
         .it_comp_work_process {
             position: relative;
@@ -62,13 +69,13 @@
             width: 120px;
             height: 120px;
             position: relative;
-            border-radius: 50%;
+            border-radius: 10%;
             line-height: 130px;
             font-size: 40px;
             text-align: center;
             color: #1c1d3e;
-            -webkit-box-shadow: 0px 0px 30px 0px rgba(93, 136, 250, 0.5);
-            box-shadow: 0px 0px 30px 0px rgba(93, 136, 250, 0.5);
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(93, 136, 250, 0.5);
+            box-shadow: 0px 0px 10px 0px rgba(93, 136, 250, 0.5);
         }
 
         .it_comp_working_wrapper {
@@ -84,7 +91,7 @@
         .it_comp_work_process .step-desc h4 a {
             color: #111;
             margin-bottom: 15px;
-            font-size: 22px;
+            font-size: 14px;
             display: inline-block;
             text-transform: capitalize;
             -webkit-transition: all 0.5s;
@@ -93,6 +100,8 @@
             -moz-transition: all 0.5s;
             transition: all 0.5s;
         }
+
+
 
         .it_comp_work_process:hover .step-desc h4 a {
             color: #C52C28;
@@ -103,6 +112,7 @@
             transition: all 0.5s;
         }
 
+
         .it_comp_working_wrapper .step-icon {
             border-color: rgba(255, 255, 255, 0.2);
         }
@@ -110,7 +120,8 @@
         .it_comp_work_process .step-num-box {
             position: relative;
             display: inline-block;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
+            cursor: pointer;
         }
 
         .modal {
@@ -190,6 +201,155 @@
             margin: 0 auto;
             width: 100%;
         }
+
+
+        .mobile-view {
+            display: none;
+        }
+
+        @media (max-width: 500px) {
+            .desktop-view {
+                display: none;
+            }
+
+            .mobile-view {
+                display: block;
+            }
+        }
+
+        /* For iPad view  */
+        @media only screen and (min-width: 768px) and (max-width: 997px) {
+
+            #head-1 .header-inner {
+                margin-top: -200px !important;
+            }
+
+            #head-1 h2.title {
+                display: none;
+            }
+
+            #head-1 .ipad-title {
+                display: block;
+                font-size: 40px;
+                line-height: 1.2;
+                text-transform: none;
+            }
+
+            #head-1 .ipad-title span {
+                display: block;
+                text-transform: capitalize;
+            }
+
+            #head-1 p {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
+
+        /* For iPad Pro view */
+        @media only screen and (min-width: 1024px) and (max-width: 1024px) {
+
+            #head-1 .header-inner {
+                margin-top: -100px !important;
+            }
+
+
+            #head-1 h2.title {
+                display: block;
+            }
+
+
+            #head-1 .ipad-title {
+                display: none;
+            }
+
+
+            #head-1 p {
+                font-size: inherit;
+                line-height: inherit;
+            }
+        }
+
+
+        @media only screen and (min-width: 1025px) {
+            #head-1 .header-inner {
+                margin-top: -50px !important;
+            }
+
+            #head-1 h2.title {
+                display: block;
+            }
+
+            #head-1 .ipad-title {
+                display: none;
+            }
+
+            #head-1 p {
+                font-size: inherit;
+                line-height: inherit;
+            }
+        }
+
+
+        @media only screen and (max-width: 767px) {
+            #head-1 h2.title {
+                display: block;
+            }
+
+            #head-1 .ipad-title {
+                display: none;
+            }
+
+
+        }
+
+        /* For mobile views */
+        @media only screen and (max-width: 415px) {
+
+            #head-1 .header-inner p,
+            #head-1 .header-inner p span {
+                font-size: 15px !important;
+                line-height: 1.4;
+            }
+        }
+
+
+
+
+
+        .mobile-arrows {
+            display: none;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+
+        .arrow {
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .left-arrow {
+            position: absolute;
+            left: 10px;
+        }
+
+        .right-arrow {
+            position: absolute;
+            right: 10px;
+        }
+
+
+        @media (max-width: 500px) {
+            .mobile-arrows {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
     </style>
 
 </head>
@@ -230,7 +390,8 @@
                         <li><a href="#testimonial" class="lang-change" data-lang="nav-testimonial">Testimonial</a></li>
                         <li><a href="#faq" class="lang-change" data-lang="nav-faq">FAQs</a></li>
                         <li>
-                            <select class="form-select p-1"  style="border-radius: 10px; background-color: #ffc05e;"onchange="langChange(this);">
+                            <select class="form-select p-1" style="border-radius: 10px; background-color: #ffc05e;"
+                                onchange="langChange(this);">
                                 <option value="en">English</option>
                                 <option value="hi">हिंदी</option>
                             </select>
@@ -265,44 +426,32 @@
         </nav>
         <!-- navbar area end -->
     </div>
-    <div class="header-area header-bg">
+    <div class="header-area header-bg margin-bottom-120" style="background-image:url(assets/images/bg-02.png);">
         <div class="video-container">
             <video autoplay loop muted playsinline id="bg-video">
                 <source src="assets/images/hero1.mp4" type="video/mp4">
             </video>
         </div>
-
-
-
-        <!--
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="header-inner desktop-center">
-                        
-                        <h1 class="title wow animate__animated animate__fadeInUp animated">School Innovation Marathon 2024-25</h1>
-                        <p class="wow animate__animated animate__fadeInUp animated" style="color:#e30044">Creating Change Makers Of Tomorrow With 21st
-                            Century Skills.Nurture a culture of social innovation and build skills while inspiring young people to become transformative leaders.</p>
-                        <div class="btn-wrapper padding-top-30 wow animate__animated animate__fadeInUp animated">
-                            <a href="#" class="boxed-btn medical-btn">Register</a>
-                            <a href="#" class="boxed-btn medical-btn">Login</a>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-        </div>-->
-        <!--hero section start-->
-
         <div class="container" id="head-1">
             <div class="row">
-                <div class="col-lg-6" style="margin-top: -50px;">
+                <div class="col-lg-5 col-sm-12">
                     <div class="header-inner">
-                        <!-- header inner -->
-                        <h2 class="title lang-change" data-lang="heroSection-title" style="font-size: 50px;">School
-                            Innovation Marathon 2024</h2>
+                        <!-- Original heading for non-iPad views -->
+                        <h2 class="title lang-change" data-lang="heroSection-title">
+                            School Innovation Marathon 2024
+                        </h2>
+
+                        <!-- New heading specifically for iPad view -->
+                        <h2 class="ipad-title">
+                            School Innovation<br><span>
+                                <h2>Marathon 2024</h2>
+                            </span>
+                        </h2>
                         <p>
+                            Creating Change Makers of tomorrow with 21st Century Skills. Nurture a culture of social
+                            innovation and build skills while inspiring young people to become transformative leaders.
+                        </p>
+                        <!-- <p>
                             <span style="color:black" class="lang-change text-lowercase"
                                 data-lang="heroSection-title1">Creating Change Makers of tomorrow with </span>
                             <span style="color:black" class="lang-change text-lowercase"
@@ -313,7 +462,7 @@
                                 young</span>
                             <span style="color:black" class="lang-change text-lowercase"
                                 data-lang="heroSection-title1_p3">people to become transformative leaders.</span>
-                        </p>
+                        </p> -->
 
                         <div class="btn-wrapper padding-top-20 wow animate__animated animate__fadeInUp animated">
                             <a href="https://schoolinnovationmarathon.org/registration"
@@ -326,64 +475,104 @@
                 </div>
             </div>
         </div>
-
         <!--hero section end-->
     </div>
     <!--about us start-->
-    <div id="about_us" class="create-content-area-03 padding-top-100">
+    <div id="why" class="unique-project-area1 margin-bottom-120">
         <div class="container">
+
             <div class="row">
-                <div class="col-lg-6 wow animate__animated animate__fadeInUp animated">
-                    <div class="section-title">
-                        <h4 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="aboutSection-title">About Us</h4>
+                <div class="col-lg-6">
+                    <div class="unique-content-area">
+                        <div class="section-title brand">
+                            <h4 class="title">About Us
+                            </h4>
+                            <p class="wow animate__animated animate__fadeInUp animated lang-change text-justify"
+                                data-lang="aboutSection-desc">School Innovation Marathon is
+                                envisioned as India's largest school innovation challenge organized jointly by the
+                                Ministry
+                                of Education, Atal Innovation Mission (AIM) NITI Aayog and Ministry of Education's
+                                Innovation Cell (MIC), where students from all schools of the country identify community
+                                problems of their choice and develop innovative solutions in the form of working
+                                prototypes.
+                                The Top Teams of School Innovation Marathon will get funding support from the Ministry
+                                of
+                                Education. </p>
+                        </div>
                     </div>
-                    <p class="wow animate__animated animate__fadeInUp animated lang-change"
-                        data-lang="aboutSection-desc">School Innovation Marathon is
-                        envisioned as India’s largest school innovation challenge organized jointly by the Ministry
-                        of Education, Atal Innovation Mission (AIM) NITI Aayog and Ministry of Education’s
-                        Innovation Cell (MIC), where students from all schools of the country identify community
-                        problems of their choice and develop innovative solutions in the form of working prototypes.
-                        The Top Teams of School Innovation Marathon will get funding support from the Ministry of
-                        Education. </p>
-                    <p class="wow animate__animated animate__fadeInUp animated lang-change"
-                        data-lang="aboutSection-desc1">Last Year Highlights :</p>
-
-                    <ul class="content wow animate__animated animate__fadeInUp animated">
-                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change"
-                                data-lang="aboutSection-point1_b">19000+ Innovations</strong>
-                            <p class="lang-change" data-lang="aboutSection-point1" style="display:inline;">witnessed
-                                in last edition of Marathon.</p>
-                        </li>
-                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change"
-                                data-lang="aboutSection-point2_b">Internship opportunities</strong>
-                            <p class="lang-change" data-lang="aboutSection-point2" style="display:inline;"> for
-                                Top 400 teams through SIP program.</p>
-                        </li>
-                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change"
-                                data-lang="aboutSection-point3_b">Mentorship Program</strong>
-                            <p class="lang-change" data-lang="aboutSection-point3" style="display:inline;"> for Top
-                                75 teams through SEP program</p>
-                        </li>
-                        <li><i aria-hidden="true" class="fas fa-check"></i><strong class="lang-change"
-                                data-lang="aboutSection-point4_b">Prizes and certificates </strong>
-                            <p class="lang-change" data-lang="aboutSection-point4" style="display:inline;">from
-                                AIM, NITI Aayog to students.</p>
-                        </li>
-
-                    </ul>
-                    </ul>
                 </div>
                 <div class="col-lg-6">
-                    <div class="trip-img wow animate__animated bg-image" data-parallax='{"x": 50, "y": 0}'>
-                        <iframe width="100%" height="430"
-                            src="https://www.youtube.com/embed/mxbmaf7B3I4?si=bJZunIE8ZsT2pAZZ&autoplay=0&loop=1&playlist=mxbmaf7B3I4&controls=1"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                        </iframe>
+                    <div class="shape">
+                        <div class="build-img bg-image-02 wow animate__ animate__backInUp  animated"
+                            style="visibility: visible; animation-name: backInUp;">
+                            <div class="about-video-container">
+                                <iframe width="100%" height="300"
+                                    src="https://www.youtube.com/embed/mxbmaf7B3I4?si=bJZunIE8ZsT2pAZZ&autoplay=0&loop=1&playlist=mxbmaf7B3I4&controls=1"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+            </div>
+        </div>
+    </div>
+    <div id="idea" class="build-area margin-bottom-60" style="background-image:url(assets/images/bg-02.png);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title desktop-center margin-bottom-55">
+                        <h3 class="title social-title">Major Highlights from the Last Year </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-everything-item">
+                        <div class="icon">
+                            <i class="far fa-lightbulb"></i>
+                        </div>
+                        <div class="content">
+                            <h3 class="title">19000+ Innovations</h3>
+                            <p>witnessed in last edition of Marathon.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-everything-item">
+                        <div class="icon style-01">
+                            <i class="flaticon-favourite"></i>
+                        </div>
+                        <div class="content">
+                            <h3 class="title">Internship opportunities </h3>
+                            <p>for Top 400 teams through SIP program.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-everything-item">
+                        <div class="icon style-02">
+                            <i class="flaticon-speedometer-1"></i>
+                        </div>
+                        <div class="content">
+                            <h3 class="title">Mentorship Program</h3>
+                            <p>for Top 75 teams through SEP program</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-everything-item">
+                        <div class="icon style-03">
+                            <i class="flaticon-feedback"></i>
+                        </div>
+                        <div class="content">
+                            <h3 class="title">Prizes and certificates</h3>
+                            <p>from AIM, NITI Aayog to students.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -464,39 +653,41 @@
     -->
     <!--old Road Map end-->
     <!--Road Map start-->
-    <section style="background-image: url(assets/images/bg.png);" id="road_map">
+
+    <section style="background-image: url(assets/images/bg.png); background-color: white;" id="road_map">
         <div class="build-area-02">
-            <div class="container">
+            <div class="container padding-bottom-50">
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div class="section-title desktop-center padding-bottom-25">
                             <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
                                 data-lang="roadmap-title">Road Map</h3>
                             <p class="wow animate__animated animate__fadeInUp animated lang-change"
-                                data-lang="roadmap-title1">Journey Of A Student In School
-                                Innovation Marathon. Let’s create impact with youth</p>
+                                data-lang="roadmap-title1">Journey Of A Student In School Innovation Marathon. Let’s
+                                create
+                                impact with youth</p>
                         </div>
                     </div>
                 </div>
-                <div class="audio-triangle-area">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4">
+
+                <!-- Desktop View -->
+                <div class="audio-triangle-area desktop-view">
+                    <div class="row align-items-center d-flex">
+                        <div class="col-lg-4 innovation-block">
                             <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
                                 <div class="icon">
                                     <i class="fas fa-lightbulb"></i>
                                 </div>
                                 <div class="content padding-bottom-55">
-                                    <h4 class="title">
-                                        <a class="lang-change" data-lang="roadmap-innovation">INNOVATION</a>
-                                    </h4>
+                                    <h4 class="title"><a class="lang-change"
+                                            data-lang="roadmap-innovation">INNOVATION</a></h4>
                                     <ul>
+
                                         <li class="lang-change" data-lang="roadmap-i_point1">Launch of SIM on 29 July.
                                         </li>
-                                        <li class="lang-change" data-lang="roadmap-i_point2">Followed by Innovation &
-                                            Prototyping Phase :
-                                            Aug 1st to 30th Nov 2024.</li>
+                                        <li class="lang-change" data-lang="roadmap-i_point2">Innovation & Prototyping
+                                            Phase from Aug 1st to 30th Nov 2024.</li>
                                     </ul>
-
                                 </div>
                             </div>
                             <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
@@ -504,37 +695,34 @@
                                     <i class="fas fa-briefcase"></i>
                                 </div>
                                 <div class="content padding-bottom-55">
-                                    <h4 class="title">
-                                        <a class="lang-change" data-lang="roadmap-sip">SIP</a>
-                                    </h4>
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-sip">SIP</a></h4>
                                     <p class="lang-change" data-lang="roadmap-s_point">Commencement of Student
                                         Internship Programme(SIP)<br>May 2025 onwards.</p>
                                 </div>
 
                             </div>
 
+
                         </div>
 
-                        <div class="col-lg-4 justify-content-center">
 
+                        <div class="col-lg-4 gif-section">
                             <div class="audio-bg" style="background-image: url(assets/images/New_other.gif)">
-
-                                <!-- <img class="bg-img wow animate__animated animate__fadeInUp animated" src="assets/img/audio-03.png" alt=""> -->
                             </div>
-
                         </div>
 
-                        <div class="col-lg-4">
+
+                        <div class="col-lg-4 sip-block">
+
                             <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
 
                                 <div class="content padding-bottom-55">
-                                    <h4 class="title">
-                                        <a class="lang-change" data-lang="roadmap-winners">WINNERS</a>
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-winners">WINNERS</a>
                                     </h4>
                                     <ul>
                                         <li><span class="lang-change" data-lang="roadmap-w_point1">Announcement of Top
-                                            </span> <br> <span class="lang-change" data-lang="roadmap-w_point1_1"> Teams
-                                                in Jan 2025.</span></li>
+                                                Teams</span> <br> <span class="lang-change"
+                                                data-lang="roadmap-w_point1_1">in Jan 2025.</span></li>
                                         <li class="lang-change" data-lang="roadmap-w_point2">Funding support to teams in
                                             March 2025.</li>
                                     </ul>
@@ -543,14 +731,86 @@
                                     <i class="fas fa-trophy"></i>
                                 </div>
                             </div>
+
+
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-sep">SEP</a></h4>
+                                    <p class="lang-change" data-lang="roadmap-sep_point">Top teams from SIP to student
+                                        Entrepreneurship Programme(SEP)<br>Aug 2025 onwards.</p>
+                                </div>
+                                <div class="icon style-03">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile View-->
+                <div class="audio-triangle-area mobile-view">
+                    <div class="row align-items-center d-flex">
+                        <div class="col-lg-4 innovation-block">
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title"><a class="lang-change"
+                                            data-lang="roadmap-innovation">INNOVATION</a></h4>
+                                    <ul>
+                                        <li class="lang-change" data-lang="roadmap-i_point1">Launch of SIM on 29 July.
+                                        </li>
+                                        <li class="lang-change" data-lang="roadmap-i_point2">Innovation & Prototyping
+                                            Phase from Aug 1st to 30th Nov 2024.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 winner-block">
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="icon style-01">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-winners">WINNERS</a>
+                                    </h4>
+                                    <ul>
+                                        <li><span class="lang-change" data-lang="roadmap-w_point1">Announcement of Top
+                                                Teams</span> <br> <span class="lang-change"
+                                                data-lang="roadmap-w_point1_1">in Jan 2025.</span></li>
+                                        <li class="lang-change" data-lang="roadmap-w_point2">Funding support to teams in
+                                            March 2025.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 gif-section">
+                            <div class="audio-bg" style="background-image: url(assets/images/New_other.gif)">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 sip-block">
+                            <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
+                                <div class="content padding-bottom-55">
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-sip">SIP</a></h4>
+                                    <p class="lang-change" data-lang="roadmap-s_point">Commencement of Student
+                                        Internship Programme(SIP)<br>May 2025 onwards.</p>
+                                </div>
+                                <div class="icon style-02">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                            </div>
+
+
                             <div class="offer-single-item style-01 wow animate__animated animate__fadeInUp animated">
                                 <div class="content">
-                                    <h4 class="title">
-                                        <a class="lang-change" data-lang="roadmap-sep">SEP</a>
-                                    </h4>
+                                    <h4 class="title"><a class="lang-change" data-lang="roadmap-sep">SEP</a></h4>
                                     <p class="lang-change" data-lang="roadmap-sep_point">Top teams from SIP to student
-                                        Entrepreneurship Programme(SEP)<br>Aug
-                                        2025 onwards.</p>
+                                        Entrepreneurship Programme(SEP)<br>Aug 2025 onwards.</p>
                                 </div>
                                 <div class="icon style-03">
                                     <i class="fas fa-chart-line"></i>
@@ -562,11 +822,13 @@
             </div>
         </div>
     </section>
+
+
     <!--Road Map end-->
 
     <!-- themes area start  -->
     <section class="testimonial-area bg-image padding-top-100 padding-bottom-90"
-        style="background-image: url(assets/images/bg3.png);" id="themes">
+        style="background-image: url(assets/images/bg3.png); background-color: white;" id="themes">
         <div class="shape-02">
             <img src="assets/images/logoup2.png" alt="">
         </div>
@@ -835,11 +1097,12 @@
             </div>
         </div>
     </section>
+
     <!-- theme area end -->
 
 
     <!--Prizes start here-->
-    <div class="offer-area padding-bottom-400 padding-top-100 bg-image" id="prizes">
+    <div class="offer-area padding-bottom-400 padding-top-100 bg-image" id="prizes" style="background-color: white;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -855,7 +1118,7 @@
             </div>
         </div>
     </div>
-    <div class="offer-item-area">
+    <div class="offer-item-area" style="background-color: white;">
         <div class="container">
             <div class="offer-item-wrap m-top">
                 <div class="row">
@@ -996,7 +1259,7 @@
 
     <!--impact start-->
     <div class="call-to-action-area-01 bg-image padding-top-120"
-        style="background-image: url(assets/images/impactbg.png);" id="impact">
+        style="background-image: url(assets/images/impactbg.png); background-color: white;" id="impact">
         <div class="container">
             <div class="call-to-action-inner style-08">
                 <div class="lawyer_wrraper advantege-work-area full_width animated-row">
@@ -1009,14 +1272,15 @@
                                         border: 0px solid #aaa;
                                     }
 
-                                    @media only screen and (max-width: 350px) {
+                                    @media only screen and (max-width: 980px) {
                                         svg {
                                             padding-top: 20px;
-                                            zoom: 45%;
+                                            zoom: 50%;
                                         }
                                     }
 
-                                    @media only screen and (min-width: 500px) {
+
+                                    @media only screen and (min-width: 1000px) {
                                         svg {
                                             padding-top: 20px;
                                             zoom: 75%;
@@ -1108,7 +1372,8 @@
                             <div class="col-md-6">
                                 <div class="row justify-content-center">
                                     <div class="col-md-12">
-                                        <h3 class="style-01 lang-change text-uppercase" data-lang="impact-title">Engagement & Impact </br> SIM 2024-25</h3>
+                                        <h3 class="style-01 lang-change text-uppercase" data-lang="impact-title">
+                                            Engagement & Impact </br> SIM 2024-25</h3>
                                     </div>
                                     <div class="col-md-12 py-2 text-center">
                                         <h3 id="name" class="text-uppercase text-center lang-change"
@@ -1117,7 +1382,7 @@
                                 </div>
                                 <div class="row justify-content-center mt-2">
                                     <div class="counter-item-list">
-                                        <div class="col-lg-4">
+                                        <div class="col-lg-4 col-sm-6 col-md-6">
                                             <div class="single-counterup-01 white">
                                                 <div class="content">
                                                     <div class="count-wrap"><span class="count-num"
@@ -1127,7 +1392,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-lg-4 col-sm-6 col-md-6">
                                             <div class="single-counterup-01 white">
                                                 <div class="content">
                                                     <div class="count-wrap"><span class="count-num"
@@ -1137,7 +1402,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-lg-4 col-sm-6 col-md-6">
                                             <div class="single-counterup-01 white">
                                                 <div class="content">
                                                     <div class="count-wrap"><span class="count-num"
@@ -1152,7 +1417,7 @@
                                 <br>
                                 <div class="row justify-content-center">
                                     <div class="counter-item-list">
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="single-counterup-01 white">
                                                 <div class="content">
                                                     <div class="count-wrap"><span class="count-num"
@@ -1162,7 +1427,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="single-counterup-01 white">
                                                 <div class="content">
                                                     <div class="count-wrap"><span class="count-num"
@@ -1186,145 +1451,140 @@
     <!--impact end-->
 
     <!--videos-->
-    <!-- <section class="testimonial-area bg-image padding-top-120 padding-bottom-120" id="videos">
-     
-    <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
-        <div class="it_comp_heading_wrapper text-center">
+    <section class="testimonial-area bg-image padding-top-120" id="videos" style="background-color: white;">
 
-            <h2  class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="videos-title" style="text-transform: none;">Help resources to navigate the platform</h2>
-            <h1 class="lang-change"  data-lang="videos-title2" style="font-size: 18px;" >Please refer to the help videos below on how to Register, Log
-                In, Create Team and Submit
-                your idea. </h1>
+        <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+            <div class="it_comp_heading_wrapper text-center">
+
+                <h2 class="title wow animate__animated animate__fadeInUp animated lang-change" data-lang="videos-title"
+                    style="text-transform: none;">Help resources to navigate the platform</h2>
+                <h1 class="lang-change" data-lang="videos-title2" style="font-size: 18px;">Please refer to the help
+                    videos below on how to Register, Log
+                    In, and Create Team </h1>
+            </div>
         </div>
-    </div>
-    <br>
-    <br>
-    <div class="container" >
-        <div class="row row-centered justify-content-center">
-            <div id="it_comp_svg_container">
-                <svg id="svgC" width="100%" height="100%" viewBox="0 0 620 120"
-                    preserveAspectRatio="xMidYMid meet">
-                    
-                </svg>
-            </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row row-centered justify-content-center">
+                <div id="it_comp_svg_container">
+                    <svg id="svgC" width="100%" height="100%" viewBox="0 0 620 120"
+                        preserveAspectRatio="xMidYMid meet"></svg>
+                </div>
+                <div class="col-lg-2 col-md-12 col-centered">
+                    <div class="it_comp_work_process">
+                        <div class="box-loader"> <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="step-num-box">
+                            <div class="step-icon animate__animated animate__fadeInUp animated">
+                                <!-- <img src="assets/images/image.png" alt="img" class="youtube-popup"
+                                    data-video-id="sVCgsJgfNJY"> -->
+                                <i class="fab fa-youtube text-danger youtube-popup" data-video-id="sVCgsJgfNJY"></i>
+                            </div>
+                        </div>
+                        <div class="step-desc">
+                            <h4><a class="lang-change" data-lang="videos-video_1">Teacher Registration</a></h4>
+                        </div>
+                    </div>
+                </div>
 
-          
-           <div class="col-lg-2 col-md-6 col-centered">
-                <div class="it_comp_work_process">
-                    <div class="box-loader"> <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="step-num-box">
-                        <div class="step-icon animate__animated animate__fadeInUp animated">
-                            <img src="assets/images/image.png" alt="img" class="youtube-popup" data-video-id="xe9bV7I3pQs">
-                        </div>
-                        <div class="step-num">01</div>
-                    </div>
-                    <div class="step-desc">
-                        <h4><a class="lang-change"  data-lang="videos-video_1" >VIDEO1</a></h4>
-                    </div>
-                </div>
-            </div>
 
-            
-            <div class="col-lg-2 col-md-6 col-centered">
-                <div class="it_comp_work_process">
-                    <div class="step-num-box">
-                        <div class="step-icon animate__animated animate__fadeInUp animated">
-                            <img src="assets/images/image.png" alt="img" class="youtube-popup" data-video-id="mxbmaf7B3I4">
+                <div class="col-lg-2 col-md-12 col-centered">
+                    <div class="it_comp_work_process">
+                        <div class="step-num-box">
+                            <div class="step-icon animate__animated animate__fadeInUp animated">
+                                <i class="fab fa-youtube text-danger youtube-popup" data-video-id="MIZcxs9pJuA"></i>
+                            </div>
                         </div>
-                        <div class="step-num">02</div>
-                    </div>
-                    <div class="step-desc">
-                        <h4><a class="lang-change"  data-lang="videos-video_2">VIDEO2</a></h4>
+                        <div class="step-desc">
+                            <h4><a class="lang-change" data-lang="videos-video_2">Teacher Login</a></h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-centered">
-                <div class="it_comp_work_process">
-                    <div class="box-loader"> <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="step-num-box">
-                        <div class="step-icon animate__animated animate__fadeInUp animated">
-                            <img src="assets/images/image.png" alt="img" class="youtube-popup" data-video-id="xe9bV7I3pQs">
+                <div class="col-lg-2 col-md-12 col-centered">
+                    <div class="it_comp_work_process">
+                        <div class="box-loader"> <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
-                        <div class="step-num">03</div>
-                    </div>
-                    <div class="step-desc">
-                        <h4><a class="lang-change"  data-lang="videos-video_3" >VIDEO1</a></h4>
+                        <div class="step-num-box">
+                            <div class="step-icon animate__animated animate__fadeInUp animated">
+                                <i class="fab fa-youtube text-danger youtube-popup" data-video-id="OIsCwczsT0o"></i>
+                            </div>
+                        </div>
+                        <div class="step-desc">
+                            <h4><a class="lang-change" data-lang="videos-video_3">Teacher Dashboard</a></h4>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            
-            <div class="col-lg-2 col-md-6 col-centered">
-                <div class="it_comp_work_process">
-                    <div class="step-num-box">
-                        <div class="step-icon animate__animated animate__fadeInUp animated">
-                            <img src="assets/images/image.png" alt="img" class="youtube-popup" data-video-id="mxbmaf7B3I4">
+
+                <div class="col-lg-2 col-md-12 col-centered">
+                    <div class="it_comp_work_process">
+                        <div class="step-num-box">
+                            <div class="step-icon animate__animated animate__fadeInUp animated">
+                                <i class="fab fa-youtube text-danger youtube-popup" data-video-id="sT3I44RzZAI"></i>
+                            </div>
                         </div>
-                        <div class="step-num">04</div>
+                        <div class="step-desc">
+                            <h4><a class="lang-change" data-lang="videos-video_4">Team Creation</a></h4>
+                        </div>
                     </div>
-                    <div class="step-desc">
-                        <h4><a class="lang-change"  data-lang="videos-video_4">VIDEO2</a></h4>
+                </div>
+
+                <div class="col-lg-2 col-md-12 col-centered">
+                    <div class="it_comp_work_process">
+                        <div class="step-num-box">
+                            <div class="step-icon  animate__animated animate__fadeInUp animated">
+                                <i class="fab fa-youtube text-danger youtube-popup" data-video-id="D434mJUmGpk"></i>
+                            </div>
+                        </div>
+                        <div class="step-desc">
+                            <h4><a class="lang-change" data-lang="videos-video_5">Forgot Password?</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-centered">
+                    <div class="it_comp_work_process">
+                        <div class="step-num-box">
+                            <div class="step-icon  animate__animated animate__fadeInUp animated">
+                                <i class="fab fa-youtube text-danger youtube-popup" data-video-id="IoaGAVQ38-I"></i>
+                            </div>
+                        </div>
+                        <div class="step-desc">
+                            <h4><a class="lang-change" data-lang="videos-video_6">Idea Submission</a></h4>
+                        </div>
                     </div>
                 </div>
             </div>
-        
-            <div class="col-lg-2 col-md-6 col-centered">
-                <div class="it_comp_work_process">
-                    <div class="step-num-box">
-                        <div class="step-icon">
-                            <img src="assets/images/image.png" alt="img" class="youtube-popup" data-video-id="XlR6C_FmIGM">
-                        </div>
-                        <div class="step-num">05</div>
-                    </div>
-                    <div class="step-desc">
-                        <h4><a>VIDEO3</a></h4>
-                    </div>
-                </div>
-            </div> -->
-    <!-- <div class="col-lg-2 col-md-6 col-centered">
-                <div class="it_comp_work_process">
-                    <div class="step-num-box">
-                        <div class="step-icon">
-                            <img src="assets/images/image.png" alt="img" class="youtube-popup" data-video-id="IoaGAVQ38-I">
-                        </div>
-                        <div class="step-num">06</div>
-                    </div>
-                    <div class="step-desc">
-                        <h4><a>VIDEO4</a></h4>
-                    </div>
-                </div>
-            </div> -->
-    <!--</div>
-    </div>
-</section>
+        </div>
+    </section>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" style="padding-left: 550px;">&times;</span>
-            <iframe id="modalIframe" width="100%" height="430" src="" style="padding-top:20px"; title="YouTube video player" frameborder="0"
-                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id="modalIframe" width="100%" height="430" src="" style="padding-top:20px" ;
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-    </div> -->
+    </div>
 
     <!--videos end-->
 
 
     <!--partners wrapper start-->
-    <div class="header-bottom-area  padding-top-100" id="partners">
+    <div class="header-bottom-area padding-top-100" id="partners" style="background-color: white;">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-12">
                     <div class="section-title desktop-center blue margin-bottom-55">
                         <h3 class="title wow animate__animated animate__fadeInUp animated lang-change"
                             data-lang="partner-title">Our Partners</h3>
                     </div>
                     <div class="client-area">
-                        <div class="client-active-area" style="text-align: center">
+                        <div class="client-active-area owl-carousel owl-theme" style="text-align: center">
                             <div class="single-brand">
                                 <a><img src="assets/images/Ministry of Education_Logo (2).jpg" alt=""></a>
                                 <br>
@@ -1353,7 +1613,7 @@
                             <div class="single-brand">
                                 <a><img src="assets/images/partner19.png" alt=""></a>
                                 <br>
-                                <p class="lang-change" data-lang="partner-technical">Technology,Knowledge &
+                                <p class="lang-change" data-lang="partner-technical">Technology, Knowledge &
                                     Implementation Partner</p>
                             </div>
                             <div class="single-brand">
@@ -1373,15 +1633,16 @@
         </div>
     </div>
 
+
+
     <!--partners wrapper end-->
     <!-- testimonial area start  -->
-    <section class="testimonial-area bg-image padding-top-100 padding-bottom-120" id="testimonial"
-        style="background-image: url(assets/images/t1.png);">
+    <section class="testimonial-area bg-image padding-top-100 padding-bottom-110" id="testimonial"
+        style="background-image: url(assets/images/t1.png); background-color: white;">
         <div class="container">
             <div class="section-title desktop-center blue margin-bottom-20">
                 <h2 class="title wow animate__animated animate__fadeInUp animated lang-change"
-                    data-lang="testimonials-title">Hear what our teacher and student
-                    innovators say about SIM</h2>
+                    data-lang="testimonials-title">Hear what our teacher and student innovators say about SIM</h2>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -1430,7 +1691,8 @@
                                                 Nair</h4>
                                             <br>
                                             <div class="designation lang-change" data-lang="testimonials-designation1">
-                                                Regional Mentor of Change, Tamil Nadu, SIM</div>
+                                                Regional Mentor of Change, Tamil Nadu, SIM
+                                            </div>
                                         </div>
                                     </div>
                                     <p class="description lang-change" data-lang="testimonials-desc_t1">"SIM, the
@@ -1438,9 +1700,9 @@
                                         from Atal Innovation Mission (AIM) has been a trailblazer, having completed 5
                                         editions with the 2022-2023 edition attracting 12,000+ teams pan India. I have
                                         been fortunate to have been able to mentor 10+ teams that have been ranked
-                                        amongst the top teams over the last few years.SIM provides an excellent
-                                        opportunity for students to unleash their creativity, innovation and team work
-                                        to solve problems for societal and humanitarian benefit"</p>
+                                        amongst the top teams over the last few years. SIM provides an excellent
+                                        opportunity for students to unleash their creativity, innovation and teamwork
+                                        to solve problems for societal and humanitarian benefit."</p>
                                 </div>
                             </div>
                             <div class="single-testimonial-item-05">
@@ -1465,9 +1727,9 @@
                                         as a team has been an incredible roller
                                         coaster of innovation and collaboration. We worked hard and our hard work paid
                                         off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
-                                        digital tablets from Niti Aayog as a prize for our achievement . It was like a
+                                        digital tablets from Niti Aayog as a prize for our achievement. It was like a
                                         dream come true. We have even filed for the patent of our project this year in
-                                        2024. ”</p>
+                                        2024.”</p>
                                 </div>
                             </div>
                             <div class="single-testimonial-item-05">
@@ -1484,24 +1746,34 @@
                                                 Ghatak & Agam Yadav</h4>
                                             <br>
                                             <div class="designation lang-change" data-lang="testimonials-designation3">
-                                                D.A.V Public School, Vasant Kunj, New Delhi</div>
+                                                D.A.V Public School, Vasant Kunj, New Delhi
+                                            </div>
                                         </div>
                                     </div>
                                     <p class="description lang-change" data-lang="testimonials-desc_t3">“Our SIM journey
                                         as a team has been an incredible roller
                                         coaster of innovation and collaboration. We worked hard and our hard work paid
                                         off as we emerged as one of the top 75 teams of ATL marathon 2021 and even got
-                                        digital tablets from Niti Aayog as a prize for our achievement . It was like a
+                                        digital tablets from Niti Aayog as a prize for our achievement. It was like a
                                         dream come true. We have even filed for the patent of our project this year in
-                                        2024. ”</p>
+                                        2024.”</p>
                                 </div>
                             </div>
                         </div>
+                        <!-- <div class="mobile-arrows">
+                        <button class="arrow left-arrow" aria-label="Previous">
+                            &#10094; 
+                        </button>
+                        <button class="arrow right-arrow" aria-label="Next">
+                            &#10095;
+                        </button>
+                    </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- testimonial area end -->
     <!--
     <div id="packages" class="header-bottom-area padding-top-110">
@@ -1729,7 +2001,8 @@
     </div>-->
 
     <!--FAQS area starts-->
-    <div id="faq" class="frequently-area contact-area padding-bottom-120 padding-top-100">
+    <div id="faq" class="frequently-area contact-area padding-bottom-120 padding-top-100"
+        style="background-color: white;">
         <div class="bg-image" data-parallax='{"x": -50, "y": 0}' style="background-image: url(assets/images/faq1.png);">
         </div>
 
@@ -1842,33 +2115,38 @@
     </div>
     <!--FAQS area ends-->
 
-    <!--chatbot start-->
-    <!-- <div class="chatbox-container">
-    <div class="chatbox">
-      <div class="chatbox-heading">
-          <img src="assets/images/Mira_white.png" alt="Chatbot Image" width="100" height="45">
-        <h2>Mira</h2>
-        <div class="refresh-button-container">
-          <div class="refresh-button">&#8634;</div>
-        </div>
-        <div class="close-button-container" >
-          <div class="close-button">&#10006;</div>
-        </div>
-      </div>
-      <div class="chat-messages" id="chatMessages"></div>
-      
-      <div class="input-box">
-          
-        <input type="text" id="userMessage" name="message" class="user-input" placeholder="Type your message...">
-        <button id="send-button" class="send-button" >&#11166;</button>
-        <div id="chatMessages"></div>
-      </div>
-      
-    </div>
-  </div>
-  <img src="assets/images/chatbotimage1.png" alt="Messenger Icon" class="messenger-icon"> -->
+    <!--chatbot1 start-->
+    <div class="chatbox-container">
 
-    <!--chatbot end-->
+        <div class="chatbox">
+            <div class="chatbox-heading">
+                <img src="./static/assets/bot-image1.png" alt="Chatbot Image" width="100" height="45">
+                <h3 style="color: #fff;">Chatbot</h3>
+                <div class="refresh-button-container">
+                    <div class="refresh-button">&#8634;</div>
+                </div>
+                <div class="close-button-container">
+                    <div class="close-button">&#10006;</div>
+                </div>
+            </div>
+
+
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="powered-by">
+                Powered by: <span class="medha-tech">Medha Tech</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="speech-bubble">
+        <div class="speech-bubble-close-button" id="closeSpeechBubble">&#10006;</div>
+        I am a chatbot! How can I help you?
+      </div> -->
+    <img src="./static/assets/BMSCEMessenger.webp" alt="Messenger Icon" class="messenger-icon">
+
+    <!--chatbot1 end-->
+
+
     <!--
     <div id="contact" class="contact-area padding-bottom-120 padding-top-110">
         <div class="bg-image" data-parallax='{"x": -50, "y": 0}' style="background-image: url(assets/img/contact/01.png);"></div>
@@ -2081,10 +2359,10 @@
             <!-- back to top area end -->
 
             <script>
-
-
                 function redirectToPage(event) {
                     const stateId = event.target.id;
+
+
                     const stateUrls = {
                         'IN-AP': 'AP.html',
                         'IN-JK': 'JK.html',
@@ -2118,42 +2396,46 @@
                         'IN-PB': 'PB.html',
                         'IN-ML': 'ME.html',
                     };
+
+
                     if (stateUrls[stateId]) {
                         window.location.href = stateUrls[stateId];
                     }
                 }
 
-                // document.getElementById('IN-AP').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-JK').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-AR').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-AS').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-DL').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-GJ').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-KL').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-KA').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-MP').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-RJ').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-HP').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-UT').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-HR').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-UP').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-BR').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-JH').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-WB').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-OR').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-SK').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-NL').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-TR').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-MZ').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-MN').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-CT').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-TG').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-GA').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-AN').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-TN').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-MH').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-PB').addEventListener('click', redirectToPage);
-                // document.getElementById('IN-ML').addEventListener('click', redirectToPage);
+
+                document.getElementById('IN-AP').addEventListener('click', redirectToPage);
+                document.getElementById('IN-JK').addEventListener('click', redirectToPage);
+                document.getElementById('IN-AR').addEventListener('click', redirectToPage);
+                document.getElementById('IN-AS').addEventListener('click', redirectToPage);
+                document.getElementById('IN-DL').addEventListener('click', redirectToPage);
+                document.getElementById('IN-GJ').addEventListener('click', redirectToPage);
+                document.getElementById('IN-KL').addEventListener('click', redirectToPage);
+                document.getElementById('IN-KA').addEventListener('click', redirectToPage);
+                document.getElementById('IN-MP').addEventListener('click', redirectToPage);
+                document.getElementById('IN-RJ').addEventListener('click', redirectToPage);
+                document.getElementById('IN-HP').addEventListener('click', redirectToPage);
+                document.getElementById('IN-UT').addEventListener('click', redirectToPage);
+                document.getElementById('IN-HR').addEventListener('click', redirectToPage);
+                document.getElementById('IN-UP').addEventListener('click', redirectToPage);
+                document.getElementById('IN-BR').addEventListener('click', redirectToPage);
+                document.getElementById('IN-JH').addEventListener('click', redirectToPage);
+                document.getElementById('IN-WB').addEventListener('click', redirectToPage);
+                document.getElementById('IN-OR').addEventListener('click', redirectToPage);
+                document.getElementById('IN-SK').addEventListener('click', redirectToPage);
+                document.getElementById('IN-NL').addEventListener('click', redirectToPage);
+                document.getElementById('IN-TR').addEventListener('click', redirectToPage);
+                document.getElementById('IN-MZ').addEventListener('click', redirectToPage);
+                document.getElementById('IN-MN').addEventListener('click', redirectToPage);
+                document.getElementById('IN-CT').addEventListener('click', redirectToPage);
+                document.getElementById('IN-TG').addEventListener('click', redirectToPage);
+                document.getElementById('IN-GA').addEventListener('click', redirectToPage);
+                document.getElementById('IN-AN').addEventListener('click', redirectToPage);
+                document.getElementById('IN-TN').addEventListener('click', redirectToPage);
+                document.getElementById('IN-MH').addEventListener('click', redirectToPage);
+                document.getElementById('IN-PB').addEventListener('click', redirectToPage);
+                document.getElementById('IN-ML').addEventListener('click', redirectToPage);
+
 
                 const api_url = "https://api.schoolinnovationmarathon.org/api/v1/dashboard/mapStats";
                 var api_data;
@@ -2839,8 +3121,6 @@
                             text5.textContent = dataOfmap['all'].reg_mentors;
                         });
                     });
-
-
                 document.addEventListener("DOMContentLoaded", function () {
                     var modal = document.getElementById("myModal");
                     var btns = document.querySelectorAll(".youtube-popup");
@@ -2880,6 +3160,36 @@
                     strokeDasharray: "5 10",
                     strokeDashOffset: "180"
                 });
+                $(document).ready(
+                    function () {
+                        var testimonialCarousel = $('.testimonial-carousel');
+
+                        testimonialCarousel.owlCarousel({
+                            loop: true,
+                            margin: 30,
+                            nav: false, // Disable default nav
+                            dots: false, // Disable default dots
+                            responsive: {
+                                0: {
+                                    items: 1
+                                },
+                                768: {
+                                    items: 2
+                                },
+                                1200: {
+                                    items: 3
+                                }
+                            }
+                        });
+
+                        // Custom Navigation Events
+                        $('.prev-arrow').click(function () {
+                            testimonialCarousel.trigger('prev.owl.carousel');
+                        });
+                        $('.next-arrow').click(function () {
+                            testimonialCarousel.trigger('next.owl.carousel');
+                        });
+                    });
 
             </script>
 
@@ -2913,7 +3223,17 @@
             <!-- main js -->
             <script src="assets/js/main.js"></script>
             <script src="assets/js/map.js"></script>
+
             <script src="static/script.js"></script>
+            <!-- jQuery -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <!-- Bootstrap JS (if you're using Bootstrap's carousel) -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
 
 
 </body>

@@ -22,4 +22,5 @@ async function langChange(set) {
 
         $(this).html(translations[index][key[0]][key[1]]).text();
     });
+   
 }

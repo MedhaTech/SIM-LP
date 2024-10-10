@@ -13,19 +13,42 @@
         /*------------------------------
             smoth achor effect
         ------------------------------*/
-        $(document).on('click', '.navbar-nav li a', function(e) {
-            var anchor = $(this).attr('href');
-            var link = anchor.slice(0, 1);
-            if ('#' == link) {
-                e.preventDefault();
-                var top = $(anchor).offset().top;
-                $('html, body').animate({
-                    scrollTop: $(anchor).offset().top
-                }, 1000);
-                $(this).parent().addClass('current-menu-item').siblings().removeClass('current-menu-item');
-            }
-
+        $(document).ready(function() {
+            // Toggle icon click event to close the navbar
+            $('.navbar-toggler').on('click', function() {
+                $('.navbar-collapse').collapse('toggle');
+            });
+        
+            // Click event for navbar links
+            $(document).on('click', '.navbar-nav li a', function(e) {
+                var anchor = $(this).attr('href');
+                var link = anchor.slice(0, 1);
+        
+                if ('#' == link) {
+                    e.preventDefault();
+                    var top = $(anchor).offset().top;
+                    $('html, body').animate({
+                        scrollTop: $(anchor).offset().top
+                    }, 1000);
+        
+                    $(this).parent().addClass('current-menu-item').siblings().removeClass('current-menu-item');
+                }
+        
+                // Collapse navbar after selecting an item on mobile view
+                if ($(window).width() < 991) {
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
+        
+            // Click event for closing the navbar when clicking outside
+            $(document).on('click', function(e) {
+                if (!$(e.target).closest('.navbar-collapse').length && !$(e.target).closest('.navbar-toggler').length) {
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
         });
+        
+        
 
 
         /*--------------------
@@ -100,73 +123,84 @@
 
         }
         // Clinet - active
-        $('.client-active-area').owlCarousel({
+       
+        $(document).ready(function(){
+            $('.client-active-area').owlCarousel({
                 loop: true,
-                autoplay: true, //true if you want enable autoplay
-                autoPlayTimeout: 1000,
+                autoplay: true,
+                autoplayTimeout: 2000, // Adjust this as needed
                 items: 5,
                 nav: true,
-                margin: 100,
+                margin: 30, // Adjust margin between items
                 dots: false,
-                navText: ['<span data-icon="&#x23;"></span>', '<span data-icon="&#x24;"></span>'],
+                navText: [
+                    '<span class="owl-nav-arrow owl-prev-arrow">&#10094;</span>', // left arrow
+                    '<span class="owl-nav-arrow owl-next-arrow">&#10095;</span>'  // right arrow
+                ],
                 responsive: {
                     0: {
-                        items: 1
-                    },
-                    300: {
-                        items: 1
+                        items: 1,
+                        nav: true // Show arrows in mobile view
                     },
                     600: {
-                        items: 3
+                        items: 3,
+                        nav: true
                     },
                     992: {
-                        items: 4
+                        items: 4,
+                        nav: true
                     },
                     1200: {
-                        items: 4
-                    }
-                }
-            })
-            /*---------------------------
-                testimonial carousel
-            ---------------------------*/
-        var $TestimonialCarousel = $('.testimonial-carousel');
-        if ($TestimonialCarousel.length > 0) {
-            $TestimonialCarousel.owlCarousel({
-                loop: true,
-                autoplay: true, //true if you want enable autoplay
-                autoPlayTimeout: 1000,
-                margin: 30,
-                dots: false,
-                nav: false,
-                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-                animateOut: 'fadeOut',
-                animateIn: 'fadeIn',
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    460: {
-                        items: 1
-                    },
-                    599: {
-                        items: 1
-                    },
-                    768: {
-                        items: 2
-                    },
-                    960: {
-                        items: 2
-                    },
-                    1200: {
-                        items: 3
-                    },
-                    1920: {
-                        items: 3
+                        items: 5,
+                        nav: true
                     }
                 }
             });
-        }
+        });
+            /*---------------------------
+                testimonial carousel
+            ---------------------------*/
+            var $TestimonialCarousel = $('.testimonial-carousel');
+            if ($TestimonialCarousel.length > 0) {
+                $TestimonialCarousel.owlCarousel({
+                    loop: true,
+                    autoplay: true,
+                    autoPlayTimeout: 1000,
+                    margin: 30,
+                    dots: false,  // Disable dots if you only want arrows
+                    nav: true,  // Enable navigation arrows
+                    navText: [
+                        '<div class="nav-arrow nav-left"><i class="fa fa-angle-left"></i></div>', 
+                        '<div class="nav-arrow nav-right"><i class="fa fa-angle-right"></i></div>'
+                    ],
+                    animateOut: 'fadeOut',  // Transition effect when sliding out
+                    animateIn: 'fadeIn',  // Transition effect when sliding in
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        460: {
+                            items: 1
+                        },
+                        599: {
+                            items: 1
+                        },
+                        768: {
+                            items: 2
+                        },
+                        960: {
+                            items: 2
+                        },
+                        1200: {
+                            items: 3
+                        },
+                        1920: {
+                            items: 3
+                        }
+                    }
+                });
+            }
+            
         /*---------------------------
             testimonial carousel Two
         ---------------------------*/
@@ -174,12 +208,12 @@
         if ($TestimonialCarousel.length > 0) {
             $TestimonialCarousel.owlCarousel({
                 loop: true,
-                autoplay: true, //true if you want enable autoplay
+                autoplay: true,  // Enable autoplay
                 autoPlayTimeout: 1000,
                 margin: 30,
-                dots: false,
-                nav: false,
-                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                dots: false,  // Disable dots
+                nav: true,  // Enable navigation arrows
+                navText: ['<div class="nav-arrow nav-left"><i class="fa fa-angle-left"></i></div>', '<div class="nav-arrow nav-right"><i class="fa fa-angle-right"></i></div>'],
                 animateOut: 'fadeOut',
                 animateIn: 'fadeIn',
                 responsive: {
@@ -207,7 +241,7 @@
                 }
             });
         }
-
+        
         /*---------------------------
             testimonial carousel Two
         ---------------------------*/
