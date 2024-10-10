@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var refreshButton = document.querySelector('.refresh-button');
     var closeSpeechBubbleButton = document.getElementById('closeSpeechBubble');
     closeButton.addEventListener('click', closeChatbox);
-    const botImagepath = "./static/assets/bot-image.png";
+    const botImagepath = "./static/assets/bot.png";
     function closeChatbox() {
         chatBox.innerHTML = '';
         chatboxContainer.style.display = 'none';
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var messageElement = document.createElement('p');
         messageElement.innerHTML = message.replace(/\n/g, "<br>");
         messageElement.classList.add('bot-message');
-        messageElement.style.color = 'white';
+        messageElement.style.color = 'black';
         
     
         var whiteLinks = messageElement.querySelectorAll('a');
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var messageElement = document.createElement('p');
         messageElement.innerHTML = message.replace(/\n/g, "<br>");
         messageElement.classList.add('bot-message');
-        messageElement.style.color = 'white';
+        messageElement.style.color = 'black';
         
         
 

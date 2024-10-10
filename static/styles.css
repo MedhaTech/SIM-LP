@@ -14,8 +14,8 @@
     right: 20px; /* Adjust this value as needed */
     cursor: pointer;
     z-index: 999;
-    width: 70px; /* Adjust the width as needed */
-    height: 70px;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px;
   }
  
   
@@ -41,7 +41,7 @@
   }
   
   .chatbox-heading {
-    background-color:#222222;
+    background-color:#07338C;
     color: #fff;
     padding: 10px;
     display: flex;
@@ -75,11 +75,23 @@
     
   }
 
- 
+  .title-container {
+    /* background-color: #222222; */
+    border-radius: 50%;
+    width: auto; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   
 
 .close-button-container {
-  background-color: #222222;
+  /* background-color: #222222; */
   border-radius: 50%;
   width: 30px; /* Adjust the size as needed */
   height: 30px; /* Adjust the size as needed */
@@ -101,7 +113,7 @@
   color: white;
 }
 .refresh-button-container {
-  background-color: #222222;
+  /* background-color: #222222; */
   border-radius: 50%;
   width: 30px; /* Adjust the size as needed */
   height: 30px; /* Adjust the size as needed */
@@ -132,9 +144,9 @@
  
 }
 .user-message {
-  background-color:  #ed9730;; /* Light blue */
+  background-color:  #07338C;; /* Light blue */
   padding: 5px 10px;
-  border-radius: 10px;
+  border-radius: 10px 0px 10px 10px;
   margin: 5px 0;
   order: 1;
   max-width: 70%;
@@ -154,13 +166,13 @@
 }
 
 .bot-message {
-  background-color: #4c7eb3; /* Background color for bot messages */
+  background-color: #E6E6E6; /* Background color for bot messages */
   padding: 10px;
   border-radius: 10px; /* Curved corners */
   max-width: 70%; /* Maximum width for the bot message container */
   clear: both;
   margin-bottom: 5px;
-  color:black;
+  color: #000;
   
   
 }
