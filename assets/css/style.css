@@ -81,7 +81,8 @@ Version: 1.0.0
   --main-color-two: #ffc05e;
   --secondary-color: #fb3c7f;
   --heading-color: #16215c;
-  --paragraph-color: #727777;
+  --dark-color: #727777;
+  --dark-color: #101010;
   --heading-font: "Roboto", sans-serif;
   --heading-font-02: "Open Sans", sans-serif;
   --body-font: "Poppins", sans-serif;
@@ -106,7 +107,7 @@ html {
 
 body {
   margin: 0;
-  color: var(--paragraph-color);
+  color: var(--dark-color);
   overflow-x: hidden;
   font-family: var(--body-font);
   font-size: 14px;
@@ -152,7 +153,7 @@ h6 {
 }
 
 p {
-  color: var(--paragraph-color);
+  color: var(--dark-color);
   -webkit-hyphens: auto;
   hyphens: auto;
   margin-bottom: 10px;
@@ -162,7 +163,7 @@ p {
 a {
   color: inherit;
   text-decoration: none;
-  color: var(--paragraph-color);
+  color: var(--dark-color);
 }
 
 a,
@@ -2845,7 +2846,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li a {
   background-color: #fff;
-  color: var(--paragraph-color);
+  color: var(--dark-color);
 }
 
 .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li a:hover {
@@ -2919,7 +2920,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .navbar-area.nav-style-01 .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li a {
   background-color: #fff;
-  color: var(--paragraph-color);
+  color: var(--dark-color);
 }
 
 .navbar-area.nav-style-01 .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li a:hover {
@@ -3091,7 +3092,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding: 12px 30px;
   background-color: #fff;
   white-space: nowrap;
-  color: var(--paragraph-color);
+  color: var(--dark-color);
   transition: all 0.3s ease-in;
 }
 
@@ -3190,7 +3191,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
   .navbar-area.nav-style-01 .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li a {
     background-color: transparent;
-    color: var(--paragraph-color);
+    color: var(--dark-color);
   }
 
   .navbar-area.nav-style-01 .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li a:hover {
@@ -4802,17 +4803,17 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .header-area .title {
-  font-size: 70px;
-  line-height: 65px;
+  font-size: 50px;
+  line-height: 60px;
   color: var(--heading-color);
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .header-area p {
-  font-size: 18px;
-  line-height: 28px;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px !important;
+  line-height: 28px !important;
+  /* color: rgba(255, 255, 255, 0.8); */
 }
 
 .header-area span {
@@ -6683,7 +6684,7 @@ Client Area
 .unique-content-area {
   display: flex;
   align-items: center;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .unique-content-area .section-title .content {
@@ -8992,8 +8993,8 @@ Client Area
 }
 
 .section-title.brand .title {
-  font-size: 42px;
-  line-height: 52px;
+  font-size: 32px;
+  line-height: 42px;
   font-weight: 700;
   color: #16215c;
 }
@@ -9015,8 +9016,8 @@ Client Area
 }
 
 .section-title.brand p {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 25px;
   font-weight: 400;
   margin-top: 20px;
 }
@@ -9072,14 +9073,14 @@ Client Area
 }
 
 .section-title .title {
-  font-size: 30px;
+  font-size: 32px;
   line-height: 40px;
   font-weight: 500;
   margin-bottom: 14px;
 }
 
 .section-title .title.social-title {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 46px;
 }
 
@@ -11209,7 +11210,7 @@ Single package item
 .single-everything-item {
   background-color: #fff;
   text-align: center;
-  padding: 0 60px;
+  padding: 0 30px;
   position: relative;
   z-index: 0;
   transition: all 0.3s;
@@ -11234,7 +11235,8 @@ Single package item
 }
 
 .single-everything-item:hover .icon.style-01::after,
-.single-everything-item:hover .icon.style-02::after {
+.single-everything-item:hover .icon.style-02::after,
+.single-everything-item:hover .icon.style-03::after {
   width: 80px;
   height: 80px;
   left: 50%;
@@ -11284,6 +11286,19 @@ Single package item
   height: 30px;
   background-color: #57b4fd;
   border-radius: 0;
+}
+
+.single-everything-item .icon.style-03::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 55px;
+  height: 55px;
+  transition: all 0.3s;
+  background-color: #fb3c7f;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .single-everything-item .content .title {
@@ -12495,7 +12510,7 @@ Single package item
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
   overflow: hidden;
   z-index: -1;
 }
@@ -12629,8 +12644,23 @@ Single package item
       top: 107%;
   }
 }
+ 
 
+.about-video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width * 100) */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
 
-
+.about-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
