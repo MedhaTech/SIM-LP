@@ -1,2 +1,4 @@
 RewriteEngine On
 RewriteRule ^login$ / [L,R=301]
+RewriteRule ^teacher$ / [L,R=301]
+RewriteRule ^team$ / [L,R=301]
