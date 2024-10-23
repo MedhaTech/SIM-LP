@@ -1,4 +1,3 @@
 RewriteEngine On
-RewriteRule ^login$ / [L,R=301]
-RewriteRule ^teacher$ / [L,R=301]
-RewriteRule ^team$ / [L,R=301]
+RewriteCond %{REQUEST_URI} ^/login$
+RewriteRule ^(.*)$ https://schoolinnovationmarathon.org/ [R=301,L]
