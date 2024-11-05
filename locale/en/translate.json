@@ -1,0 +1,211 @@
+[
+    {
+      "nav": {
+        "aboutus": "About Us",
+        "roadmap": "Road Map",
+        "impact": "Impact",
+        "prizes": "Prizes",
+        "testimonial": "Testimonial",
+        "partners": "Partners",
+        "themes":"Themes",
+        "faq": "FAQ",
+        "login": "Login"
+      }
+    },
+    {
+      "heroSection": {
+        "title":"School Innovation Marathon 2024",
+        "title1":"Creating Change Makers Of Tomorrow With",
+        "title1_p1":"21st Century Skills. Nurture a culture of social",
+        "title1_p2":"innovation and build skills while inspiring young",
+        "title1_p3":"people to become transformative leaders",
+        "login": "Login",
+        "register":"Register"
+      }
+    },
+    {
+      "aboutSection": {
+        "title": "About Us",
+        "desc": "School Innovation Marathon is envisioned as India’s largest school innovation challenge organized jointly by the Ministry of Education, Atal Innovation Mission (AIM) NITI Aayog and Ministry of Education’s Innovation Cell (MIC), where students from all schools of the country identify community problems of their choice and develop innovative solutions in the form of working prototypes. The Top Teams of School Innovation Marathon will get funding support from the Ministry of Education",
+        "desc1":"Last Year Highlights :",
+        "point1_b":"19000+ Innovations ",
+        "point1":"witnessed in the last edition of Marathon.",
+        "point2_b":" Internship opportunities ",
+        "point2":"for Top 400 teams through SIP program.",
+        "point3_b":"Mentorship Program",
+        "point3":" for Top 75 teams through SEP program",
+        "point4_b":"Prizes and certificates ",
+        "point4":"from AIM, NITI Aayog to students."
+      }
+    },
+    {
+        "roadmap": {
+          "title": "Road Map",
+          "title1": "Journey Of A Student In School Innovation Marathon",
+          "innovation": "INNOVATION",
+          "i_point1":"Launch of SIM on 29 July.",
+          "i_point2":"Followed by Innovation & Prototyping Phase : Aug 1st to 30th Nov 2024.",
+          "winners":"WINNERS",
+          "w_point1":"Announcement of Top",
+          "w_point1_1":"Teams in Jan 2025",
+
+          "w_point2":"Funding support to teams in March 2025",
+          "sip":"SIP",
+          "s_point":"Commencement of Student Internship Programme(SIP) May 2025 onwards.",
+          "sep":"SEP",
+          "sep_point":"Top teams from SIP participate in the student Entrepreneurship Programme(SEP) Aug 2025 onwards."
+        }
+      },
+      {
+          "themes": {
+            "title": "Viksit Bharat 2047 - Themes for SIM 2024-25",
+            "title1": "The vision of \"Viksit Bharat 2047\" aims to transform India into a developed nation by 2047. To support this, the School Innovation Marathon 2024-25 has set broad themes. Start your research to generate innovative ideas and implement solutions.To align with this vision, here are some broad themes for the School Innovation Marathon 2024-25 : ",
+            "focus":"Focus Areas",
+
+            "sustainable":"Sustainable Development",
+            "sd_desc":"It emphasizes the importance of balancing economic growth with environmental protection to ensure a sustainable future.",
+            "sd_p1":"Environmental conservation",
+            "sd_p2":"Renewable energy",
+            "sd_p3":"Sustainable agriculture",
+            "sd_p4":"Water management",
+
+            "digital":"Digital Transformation",
+            "dt_desc":"Highlights the critical role of digital technologies in bridging the digital divide and fostering innovation, making India a leader in the digital economy.",
+            "dt_p1":"Digital literacy",
+            "dt_p2":"Access to technology",
+            "dt_p3":"Cybersecurity",
+            "dt_p4":"AI technology based ideas",
+
+            "health":"Health and Well-being",
+            "hw_desc":"Focuses on enhancing the overall health and wellness of communities, ensuring that physical and mental health are prioritized in development plans.",
+            "hw_p1":"Physical health",
+            "hw_p2":"Mental health",
+            "hw_p3":"Healthcare innovations",
+            "hw_p4":"Community well-being",
+
+            "education":"Quality Education",
+            "qe_desc":"Stresses the necessity of providing equitable, high-quality education for all, fostering lifelong learning and preparing a skilled workforce for the future.",
+            "qe_p1":"Inclusive education",
+            "qe_p2":"Remote learning",
+            "qe_p3":"Lifelong learning",
+            "qe_p4":"Teacher training",
+
+            "economic":"Economic Empowerment",
+            "ee_desc":"Aims to uplift communities by promoting financial literacy, entrepreneurship, and vocational skills, driving inclusive economic growth.",
+            "ee_p1":"Financial literacy",
+            "ee_p2":"Entrepreneurship",
+            "ee_p3":"Vocational training",
+            "ee_p4":"Economic development",
+
+            "smart":"Smart and Resilient Communities",
+            "sc_desc":"Encourages the development of adaptive & innovative communities capable of withstanding & thriving amid future challenges.",
+            "sc_p1":"Smart cities",
+            "sc_p2":"Disaster management",
+            "sc_p3":"Infrastructure development",
+            "sc_p4":"Social innovation",
+           
+
+            "culture":"Cultural Heritage and Creativity",
+            "cc_desc":"Recognizes the value of preserving cultural heritage while promoting creativity and the arts as essential components of a vibrant society.",
+            "cc_p1":"Preserving cultural heritage",
+            "cc_p2":"Promoting arts and crafts",
+            "cc_p3":"Fostering creativity",
+
+            "others":"Others",
+            "o_desc":"School Innovation Marathon encourages innovative solutions in any other area that aligns with the vision of Viksit Bharat 2047.",
+            "o_p1":"Any other Area that does not come under mentioned theme but broadly qualifies for the vision of Viksit bharat."
+            
+          }
+        },
+        {
+          "prizes": {
+            "title": "Prizes & Certificates",
+            "desc": "Participation certificates shall be provided to all teams participating in the School Innovation Marathon.",
+
+            "funding":"Funding & Internships",
+            "f_desc":"Funding Support from the Ministry of Education, facilitated by MIC \n Student Internship Programme (SIP) with Incubators, facilitated by AIM",
+            
+            "mentorship":"Mentorship & Patenting",
+            "m_desc":" Student Entrepreneurship Programme (SEP), facilitated by AIM \n Patenting support and guidance, facilitated by Innovation Centers, MIC",
+            
+            "certificate":"Certificates",
+            "c_p1":"Top 20 teams from each state",
+            "c_p2":"Top 20 teams from Aspirational Districts",
+            "c_p3":"Top 20 teams from rural areas",
+            "rewards":"Special Recognition",
+            "r_desc":" Top 20 teams from govt schools, Top 20 teams for teams having Children with special needs, Top 3 best-performing states"
+            
+          }
+        },
+        {
+            "testimonials": {
+              "title":"Hear what our teacher and student innovators say about SIM",
+              "test_name1":"Prashant Nair",
+              "designation1":"Regional Mentor of Change, Tamil Nadu, AIM",
+              "desc_t1":"\"School Innovation marathon, the flagship national innovation challenge for schools from Atal Innovation Mission (AIM) has been a trailblazer, having completed 5 editions with the 2022-2023 edition attracting 12,000+  teams pan India. I have been fortunate to  have been able to mentor 10+ teams that have been ranked amongst the top teams over the last few years. School Innovation marathon provides an excellent opportunity for students to unleash their creativity, innovation and teamwork to solve problems for societal and humanitarian benefit\"",
+                
+              "test_name2":"Umesh Bajaj",
+              "designation2":"ATL Incharge, Dass & Brown World School, Ferozepur, Punjab",
+              "desc_t2":"\"I serve as the ATL Incharge at Dass and Brown World School in Ferozepur, Punjab. We recently featured in the Top 75 teams of School Innovation marathon. The Atal Tinkering Lab has become like a second home to me. It's a place where my students and I engage in daily learning, finding solace in our lab. We are dedicated to working on solutions for the Sustainable Development Goals, and I am profoundly grateful to the Atal Innovation Mission for providing us with this platform to contribute to our community and nurture innovation in the young entrepreneurial minds.\"",
+               
+              "test_name3":"Ishan Ghatak & Agam Yadav",
+              "designation3":"D.A.V Public School, Vasant Kunj, New Delhi",
+              "desc_t3":"\"Our School Innovation marathon journey as a team has been an incredible roller coaster of innovation and collaboration. We worked hard and our hard work paid off as we emerged as one of the top 75 teams of School Innovation marathon 2021 and even got digital tablets from Niti Aayog as a prize for our achievement . It was like a dream come true. We have even filed for the patent of our project this year in 2023. \"",
+
+              "test_name4":"Suneeti Patwari",
+              "designation4":"Student, Lakshmipat Singhania Academy, Kolkata",
+              "desc_t4":"\"I began as a novice, but through the School Innovation marathon & the Student Innovation Program, we developed an industry prototype. This experience not only expanded my technology and business knowledge but also fostered personal growth. I'm immensely thankful for the opportunity.\""
+            }
+        },
+        {
+          "impact": {
+            "title":"Engagement & Impact SIM 2024-25",
+            "india":"INDIA",
+            "school":"Schools",
+            "teacher":"Teachers",
+            "team":"Teams",
+            "student":"Students",
+            "idea":"Ideas"
+            }
+        },
+        {
+          "partner": {
+            "title":"Our Partners",
+            "host":"Hosting partner",
+            "initiate":"Initiated By",
+            "powered":"Powered by",
+            "implement":"Implementation Partner",
+            "technical":"Technology Knowledge & Implementation partner"
+            }
+        },
+        {
+          "faqs": {
+            "title":"Frequently asked questions",
+            "faq_q1":"What is the School Innovation Marathon?",
+            "faq_a1":"The School Innovation Marathon is a nationwide initiative aimed at unleashing the creative potential of students across India. It encourages student innovation and agency to tackle critical local and global challenges.",
+            "faq_q2":"Who organizes the School Innovation Marathon? ",
+            "faq_a2":"The Marathon is spearheaded by AIM, NITI Aayog, Ministry of Education (MOE) in collaboration with UNICEF and YUWAAH.",
+            "faq_q3":"Who can participate in the School Innovation Marathon?",
+            "faq_a3":"All students from classes 6th to 12th in schools across India are eligible to participate.",
+            "faq_q4":"What are the rewards for the top teams?  ",
+            "faq_a4":"The top teams will receive internships through the Student Innovator Program with leading corporates of India, certificates from AIM, NITI Aayog, and many more interesting opportunities at the conclusion of the Marathon.",
+            "faq_q5":"What is the deadline for submitting entries? ",
+            "faq_a5":"The last date to submit entries is November 30th, 2024."
+        }
+        },
+        {
+          "videos": {
+            "title":"Help resources to navigate the platform",
+            "title2":"Please refer to the help videos below on how to Register, Log in, Create Team.",
+            "video_1":"How To Register?",
+            "video_2":"Teacher Login",
+            "video_3":"Teacher Dashboard",
+            "video_4":"Team Creation",
+            "video_5":"Forgot Password?",
+            "video_6":"Idea Submission"
+            
+        }
+        }
+
+
+]
