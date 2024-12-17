@@ -2438,44 +2438,648 @@
                 // document.getElementById('IN-ML').addEventListener('click', redirectToPage);
 
 
-                const api_url = "https://api.schoolinnovationmarathon.org/api/v1/dashboard/mapStats";
-                var api_data;
+                // const api_url = "https://api.schoolinnovationmarathon.org/api/v1/dashboard/mapStats";
+                // var api_data;
                 let dataOfmap = {};
                 const config = {
                     headers: {
                         Authorization: 'O10ZPA0jZS38wP7cO9EhI3jaDf24WmKX62nWw870'
                     }
                 }
-                async function getUser() {
-                    // Making an API call (request)
-                    // and getting the response back
-                    const response = await fetch(api_url, config);
 
-                    // Parsing it to JSON format
-                    const data = await response.json();
-                    console.log(data);
-                    api_data = data.data[0];
-                    const districtData = data.data[0].dataValues;
-                    for (const entry of districtData) {
-                        const state_name = entry.state_name;
-                        const overallSchools = parseInt(entry.overall_schools);
-                        dataOfmap[state_name] = { 'reg_schools': parseInt(entry.reg_schools), 'teams': parseInt(entry.teams), 'students': parseInt(entry.students), 'ideas': parseInt(entry.ideas), 'reg_mentors': parseInt(entry.reg_mentors), 'state_name': state_name };
-                    }
-                    text.textContent = dataOfmap['all'].reg_schools;
-                    text1.textContent = dataOfmap['all'].teams;
-                    text2.textContent = dataOfmap['all'].students;
-                    text3.textContent = dataOfmap['all'].ideas;
-                    text4.textContent = "INDIA"
-                    text5.textContent = dataOfmap['all'].reg_mentors;
-                }
-                getUser();
-                //  console.log(data.data[0].dataValues[0].reg_schools,'vgvhbkjb');
                 var text = document.getElementById('institute_count');
                 var text1 = document.getElementById('student_team');
                 var text2 = document.getElementById('student_count');
                 var text3 = document.getElementById('student_ideas');
                 var text4 = document.getElementById('name');
-                var text5 = document.getElementById('teacher_count')
+                var text5 = document.getElementById('teacher_count');
+                
+                async function getUser() {
+                    // Making an API call (request)
+                    // and getting the response back
+                    // const response = await fetch(api_url, config);
+
+                    // Parsing it to JSON format
+                    // const data = await response.json();
+                    
+                    // api_data = data.data[0];
+                    // const districtData = data.data[0].dataValues;
+                    // console.log(districtData);
+
+                    const districtData = [
+    {
+        "state_name": "Andaman and Nicobar Islands",
+        "dashboard_map_stat_id": 1,
+        "overall_schools": "32",
+        "reg_schools": "29",
+        "reg_mentors": "49",
+        "schools_with_teams": "30",
+        "teams": "54",
+        "ideas": "47",
+        "students": "148",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Andhra Pradesh",
+        "dashboard_map_stat_id": 2,
+        "overall_schools": "5715",
+        "reg_schools": "5439",
+        "reg_mentors": "12978",
+        "schools_with_teams": "6768",
+        "teams": "21622",
+        "ideas": "8749",
+        "students": "61027",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Arunachal Pradesh",
+        "dashboard_map_stat_id": 3,
+        "overall_schools": "366",
+        "reg_schools": "344",
+        "reg_mentors": "552",
+        "schools_with_teams": "119",
+        "teams": "241",
+        "ideas": "79",
+        "students": "679",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Assam",
+        "dashboard_map_stat_id": 4,
+        "overall_schools": "1346",
+        "reg_schools": "1077",
+        "reg_mentors": "3407",
+        "schools_with_teams": "869",
+        "teams": "1862",
+        "ideas": "757",
+        "students": "5208",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Bihar",
+        "dashboard_map_stat_id": 5,
+        "overall_schools": "1407",
+        "reg_schools": "1326",
+        "reg_mentors": "1851",
+        "schools_with_teams": "867",
+        "teams": "1588",
+        "ideas": "735",
+        "students": "4306",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Chandigarh",
+        "dashboard_map_stat_id": 6,
+        "overall_schools": "42",
+        "reg_schools": "34",
+        "reg_mentors": "54",
+        "schools_with_teams": "33",
+        "teams": "102",
+        "ideas": "88",
+        "students": "278",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Chhattisgarh",
+        "dashboard_map_stat_id": 7,
+        "overall_schools": "817",
+        "reg_schools": "661",
+        "reg_mentors": "1397",
+        "schools_with_teams": "427",
+        "teams": "1439",
+        "ideas": "987",
+        "students": "3919",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Dadra and Nagar Haveli and Daman and Diu",
+        "dashboard_map_stat_id": 8,
+        "overall_schools": "42",
+        "reg_schools": "42",
+        "reg_mentors": "61",
+        "schools_with_teams": "31",
+        "teams": "73",
+        "ideas": "48",
+        "students": "186",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Delhi",
+        "dashboard_map_stat_id": 9,
+        "overall_schools": "510",
+        "reg_schools": "448",
+        "reg_mentors": "896",
+        "schools_with_teams": "428",
+        "teams": "2129",
+        "ideas": "1633",
+        "students": "5317",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Goa",
+        "dashboard_map_stat_id": 10,
+        "overall_schools": "60",
+        "reg_schools": "47",
+        "reg_mentors": "85",
+        "schools_with_teams": "45",
+        "teams": "81",
+        "ideas": "46",
+        "students": "211",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Gujarat",
+        "dashboard_map_stat_id": 11,
+        "overall_schools": "909",
+        "reg_schools": "386",
+        "reg_mentors": "546",
+        "schools_with_teams": "332",
+        "teams": "1128",
+        "ideas": "884",
+        "students": "2950",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Haryana",
+        "dashboard_map_stat_id": 12,
+        "overall_schools": "1038",
+        "reg_schools": "693",
+        "reg_mentors": "1516",
+        "schools_with_teams": "339",
+        "teams": "1343",
+        "ideas": "834",
+        "students": "3542",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Himachal Pradesh",
+        "dashboard_map_stat_id": 13,
+        "overall_schools": "212",
+        "reg_schools": "146",
+        "reg_mentors": "316",
+        "schools_with_teams": "137",
+        "teams": "449",
+        "ideas": "329",
+        "students": "1197",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Jammu and Kashmir",
+        "dashboard_map_stat_id": 14,
+        "overall_schools": "4146",
+        "reg_schools": "4119",
+        "reg_mentors": "6378",
+        "schools_with_teams": "3144",
+        "teams": "6884",
+        "ideas": "3517",
+        "students": "17763",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Jharkhand",
+        "dashboard_map_stat_id": 15,
+        "overall_schools": "215",
+        "reg_schools": "117",
+        "reg_mentors": "175",
+        "schools_with_teams": "115",
+        "teams": "448",
+        "ideas": "345",
+        "students": "1154",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Karnataka",
+        "dashboard_map_stat_id": 16,
+        "overall_schools": "3520",
+        "reg_schools": "3189",
+        "reg_mentors": "3928",
+        "schools_with_teams": "1886",
+        "teams": "8100",
+        "ideas": "4401",
+        "students": "21241",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Kerala",
+        "dashboard_map_stat_id": 17,
+        "overall_schools": "5791",
+        "reg_schools": "5710",
+        "reg_mentors": "9882",
+        "schools_with_teams": "7887",
+        "teams": "16691",
+        "ideas": "14332",
+        "students": "45129",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Ladakh",
+        "dashboard_map_stat_id": 18,
+        "overall_schools": "4",
+        "reg_schools": "2",
+        "reg_mentors": "2",
+        "schools_with_teams": "1",
+        "teams": "1",
+        "ideas": "1",
+        "students": "3",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Madhya Pradesh",
+        "dashboard_map_stat_id": 19,
+        "overall_schools": "3667",
+        "reg_schools": "3226",
+        "reg_mentors": "6443",
+        "schools_with_teams": "3631",
+        "teams": "8125",
+        "ideas": "3809",
+        "students": "22194",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Maharashtra",
+        "dashboard_map_stat_id": 20,
+        "overall_schools": "1342",
+        "reg_schools": "623",
+        "reg_mentors": "879",
+        "schools_with_teams": "591",
+        "teams": "2183",
+        "ideas": "1605",
+        "students": "5522",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Manipur",
+        "dashboard_map_stat_id": 21,
+        "overall_schools": "131",
+        "reg_schools": "21",
+        "reg_mentors": "26",
+        "schools_with_teams": "18",
+        "teams": "24",
+        "ideas": "20",
+        "students": "66",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Meghalaya",
+        "dashboard_map_stat_id": 22,
+        "overall_schools": "250",
+        "reg_schools": "241",
+        "reg_mentors": "340",
+        "schools_with_teams": "99",
+        "teams": "314",
+        "ideas": "85",
+        "students": "913",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Mizoram",
+        "dashboard_map_stat_id": 23,
+        "overall_schools": "57",
+        "reg_schools": "35",
+        "reg_mentors": "51",
+        "schools_with_teams": "17",
+        "teams": "29",
+        "ideas": "13",
+        "students": "79",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Nagaland",
+        "dashboard_map_stat_id": 24,
+        "overall_schools": "214",
+        "reg_schools": "192",
+        "reg_mentors": "287",
+        "schools_with_teams": "113",
+        "teams": "371",
+        "ideas": "132",
+        "students": "961",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Odisha",
+        "dashboard_map_stat_id": 25,
+        "overall_schools": "2705",
+        "reg_schools": "2504",
+        "reg_mentors": "3471",
+        "schools_with_teams": "1802",
+        "teams": "2854",
+        "ideas": "1756",
+        "students": "7484",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Puducherry",
+        "dashboard_map_stat_id": 26,
+        "overall_schools": "91",
+        "reg_schools": "85",
+        "reg_mentors": "592",
+        "schools_with_teams": "77",
+        "teams": "222",
+        "ideas": "162",
+        "students": "579",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Punjab",
+        "dashboard_map_stat_id": 27,
+        "overall_schools": "445",
+        "reg_schools": "301",
+        "reg_mentors": "481",
+        "schools_with_teams": "298",
+        "teams": "932",
+        "ideas": "641",
+        "students": "2463",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Rajasthan",
+        "dashboard_map_stat_id": 28,
+        "overall_schools": "9243",
+        "reg_schools": "8904",
+        "reg_mentors": "22237",
+        "schools_with_teams": "9855",
+        "teams": "21206",
+        "ideas": "9930",
+        "students": "56585",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Sikkim",
+        "dashboard_map_stat_id": 29,
+        "overall_schools": "116",
+        "reg_schools": "104",
+        "reg_mentors": "231",
+        "schools_with_teams": "69",
+        "teams": "158",
+        "ideas": "64",
+        "students": "457",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Telangana",
+        "dashboard_map_stat_id": 30,
+        "overall_schools": "3382",
+        "reg_schools": "3160",
+        "reg_mentors": "6093",
+        "schools_with_teams": "3410",
+        "teams": "14259",
+        "ideas": "7799",
+        "students": "39857",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Tripura",
+        "dashboard_map_stat_id": 31,
+        "overall_schools": "54",
+        "reg_schools": "35",
+        "reg_mentors": "84",
+        "schools_with_teams": "26",
+        "teams": "59",
+        "ideas": "44",
+        "students": "168",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Uttar Pradesh",
+        "dashboard_map_stat_id": 32,
+        "overall_schools": "3000",
+        "reg_schools": "2231",
+        "reg_mentors": "4377",
+        "schools_with_teams": "1836",
+        "teams": "5705",
+        "ideas": "2670",
+        "students": "15124",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Uttarakhand",
+        "dashboard_map_stat_id": 33,
+        "overall_schools": "379",
+        "reg_schools": "326",
+        "reg_mentors": "543",
+        "schools_with_teams": "289",
+        "teams": "946",
+        "ideas": "709",
+        "students": "2484",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "West Bengal",
+        "dashboard_map_stat_id": 34,
+        "overall_schools": "343",
+        "reg_schools": "152",
+        "reg_mentors": "255",
+        "schools_with_teams": "146",
+        "teams": "490",
+        "ideas": "366",
+        "students": "1263",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Tamil Nadu",
+        "dashboard_map_stat_id": 35,
+        "overall_schools": "8633",
+        "reg_schools": "8465",
+        "reg_mentors": "13437",
+        "schools_with_teams": "12330",
+        "teams": "70395",
+        "ideas": "33685",
+        "students": "336542",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "Lakshadweep",
+        "dashboard_map_stat_id": 36,
+        "overall_schools": "2",
+        "reg_schools": "1",
+        "reg_mentors": "1",
+        "schools_with_teams": "1",
+        "teams": "1",
+        "ideas": "1",
+        "students": "3",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    },
+    {
+        "state_name": "all",
+        "dashboard_map_stat_id": 37,
+        "overall_schools": "60226",
+        "reg_schools": "54415",
+        "reg_mentors": "103901",
+        "schools_with_teams": "58066",
+        "teams": "192508",
+        "ideas": "101296",
+        "students": "667002",
+        "status": "ACTIVE",
+        "created_by": null,
+        "created_at": "2024-12-17T15:54:48.000Z",
+        "updated_by": null,
+        "updated_at": "2024-12-17T15:54:48.000Z"
+    }
+];
+
+                    for (const entry of districtData) {
+
+                        const state_name = entry.state_name;
+                        const overallSchools = parseInt(entry.overall_schools);
+                        dataOfmap[state_name] = { 'reg_schools': parseInt(entry.reg_schools), 'teams': parseInt(entry.teams), 'students': parseInt(entry.students), 'ideas': parseInt(entry.ideas), 'reg_mentors': parseInt(entry.reg_mentors), 'state_name': state_name };
+                    }
+                    // console.log(dataOfmap['all']);
+                    text.textContent = 54415;
+                    text1.textContent = 192508;
+                    text2.textContent = 667002;
+                    text3.textContent = 101296;
+                    text4.textContent = "INDIA"
+                    text5.textContent = 103901;
+                }
+
+                getUser();
+
+                //  console.log(data.data[0].dataValues[0].reg_schools,'vgvhbkjb');
+               
                 document.getElementById('IN-DL')
                     .addEventListener('mouseover', function (e) {
                         text.textContent = dataOfmap['Delhi'].reg_schools;
@@ -2485,12 +3089,12 @@
                         text4.textContent = dataOfmap['Delhi'].state_name;
                         text5.textContent = dataOfmap['Delhi'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2503,12 +3107,12 @@
                         text4.textContent = dataOfmap['Andaman and Nicobar Islands'].state_name;
                         text5.textContent = dataOfmap['Andaman and Nicobar Islands'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2521,12 +3125,12 @@
                         text4.textContent = dataOfmap['Andhra Pradesh'].state_name;
                         text5.textContent = dataOfmap['Andhra Pradesh'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2539,12 +3143,12 @@
                         text4.textContent = dataOfmap['Arunachal Pradesh'].state_name;
                         text5.textContent = dataOfmap['Arunachal Pradesh'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2557,12 +3161,12 @@
                         text4.textContent = dataOfmap['Assam'].state_name;
                         text5.textContent = dataOfmap['Assam'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2575,12 +3179,12 @@
                         text4.textContent = dataOfmap['Bihar'].state_name;
                         text5.textContent = dataOfmap['Bihar'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2593,12 +3197,12 @@
                         text4.textContent = dataOfmap['Chandigarh'].state_name;
                         text5.textContent = dataOfmap['Chandigarh'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2611,12 +3215,12 @@
                         text4.textContent = dataOfmap['Chhattisgarh'].state_name;
                         text5.textContent = dataOfmap['Chhattisgarh'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2629,12 +3233,12 @@
                         text4.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].state_name;
                         text5.textContent = dataOfmap['Dadra and Nagar Haveli and Daman and Diu'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2647,12 +3251,12 @@
                         text4.textContent = dataOfmap['Goa'].state_name;
                         text5.textContent = dataOfmap['Goa'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2665,12 +3269,12 @@
                         text4.textContent = dataOfmap['Gujarat'].state_name;
                         text5.textContent = dataOfmap['Gujarat'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2683,12 +3287,12 @@
                         text4.textContent = dataOfmap['Himachal Pradesh'].state_name;
                         text5.textContent = dataOfmap['Himachal Pradesh'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2701,12 +3305,12 @@
                         text4.textContent = dataOfmap['Haryana'].state_name;
                         text5.textContent = dataOfmap['Haryana'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2719,12 +3323,12 @@
                         text4.textContent = dataOfmap['Jharkhand'].state_name;
                         text5.textContent = dataOfmap['Jharkhand'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2737,12 +3341,12 @@
                         text4.textContent = dataOfmap['Jammu and Kashmir'].state_name;
                         text5.textContent = dataOfmap['Jammu and Kashmir'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2755,12 +3359,12 @@
                         text4.textContent = dataOfmap['Karnataka'].state_name;
                         text5.textContent = dataOfmap['Karnataka'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2773,12 +3377,12 @@
                         text4.textContent = dataOfmap['Kerala'].state_name;
                         text5.textContent = dataOfmap['Kerala'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2791,12 +3395,12 @@
                 //     text4.textContent = dataOfmap['Ladakh'].state_name;
                 //     text5.textContent = dataOfmap['Ladakh'].reg_mentors;
                 //     addEventListener("mouseout", function(e) {
-                //     text.textContent =   dataOfmap['all'].reg_schools;
-                //     text1.textContent = dataOfmap['all'].teams;
-                //     text2.textContent = dataOfmap['all'].students;
-                //     text3.textContent = dataOfmap['all'].ideas;
+                //     text.textContent =   54415;
+                //     text1.textContent = 192508
+                //     text2.textContent = 667002;
+                //     text3.textContent = 101296;
                 //     text4.textContent = "INDIA"
-                //     text5.textContent = dataOfmap['all'].reg_mentors;
+                //     text5.textContent = 103901;
                 //     });
                 // });
 
@@ -2809,12 +3413,12 @@
                         text4.textContent = dataOfmap['Maharashtra'].state_name;
                         text5.textContent = dataOfmap['Maharashtra'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2827,12 +3431,12 @@
                         text4.textContent = dataOfmap['Meghalaya'].state_name;
                         text5.textContent = dataOfmap['Meghalaya'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2845,12 +3449,12 @@
                         text4.textContent = dataOfmap['Manipur'].state_name;
                         text5.textContent = dataOfmap['Manipur'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2863,12 +3467,12 @@
                         text4.textContent = dataOfmap['Madhya Pradesh'].state_name;
                         text5.textContent = dataOfmap['Madhya Pradesh'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2881,12 +3485,12 @@
                         text4.textContent = dataOfmap['Mizoram'].state_name;
                         text5.textContent = dataOfmap['Mizoram'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2899,12 +3503,12 @@
                         text4.textContent = dataOfmap['Nagaland'].state_name;
                         text5.textContent = dataOfmap['Nagaland'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2917,12 +3521,12 @@
                         text4.textContent = dataOfmap['Odisha'].state_name;
                         text5.textContent = dataOfmap['Odisha'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2935,12 +3539,12 @@
                         text4.textContent = dataOfmap['Punjab'].state_name;
                         text5.textContent = dataOfmap['Punjab'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2953,12 +3557,12 @@
                         text4.textContent = dataOfmap['Puducherry'].state_name;
                         text5.textContent = dataOfmap['Puducherry'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2971,12 +3575,12 @@
                         text4.textContent = dataOfmap['Rajasthan'].state_name;
                         text5.textContent = dataOfmap['Rajasthan'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -2989,12 +3593,12 @@
                         text4.textContent = dataOfmap['Sikkim'].state_name;
                         text5.textContent = dataOfmap['Sikkim'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -3007,12 +3611,12 @@
                         text4.textContent = dataOfmap['Telangana'].state_name;
                         text5.textContent = dataOfmap['Telangana'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -3025,12 +3629,12 @@
                         text4.textContent = dataOfmap['Tamil Nadu'].state_name;
                         text5.textContent = dataOfmap['Tamil Nadu'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -3043,12 +3647,12 @@
                         text4.textContent = dataOfmap['Tripura'].state_name;
                         text5.textContent = dataOfmap['Tripura'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -3061,12 +3665,12 @@
                         text4.textContent = dataOfmap['Uttar Pradesh'].state_name;
                         text5.textContent = dataOfmap['Uttar Pradesh'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -3079,12 +3683,12 @@
                         text4.textContent = dataOfmap['Uttarakhand'].state_name;
                         text5.textContent = dataOfmap['Uttarakhand'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
 
@@ -3097,12 +3701,12 @@
                         text4.textContent = dataOfmap['West Bengal'].state_name;
                         text5.textContent = dataOfmap['West Bengal'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
                 document.getElementById('IN-LD')
@@ -3114,12 +3718,12 @@
                         text4.textContent = dataOfmap['Lakshadweep'].state_name;
                         text5.textContent = dataOfmap['Lakshadweep'].reg_mentors;
                         addEventListener("mouseout", function (e) {
-                            text.textContent = dataOfmap['all'].reg_schools;
-                            text1.textContent = dataOfmap['all'].teams;
-                            text2.textContent = dataOfmap['all'].students;
-                            text3.textContent = dataOfmap['all'].ideas;
+                            text.textContent = 54415;
+                            text1.textContent = 192508
+                            text2.textContent = 667002;
+                            text3.textContent = 101296;
                             text4.textContent = "INDIA"
-                            text5.textContent = dataOfmap['all'].reg_mentors;
+                            text5.textContent = 103901;
                         });
                     });
                 document.addEventListener("DOMContentLoaded", function () {
